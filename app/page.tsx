@@ -1,4 +1,5 @@
 import { getAllArticles, CATEGORIES } from "@/lib/articles";
+import { Flower2, Search, MessageSquare, RefreshCw } from "lucide-react";
 
 export default function HomePage() {
   const articles = getAllArticles();
@@ -9,7 +10,7 @@ export default function HomePage() {
       {/* HERO */}
       <section className="bg-gradient-to-br from-rose-50 to-pink-50 py-16 px-4">
         <div className="max-w-6xl mx-auto text-center">
-          <span className="text-5xl mb-4 block">🌸</span>
+          <Flower2 size={48} className="text-rose-400 mx-auto mb-4" />
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Les <span className="text-rose-500">Meilleurs</span> Soins Beauté
           </h1>
@@ -19,8 +20,8 @@ export default function HomePage() {
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             {Object.entries(CATEGORIES).map(([slug, cat]) => (
-              <a key={slug} href={`/categorie/${slug}`} className="btn-rose">
-                {cat.emoji} {cat.label}
+              <a key={slug} href={`/categorie/${slug}`} className="btn-rose flex items-center gap-2">
+                <cat.Icon size={16} /> {cat.label}
               </a>
             ))}
           </div>
@@ -36,7 +37,9 @@ export default function HomePage() {
             return (
               <a key={slug} href={`/categorie/${slug}`}
                 className="card-article p-8 text-center group">
-                <div className="text-4xl mb-3">{cat.emoji}</div>
+                <div className="flex justify-center mb-3 text-rose-400">
+                  <cat.Icon size={40} />
+                </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-rose-500 transition">
                   {cat.label}
                 </h3>
@@ -53,21 +56,26 @@ export default function HomePage() {
         <section className="max-w-6xl mx-auto px-4 pb-14">
           <h2 className="text-2xl font-bold text-gray-900 mb-8">Derniers comparatifs</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {recent.map((article) => (
-              <a key={article.slug} href={`/categorie/${article.categorie}/${article.slug}`}
-                className="card-article group">
-                <div className="bg-rose-50 h-40 flex items-center justify-center text-4xl">
-                  {CATEGORIES[article.categorie]?.emoji ?? "🌸"}
-                </div>
-                <div className="p-5">
-                  <span className="badge mb-2 inline-block">{CATEGORIES[article.categorie]?.label}</span>
-                  <h3 className="font-bold text-gray-900 mb-2 group-hover:text-rose-500 transition leading-snug">
-                    {article.title}
-                  </h3>
-                  <p className="text-sm text-gray-500 line-clamp-2">{article.description}</p>
-                </div>
-              </a>
-            ))}
+            {recent.map((article) => {
+              const cat = CATEGORIES[article.categorie];
+              return (
+                <a key={article.slug} href={`/categorie/${article.categorie}/${article.slug}`}
+                  className="card-article group">
+                  <div className="bg-rose-50 h-40 flex items-center justify-center text-rose-300">
+                    {cat ? <cat.Icon size={48} /> : <Flower2 size={48} />}
+                  </div>
+                  <div className="p-5">
+                    <span className="badge mb-2 inline-flex items-center gap-1">
+                      {cat && <cat.Icon size={11} />} {cat?.label}
+                    </span>
+                    <h3 className="font-bold text-gray-900 mb-2 group-hover:text-rose-500 transition leading-snug">
+                      {article.title}
+                    </h3>
+                    <p className="text-sm text-gray-500 line-clamp-2">{article.description}</p>
+                  </div>
+                </a>
+              );
+            })}
           </div>
         </section>
       )}
@@ -78,12 +86,14 @@ export default function HomePage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">Pourquoi nous faire confiance ?</h2>
           <div className="grid md:grid-cols-3 gap-6 text-center">
             {[
-              { emoji: "🔍", title: "Sélection rigoureuse", desc: "Chaque produit est analysé en détail : composition, avis clients, rapport qualité/prix." },
-              { emoji: "💬", title: "Avis authentiques", desc: "Nous agrégeons des milliers d'avis réels pour vous donner une vue objective." },
-              { emoji: "🔄", title: "Mis à jour régulièrement", desc: "Nos comparatifs sont mis à jour chaque mois pour refléter les dernières sorties." },
+              { Icon: Search,        title: "Sélection rigoureuse",    desc: "Chaque produit est analysé en détail : composition, avis clients, rapport qualité/prix." },
+              { Icon: MessageSquare, title: "Avis authentiques",        desc: "Nous agrégeons des milliers d'avis réels pour vous donner une vue objective." },
+              { Icon: RefreshCw,     title: "Mis à jour régulièrement", desc: "Nos comparatifs sont mis à jour chaque mois pour refléter les dernières sorties." },
             ].map((item) => (
               <div key={item.title} className="bg-white rounded-2xl p-6 shadow-sm">
-                <div className="text-3xl mb-3">{item.emoji}</div>
+                <div className="flex justify-center mb-3 text-rose-400">
+                  <item.Icon size={32} />
+                </div>
                 <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
                 <p className="text-sm text-gray-500">{item.desc}</p>
               </div>

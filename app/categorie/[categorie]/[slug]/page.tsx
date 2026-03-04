@@ -1,6 +1,7 @@
 import { getArticle, CATEGORIES } from "@/lib/articles";
 import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
+import { Link2 } from "lucide-react";
 
 export default async function ArticlePage({
   params,
@@ -26,7 +27,9 @@ export default async function ArticlePage({
 
       {/* Header */}
       <div className="mb-8">
-        <span className="badge mb-3 inline-block">{cat?.emoji} {cat?.label}</span>
+        <span className="badge mb-3 inline-flex items-center gap-1">
+          {cat?.Icon && <cat.Icon size={12} />} {cat?.label}
+        </span>
         <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
           {article.title}
         </h1>
@@ -36,10 +39,11 @@ export default async function ArticlePage({
 
       {/* Disclaimer affilié */}
       <div className="bg-rose-50 border border-rose-100 rounded-xl p-4 mb-8">
-        <p className="affiliate-disclaimer">
-          🔗 <strong>Transparence :</strong> Certains liens de cet article sont des liens affiliés.
+        <p className="affiliate-disclaimer flex items-start gap-2">
+          <Link2 size={14} className="mt-0.5 shrink-0 text-rose-400" />
+          <span><strong>Transparence :</strong> Certains liens de cet article sont des liens affiliés.
           Si vous achetez via ces liens, nous percevons une petite commission, sans coût supplémentaire pour vous.
-          Cela nous aide à maintenir ce site gratuitement.
+          Cela nous aide à maintenir ce site gratuitement.</span>
         </p>
       </div>
 

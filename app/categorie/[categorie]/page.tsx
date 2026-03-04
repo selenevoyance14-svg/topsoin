@@ -1,5 +1,6 @@
 import { getArticlesByCategorie, CATEGORIES } from "@/lib/articles";
 import { notFound } from "next/navigation";
+import { Flower2 } from "lucide-react";
 
 export default async function CategoriePage({ params }: { params: Promise<{ categorie: string }> }) {
   const { categorie } = await params;
@@ -12,7 +13,9 @@ export default async function CategoriePage({ params }: { params: Promise<{ cate
     <div className="max-w-6xl mx-auto px-4 py-10">
       {/* Header catégorie */}
       <div className="text-center mb-12">
-        <span className="text-5xl block mb-3">{cat.emoji}</span>
+        <div className="flex justify-center mb-3 text-rose-400">
+          <cat.Icon size={52} />
+        </div>
         <h1 className="text-3xl font-bold text-gray-900 mb-3">
           Les Meilleurs Soins <span className="text-rose-500">{cat.label}</span>
         </h1>
@@ -21,7 +24,9 @@ export default async function CategoriePage({ params }: { params: Promise<{ cate
 
       {articles.length === 0 ? (
         <div className="text-center py-20 text-gray-400">
-          <p className="text-4xl mb-4">🌸</p>
+          <div className="flex justify-center mb-4 text-rose-200">
+            <Flower2 size={48} />
+          </div>
           <p>Guides en cours de rédaction — revenez bientôt !</p>
         </div>
       ) : (
@@ -29,8 +34,8 @@ export default async function CategoriePage({ params }: { params: Promise<{ cate
           {articles.map((article) => (
             <a key={article.slug} href={`/categorie/${categorie}/${article.slug}`}
               className="card-article group">
-              <div className="bg-rose-50 h-40 flex items-center justify-center text-4xl">
-                {cat.emoji}
+              <div className="bg-rose-50 h-40 flex items-center justify-center text-rose-300">
+                <cat.Icon size={48} />
               </div>
               <div className="p-5">
                 <h2 className="font-bold text-gray-900 mb-2 group-hover:text-rose-500 transition leading-snug">

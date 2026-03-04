@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Flower2, Scissors, Sparkles, Leaf } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "GuideSoin — Les Meilleurs Produits Beauté & Soins",
@@ -23,20 +24,26 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* HEADER */}
         <header className="sticky top-0 z-50 bg-white border-b border-rose-100 shadow-sm">
           <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-            <a href="/" className="flex items-center gap-1">
-              <span className="text-2xl">🌸</span>
+            <a href="/" className="flex items-center gap-2">
+              <Flower2 size={22} className="text-rose-400" />
               <span className="text-xl font-bold text-rose-500">Top</span>
               <span className="text-xl font-bold text-gray-800">Soin</span>
             </a>
             <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
-              <a href="/categorie/cheveux" className="text-gray-600 hover:text-rose-500 transition">💇 Cheveux</a>
-              <a href="/categorie/visage" className="text-gray-600 hover:text-rose-500 transition">✨ Visage</a>
-              <a href="/categorie/corps" className="text-gray-600 hover:text-rose-500 transition">🌿 Corps</a>
+              <a href="/categorie/cheveux" className="flex items-center gap-1.5 text-gray-600 hover:text-rose-500 transition">
+                <Scissors size={15} /> Cheveux
+              </a>
+              <a href="/categorie/visage" className="flex items-center gap-1.5 text-gray-600 hover:text-rose-500 transition">
+                <Sparkles size={15} /> Visage
+              </a>
+              <a href="/categorie/corps" className="flex items-center gap-1.5 text-gray-600 hover:text-rose-500 transition">
+                <Leaf size={15} /> Corps
+              </a>
             </nav>
-            <nav className="md:hidden flex items-center gap-4 text-base">
-              <a href="/categorie/cheveux" className="hover:text-rose-500">💇</a>
-              <a href="/categorie/visage" className="hover:text-rose-500">✨</a>
-              <a href="/categorie/corps" className="hover:text-rose-500">🌿</a>
+            <nav className="md:hidden flex items-center gap-4">
+              <a href="/categorie/cheveux" className="text-gray-600 hover:text-rose-500"><Scissors size={20} /></a>
+              <a href="/categorie/visage" className="text-gray-600 hover:text-rose-500"><Sparkles size={20} /></a>
+              <a href="/categorie/corps" className="text-gray-600 hover:text-rose-500"><Leaf size={20} /></a>
             </nav>
           </div>
         </header>
@@ -49,7 +56,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div className="grid md:grid-cols-3 gap-8">
               <div>
                 <div className="flex items-center gap-2 mb-3">
-                  <span>🌸</span>
+                  <Flower2 size={18} className="text-rose-400" />
                   <span className="font-bold text-rose-500">Guide-Soin.fr</span>
                 </div>
                 <p className="text-sm text-gray-500 leading-relaxed">
@@ -62,9 +69,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <div>
                 <h4 className="font-semibold text-gray-700 mb-3">Catégories</h4>
                 <ul className="space-y-2 text-sm text-gray-500">
-                  <li><a href="/categorie/cheveux" className="hover:text-rose-500 transition">💇 Soins Cheveux</a></li>
-                  <li><a href="/categorie/visage" className="hover:text-rose-500 transition">✨ Soins Visage</a></li>
-                  <li><a href="/categorie/corps" className="hover:text-rose-500 transition">🌿 Soins Corps</a></li>
+                  <li><a href="/categorie/cheveux" className="flex items-center gap-1.5 hover:text-rose-500 transition"><Scissors size={13} /> Soins Cheveux</a></li>
+                  <li><a href="/categorie/visage" className="flex items-center gap-1.5 hover:text-rose-500 transition"><Sparkles size={13} /> Soins Visage</a></li>
+                  <li><a href="/categorie/corps" className="flex items-center gap-1.5 hover:text-rose-500 transition"><Leaf size={13} /> Soins Corps</a></li>
                 </ul>
               </div>
               <div>
