@@ -2,6 +2,19 @@ import { getArticle, CATEGORIES } from "@/lib/articles";
 import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { Link2 } from "lucide-react";
+import type { MDXComponents } from "mdx/types";
+
+const mdxComponents: MDXComponents = {
+  a: ({ href = "", children }) => {
+    if (href.includes("amazon.fr")) {
+      return <a href={href} target="_blank" rel="noopener noreferrer sponsored" className="btn-amazon">{children}</a>;
+    }
+    if (href.startsWith("http")) {
+      return <a href={href} target="_blank" rel="noopener noreferrer" className="btn-rose" style={{ fontSize: "0.85rem", padding: "0.5rem 1rem" }}>{children}</a>;
+    }
+    return <a href={href}>{children}</a>;
+  },
+};
 
 export default async function ArticlePage({
   params,
@@ -57,7 +70,7 @@ export default async function ArticlePage({
         prose-strong:text-gray-900
         prose-li:text-gray-600
         prose-table:text-sm">
-        <MDXRemote source={article.content} />
+        <MDXRemote source={article.content} components={mdxComponents} />
       </div>
 
       {/* Retour catégorie */}
