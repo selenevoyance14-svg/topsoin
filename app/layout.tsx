@@ -2,15 +2,15 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "TopSoin — Les Meilleurs Produits Beauté & Soins",
+  title: "GuideSoin — Les Meilleurs Produits Beauté & Soins",
   description: "Guides d'achat et comparatifs beauté : cheveux, visage, corps. Trouvez les meilleurs produits testés et approuvés.",
   keywords: "meilleur shampoing, crème visage, soin cheveux, comparatif beauté, guide achat beauté",
   openGraph: {
-    title: "TopSoin — Les Meilleurs Produits Beauté",
+    title: "GuideSoin — Les Meilleurs Produits Beauté",
     description: "Comparatifs et guides d'achat beauté pour choisir les meilleurs soins.",
     type: "website",
     locale: "fr_FR",
-    url: "https://topsoin.fr",
+    url: "https://guide-soin.fr",
   },
 };
 
@@ -50,7 +50,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <div>
                 <div className="flex items-center gap-2 mb-3">
                   <span>🌸</span>
-                  <span className="font-bold text-rose-500">TopSoin.fr</span>
+                  <span className="font-bold text-rose-500">Guide-Soin.fr</span>
                 </div>
                 <p className="text-sm text-gray-500 leading-relaxed">
                   Comparatifs et guides d&apos;achat beauté pour trouver les meilleurs produits soins.
@@ -76,7 +76,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               </div>
             </div>
             <div className="border-t border-gray-200 mt-8 pt-6 text-center text-xs text-gray-400">
-              © 2026 TopSoin.fr — Tous droits réservés
+              © 2026 Guide-Soin.fr — Tous droits réservés
             </div>
           </div>
         </footer>
