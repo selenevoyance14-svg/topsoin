@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #1a1a2e;
+  background: #fff;
+}
+
+.btn-rose {
+  background: linear-gradient(135deg, #f43f5e, #e11d48);
+  color: white;
+  padding: 0.75rem 1.75rem;
+  border-radius: 50px;
+  font-weight: 600;
+  display: inline-block;
+  transition: all 0.2s;
+  box-shadow: 0 4px 15px rgba(244, 63, 94, 0.3);
+}
+
+.btn-rose:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(244, 63, 94, 0.4);
+}
+
+.btn-amazon {
+  background: linear-gradient(135deg, #FF9900, #e68900);
+  color: white;
+  padding: 0.6rem 1.25rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: all 0.2s;
+}
+
+.btn-amazon:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 153, 0, 0.3);
+}
+
+.card-article {
+  border: 1px solid #f3f4f6;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+  background: white;
+}
+
+.card-article:hover {
+  border-color: #fecdd3;
+  box-shadow: 0 8px 30px rgba(244, 63, 94, 0.1);
+  transform: translateY(-3px);
+}
+
+.badge {
+  background: #fff1f2;
+  color: #f43f5e;
+  padding: 0.25rem 0.75rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.product-card {
+  border: 2px solid #f3f4f6;
+  border-radius: 16px;
+  padding: 1.5rem;
+  transition: all 0.2s;
+  background: white;
+}
+
+.product-card:hover {
+  border-color: #fecdd3;
+  box-shadow: 0 4px 20px rgba(244, 63, 94, 0.08);
+}
+
+.product-card.top-pick {
+  border-color: #f43f5e;
+  background: #fff1f2;
+}
+
+.affiliate-disclaimer {
+  font-size: 0.78rem;
+  color: #9ca3af;
+  font-style: italic;
+}
