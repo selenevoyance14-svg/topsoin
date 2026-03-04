@@ -80,7 +80,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   <li><a href="/mentions-legales" className="hover:text-rose-500 transition">Mentions légales</a></li>
                   <li><a href="/confidentialite" className="hover:text-rose-500 transition">Politique de confidentialité</a></li>
                   <li className="pt-1">
-                    <a href="mailto:contact@guide-soin.fr" className="hover:text-rose-500 transition">contact@guide-soin.fr</a>
+                    <a href="mailto:bonsplansmania@gmail.com" className="hover:text-rose-500 transition">contact@guide-soin.fr</a>
                     <span className="block text-xs text-gray-400 mt-0.5">Partenariats &amp; collaborations</span>
                   </li>
                 </ul>
