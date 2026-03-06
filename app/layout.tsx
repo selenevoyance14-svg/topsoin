@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 import { Flower2, Scissors, Sparkles, Leaf } from "lucide-react";
 
@@ -49,6 +50,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </header>
 
         <main>{children}</main>
+        <Script
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5064203547863113"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
 
         {/* FOOTER */}
         <footer className="bg-gray-50 border-t border-gray-100 mt-16">
