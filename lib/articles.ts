@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import { Scissors, Sparkles, Leaf, type LucideIcon } from "lucide-react";
+import { Scissors, Sparkles, Leaf, Palette, Droplets, User, type LucideIcon } from "lucide-react";
 
 const contentDir = path.join(process.cwd(), "content");
 
@@ -75,5 +75,8 @@ export function getArticlesByCategorie(categorie: string): ArticleMeta[] {
 export const CATEGORIES: Record<string, { label: string; Icon: LucideIcon; description: string }> = {
   cheveux: { label: "Cheveux", Icon: Scissors, description: "Shampoings, masques, sèche-cheveux, lisseurs..." },
   visage:  { label: "Visage",  Icon: Sparkles, description: "Crèmes, sérums, nettoyants, contours des yeux..." },
-  corps:   { label: "Corps",   Icon: Leaf,     description: "Huiles, gommages, crèmes hydratantes, épilation..." },
+  corps:      { label: "Corps",      Icon: Leaf,     description: "Huiles, gommages, crèmes hydratantes, épilation..." },
+  maquillage: { label: "Maquillage", Icon: Palette,  description: "Fonds de teint, mascaras, rouges à lèvres, palettes..." },
+  parfum:     { label: "Parfum",     Icon: Droplets, description: "Parfums femme, homme, coffrets, eaux de toilette..." },
+  homme:      { label: "Homme",      Icon: User,     description: "Rasoirs, tondeuses, soins barbe, crèmes hydratantes..." },
 };
