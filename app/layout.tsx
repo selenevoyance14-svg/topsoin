@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "GuideSoin — Les Meilleurs Produits Beauté & Soins",
   description: "Guides d'achat et comparatifs beauté : cheveux, visage, corps. Trouvez les meilleurs produits testés et approuvés.",
   keywords: "meilleur shampoing, crème visage, soin cheveux, comparatif beauté, guide achat beauté",
+  icons: {
+    icon: "/favicon.svg",
+  },
   openGraph: {
     title: "GuideSoin — Les Meilleurs Produits Beauté",
     description: "Comparatifs et guides d'achat beauté pour choisir les meilleurs soins.",
