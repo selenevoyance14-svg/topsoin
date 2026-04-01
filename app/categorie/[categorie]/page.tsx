@@ -2,6 +2,10 @@ import { getArticlesByCategorie, CATEGORIES } from "@/lib/articles";
 import { notFound } from "next/navigation";
 import { Flower2 } from "lucide-react";
 
+export function generateStaticParams() {
+  return Object.keys(CATEGORIES).map((categorie) => ({ categorie }));
+}
+
 export default async function CategoriePage({ params }: { params: Promise<{ categorie: string }> }) {
   const { categorie } = await params;
   const cat = CATEGORIES[categorie];

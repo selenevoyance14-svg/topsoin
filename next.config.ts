@@ -1,8 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  outputFileTracingIncludes: {
-    "/**": ["./content/**/*.mdx"],
+  output: "export",
+  images: {
+    unoptimized: true,
   },
 };
 

@@ -1,8 +1,12 @@
-import { getArticle, CATEGORIES } from "@/lib/articles";
+import { getArticle, getAllArticles, CATEGORIES } from "@/lib/articles";
 import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { Link2 } from "lucide-react";
 import type { MDXComponents } from "mdx/types";
+
+export function generateStaticParams() {
+  return getAllArticles().map((a) => ({ categorie: a.categorie, slug: a.slug }));
+}
 
 const mdxComponents: MDXComponents = {
   a: ({ href = "", children }) => {
