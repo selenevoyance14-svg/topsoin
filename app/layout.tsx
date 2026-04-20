@@ -87,6 +87,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <div>
                 <h4 className="font-semibold text-gray-700 mb-3">Informations</h4>
                 <ul className="space-y-2 text-sm text-gray-500">
+                  <li><a href="/a-propos" className="hover:text-rose-500 transition">À propos</a></li>
                   <li><a href="/mentions-legales" className="hover:text-rose-500 transition">Mentions légales</a></li>
                   <li><a href="/confidentialite" className="hover:text-rose-500 transition">Politique de confidentialité</a></li>
                   <li className="pt-1">
