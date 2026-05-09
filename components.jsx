@@ -155,8 +155,16 @@ function Hero() {
             de la dentelle aux objets du plaisir.
           </p>
           <div style={{display:'flex', gap:12, flexWrap:'wrap'}}>
-            <button style={btnPrimary}>Découvrir la collection</button>
-            <button style={btnGhost}>Le mot de Léa →</button>
+            <a href="#produits" style={{...btnPrimary, display:'inline-flex', alignItems:'center', textDecoration:'none'}}>Découvrir la sélection →</a>
+            <a href="/journal/" style={{...btnGhost, display:'inline-flex', alignItems:'center', textDecoration:'none'}}>Le journal de Léa</a>
+          </div>
+
+          {/* Preuve sociale honnête juste sous les CTA */}
+          <div style={{display:'flex', alignItems:'center', gap:10, marginTop:22, fontSize:13, color:'var(--ink-2)', flexWrap:'wrap'}}>
+            <div style={{display:'flex', gap:2, color:'#d4a017'}}>
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <span><strong style={{color:'var(--ink)'}}>4,5+</strong> sur Amazon — produits notés par des milliers d'acheteur·euse·s</span>
           </div>
         </div>
 
@@ -165,9 +173,9 @@ function Hero() {
           display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:16, fontSize:12
         }}>
           {[
-            ['◇', 'Dentelle de Calais','Made in France'],
-            ['◐', 'Emballage discret','100% neutre'],
-            ['☉', '+38 000 femmes','nous font confiance'],
+            ['◇', 'Sélection indépendante','Curation française'],
+            ['◐', 'Colis neutre Amazon','Discrétion garantie'],
+            ['☉', 'Livraison Prime','24h, retours gratuits'],
           ].map(([i,a,b],idx) => (
             <div key={idx}>
               <div style={{fontSize:18, color:'var(--accent)', marginBottom:6}}>{i}</div>
@@ -217,7 +225,7 @@ function Hero() {
           background:'rgba(0,0,0,.18)', backdropFilter:'blur(4px)',
           padding:8, fontWeight:500
         }}>
-          MADE IN<br/>FRANCE<br/>—<br/>2024
+          SÉLECTION<br/>LÉA<br/>—<br/>2026
         </div>
       </div>
     </section>
