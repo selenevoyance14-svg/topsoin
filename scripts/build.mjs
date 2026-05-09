@@ -18,6 +18,7 @@ const filesToCopy = [
     "ads.txt",
     "google90481d72c7059505.html",
     "journal",
+    "favicon.svg",
 ];
 
 await rm(out, { recursive: true, force: true });
