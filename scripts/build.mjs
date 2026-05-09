@@ -43,6 +43,16 @@ const journalSlugs = [
     "vibromasseurs-debutantes-selection",
     "idees-cadeaux-couple-romantique",
     "lingerie-et-confiance-soi",
+    "comment-trouver-sa-taille-soutien-gorge",
+    "bralette-confort-elegance",
+    "body-dentelle-guide-bien-choisir",
+    "culotte-taille-haute-confort-style",
+    "kimono-peignoir-robe-chambre-difference",
+    "pyjama-satin-luxe-quotidien",
+    "stimulateur-clitoridien-tout-comprendre",
+    "bougie-massage-rituel-sensoriel",
+    "pimenter-couple-7-idees-simples",
+    "saint-valentin-7-idees-cadeaux",
 ];
 const journalUrls = journalSlugs
     .map(s => `  <url><loc>https://guide-soin.fr/journal/${s}.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>`)

@@ -254,6 +254,378 @@ ARTICLES = [
             "La règle d'or de Léa : **achète ce qui te plaît à toi, pas ce qui plairait à un partenaire imaginaire**. C'est toi qui le portes 16h sur 24.",
         ],
     },
+    {
+        "slug": "comment-trouver-sa-taille-soutien-gorge",
+        "kicker": "GUIDE LINGERIE",
+        "title": "Comment trouver sa vraie taille de soutien-gorge",
+        "lead": "Plus de 70% des femmes portent la mauvaise taille. Voici la méthode pour ne plus jamais te tromper.",
+        "category": "lingerie",
+        "date": "9 mai 2026",
+        "read": "4 min",
+        "cover_color": "#8b1d2c",
+        "product_cats": ["lingerie"],
+        "max_products": 3,
+        "intro": [
+            "Bretelles qui glissent, bonnets qui plissent, bande qui remonte dans le dos : si tu connais ces galères, c'est que ton soutien-gorge n'est pas à la bonne taille. Bonne nouvelle : la solution prend 3 minutes.",
+        ],
+        "sections": [
+            ("Les 2 mesures à prendre", [
+                "Tu auras besoin d'un mètre ruban souple. **Mesure 1 (tour sous poitrine)** : passe le mètre bien serré juste sous la poitrine, à l'horizontale. Note le chiffre en cm.",
+                "**Mesure 2 (tour de poitrine)** : mesure au point le plus large, sans serrer, en restant droite. Note le chiffre en cm.",
+            ]),
+            ("Le calcul", [
+                "**Pour la bande (le chiffre, ex: 85, 90, 95)** : prends ton tour sous poitrine et arrondis à la valeur la plus proche dans cette grille : 63-67 = 80, 68-72 = 85, 73-77 = 90, 78-82 = 95, 83-87 = 100.",
+                "**Pour le bonnet (la lettre, ex: A, B, C)** : soustrais le tour sous poitrine au tour de poitrine. Différence de 13 cm = A, 15 cm = B, 17 cm = C, 19 cm = D, 21 cm = E.",
+                "Exemple : tour sous poitrine 76 cm, tour de poitrine 91 cm → 90B.",
+            ]),
+            ("Les signes que tu portes la mauvaise taille", [
+                "**La bande remonte dans le dos** : ta taille de bande est trop grande. Descends d'une taille (ex: 95 → 90).",
+                "**Les bonnets plissent ou flottent** : bonnet trop grand. Descends d'une lettre.",
+                "**Les bonnets débordent (effet \"4 seins\")** : bonnet trop petit. Monte d'une lettre.",
+                "**Les bretelles font mal** : c'est souvent la bande qui fait défaut, pas les bretelles. Si la bande est bien, elles tiennent toutes seules.",
+            ]),
+            ("L'astuce magique : la sister size", [
+                "Si une marque ne fait pas ta taille exacte, tu peux essayer une **\"taille sœur\"** : descends d'une bande et monte d'une lettre. Ex: 90B = 85C = 80D. Le volume du bonnet est identique, seule la bande change.",
+                "Très utile pour trouver ton bonheur quand un modèle te plaît mais que ta taille est en rupture.",
+            ]),
+        ],
+        "outro": [
+            "Refais cette mesure **tous les 6 mois** ou après chaque variation de poids importante. Les soutiens-gorge se déforment aussi avec le temps — au bout de 18-24 mois de port quotidien, il est temps d'en racheter.",
+        ],
+    },
+    {
+        "slug": "bralette-confort-elegance",
+        "kicker": "TENDANCE",
+        "title": "Bralette : pourquoi tout le monde l'adore",
+        "lead": "Le soutien-gorge sans agrafes ni armatures qui a conquis toutes les générations. Mode d'emploi.",
+        "category": "lingerie",
+        "date": "9 mai 2026",
+        "read": "3 min",
+        "cover_color": "#a04848",
+        "product_cats": ["lingerie"],
+        "max_products": 3,
+        "intro": [
+            "La bralette, c'est ce sous-vêtement qu'on enfile par la tête, sans armatures, souvent en dentelle élastique, qui combine le confort d'un caraco et l'esthétique d'un soutien-gorge. Bref : la pièce qu'on ne quitte plus.",
+        ],
+        "sections": [
+            ("Pour qui c'est fait ?", [
+                "Bonnets **A, B, C, parfois D** : maintien correct au quotidien.",
+                "Bonnets **E et plus** : la bralette n'apportera pas le maintien dont tu as besoin pour la journée. À garder pour le soir ou les moments de détente.",
+                "**Toutes les morphologies** : large gamme de tailles (XS au 3XL chez certaines marques), souvent plus inclusif que les soutiens-gorge classiques.",
+            ]),
+            ("Comment la porter", [
+                "**Sous un t-shirt blanc** : choisis une bralette nude, fine, sans détails apparents.",
+                "**Sous un débardeur ample** : laisse-la dépasser, c'est volontaire et stylé.",
+                "**En haut de pyjama** : avec un short ou un legging, parfait pour le coucher.",
+                "**À la place du soutien-gorge classique** au bureau : oui, si la dentelle est discrète et que ton top n'est pas transparent.",
+            ]),
+            ("Les 3 critères qualité", [
+                "**Les bretelles ne sont pas qu'un détail** : doivent être réglables et assez larges (1 cm minimum) pour ne pas marquer.",
+                "**La bande de dessous** : doit être élastique mais ferme, pas trop fine sinon elle ne tient pas.",
+                "**La matière** : 80% nylon + 20% élasthanne offre le meilleur compromis maintien/confort. Le pur coton se déforme, la dentelle 100% est jolie mais peu maintenante.",
+            ]),
+        ],
+        "outro": [
+            "Notre conseil : commande en deux tailles si tu hésites. Une bralette parfaite, c'est celle qu'on oublie sur soi.",
+        ],
+    },
+    {
+        "slug": "body-dentelle-guide-bien-choisir",
+        "kicker": "GUIDE LINGERIE",
+        "title": "Body en dentelle : guide pour bien choisir",
+        "lead": "Sous une jupe, sous un blazer ou pour soi : le body est de retour. Voici comment choisir le bon.",
+        "category": "lingerie",
+        "date": "9 mai 2026",
+        "read": "4 min",
+        "cover_color": "#5b1a26",
+        "product_cats": ["lingerie"],
+        "max_products": 3,
+        "intro": [
+            "Le body, c'était le must des années 90, et il revient en force. Pratique, sexy, élégant — il combine soutien-gorge et culotte en une pièce qui ne remonte jamais. Encore faut-il choisir le bon.",
+        ],
+        "sections": [
+            ("3 styles, 3 usages", [
+                "**Body lingerie pur** (dentelle, transparences) : pour soi ou pour les soirées intimes.",
+                "**Body habillé** (mat, manches longues, col rond) : se porte sous une jupe taille haute ou un pantalon, comme un haut.",
+                "**Body coquin** (résille, dos nu) : pour les occasions spéciales, plutôt à porter sur soi en privé.",
+            ]),
+            ("Les détails qui changent tout", [
+                "**Les pressions à l'entrejambe** sont indispensables — sinon, plus moyen d'aller aux toilettes sans tout retirer.",
+                "**Le tissu doit être stretch** (au moins 10% élasthanne) pour épouser sans serrer.",
+                "**Les coutures plates** évitent les marques sous les vêtements.",
+                "**Pour les bonnets D+** : choisis un body avec des balconnets renforcés, sinon ça flotte.",
+            ]),
+            ("Comment le porter au quotidien", [
+                "**Sous un blazer** : look working girl, féminin sans être sexy.",
+                "**Avec un jean taille haute** : silhouette allongée, ventre plat sans effort.",
+                "**Sous une jupe en tweed** : très années 90, ultra moderne aujourd'hui.",
+            ]),
+        ],
+        "outro": [
+            "Pas convaincue ? Démarre avec un body uni en coton stretch (le plus polyvalent), puis ajoute une pièce en dentelle quand tu auras pris l'habitude.",
+        ],
+    },
+    {
+        "slug": "culotte-taille-haute-confort-style",
+        "kicker": "TENDANCE",
+        "title": "La culotte taille haute : confort et silhouette",
+        "lead": "L'anti-string : confortable, gainante, et plus glamour que jamais. Pourquoi elle revient en force.",
+        "category": "lingerie",
+        "date": "9 mai 2026",
+        "read": "3 min",
+        "cover_color": "#8b1d2c",
+        "product_cats": ["lingerie"],
+        "max_products": 3,
+        "intro": [
+            "Pendant 20 ans, on nous a vendu le string comme l'apogée de la féminité. Aujourd'hui, on assume : la culotte taille haute, c'est mieux. Plus confortable, plus élégante, et silhouette redessinée sans effort.",
+        ],
+        "sections": [
+            ("Les bénéfices concrets", [
+                "**Aucune marque sous les vêtements** (contrairement à la culotte basse mal coupée).",
+                "**Effet ventre plat naturel** : la pièce gaine légèrement sans comprimer.",
+                "**Confort thermique** : couvre les reins, parfait en hiver.",
+                "**Esthétique vintage chic** : Brigitte Bardot la portait, le retour est définitif.",
+            ]),
+            ("Les coupes à connaître", [
+                "**Coupe française** : montant simple jusqu'au nombril, version classique.",
+                "**Boyshort haut** : avec petite jambe, encore plus couvrante.",
+                "**Culotte gainante** : intègre une bande sculptante au ventre.",
+                "**Modèle à dentelle** : la jambe est en dentelle élastique, look glamour.",
+            ]),
+            ("Pour quelle morphologie ?", [
+                "**Toutes**, vraiment. Mais les femmes avec des hanches marquées y trouveront un confort particulier (la bande haute ne cisaille pas).",
+                "Pour les ventres ronds : préfère un modèle avec **ceinture large douce** plutôt qu'un élastique fin qui marquerait.",
+            ]),
+        ],
+        "outro": [
+            "Mon astuce : assortis-la à un soutien-gorge balconnet de la même couleur. Tu obtiens un ensemble cohérent qui te fait ressembler à une héroïne de cinéma — même un mardi de pluie au bureau.",
+        ],
+    },
+    {
+        "slug": "kimono-peignoir-robe-chambre-difference",
+        "kicker": "GUIDE NUIT",
+        "title": "Kimono, peignoir, robe de chambre : quelle différence ?",
+        "lead": "Trois pièces qu'on confond tout le temps. Voici comment les distinguer et bien choisir.",
+        "category": "nuit",
+        "date": "9 mai 2026",
+        "read": "3 min",
+        "cover_color": "#3a2e1f",
+        "product_cats": ["nuit"],
+        "max_products": 3,
+        "intro": [
+            "On dit \"je vais enfiler mon kimono\" alors qu'on parle d'un peignoir, et inversement. Pas grave dans la conversation, mais utile à savoir quand on achète : les trois pièces ne couvrent pas les mêmes usages.",
+        ],
+        "sections": [
+            ("Le kimono", [
+                "**Origine japonaise**, taille fluide, manches larges, sans col, fermé par une ceinture nouée sur le côté ou devant.",
+                "**Tissu fin** : satin, soie, viscose. Ne tient pas chaud.",
+                "**Usage idéal** : été, après la douche, ou en intérieur stylé. Se porte aussi sur un maillot à la plage ou sur une nuisette.",
+            ]),
+            ("Le peignoir", [
+                "**Forme occidentale** plus structurée, manches droites, col à revers ou châle, ceinture nouée à la taille.",
+                "**Tissu épais** : éponge (pour la sortie de bain) ou polaire (pour l'hiver).",
+                "**Usage idéal** : sortie de douche, soirées au chaud, lendemains de fête.",
+            ]),
+            ("La robe de chambre", [
+                "**Plus chic** que le peignoir, souvent en satin matelassé ou en velours, plus longue (jusqu'aux chevilles).",
+                "**Atmosphère hôtellerie de luxe** : fait pour traîner dans un appartement parisien avec une tasse de thé.",
+                "**Usage idéal** : moments de détente où tu veux te sentir élégante chez toi.",
+            ]),
+        ],
+        "outro": [
+            "Si tu dois en choisir une seule pour démarrer : prends un **kimono en satin fluide**. C'est la pièce la plus polyvalente — tu peux la porter sur une nuisette, sur un maillot ou en lounge.",
+        ],
+    },
+    {
+        "slug": "pyjama-satin-luxe-quotidien",
+        "kicker": "GUIDE NUIT",
+        "title": "Pyjama satin : le luxe au quotidien",
+        "lead": "Pourquoi un bon pyjama satin change vraiment ta façon de dormir — et comment ne pas se faire avoir.",
+        "category": "nuit",
+        "date": "9 mai 2026",
+        "read": "4 min",
+        "cover_color": "#241c16",
+        "product_cats": ["nuit"],
+        "max_products": 3,
+        "intro": [
+            "Tu hésites à investir dans un pyjama satin parce que ça te paraît superflu ? Une fois que tu en auras un, tu ne reviendras plus au pyjama coton. Voici pourquoi.",
+        ],
+        "sections": [
+            ("Les 3 vrais bénéfices", [
+                "**Glisse sur la peau** : zéro friction. Dis adieu aux marques de couture le matin.",
+                "**Protège les cheveux** : le satin (contrairement au coton) ne casse pas les fibres capillaires pendant la nuit. Cheveux moins crépus, moins de pointes fourchues.",
+                "**Régule la température** : respire en été, garde la chaleur en hiver. Plus polyvalent que tu ne le penses.",
+            ]),
+            ("Polyester ou soie ? Le grand débat", [
+                "**Polyester satiné** (entre 25 et 60€ généralement) : visuel identique, prix accessible, lavage en machine. Mais ne respire pas vraiment.",
+                "**Soie naturelle** (entre 100 et 300€) : confort incomparable, thermorégulateur, hypoallergénique. Demande un lavage doux à la main.",
+                "**Notre avis** : démarre par un polyester de qualité (cherche \"satin de polyester épais\" minimum 95g/m²). Si tu adoptes vraiment, passe à la soie 6 mois plus tard.",
+            ]),
+            ("Les coupes les plus flatteuses", [
+                "**Pantalon fluide + chemise boutonnée** : style hôtel parisien, intemporel.",
+                "**Short + débardeur** : pour l'été, ou si tu as chaud la nuit.",
+                "**Combinaison une pièce** : original, glamour, parfait pour traîner un dimanche.",
+            ]),
+        ],
+        "outro": [
+            "Si tu offres : c'est un cadeau qui ne déçoit jamais. La taille L convient à beaucoup de femmes (le satin glisse, donc large taille = pas grave).",
+        ],
+    },
+    {
+        "slug": "stimulateur-clitoridien-tout-comprendre",
+        "kicker": "SENSUALITÉ",
+        "title": "Stimulateur clitoridien : tout comprendre",
+        "lead": "Différent du vibromasseur classique. Voici comment ça marche et à qui c'est destiné.",
+        "category": "sensualite",
+        "date": "9 mai 2026",
+        "read": "5 min",
+        "cover_color": "#1a1a1a",
+        "product_cats": ["sensualite"],
+        "max_products": 3,
+        "intro": [
+            "Le **stimulateur clitoridien** (souvent appelé \"Womanizer\" du nom de la marque qui a démocratisé le concept) n'est pas un vibromasseur classique. Il fonctionne sans contact direct, par succion ou ondes de pression. Et c'est précisément ce qui change tout.",
+        ],
+        "sections": [
+            ("Comment ça fonctionne ?", [
+                "L'embout en silicone se place **sur** le clitoris (sans appuyer), formant une chambre étanche. À l'intérieur, des ondes de pression alternées produisent une stimulation sans frottement.",
+                "Résultat : **sensations beaucoup plus intenses** que la vibration classique, et une stimulation qui dure sans inconfort.",
+            ]),
+            ("Pour qui c'est fait ?", [
+                "**Pour les femmes qui ont du mal à atteindre l'orgasme** par stimulation classique : le taux de succès rapporté dans les avis est très élevé.",
+                "**Pour celles qui trouvent les vibromasseurs \"trop\" en intensité directe** : le contact indirect est plus doux.",
+                "**Pour les couples** qui veulent ajouter une dimension nouvelle aux préliminaires.",
+            ]),
+            ("Les critères d'achat", [
+                "**Marque sérieuse** : Womanizer, Satisfyer, Lelo, We-Vibe sont les références. Évite les copies bas de gamme à 15€ sur Amazon.",
+                "**Plusieurs niveaux d'intensité** (au moins 5) : tu vas vouloir varier.",
+                "**Étanche** (IPX7 minimum) : indispensable pour le nettoyage et l'usage sous la douche.",
+                "**Silencieux** : sous 50 dB. Important pour la discrétion.",
+                "**Embout interchangeable** : certains modèles permettent d'adapter la taille de l'embout.",
+            ]),
+        ],
+        "outro": [
+            "Budget : entre **30 et 100€** pour un bon premier modèle. Pas la peine de mettre 200€+ pour démarrer. Tu pourras toujours upgrader plus tard si tu adores.",
+        ],
+    },
+    {
+        "slug": "bougie-massage-rituel-sensoriel",
+        "kicker": "SOINS INTIMES",
+        "title": "Bougie de massage : le rituel sensoriel à découvrir",
+        "lead": "Une bougie qui fond en huile de massage tiède. Le geste qui transforme un soir banal en moment d'exception.",
+        "category": "soins",
+        "date": "9 mai 2026",
+        "read": "3 min",
+        "cover_color": "#c9a961",
+        "product_cats": ["soins"],
+        "max_products": 3,
+        "intro": [
+            "Tu connais sûrement les bougies parfumées. Mais sais-tu qu'il existe des bougies qui, en fondant, deviennent une **huile de massage tiède** ? C'est ce qu'on appelle les **bougies de massage**. Petit objet, grand effet.",
+        ],
+        "sections": [
+            ("Comment ça marche ?", [
+                "La bougie est composée de **cires végétales fondant à basse température** (45-50°C, comparable à un café chaud — donc pas brûlant pour la peau).",
+                "Tu l'allumes 10-15 min avant l'usage, le temps qu'une petite flaque d'huile se forme.",
+                "Tu éteins, tu verses l'huile chaude sur la peau, et tu masses. La chaleur amplifie la sensation et l'absorption.",
+            ]),
+            ("Les ingrédients à privilégier", [
+                "**Cire de soja, cire d'abeille ou cire de colza** : végétales, naturelles, biodégradables.",
+                "**Huiles essentielles naturelles** (lavande, ylang-ylang, rose) plutôt que parfums synthétiques.",
+                "**Sans paraffine ni paraben** : éviter les bougies industrielles classiques pour cet usage.",
+                "**Vérifie la mention \"compatible peau\"** sur le packaging.",
+            ]),
+            ("Le rituel", [
+                "Allume la bougie 15 min avant. Profite de l'odeur diffuser.",
+                "Mets une serviette sous toi pour ne pas tacher draps ou tapis.",
+                "Verse l'huile en filets sur la peau du partenaire (ou de soi).",
+                "Masse en commençant par le dos, puis les épaules, les bras, les jambes. La détente vient en quelques minutes.",
+            ]),
+        ],
+        "outro": [
+            "Une bougie de massage de qualité tient **15-20 utilisations**. Considère ça comme un investissement dans tes soirées détente — c'est moins cher qu'un seul massage en spa.",
+        ],
+    },
+    {
+        "slug": "pimenter-couple-7-idees-simples",
+        "kicker": "ÉROTISME",
+        "title": "Pimenter le couple : 7 idées simples pour rallumer la flamme",
+        "lead": "Pas besoin d'aller chercher loin. Voilà 7 micro-changements qui font une vraie différence.",
+        "category": "erotisme",
+        "date": "9 mai 2026",
+        "read": "4 min",
+        "cover_color": "#3a1a26",
+        "product_cats": ["erotisme", "soins"],
+        "max_products": 3,
+        "intro": [
+            "Quand un couple s'installe, le quotidien prend le dessus. Ce n'est pas un drame — c'est juste un moment où il faut décider de remettre de l'attention sur le \"nous\". Voici 7 idées qui ne demandent ni budget ni mise en scène compliquée.",
+        ],
+        "sections": [
+            ("1. Bloquer un soir par semaine \"sans téléphone\"", [
+                "Le mardi soir, par exemple. Pas de Netflix, pas de scroll. Cuisinez ensemble, ressortez un jeu, parlez. La présence vaut plus que toute mise en scène.",
+            ]),
+            ("2. Tester un jeu de cartes pour couples", [
+                "Type \"OSMOOZ\", \"Carta Sutra\", ou autres. Tu choisis le niveau (suggestif → osé). Ça brise la routine sans pression et ouvre des conversations sur ce qui plaît à chacun.",
+            ]),
+            ("3. Reprendre les massages", [
+                "10 minutes de massage avec une bougie de massage ou une huile sensorielle, alternées une fois par semaine. C'est l'une des activités qui rapproche le plus, sans attente performance.",
+            ]),
+            ("4. S'écrire des messages dans la journée", [
+                "Pas \"tu as pris le pain ?\" — vraiment des messages personnels. Un compliment précis (\"j'aime quand tu...\"), un souvenir partagé, une intention pour le soir.",
+            ]),
+            ("5. Changer de décor une fois par mois", [
+                "Pas besoin de partir 3 jours. Un afterwork à 2 dans un nouveau bar, un dîner improvisé sur le balcon avec des bougies, une nuit dans un Airbnb à 30 min de chez vous. Le cerveau associe \"nouveauté\" à \"désir\".",
+            ]),
+            ("6. Réserver de la lingerie pour soi (pas pour l'autre)", [
+                "Porter de la belle lingerie un mardi parce que **toi** tu en as envie. Ce que ça change : ton humeur, ton énergie, ta posture. Et ton partenaire le ressent — sans même savoir ce que tu portes dessous.",
+            ]),
+            ("7. Programmer une \"date night\" mensuelle", [
+                "Concrète, dans le calendrier. Robe, chemise, bonne table. Le fait de **planifier** crée l'anticipation, qui est souvent ce qui manque dans le couple installé.",
+            ]),
+        ],
+        "outro": [
+            "Tu n'es pas obligée de tout faire. Choisis 2 idées qui te parlent et essaie ce mois-ci. Si ça marche, en ajoute une autre. La routine se recrée — l'important c'est de garder la dynamique.",
+        ],
+    },
+    {
+        "slug": "saint-valentin-7-idees-cadeaux",
+        "kicker": "COFFRETS",
+        "title": "Saint-Valentin : 7 idées cadeaux pour vraiment lui faire plaisir",
+        "lead": "Au-delà du bouquet et du chocolat. Sept idées originales mais pas cliché.",
+        "category": "cadeaux",
+        "date": "9 mai 2026",
+        "read": "4 min",
+        "cover_color": "#5b1a26",
+        "product_cats": ["cadeaux", "soins"],
+        "max_products": 3,
+        "intro": [
+            "Le 14 février arrive, et tu galères entre la peur du cliché et la peur de mal viser. Voici 7 idées éprouvées : ni convenu, ni risqué.",
+        ],
+        "sections": [
+            ("1. Un coffret massage pour deux", [
+                "Bougie qui fond en huile + livret de techniques. Le format \"on s'occupe l'un de l'autre\" plutôt que \"je consomme un cadeau\". Sensoriel et partagé.",
+            ]),
+            ("2. Un jeu de cartes coquin", [
+                "Pas la version blagues paillardes des années 90. Les nouvelles éditions (Carta Sutra, Osmooz) sont esthétiques, bien écrites, drôles. Niveau ajustable.",
+            ]),
+            ("3. Une expérience plutôt qu'un objet", [
+                "Wonderbox \"Moments en duo\" : 2-3 nuits dans des hôtels de charme, ou des dîners gastronomiques. L'expérience reste, l'objet jamais.",
+            ]),
+            ("4. Une nuisette en satin (à offrir à elle)", [
+                "Si tu connais sa taille (regarde une de ses nuisettes existantes), c'est un cadeau qui touche : il dit \"je t'ai pensée\" sans tomber dans le sex-shop.",
+            ]),
+            ("5. Un coffret bien-être bain", [
+                "Sels, huiles de bain, bougie parfumée. Pour celle ou celui qui adore prolonger le bain. Doux, ni trop intime, ni gadget.",
+            ]),
+            ("6. Une lettre manuscrite", [
+                "Coût : zéro. Effet : maximal. Liste 10 choses précises qui te plaisent chez l'autre, ajoute une intention pour les 12 mois à venir. Met-la dans une enveloppe scellée à la cire si tu veux le geste cinéma.",
+            ]),
+            ("7. Un mini-coffret \"5 sens\"", [
+                "Toi-même tu prépares 5 petits paquets : quelque chose à goûter, à toucher, à sentir, à voir, à écouter. Une chocolatine, une plume, une huile parfumée, une photo, une playlist écrite. Personnel et inoubliable.",
+            ]),
+        ],
+        "outro": [
+            "Le critère qui marche le mieux : **ce qui vous ressemble**, pas ce qui ferait \"bien sur Instagram\". Un cadeau qui parle à vous deux est toujours plus fort qu'un cadeau qui aurait pu être pour n'importe quel couple.",
+        ],
+    },
 ]
 
 
