@@ -53,10 +53,86 @@ function ProductVisual({ color, label, tag, image, alt }) {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// Collections
+// Illustrations line-art par catégorie (SVG cream sur fond tonal)
+const ILLUS = {
+  lingerie: (
+    <g stroke="rgba(251,246,237,.85)" strokeWidth="1" fill="none" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M30 60 q20 -8 40 -8 q20 0 40 8" />
+      <path d="M30 60 q-2 18 18 24 q12 4 22 -4" />
+      <path d="M110 60 q2 18 -18 24 q-12 4 -22 -4" />
+      <circle cx="50" cy="74" r="2" />
+      <circle cx="90" cy="74" r="2" />
+      <path d="M55 110 q15 6 30 0 q4 18 -2 30 q-13 6 -26 0 q-6 -12 -2 -30 z" />
+      <path d="M70 116 v18" />
+    </g>
+  ),
+  nuit: (
+    <g stroke="rgba(251,246,237,.85)" strokeWidth="1" fill="none" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M40 35 v100 q0 8 6 10 l24 0" />
+      <path d="M100 35 v100 q0 8 -6 10 l-24 0" />
+      <path d="M40 35 q30 -8 60 0" />
+      <path d="M70 45 v100" />
+      <path d="M55 60 q15 4 30 0" />
+      <path d="M50 90 q20 6 40 0" />
+      <path d="M115 30 a14 14 0 1 0 4 22 a11 11 0 1 1 -4 -22 z" />
+    </g>
+  ),
+  sensualite: (
+    <g stroke="rgba(251,246,237,.85)" strokeWidth="1" fill="none" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M70 28 q-3 6 0 12 q3 -6 0 -12 z" fill="rgba(251,246,237,.4)" />
+      <line x1="70" y1="40" x2="70" y2="58" />
+      <rect x="58" y="58" width="24" height="58" rx="2" />
+      <line x1="58" y1="70" x2="82" y2="70" />
+      <path d="M30 80 q10 6 0 14 q-8 -6 0 -14 z" />
+      <path d="M30 94 q-2 18 0 36" />
+      <path d="M100 100 q12 12 24 6 q12 -8 6 14 q-12 6 -24 -6 q-12 -12 -6 -14 z" />
+    </g>
+  ),
+  erotisme: (
+    <g stroke="rgba(251,246,237,.85)" strokeWidth="1" fill="none" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M30 60 q40 -10 80 0 v60 q-40 -8 -80 0 z" />
+      <line x1="70" y1="60" x2="70" y2="120" />
+      <line x1="40" y1="74" x2="62" y2="72" />
+      <line x1="40" y1="84" x2="62" y2="82" />
+      <line x1="40" y1="94" x2="62" y2="92" />
+      <line x1="78" y1="72" x2="100" y2="74" />
+      <line x1="78" y1="82" x2="100" y2="84" />
+      <line x1="78" y1="92" x2="100" y2="94" />
+      <path d="M70 70 v40 l8 8 l-8 -4 l-8 4 l8 -8 z" stroke="#c66" />
+      <path d="M115 30 q-4 14 -10 18 q-3 2 -5 5 l8 4 q3 -3 5 -5 q14 -6 18 -10" />
+    </g>
+  ),
+  soins: (
+    <g stroke="rgba(20,16,10,.78)" strokeWidth="1" fill="none" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="34" y="56" width="22" height="64" rx="2" />
+      <path d="M40 56 v-8 q0 -4 4 -4 h6 q4 0 4 4 v8" />
+      <path d="M38 76 h14" />
+      <rect x="62" y="42" width="20" height="78" rx="2" />
+      <path d="M67 42 v-6 q0 -3 3 -3 h4 q3 0 3 3 v6" />
+      <path d="M65 64 h12" />
+      <rect x="88" y="64" width="22" height="56" rx="2" />
+      <path d="M94 64 v-7 q0 -3 3 -3 h6 q3 0 3 3 v7" />
+      <path d="M125 50 q-4 8 0 18 q4 -8 0 -18 z" fill="rgba(20,16,10,.4)" />
+      <path d="M28 30 q4 6 12 4 q-2 8 -10 8" />
+      <path d="M22 38 q4 4 10 4" />
+    </g>
+  ),
+  cadeaux: (
+    <g stroke="rgba(251,246,237,.85)" strokeWidth="1" fill="none" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="30" y="60" width="80" height="60" />
+      <line x1="70" y1="60" x2="70" y2="120" />
+      <line x1="30" y1="80" x2="110" y2="80" />
+      <path d="M70 60 q-20 -16 -10 -24 q10 -6 10 24 q0 -30 10 -24 q10 8 -10 24" />
+      <rect x="86" y="34" width="34" height="22" />
+      <path d="M86 34 l17 14 l17 -14" />
+      <circle cx="103" cy="56" r="3" fill="rgba(255,80,80,.7)" />
+    </g>
+  ),
+};
+
 function Collections() {
   return (
-    <section style={{maxWidth:1360, margin:'0 auto', padding:'80px 32px 24px'}}>
+    <section id="collections" style={{maxWidth:1360, margin:'0 auto', padding:'80px 32px 24px'}}>
       <div style={{display:'flex', alignItems:'flex-end', justifyContent:'space-between', marginBottom:36, flexWrap:'wrap', gap:16}}>
         <div>
           <div className="smallcaps" style={{color:'var(--accent)', marginBottom:10}}>● Nos univers</div>
@@ -64,11 +140,11 @@ function Collections() {
             Six territoires <em style={{fontStyle:'italic'}}>intimes.</em>
           </h2>
         </div>
-        <a href="#" style={{fontSize:14, color:'var(--ink)', borderBottom:'1px solid var(--ink)', paddingBottom:2}}>Tout parcourir →</a>
+        <a href="#produits" style={{fontSize:14, color:'var(--ink)', borderBottom:'1px solid var(--ink)', paddingBottom:2}}>Tout parcourir →</a>
       </div>
-      <div style={{display:'grid', gridTemplateColumns:'repeat(6,1fr)', gap:14}}>
+      <div style={{display:'grid', gridTemplateColumns:'repeat(auto-fit, minmax(180px, 1fr))', gap:14}}>
         {window.COLLECTIONS.map((c, i) => (
-          <a key={c.id} href="#" style={{display:'block'}}>
+          <a key={c.id} href="#produits" style={{display:'block'}}>
             <div style={{
               position:'relative', aspectRatio:'3/4', borderRadius:8, overflow:'hidden',
               background:`linear-gradient(180deg,
@@ -78,16 +154,22 @@ function Collections() {
             }}
               onMouseEnter={e => e.currentTarget.style.transform='translateY(-4px)'}
               onMouseLeave={e => e.currentTarget.style.transform='translateY(0)'}>
+
+              {/* Illustration line-art */}
+              <svg viewBox="0 0 140 160" style={{position:'absolute', top:'8%', left:'50%', transform:'translateX(-50%)', width:'70%', height:'auto', opacity:.95}}>
+                {ILLUS[c.id]}
+              </svg>
+
               <div style={{
-                position:'absolute', inset:0, opacity:.16,
+                position:'absolute', inset:0, opacity:.06,
                 backgroundImage:'repeating-linear-gradient(45deg, transparent 0 12px, rgba(255,255,255,.7) 12px 13px)'
               }}/>
               <div style={{
                 position:'absolute', top:14, left:14,
-                fontSize:10, fontFamily:'Geist Mono', color:'rgba(255,255,255,.7)', letterSpacing:'.12em'
+                fontSize:10, fontFamily:'Geist Mono', color: c.id==='soins' ? 'rgba(20,16,10,.55)' : 'rgba(255,255,255,.7)', letterSpacing:'.12em'
               }}>0{i+1}{c.adult ? ' · 18+' : ''}</div>
-              <div style={{position:'absolute', bottom:0, left:0, right:0, padding:18, color:'#fff'}}>
-                <div className="serif" style={{fontSize:30, lineHeight:1, marginBottom:6}}>{c.label}</div>
+              <div style={{position:'absolute', bottom:0, left:0, right:0, padding:18, color: c.id==='soins' ? '#1a1410' : '#fff'}}>
+                <div className="serif" style={{fontSize:28, lineHeight:1, marginBottom:6}}>{c.label}</div>
                 <div style={{fontSize:12, opacity:.78, marginBottom:10}}>{c.fr}</div>
                 <div className="mono" style={{fontSize:10, letterSpacing:'.12em', opacity:.6}}>{c.count} produits →</div>
               </div>
