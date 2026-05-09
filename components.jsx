@@ -106,7 +106,7 @@ function Header({ favCount = 0 }) {
               }}>{favCount}</span>
             )}
           </button>
-          <a href="#" style={{
+          <a href="https://www.amazon.fr/?tag=lebrunnathali-21" target="_blank" rel="sponsored noopener nofollow" style={{
             padding:'8px 14px', background:'#febd69', color:'#0f1111',
             borderRadius:999, fontSize:12, fontWeight:600
           }}>Voir sur Amazon →</a>
