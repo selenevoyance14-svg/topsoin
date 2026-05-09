@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Maison Léa — Lingerie & intimité, sélection Amazon</title>
+<meta name="description" content="Maison Léa : sélection lingerie, nuit, sensualité et soins intimes. Curation indépendante avec liens Amazon affiliés. Livraison Prime, colis neutre Amazon." />
+<meta name="robots" content="index,follow" />
+<link rel="canonical" href="https://guide-soin.fr/" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Maison Léa — Lingerie & intimité, sélection Amazon" />
+<meta property="og:description" content="Curation indépendante de lingerie et soins intimes. Liens affiliés Amazon, livraison Prime, colis neutre." />
+<meta property="og:url" content="https://guide-soin.fr/" />
+<meta property="og:image" content="https://guide-soin.fr/assets/lea-persona.png" />
+<meta name="theme-color" content="#5b1a26" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --bg:#f5efe6;
+    --bg-2:#ede4d3;
+    --paper:#fbf6ed;
+    --ink:#1a1410;
+    --ink-2:#3a2e26;
+    --muted:#8a7866;
+    --line:rgba(26,20,16,.14);
+    --line-2:rgba(26,20,16,.07);
+    --accent:#5b1a26;
+    --accent-2:#8b2d3f;
+    --gold:#b8965e;
+    --card:#fbf6ed;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);
+    font-family:"Geist",ui-sans-serif,system-ui,-apple-system,sans-serif;
+    -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  img{max-width:100%;display:block}
+  button{font-family:inherit}
+  a{color:inherit;text-decoration:none}
+  ::selection{background:var(--accent);color:#fff}
+  .serif{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;letter-spacing:-0.005em;line-height:1}
+  .mono{font-family:"Geist Mono",ui-monospace,monospace}
+  .smallcaps{text-transform:uppercase;letter-spacing:.16em;font-size:11px;font-weight:500}
+  #app{min-height:100vh}
+
+  @keyframes pulse-dot { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.4;transform:scale(.6)} }
+  @keyframes rise { from{opacity:0;transform:translateY(10px)} to{opacity:1;transform:translateY(0)} }
+  @keyframes kenburns { 0%{transform:scale(1) translate(0,0)} 100%{transform:scale(1.06) translate(-1%,-.5%)} }
+  @keyframes fade-in { from{opacity:0} to{opacity:1} }
+
+  /* Bandeau cookies RGPD */
+  .cookie-banner{position:fixed;bottom:16px;left:16px;right:16px;max-width:520px;margin-left:auto;
+    background:#1a1410;color:#fbf6ed;padding:18px 20px;border-radius:12px;
+    box-shadow:0 12px 40px rgba(0,0,0,.25);z-index:9998;font-size:13px;line-height:1.5}
+  .cookie-banner.hidden{display:none}
+  .cookie-banner button{background:#b8965e;color:#1a1410;border:0;padding:8px 16px;
+    border-radius:999px;font-weight:600;cursor:pointer;margin-top:10px;font-size:12px}
+  .cookie-banner a{text-decoration:underline;color:#b8965e}
+</style>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="app"></div>
+
+<div id="cookie-banner" class="cookie-banner hidden">
+  Maison Léa utilise uniquement des cookies techniques et des liens d'affiliation Amazon.
+  Aucun traçage publicitaire tiers. <a href="/confidentialite.html">En savoir plus</a>.
+  <div><button onclick="document.getElementById('cookie-banner').classList.add('hidden');localStorage.setItem('ml_cookies_ok','1')">J'ai compris</button></div>
+</div>
+
+<script type="text/babel" src="data.jsx"></script>
+<script type="text/babel" src="components.jsx"></script>
+<script type="text/babel" src="components-2.jsx"></script>
+<script type="text/babel" src="app.jsx"></script>
+<script>
+  // Affiche le bandeau cookies si pas encore accepté
+  if (localStorage.getItem('ml_cookies_ok') !== '1') {
+    setTimeout(() => document.getElementById('cookie-banner').classList.remove('hidden'), 1500);
+  }
+</script>
+</body>
+</html>
