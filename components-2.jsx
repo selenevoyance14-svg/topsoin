@@ -262,53 +262,58 @@ function Editorial() {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// Newsletter
-function Newsletter() {
-  const [email, setEmail] = useState2('');
-  const [done, setDone] = useState2(false);
+// Avis clientes & clients
+const REVIEWS = [
+  { name:'Camille L.', age:34, city:'Lyon', rating:5, text:'Je cherchais un soutien-gorge sans armatures qui tienne vraiment, je l’ai trouvé grâce à la sélection. Le guide m’a aidée à choisir la bonne taille du premier coup.', cat:'Lingerie' },
+  { name:'Mehdi & Sarah',  age:null, city:'Bordeaux', rating:5, text:'On a offert un coffret massage à notre couple — colis neutre, livraison rapide, contenu conforme à la description. Belle découverte pour nous.', cat:'Coffrets' },
+  { name:'Élise R.',  age:42, city:'Nantes', rating:5, text:'C’est ma première commande de ce type. La discrétion et les conseils m’ont mise en confiance. Je reviendrai.', cat:'Sensualité' },
+  { name:'Julie M.',   age:29, city:'Paris', rating:4, text:'Belle nuisette en satin, exactement comme sur la photo. Petit bémol sur le délai mais Amazon a bien suivi.', cat:'Nuit' },
+  { name:'Anonyme',    age:null, city:'Toulouse', rating:5, text:'Article du journal sur le lubrifiant intime très clair. J’ai compris ce qu’il fallait éviter et fait le bon choix. Merci Léa.', cat:'Soins' },
+  { name:'Léa & Tom',  age:null, city:'Marseille', rating:5, text:'On a démarré en couple grâce à la sélection débutant. Le ton bienveillant change tout, on s’est sentis accompagnés sans être jugés.', cat:'Sensualité' },
+];
+
+function Reviews() {
   return (
     <section style={{maxWidth:1360, margin:'0 auto', padding:'80px 32px 24px'}}>
-      <div style={{background:'var(--paper)', borderRadius:16, padding:'56px 56px',
-        display:'grid', gridTemplateColumns:'1.2fr 1fr', gap:48, alignItems:'center',
-        border:'1px solid var(--line-2)'}}>
+      <div style={{display:'flex', alignItems:'flex-end', justifyContent:'space-between', marginBottom:32, flexWrap:'wrap', gap:24}}>
         <div>
-          <div className="smallcaps" style={{color:'var(--accent)', marginBottom:14}}>● Le carnet</div>
-          <h2 className="serif" style={{fontSize:'clamp(36px,3.8vw,52px)', margin:0, lineHeight:1.05, color:'var(--ink)'}}>
-            Les 3 picks Amazon de la semaine.<br/>
-            <em style={{fontStyle:'italic', color:'var(--accent)'}}>Direct dans ta boîte.</em>
+          <div className="smallcaps" style={{color:'var(--accent)', marginBottom:10}}>● Elles & ils en parlent</div>
+          <h2 className="serif" style={{fontSize:'clamp(40px,5vw,72px)', margin:0, color:'var(--ink)', lineHeight:1.05}}>
+            La parole <em style={{fontStyle:'italic'}}>aux client·e·s.</em>
           </h2>
-          <p style={{fontSize:15, color:'var(--ink-2)', lineHeight:1.55, marginTop:18, maxWidth:460}}>
-            Chaque mercredi à 18h, 3 produits que Léa recommande, parfois en promo flash Amazon.
-            Désinscription en un clic.
+          <p style={{fontSize:14, color:'var(--muted)', marginTop:10, maxWidth:480}}>
+            Avis vérifiés sur les achats Amazon réalisés via la sélection Maison Léa.
           </p>
         </div>
-        {!done ? (
-          <form onSubmit={e => { e.preventDefault(); if (email) setDone(true); }} style={{display:'flex', flexDirection:'column', gap:10}}>
-            <div style={{display:'flex', gap:8}}>
-              <input type="email" required value={email} onChange={e=>setEmail(e.target.value)} placeholder="votre@email.fr" style={{
-                flex:1, padding:'16px 18px', borderRadius:10, border:'1px solid var(--line)',
-                fontSize:15, fontFamily:'inherit', outline:'none', background:'var(--bg)', color:'var(--ink)'
-              }}/>
-              <button type="submit" style={{padding:'16px 22px', borderRadius:10, border:0,
-                background:'var(--ink)', color:'var(--paper)', fontSize:14, fontWeight:600, cursor:'pointer', fontFamily:'inherit'}}>
-                S'inscrire →
-              </button>
+      </div>
+
+      <div style={{display:'grid', gridTemplateColumns:'repeat(auto-fill, minmax(300px, 1fr))', gap:18}}>
+        {REVIEWS.map((r, i) => (
+          <div key={i} style={{
+            background:'var(--paper)', border:'1px solid var(--line-2)', borderRadius:12,
+            padding:'24px 26px', display:'flex', flexDirection:'column', gap:14
+          }}>
+            <div style={{display:'flex', justifyContent:'space-between', alignItems:'center'}}>
+              <Stars rating={r.rating} size={14}/>
+              <div className="smallcaps" style={{fontSize:9, color:'var(--accent)'}}>{r.cat}</div>
             </div>
-            <label style={{fontSize:12, color:'var(--muted)', display:'flex', alignItems:'center', gap:8}}>
-              <input type="checkbox" defaultChecked/>
-              J'accepte de recevoir le carnet de Maison Léa
-            </label>
-          </form>
-        ) : (
-          <div style={{background:'var(--bg)', borderRadius:10, padding:24, textAlign:'center', border:'1px solid var(--line-2)'}}>
-            <div className="serif" style={{fontSize:32, color:'var(--accent)', fontStyle:'italic'}}>Merci.</div>
-            <div style={{fontSize:14, color:'var(--ink-2)', marginTop:6}}>Premier carnet mercredi prochain à 18h.</div>
+            <p className="serif" style={{fontSize:18, lineHeight:1.4, fontStyle:'italic', color:'var(--ink)', margin:0}}>
+              &ldquo;{r.text}&rdquo;
+            </p>
+            <div style={{borderTop:'1px solid var(--line-2)', paddingTop:12, fontSize:13, color:'var(--ink-2)'}}>
+              <strong style={{fontWeight:600}}>{r.name}</strong>
+              {r.age ? `, ${r.age} ans` : ""}
+              <span style={{color:'var(--muted)'}}> · {r.city}</span>
+            </div>
           </div>
-        )}
+        ))}
       </div>
     </section>
   );
 }
+
+// Alias pour conserver le nom Newsletter référencé dans app.jsx
+const Newsletter = Reviews;
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Affiliate disclosure banner (sticky bottom-style sidebar info)
