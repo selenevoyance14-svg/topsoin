@@ -13,25 +13,34 @@ function Stars({ rating, size=12 }) {
 }
 
 // Product visual placeholder
-function ProductVisual({ color, label, tag }) {
+function ProductVisual({ color, label, tag, image, alt }) {
   return (
     <div style={{
       position:'relative', aspectRatio:'1/1', overflow:'hidden',
-      background:`linear-gradient(160deg, ${color} 0%, ${color}cc 100%)`, borderRadius:6
+      background: image ? '#fff' : `linear-gradient(160deg, ${color} 0%, ${color}cc 100%)`,
+      borderRadius:6
     }}>
-      <div style={{
-        position:'absolute', inset:0, opacity:.18,
-        backgroundImage:'repeating-linear-gradient(135deg, transparent 0 14px, rgba(255,255,255,.5) 14px 15px)'
-      }}/>
-      <div style={{
-        position:'absolute', left:0, right:0, bottom:0, padding:'10px 12px',
-        display:'flex', justifyContent:'space-between', alignItems:'flex-end',
-        color:'rgba(255,255,255,.78)', fontSize:9, letterSpacing:'.12em',
-        fontFamily:'Geist Mono, monospace'
-      }}>
-        <span>{label}</span>
-        <span>◇</span>
-      </div>
+      {image ? (
+        <img src={image} alt={alt || label}
+          style={{width:'100%', height:'100%', objectFit:'contain', padding:'8%'}}
+          loading="lazy" />
+      ) : (
+        <div style={{
+          position:'absolute', inset:0, opacity:.18,
+          backgroundImage:'repeating-linear-gradient(135deg, transparent 0 14px, rgba(255,255,255,.5) 14px 15px)'
+        }}/>
+      )}
+      {!image && (
+        <div style={{
+          position:'absolute', left:0, right:0, bottom:0, padding:'10px 12px',
+          display:'flex', justifyContent:'space-between', alignItems:'flex-end',
+          color:'rgba(255,255,255,.78)', fontSize:9, letterSpacing:'.12em',
+          fontFamily:'Geist Mono, monospace'
+        }}>
+          <span>{label}</span>
+          <span>◇</span>
+        </div>
+      )}
       {tag && (
         <div className="smallcaps" style={{
           position:'absolute', top:10, left:10, padding:'4px 8px',
@@ -102,7 +111,7 @@ function AffiliateCard({ p, onFav, faved }) {
     onMouseEnter={e => { e.currentTarget.style.transform='translateY(-3px)'; e.currentTarget.style.boxShadow='0 16px 40px rgba(0,0,0,.08)'; }}
     onMouseLeave={e => { e.currentTarget.style.transform='translateY(0)'; e.currentTarget.style.boxShadow='none'; }}>
       <div style={{position:'relative'}}>
-        <ProductVisual color={p.color} label={`${p.sub.toUpperCase()}`} tag={p.tag}/>
+        <ProductVisual color={p.color} label={`${p.sub.toUpperCase()}`} tag={p.tag} image={p.image} alt={p.name}/>
         <button onClick={() => onFav(p.id)} style={{
           position:'absolute', top:10, right:10, width:32, height:32, borderRadius:'50%',
           background:'var(--paper)', border:0, cursor:'pointer', fontSize:14,
