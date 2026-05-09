@@ -73,8 +73,11 @@ function Header({ favCount = 0 }) {
         display:'grid', gridTemplateColumns:'1fr auto 1fr', alignItems:'center', gap:24
       }}>
         <nav style={{display:'flex', gap:24, fontSize:13}}>
-          {['Lingerie','Nuit','Sensualité','Érotisme','Soins','Coffrets'].map(n => (
-            <a key={n} href="#" style={{color:'var(--ink-2)', fontWeight:500}}
+          {[
+            ['Lingerie','lingerie'],['Nuit','nuit'],['Sensualité','sensualite'],
+            ['Érotisme','erotisme'],['Soins','soins'],['Coffrets','cadeaux']
+          ].map(([n, id]) => (
+            <a key={id} href={`#cat=${id}`} style={{color:'var(--ink-2)', fontWeight:500}}
                onMouseEnter={e=>e.currentTarget.style.color='var(--accent)'}
                onMouseLeave={e=>e.currentTarget.style.color='var(--ink-2)'}>
               {n}

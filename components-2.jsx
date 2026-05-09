@@ -144,7 +144,7 @@ function Collections() {
       </div>
       <div style={{display:'grid', gridTemplateColumns:'repeat(auto-fit, minmax(180px, 1fr))', gap:14}}>
         {window.COLLECTIONS.map((c, i) => (
-          <a key={c.id} href="#produits" style={{display:'block'}}>
+          <a key={c.id} href={`#cat=${c.id}`} style={{display:'block'}}>
             <div style={{
               position:'relative', aspectRatio:'3/4', borderRadius:8, overflow:'hidden',
               background:`linear-gradient(180deg,
@@ -251,9 +251,27 @@ function AffiliateCard({ p, onFav, faved }) {
 // Product grid
 function ProductGrid({ favs, onFav }) {
   const [active, setActive] = useState2('all');
+
+  // Synchronise avec l'URL : #cat=lingerie filtre + scroll vers la grille
+  React.useEffect(() => {
+    const apply = () => {
+      const m = window.location.hash.match(/cat=([a-z]+)/);
+      if (m && window.COLLECTIONS.some(c => c.id === m[1])) {
+        setActive(m[1]);
+        const el = document.getElementById('produits');
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+      } else if (window.location.hash === '#produits') {
+        setActive('all');
+      }
+    };
+    apply();
+    window.addEventListener('hashchange', apply);
+    return () => window.removeEventListener('hashchange', apply);
+  }, []);
+
   const filtered = active === 'all' ? window.PRODUCTS : window.PRODUCTS.filter(p => p.cat === active);
   return (
-    <section style={{maxWidth:1360, margin:'0 auto', padding:'80px 32px 24px'}}>
+    <section id="produits" style={{maxWidth:1360, margin:'0 auto', padding:'80px 32px 24px', scrollMarginTop:'80px'}}>
       <div style={{display:'flex', alignItems:'flex-end', justifyContent:'space-between', marginBottom:32, flexWrap:'wrap', gap:24}}>
         <div>
           <div className="smallcaps" style={{color:'var(--accent)', marginBottom:10}}>● Sélection Léa · sur Amazon</div>
