@@ -244,8 +244,8 @@ function Editorial() {
             Mes 7 <em style={{fontStyle:'italic'}}>indispensables</em> intimes.
           </h2>
           <p style={{fontSize:17, lineHeight:1.55, opacity:.85, margin:'0 0 28px', maxWidth:480}}>{e.excerpt}</p>
-          <a href="#" style={{display:'inline-block', padding:'13px 22px', background:'var(--paper)',
-            color:'var(--accent)', borderRadius:10, fontWeight:600, fontSize:14}}>Lire le guide complet →</a>
+          <a href="/journal/" style={{display:'inline-block', padding:'13px 22px', background:'var(--paper)',
+            color:'var(--accent)', borderRadius:10, fontWeight:600, fontSize:14}}>Lire le journal →</a>
         </div>
         <blockquote style={{margin:0, padding:'24px 0 24px 32px', borderLeft:'2px solid rgba(251,246,237,.4)'}}>
           <div className="serif" style={{fontSize:'clamp(28px,3vw,42px)', fontStyle:'italic', lineHeight:1.25, color:'var(--paper)'}}>
@@ -343,7 +343,7 @@ function Footer() {
           </p>
           {[
             ['Univers', [['Lingerie','#collections'],['Nuit','#collections'],['Sensualité','#collections'],['Érotisme','#collections'],['Soins','#collections'],['Coffrets','#collections']]],
-            ['Le site', [['Notre méthode','#promesses'],['Le journal','#editorial'],['Guides','#editorial'],['Top des ventes','#produits']]],
+            ['Le site', [['Notre méthode','#promesses'],['Le journal','/journal/'],['Guides','/journal/'],['Top des ventes','#produits']]],
             ['Légal', [['Mentions légales','/mentions-legales.html'],['Affiliation Amazon','/affiliation.html'],['Confidentialité','/confidentialite.html'],['Cookies','/confidentialite.html#cookies']]],
           ].map(([h, items]) => (
             <div key={h}>
