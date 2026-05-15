@@ -53,6 +53,16 @@ const journalSlugs = [
     "bougie-massage-rituel-sensoriel",
     "pimenter-couple-7-idees-simples",
     "saint-valentin-7-idees-cadeaux",
+    "gode-debutante-comment-choisir",
+    "vibromasseur-rabbit-pourquoi-adore",
+    "jeux-cartes-coquins-couple-selection",
+    "action-ou-verite-version-adulte-couple",
+    "huile-massage-comestible-rituel-couple",
+    "lingerie-coquine-premiere-fois-guide",
+    "coffret-cadeau-couple-anniversaire-idees",
+    "lubrifiant-naturel-base-eau-bien-choisir",
+    "mini-vibromasseur-discret-voyage",
+    "porte-jarretelles-comment-porter-elegant",
 ];
 const journalUrls = journalSlugs
     .map(s => `  <url><loc>https://guide-soin.fr/journal/${s}.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>`)
