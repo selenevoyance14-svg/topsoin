@@ -35,35 +35,13 @@ Sitemap: https://guide-soin.fr/sitemap.xml
 `;
 await writeFile(join(out, "robots.txt"), robots);
 
-// Articles du journal pour le sitemap
-const journalSlugs = [
-    "comment-choisir-soutien-gorge-sans-armatures",
-    "guide-nuisette-satin-tomber-amoureuse-tissu",
-    "bien-choisir-lubrifiant-intime-guide",
-    "vibromasseurs-debutantes-selection",
-    "idees-cadeaux-couple-romantique",
-    "lingerie-et-confiance-soi",
-    "comment-trouver-sa-taille-soutien-gorge",
-    "bralette-confort-elegance",
-    "body-dentelle-guide-bien-choisir",
-    "culotte-taille-haute-confort-style",
-    "kimono-peignoir-robe-chambre-difference",
-    "pyjama-satin-luxe-quotidien",
-    "stimulateur-clitoridien-tout-comprendre",
-    "bougie-massage-rituel-sensoriel",
-    "pimenter-couple-7-idees-simples",
-    "saint-valentin-7-idees-cadeaux",
-    "gode-debutante-comment-choisir",
-    "vibromasseur-rabbit-pourquoi-adore",
-    "jeux-cartes-coquins-couple-selection",
-    "action-ou-verite-version-adulte-couple",
-    "huile-massage-comestible-rituel-couple",
-    "lingerie-coquine-premiere-fois-guide",
-    "coffret-cadeau-couple-anniversaire-idees",
-    "lubrifiant-naturel-base-eau-bien-choisir",
-    "mini-vibromasseur-discret-voyage",
-    "porte-jarretelles-comment-porter-elegant",
-];
+// Articles du journal pour le sitemap — lus dynamiquement depuis journal/
+// (ainsi le sitemap reste toujours synchronisé avec les articles réels)
+const journalEntries = await readdir(join(root, "journal"));
+const journalSlugs = journalEntries
+    .filter(f => f.endsWith(".html") && f !== "index.html")
+    .map(f => f.replace(/\.html$/, ""))
+    .sort();
 const journalUrls = journalSlugs
     .map(s => `  <url><loc>https://guide-soin.fr/journal/${s}.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>`)
     .join("\n");
