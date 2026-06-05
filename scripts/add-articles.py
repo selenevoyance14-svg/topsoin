@@ -214,6 +214,294 @@ DISCLAIMER_PRIME = "Tous les produits ci-dessous sont disponibles sur Amazon, so
 
 NEW_ARTICLES = [
     {
+        "slug": "soutien-gorge-balconnet-mettre-en-valeur",
+        "kicker": "GUIDE LINGERIE",
+        "title": "Le soutien-gorge balconnet : sublimer son décolleté",
+        "lead": "Coupe basse, bonnets horizontaux : le balconnet redessine la poitrine et s'invite sous les décolletés. Pour qui, comment, avec quoi.",
+        "category": "lingerie", "date": "5 juin 2026", "read": "4 min",
+        "cover_color": "#8b1d2c", "product_cats": ["lingerie"], "max_products": 3,
+        "intro": [
+            "Le balconnet est ce soutien-gorge qui remonte joliment la poitrine en laissant le haut des seins découvert. C'est l'allié des décolletés carrés et des tenues un peu habillées — mais encore faut-il choisir la bonne coupe pour sa morphologie.",
+        ],
+        "sections": [
+            ("Ce qui distingue le balconnet", [
+                "Ses bonnets sont coupés plus horizontalement que ceux d'un soutien-gorge classique : ils soutiennent par le bas et créent un effet **galbe arrondi**.",
+                "Les bretelles sont écartées, souvent posées sur l'extérieur de l'épaule : parfait sous un haut à encolure large.",
+            ]),
+            ("Pour quelle morphologie", [
+                "**Poitrine menue à moyenne** : le balconnet apporte du galbe et un joli arrondi, c'est sa zone de confort.",
+                "**Forte poitrine** : privilégie un balconnet à armatures larges et bonnets profonds, sinon le maintien manque. Vérifie toujours le tour de dos.",
+            ]),
+            ("Avec quoi le porter", [
+                "Sous un **décolleté carré ou en cœur**, il épouse la ligne du vêtement sans dépasser.",
+                "En ensemble coordonné avec une culotte assortie, il devient une pièce de lingerie à part entière, pas seulement un sous-vêtement.",
+            ]),
+        ],
+        "outro": [
+            DISCLAIMER_PRIME,
+            "Le bon réflexe : si tu hésites entre deux tailles de bonnet, prends la plus grande — un balconnet trop juste écrase au lieu de galber. Le retour est gratuit avec Prime.",
+        ],
+    },
+    {
+        "slug": "guepiere-bustier-occasion-speciale-choisir",
+        "kicker": "GUIDE LINGERIE",
+        "title": "Guêpière ou bustier : la pièce des grandes occasions",
+        "lead": "Anniversaire, nuit de noces, soir un peu spécial : guêpière et bustier subliment la silhouette. Comment choisir entre les deux.",
+        "category": "lingerie", "date": "5 juin 2026", "read": "4 min",
+        "cover_color": "#8b1d2c", "product_cats": ["lingerie"], "max_products": 3,
+        "intro": [
+            "La guêpière et le bustier, c'est la lingerie des moments qu'on a envie de marquer. Plus structurées qu'un simple ensemble, elles dessinent la taille et tiennent la silhouette — un vrai effet seconde peau.",
+        ],
+        "sections": [
+            ("Guêpière, bustier : la différence", [
+                "Le **bustier** s'arrête à la taille ou aux hanches : il galbe le buste et peut se porter seul ou sous une tenue.",
+                "La **guêpière** descend plus bas et intègre souvent des **jarretelles** pour tenir les bas : c'est la pièce la plus habillée, pensée pour les occasions.",
+            ]),
+            ("Bien la choisir", [
+                "Repère un modèle à **baleines souples** et fermeture par agrafes multiples : il s'ajuste précisément et tient sans comprimer.",
+                "Pour une première, choisis une matière **dentelle doublée** : élégante et confortable, sans effet rigide.",
+            ]),
+            ("La porter avec assurance", [
+                "Associe-la à des **bas couture** et des talons pour l'effet complet, ou garde-la seule sous un peignoir en satin.",
+                "L'important n'est pas la performance, c'est de te sentir bien : choisis la coupe qui te met à l'aise, pas la plus spectaculaire.",
+            ]),
+        ],
+        "outro": [
+            DISCLAIMER_PRIME,
+            "Commande quelques jours à l'avance pour avoir le temps d'essayer tranquillement et, au besoin, d'échanger la taille.",
+        ],
+    },
+    {
+        "slug": "chemise-de-nuit-coton-ou-satin-choisir",
+        "kicker": "GUIDE NUIT",
+        "title": "Chemise de nuit : coton ou satin, laquelle pour toi ?",
+        "lead": "Douceur du coton ou glissé du satin : deux philosophies du sommeil. On compare confort, saison et entretien pour t'aider à choisir.",
+        "category": "nuit", "date": "5 juin 2026", "read": "4 min",
+        "cover_color": "#3a2e1f", "product_cats": ["nuit"], "max_products": 3,
+        "intro": [
+            "La chemise de nuit revient en force, et pour de bonnes raisons : rien n'enserre, l'air circule, on dort vraiment mieux. Reste à choisir la matière — et le match coton contre satin n'a pas de gagnant universel, juste celui qui te convient.",
+        ],
+        "sections": [
+            ("Le coton : douceur et respirabilité", [
+                "Le coton **absorbe l'humidité** et laisse la peau respirer : idéal si tu as chaud la nuit ou la peau sensible.",
+                "Côté entretien, il passe en machine sans précaution : un vrai basique du quotidien.",
+            ]),
+            ("Le satin : glissé et élégance", [
+                "Le satin offre une sensation **fraîche et fluide** sur la peau, et un tombé flatteur. C'est la matière du plaisir et de l'occasion.",
+                "Plus délicat, il se lave en cycle doux : un petit soin en échange d'une vraie sensation de luxe.",
+            ]),
+            ("Comment trancher", [
+                "**Tu transpires la nuit ou tu cherches le confort pur ?** Coton.",
+                "**Tu veux te sentir belle et profiter du toucher soyeux ?** Satin.",
+                "Beaucoup finissent par avoir les deux : le coton en semaine, le satin pour les soirs qui comptent.",
+            ]),
+        ],
+        "outro": [
+            DISCLAIMER_PRIME,
+            "Astuce taille : les chemises de nuit taillent souvent ample. Si tu aimes le près-du-corps, descends d'une taille ; pour le côté flottant, garde ta taille habituelle.",
+        ],
+    },
+    {
+        "slug": "chaussons-cocooning-femme-choisir",
+        "kicker": "GUIDE NUIT",
+        "title": "Chaussons cocooning : le détail qui change tout",
+        "lead": "Le rituel cocooning ne s'arrête pas à la robe de chambre. Le bon chausson tient chaud, dure et fait du bien aux pieds. Comment le choisir.",
+        "category": "nuit", "date": "5 juin 2026", "read": "3 min",
+        "cover_color": "#3a2e1f", "product_cats": ["nuit"], "max_products": 3,
+        "intro": [
+            "On y pense rarement, et pourtant : une paire de chaussons douillets transforme une soirée d'hiver. C'est le compagnon naturel du peignoir et de la tisane, le petit luxe du quotidien qui ne coûte presque rien.",
+        ],
+        "sections": [
+            ("Ce qui fait un bon chausson", [
+                "Une **semelle antidérapante** : indispensable sur du carrelage ou un parquet.",
+                "Un **intérieur en fausse fourrure ou polaire** qui garde la chaleur sans faire transpirer.",
+                "Un maintien à l'arrière (mule fermée ou bottillon) si tu as les pieds qui glissent facilement.",
+            ]),
+            ("Mule, bottillon ou charentaise", [
+                "**Mule ouverte à l'arrière** : pratique à enfiler, parfaite pour la maison.",
+                "**Bottillon montant** : enveloppe la cheville, idéal pour les frileuses.",
+                "**Charentaise revisitée** : la semelle fine pour celles qui veulent sentir le sol.",
+            ]),
+        ],
+        "outro": [
+            DISCLAIMER_PRIME,
+            "Pense à prendre ta pointure habituelle, voire une demi-pointure au-dessus si le modèle est doublé épais : le pied doit rester libre pour avoir bien chaud.",
+        ],
+    },
+    {
+        "slug": "plug-debutant-guide-securite-confort",
+        "kicker": "GUIDE BIEN-ÊTRE INTIME",
+        "title": "Débuter en douceur : bien choisir son premier plug",
+        "lead": "Curieuse mais prudente ? On t'explique calmement comment choisir un premier plug en toute sécurité : taille, matière, et le rôle clé du lubrifiant.",
+        "category": "sensualite", "date": "5 juin 2026", "read": "5 min",
+        "cover_color": "#1a1a1a", "product_cats": ["sensualite"], "max_products": 3,
+        "intro": [
+            "La curiosité est légitime, et l'aborder avec de bonnes informations change tout. Pour une première fois, deux mots d'ordre : **petit format** et **beaucoup de lubrifiant**. Voici l'essentiel pour démarrer sereinement.",
+        ],
+        "sections": [
+            ("La taille : commencer petit, vraiment", [
+                "Pour débuter, choisis le **plus petit diamètre** disponible. On peut toujours évoluer ensuite ; l'inverse est inconfortable.",
+                "Repère une **base large évasée** : c'est l'élément de sécurité essentiel pour que l'accessoire reste toujours sous contrôle.",
+            ]),
+            ("La matière compte", [
+                "Privilégie le **silicone médical** ou le **verre/inox** : non poreux, faciles à nettoyer, sans odeur.",
+                "Évite les matières poreuses bas de gamme, plus difficiles à désinfecter.",
+            ]),
+            ("Lubrifiant et hygiène : non négociables", [
+                "Un **lubrifiant à base d'eau** généreux est indispensable — la zone ne s'auto-lubrifie pas. Renouvelle l'application sans hésiter.",
+                "Nettoie l'accessoire avant et après chaque usage, à l'eau tiède et au savon doux. Prends ton temps, respire, et arrête à la moindre gêne.",
+            ]),
+        ],
+        "outro": [
+            DISCLAIMER_PRIME,
+            "Le mot d'ordre : aucune précipitation. Le confort et l'écoute de soi priment sur tout le reste.",
+        ],
+    },
+    {
+        "slug": "suceur-clitoridien-air-pulse-comprendre",
+        "kicker": "GUIDE BIEN-ÊTRE INTIME",
+        "title": "Stimulateur à air pulsé : comprendre la sensation",
+        "lead": "Ni vibration, ni contact direct : la technologie à air pulsé a changé la donne. On t'explique simplement comment ça marche et comment bien choisir.",
+        "category": "sensualite", "date": "5 juin 2026", "read": "4 min",
+        "cover_color": "#1a1a1a", "product_cats": ["sensualite"], "max_products": 3,
+        "intro": [
+            "Les stimulateurs dits « à air pulsé » ou « suceurs » ont une particularité : ils n'appuient pas sur le clitoris, ils créent de petites ondes d'air et de pression. Une sensation différente de la vibration classique, que beaucoup décrivent comme plus douce et plus enveloppante.",
+        ],
+        "sections": [
+            ("Comment ça fonctionne", [
+                "Une petite buse posée **autour** (et non sur) la zone émet des variations de pression d'air. Pas de friction directe, donc une sensation moins « mécanique ».",
+                "C'est ce qui explique le succès de ces modèles auprès de celles que les vibrations frontales agacent.",
+            ]),
+            ("Bien le choisir", [
+                "Cherche un modèle **étanche** (usage sous la douche et nettoyage facile) et **rechargeable par USB**.",
+                "Plusieurs intensités progressives valent mieux qu'une seule trop forte : on monte à son rythme.",
+                "Le silicone médical sur la buse est un gage de douceur et d'hygiène.",
+            ]),
+            ("Avec un peu de lubrifiant", [
+                "Une noisette de **lubrifiant à base d'eau** améliore nettement le confort et l'effet de succion. À tester pour trouver sa bonne intensité.",
+            ]),
+        ],
+        "outro": [
+            DISCLAIMER_PRIME,
+            "Comme toujours, on commence sur l'intensité la plus basse et on remonte tranquillement.",
+        ],
+    },
+    {
+        "slug": "huile-massage-chauffante-sensation-couple",
+        "kicker": "RITUEL COUPLE",
+        "title": "Huile de massage chauffante : la chaleur qui détend",
+        "lead": "Un effet de douce chaleur au contact de la peau : l'huile chauffante transforme un massage en vrai moment sensoriel. Comment la choisir et l'utiliser.",
+        "category": "soins", "date": "5 juin 2026", "read": "3 min",
+        "cover_color": "#c9a961", "product_cats": ["soins"], "max_products": 3,
+        "intro": [
+            "L'huile de massage chauffante développe une sensation de chaleur agréable dès qu'on la masse ou qu'on souffle dessus. C'est un petit effet de surprise qui rend le moment plus enveloppant — et un excellent prétexte pour ralentir à deux.",
+        ],
+        "sections": [
+            ("L'effet chauffant, comment ça marche", [
+                "La chaleur vient d'ingrédients qui réagissent au contact et au souffle. Elle reste **douce et progressive**, jamais brûlante sur un produit de qualité.",
+                "Certaines huiles sont aussi **comestibles** : pratique pour un massage qui se prolonge sans contrainte.",
+            ]),
+            ("Bien la choisir", [
+                "Vérifie une **liste d'ingrédients courte** et une mention « testée dermatologiquement » si tu as la peau réactive.",
+                "Fais toujours un **test au pli du coude** avant la première utilisation : l'effet chauffant doit être agréable, pas irritant.",
+            ]),
+            ("Le rituel", [
+                "Chauffe quelques gouttes entre les mains, commence par le dos et les épaules, puis souffle doucement pour réveiller la chaleur.",
+                "Lumière tamisée, téléphone loin : l'huile fait la moitié du travail, l'attention fait le reste.",
+            ]),
+        ],
+        "outro": [
+            DISCLAIMER_PRIME,
+            "Évite le contact avec les yeux et les muqueuses sensibles, et garde un lubrifiant dédié à part : une huile de massage n'est pas un lubrifiant intime.",
+        ],
+    },
+    {
+        "slug": "gommage-corps-peau-douce-rituel-maison",
+        "kicker": "RITUEL SOINS",
+        "title": "Gommage corps : le secret d'une peau douce",
+        "lead": "Avant l'hydratation, il y a le gommage. Une étape simple qui rend la peau plus douce, plus lumineuse et prête à recevoir les soins. Mode d'emploi.",
+        "category": "soins", "date": "5 juin 2026", "read": "3 min",
+        "cover_color": "#c9a961", "product_cats": ["soins"], "max_products": 3,
+        "intro": [
+            "Une peau de pêche, ça commence par le gommage. En éliminant les cellules mortes en surface, on révèle une peau plus douce et on aide les crèmes à mieux pénétrer. C'est l'un des gestes les plus satisfaisants du rituel beauté maison.",
+        ],
+        "sections": [
+            ("Grain fin ou grain épais", [
+                "**Grain fin (sucre, jojoba)** : doux, parfait pour le corps entier et les peaux sensibles, une à deux fois par semaine.",
+                "**Grain plus épais (sel, noyaux)** : idéal sur les zones rugueuses comme les coudes, les genoux et les talons.",
+            ]),
+            ("Le bon geste", [
+                "Sur peau humide, masse en **mouvements circulaires** des chevilles vers le cœur — ça stimule aussi la circulation.",
+                "Rince à l'eau tiède, sèche en tapotant, puis applique tout de suite une **huile ou un lait** : la peau encore tiède absorbe mieux.",
+            ]),
+            ("À quelle fréquence", [
+                "Une à deux fois par semaine suffit largement. Trop fréquent, le gommage fragilise la barrière de la peau.",
+            ]),
+        ],
+        "outro": [
+            DISCLAIMER_PRIME,
+            "Évite le gommage juste après l'épilation ou sur une peau irritée : laisse-lui 24 à 48 h pour récupérer.",
+        ],
+    },
+    {
+        "slug": "coffret-cadeau-pour-lui-idees-homme",
+        "kicker": "IDÉES CADEAUX",
+        "title": "Coffret cadeau pour lui : des idées qui font mouche",
+        "lead": "Anniversaire, fête, juste pour le plaisir : un coffret bien choisi vaut mille cravates. Nos pistes pour gâter un homme sans se tromper.",
+        "category": "cadeaux", "date": "5 juin 2026", "read": "4 min",
+        "cover_color": "#b07d2b", "product_cats": ["cadeaux"], "max_products": 3,
+        "intro": [
+            "Offrir à un homme tourne vite au casse-tête. La bonne nouvelle : un coffret prêt-à-offrir règle tout — c'est joli, complet, et ça montre l'attention sans avoir à tout composer soi-même.",
+        ],
+        "sections": [
+            ("Les valeurs sûres", [
+                "**Coffret soin et rasage** : un classique qui plaît, surtout en version naturelle et bien parfumée.",
+                "**Coffret bien-être à deux** : bougie de massage, huile, accessoires — l'idée parfaite pour un cadeau qui se partage.",
+                "**Coffret expérience** : un moment à vivre plutôt qu'un objet, souvent le souvenir le plus marquant.",
+            ]),
+            ("Comment ne pas se tromper", [
+                "Pars de **ce qu'il aime déjà** : un homme qui soigne sa barbe, un amateur de cocooning, un curieux des sens.",
+                "Vérifie la **présentation** : un coffret se juge aussi à son emballage, c'est ce qu'il voit en premier.",
+            ]),
+            ("Le petit plus", [
+                "Glisse un **mot manuscrit** : c'est gratuit et ça transforme n'importe quel coffret en cadeau personnel.",
+            ]),
+        ],
+        "outro": [
+            DISCLAIMER_PRIME,
+            "Commande quelques jours avant la date : tu auras le choix des modèles et le temps de soigner l'emballage.",
+        ],
+    },
+    {
+        "slug": "jeu-de-des-coquin-pimenter-couple",
+        "kicker": "JEUX DE COUPLE",
+        "title": "Jeu de dés coquin : pimenter la soirée en riant",
+        "lead": "Un accessoire minuscule, zéro pression et beaucoup de complicité : le jeu de dés est la façon la plus légère de réveiller la soirée à deux.",
+        "category": "erotisme", "date": "5 juin 2026", "read": "3 min",
+        "cover_color": "#3a1a26", "product_cats": ["erotisme"], "max_products": 3,
+        "intro": [
+            "Pas besoin de grands moyens pour casser la routine : un jeu de dés coquin tient dans une poche et désamorce la gêne par le rire. On lance, on suit la consigne, et la conversation prend un tout autre tour.",
+        ],
+        "sections": [
+            ("Le principe, tout simple", [
+                "Chaque dé porte des **actions** (embrasser, caresser, souffler…) et des **zones** (cou, épaule, main…). On lance, on combine, on s'amuse.",
+                "Aucune règle compliquée : c'est justement la légèreté qui marche. Le jeu sert de prétexte, le reste vient naturellement.",
+            ]),
+            ("Bien le choisir", [
+                "Les versions **douces** suffisent largement pour débuter : elles instaurent le jeu sans intimider.",
+                "Certains coffrets ajoutent des dés **plus audacieux** : à réserver quand la complicité est déjà installée.",
+            ]),
+            ("Pour que ça marche", [
+                "La règle d'or : on peut **toujours repasser son tour**. La complicité grandit dans le respect du rythme de chacun.",
+                "Une bougie, un verre, le téléphone en silencieux : le décor compte autant que le jeu.",
+            ]),
+        ],
+        "outro": [
+            DISCLAIMER_PRIME,
+            "Idée : glisse-le dans un sac week-end. C'est le genre de petit objet qui transforme un soir d'hôtel en souvenir.",
+        ],
+    },
+    {
         "slug": "ensemble-lingerie-dentelle-assortir-guide",
         "kicker": "GUIDE LINGERIE",
         "title": "Ensemble de lingerie en dentelle : l'art de bien assortir",
