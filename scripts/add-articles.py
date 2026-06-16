@@ -1092,6 +1092,296 @@ NEW_ARTICLES = [
             "Le plus beau cadeau de lune de miel reste celui qui invite le couple à **prendre du temps pour lui**. Le reste n'est qu'un joli prétexte.",
         ],
     },
+    {
+        "slug": "soutien-gorge-push-up-guide",
+        "kicker": "GUIDE LINGERIE",
+        "title": "Le soutien-gorge push-up : du galbe et de l'assurance",
+        "lead": "Rembourrage, coupe plongeante, effet décolleté : le push-up remonte et rapproche la poitrine. Pour qui, et comment ne pas se tromper de taille.",
+        "category": "lingerie", "date": "16 juin 2026", "read": "4 min",
+        "cover_color": "#8b1d2c", "product_cats": ["lingerie"], "max_products": 3,
+        "intro": [
+            "Le push-up, c'est le soutien-gorge qui crée du volume et un joli décolleté grâce à un rembourrage placé sous le bonnet. Idéal pour mettre en valeur une poitrine menue ou simplement assumer un décolleté plongeant — à condition de bien le choisir.",
+        ],
+        "sections": [
+            ("Comment fonctionne un push-up", [
+                "Le secret tient au coussinet placé sur le bas et l'extérieur du bonnet : il **pousse la poitrine vers le haut et le centre** pour rapprocher les seins.",
+                "Plus le coussinet est épais, plus l'effet est marqué. Certains modèles proposent des coussinets **amovibles** pour doser le galbe selon l'envie.",
+            ]),
+            ("Pour quelle morphologie", [
+                "**Poitrine menue** : c'est l'allié n°1, il apporte le volume qui manque et un décolleté immédiat.",
+                "**Poitrine généreuse** : préfère un push-up léger ou un balconnet, sinon l'effet devient excessif et le maintien diminue.",
+            ]),
+            ("Trouver la bonne taille", [
+                "Un push-up doit galber sans comprimer : si la poitrine déborde sur les côtés, monte d'une taille de bonnet.",
+                "Vérifie le tour de dos en premier : c'est lui qui assure 80 % du maintien, pas les bretelles.",
+            ]),
+        ],
+        "outro": [
+            DISCLAIMER_PRIME,
+            "Le bon réflexe : commande deux tailles si tu hésites, essaie tranquillement chez toi, et renvoie celle qui ne va pas — le retour est gratuit avec Prime.",
+        ],
+    },
+    {
+        "slug": "lingerie-mariee-nuit-de-noces",
+        "kicker": "GUIDE LINGERIE",
+        "title": "Lingerie de mariée : la pièce de la nuit de noces",
+        "lead": "Blanc immaculé ou ivoire délicat, dentelle fine et coupe travaillée : la lingerie de mariée mérite qu'on s'y prenne à l'avance. Nos repères.",
+        "category": "lingerie", "date": "15 juin 2026", "read": "4 min",
+        "cover_color": "#8b1d2c", "product_cats": ["lingerie"], "max_products": 3,
+        "intro": [
+            "La lingerie de mariée, c'est une pièce à part : on la choisit pour soi autant que pour l'autre, et elle doit tenir une journée entière avant de devenir le clou de la nuit de noces. Confort et élégance ne sont pas négociables.",
+        ],
+        "sections": [
+            ("La pièce sous la robe", [
+                "Sous une robe ajustée, mise sur un **bustier sans coutures** ou un ensemble invisible qui galbe sans marquer le tissu.",
+                "La couleur compte : un **ton chair** disparaît mieux sous une robe blanche qu'un blanc pur, souvent plus visible en transparence.",
+            ]),
+            ("La pièce de la nuit", [
+                "Pour le soir, ose la **dentelle travaillée** : guêpière, body ou ensemble porte-jarretelles, en blanc ou ivoire pour rester dans le thème.",
+                "Choisis une matière agréable à porter longtemps : une belle dentelle doublée vaut mieux qu'un modèle spectaculaire mais inconfortable.",
+            ]),
+            ("S'y prendre à temps", [
+                "Commande **plusieurs semaines avant** : tu auras le temps d'essayer, d'ajuster la taille et d'échanger si besoin.",
+                "Garde un ensemble de secours simple et confortable : le jour J, mieux vaut une pièce sûre qu'une découverte de dernière minute.",
+            ]),
+        ],
+        "outro": [
+            DISCLAIMER_PRIME,
+            "Le détail qui change tout : choisis une lingerie dans laquelle tu te sens toi-même. La plus belle pièce est celle qui te donne confiance.",
+        ],
+    },
+    {
+        "slug": "deshabille-neglige-art-choisir",
+        "kicker": "NUIT & LOUNGEWEAR",
+        "title": "Le déshabillé : l'art de la pièce qui se devine",
+        "lead": "Voile transparent, fente discrète, tombé fluide : le déshabillé joue sur la suggestion plutôt que la démonstration. Comment le choisir.",
+        "category": "nuit", "date": "15 juin 2026", "read": "4 min",
+        "cover_color": "#3a2e1f", "product_cats": ["nuit"], "max_products": 3,
+        "intro": [
+            "Le déshabillé — ou négligé — est cette pièce vaporeuse qui se porte par-dessus un ensemble ou une nuisette. Tout son charme tient dans le mouvement et la transparence : il dévoile en cachant, et c'est ce qui le rend irrésistible.",
+        ],
+        "sections": [
+            ("Ce qui fait un beau déshabillé", [
+                "Le **tombé** avant tout : un voile de mousseline ou un satin léger crée ce mouvement fluide qui suit la silhouette.",
+                "Les finitions font la différence : un liseré de dentelle, une ceinture à nouer, des manches évasées transforment une pièce simple en vraie pièce de charme.",
+            ]),
+            ("Le porter avec quoi", [
+                "Sur une **nuisette assortie** pour un ensemble harmonieux, ou sur un simple ensemble de lingerie pour jouer le contraste.",
+                "Le matin, il prolonge le réveil avec élégance, posé sur les épaules le temps d'un café.",
+            ]),
+            ("Choisir sa matière", [
+                "**Mousseline ou tulle** pour la transparence et la légèreté ; **satin** pour un tombé plus structuré et sensuel.",
+                "Évite les matières qui se froissent : un déshabillé doit rester impeccable sorti du tiroir.",
+            ]),
+        ],
+        "outro": [
+            DISCLAIMER_PRIME,
+            "Le déshabillé ne se porte pas, il se devine : choisis-le pour le plaisir du geste, celui de le laisser glisser sur les épaules.",
+        ],
+    },
+    {
+        "slug": "pyjama-hiver-chaud-cocooning",
+        "kicker": "NUIT & LOUNGEWEAR",
+        "title": "Pyjama d'hiver : chaud, doux, et toujours joli",
+        "lead": "Pilou, polaire, coton gratté : l'hiver, on veut avoir chaud sans renoncer au style. Les bonnes matières et les pièges à éviter.",
+        "category": "nuit", "date": "14 juin 2026", "read": "4 min",
+        "cover_color": "#3a2e1f", "product_cats": ["nuit"], "max_products": 3,
+        "intro": [
+            "Quand les nuits se rafraîchissent, le pyjama d'hiver devient le meilleur ami du sommeil. L'objectif : rester au chaud toute la nuit sans surchauffer ni se sentir engoncée. Tout est une question de matière.",
+        ],
+        "sections": [
+            ("Les bonnes matières", [
+                "Le **coton gratté (pilou)** est le grand classique : doux, respirant, il tient chaud sans étouffer.",
+                "La **polaire** réchauffe instantanément mais respire moins : parfaite pour les frileuses, à éviter si tu as chaud la nuit.",
+            ]),
+            ("La coupe qui change tout", [
+                "Une coupe **légèrement ample** laisse circuler l'air et reste confortable pour dormir.",
+                "Poignets et chevilles resserrés gardent la chaleur : un détail qui fait toute la différence les nuits glaciales.",
+            ]),
+            ("Le confort jusqu'au matin", [
+                "Mise sur des **coutures plates** et une ceinture élastique douce : aucune gêne quand tu te retournes.",
+                "Un ensemble assorti chaussons ou chaussettes complète le cocon — l'hiver, le bien-être commence par les pieds.",
+            ]),
+        ],
+        "outro": [
+            DISCLAIMER_PRIME,
+            "Le bon pyjama d'hiver, c'est celui qu'on ne sent plus une fois sous la couette : chaud, doux, et oublié jusqu'au réveil.",
+        ],
+    },
+    {
+        "slug": "perles-anales-debuter-guide",
+        "kicker": "SENSUALITÉ",
+        "title": "Perles anales : débuter en douceur et en sécurité",
+        "lead": "Tailles progressives, matière douce, base de sécurité : tout ce qu'il faut savoir pour s'initier sereinement, seule ou à deux.",
+        "category": "sensualite", "date": "14 juin 2026", "read": "5 min",
+        "cover_color": "#1a1a1a", "product_cats": ["sensualite"], "max_products": 3,
+        "intro": [
+            "Les perles anales (ou chapelet) sont une porte d'entrée douce vers les plaisirs anaux : une succession de billes de taille croissante qu'on insère et retire lentement. Bien choisies et bien utilisées, elles s'apprivoisent sans difficulté.",
+        ],
+        "sections": [
+            ("Bien choisir pour débuter", [
+                "Pour une première fois, choisis un modèle aux **billes fines et progressives** : on commence petit, le corps décide du rythme.",
+                "La **base évasée ou l'anneau de maintien** est non négociable : c'est la sécurité qui empêche tout incident et permet un retrait facile.",
+            ]),
+            ("La matière et l'entretien", [
+                "Privilégie le **silicone médical** : doux, sans porosité, facile à nettoyer à l'eau tiède et au savon doux.",
+                "Range chaque accessoire dans une pochette propre, à l'abri de la poussière et de la chaleur.",
+            ]),
+            ("Le bon usage", [
+                "Le **lubrifiant est indispensable** : la zone ne s'auto-lubrifie pas. Une base eau, généreuse, compatible silicone.",
+                "On y va **lentement, en respirant**, et on s'arrête à la moindre gêne. Le plaisir vient de la détente, jamais de la précipitation.",
+            ]),
+        ],
+        "outro": [
+            DISCLAIMER_PRIME,
+            "La règle d'or : douceur, lubrifiant et écoute de soi. Commencer petit n'a rien d'une limite — c'est la meilleure façon d'y prendre goût.",
+        ],
+    },
+    {
+        "slug": "lubrifiant-silicone-vs-eau-choisir",
+        "kicker": "SOINS INTIMES",
+        "title": "Lubrifiant silicone ou eau : lequel choisir",
+        "lead": "Tenue longue durée ou compatibilité avec les jouets : silicone et base eau ne jouent pas dans la même cour. On t'aide à trancher.",
+        "category": "soins", "date": "13 juin 2026", "read": "4 min",
+        "cover_color": "#c9a961", "product_cats": ["soins"], "max_products": 3,
+        "intro": [
+            "Tous les lubrifiants ne se valent pas, et le bon choix dépend surtout de l'usage. Les deux grandes familles — base eau et base silicone — ont chacune leurs forces. Voici comment savoir laquelle te convient.",
+        ],
+        "sections": [
+            ("La base eau : la polyvalente", [
+                "Elle est **compatible avec tout** : préservatifs, jouets en silicone, peau sensible. C'est l'option passe-partout.",
+                "Son seul défaut : elle sèche plus vite. Un peu d'eau ou une noisette supplémentaire la réactive instantanément.",
+            ]),
+            ("Le silicone : la longue durée", [
+                "Il **tient beaucoup plus longtemps** et résiste à l'eau : idéal sous la douche ou dans le bain.",
+                "Revers de la médaille : il **n'est pas compatible avec les jouets en silicone** (il les abîme). Réserve-le à un usage peau à peau.",
+            ]),
+            ("Comment trancher", [
+                "Tu utilises des accessoires en silicone ? Reste sur une **base eau**, c'est plus sûr.",
+                "Tu cherches une tenue longue ou un usage dans l'eau ? Le **silicone** est imbattable. En cas de doute, la base eau reste le choix sans risque.",
+            ]),
+        ],
+        "outro": [
+            DISCLAIMER_PRIME,
+            "Un conseil : garde une base eau à portée de main pour le quotidien, et réserve le silicone aux moments où sa tenue fait vraiment la différence.",
+        ],
+    },
+    {
+        "slug": "jeu-de-role-couple-scenarios-debuter",
+        "kicker": "ÉROTISME",
+        "title": "Jeu de rôle en couple : oser sans malaise",
+        "lead": "Scénarios simples, accessoires faciles, communication avant tout : le jeu de rôle pimente la complicité quand on s'y prend en douceur.",
+        "category": "erotisme", "date": "13 juin 2026", "read": "5 min",
+        "cover_color": "#3a1a26", "product_cats": ["erotisme"], "max_products": 3,
+        "intro": [
+            "Le jeu de rôle fait parfois peur, et pourtant c'est l'une des façons les plus ludiques de raviver la complicité. Pas besoin de grand théâtre : un scénario simple, un accessoire, et l'envie de jouer suffisent à changer l'ambiance.",
+        ],
+        "sections": [
+            ("Commencer petit", [
+                "Inutile de viser le scénario complexe : un **simple changement de rôle ou de décor** (une rencontre « comme si on ne se connaissait pas ») suffit pour la première fois.",
+                "L'humour est ton meilleur allié : si l'un rit, l'autre rit, et la gêne disparaît. Le but, c'est le plaisir partagé, pas la performance.",
+            ]),
+            ("Les accessoires qui aident", [
+                "Un **bandeau, un foulard, une tenue de circonstance** posent le décor sans en faire trop.",
+                "Une **carte ou un jeu de scénarios** prêts à l'emploi évite la page blanche et lance la dynamique tout seul.",
+            ]),
+            ("La règle d'or : la parole", [
+                "On définit à deux ce qui est **oui, peut-être, et non** avant de commencer. C'est ce cadre qui permet de se lâcher en confiance.",
+                "Un **mot de pause** convenu à l'avance permet d'arrêter à tout moment sans casser l'ambiance. La sécurité, c'est ce qui rend le jeu libre.",
+            ]),
+        ],
+        "outro": [
+            DISCLAIMER_PRIME,
+            "Le jeu de rôle réussi n'est pas le plus audacieux, c'est celui où vous vous sentez tous les deux libres. Commencez léger, le reste viendra.",
+        ],
+    },
+    {
+        "slug": "carnet-fantasmes-couple-oser",
+        "kicker": "ÉROTISME",
+        "title": "Le carnet de fantasmes : écrire pour mieux oser",
+        "lead": "Mettre des mots sur ses envies, à deux ou en secret : le carnet de fantasmes ouvre le dialogue là où les mots manquent parfois.",
+        "category": "erotisme", "date": "12 juin 2026", "read": "4 min",
+        "cover_color": "#3a1a26", "product_cats": ["erotisme"], "max_products": 3,
+        "intro": [
+            "Dire ses envies à voix haute n'est pas toujours simple. Le carnet de fantasmes contourne cette pudeur : on écrit ce qu'on n'ose pas dire, on partage quand on est prêt, et le dialogue s'ouvre naturellement.",
+        ],
+        "sections": [
+            ("À quoi ça sert", [
+                "Écrire met de la **distance bienveillante** : on formule une envie sans la pression du regard de l'autre.",
+                "C'est aussi un **inventaire à deux** : on découvre des envies communes qu'on n'aurait jamais évoquées spontanément.",
+            ]),
+            ("Comment s'en servir", [
+                "Chacun note de son côté, puis vous comparez : les **points communs** deviennent vos prochaines idées, sans jugement sur le reste.",
+                "Certains carnets proposent des **suggestions à cocher** : pratique pour débloquer l'imagination quand on ne sait pas par où commencer.",
+            ]),
+            ("Garder la confiance", [
+                "Ce qui est écrit reste **confidentiel et sans obligation** : un fantasme noté n'est pas un engagement, juste une porte entrouverte.",
+                "On respecte les « non » sans insister : c'est cette sécurité qui donne envie d'en partager toujours plus.",
+            ]),
+        ],
+        "outro": [
+            DISCLAIMER_PRIME,
+            "Le carnet n'est qu'un prétexte : le vrai cadeau, c'est la conversation qu'il ouvre. Et souvent, elle vaut tous les accessoires du monde.",
+        ],
+    },
+    {
+        "slug": "huile-seche-corps-peau-satinee",
+        "kicker": "SOINS INTIMES",
+        "title": "L'huile sèche : une peau satinée sans effet gras",
+        "lead": "Pénétration express, fini soyeux, parfum subtil : l'huile sèche nourrit la peau sans la rendre collante. Comment bien l'utiliser.",
+        "category": "soins", "date": "12 juin 2026", "read": "4 min",
+        "cover_color": "#c9a961", "product_cats": ["soins"], "max_products": 3,
+        "intro": [
+            "L'huile sèche, c'est le soin qui a tout compris : elle nourrit la peau aussi bien qu'une huile classique, mais pénètre en quelques secondes sans laisser de film gras. Résultat, une peau douce, satinée, prête à s'habiller aussitôt.",
+        ],
+        "sections": [
+            ("Pourquoi « sèche »", [
+                "Le terme désigne sa **texture ultra-fluide** : elle se fond dans la peau sans résidu, contrairement aux huiles riches qui marquent les vêtements.",
+                "Elle convient même aux peaux qui détestent la sensation grasse : l'hydratation est là, l'inconfort en moins.",
+            ]),
+            ("Où l'appliquer", [
+                "Sur le **corps** au sortir de la douche, sur peau encore légèrement humide, pour sceller l'hydratation.",
+                "Sur les **longueurs des cheveux** ou les pointes pour discipliner sans alourdir : beaucoup d'huiles sèches sont multi-usages.",
+            ]),
+            ("Choisir la sienne", [
+                "Regarde la **base végétale** (jojoba, amande douce, coco) et un parfum léger qui ne sature pas.",
+                "Un format **spray** facilite l'application uniforme ; un compte-gouttes permet de doser au plus juste.",
+            ]),
+        ],
+        "outro": [
+            DISCLAIMER_PRIME,
+            "Le geste qui sublime : quelques pressions après la douche, un léger massage, et la peau garde tout le jour ce fini lumineux et doux.",
+        ],
+    },
+    {
+        "slug": "coffret-cadeau-noel-couple-idees",
+        "kicker": "COFFRETS & CADEAUX",
+        "title": "Coffret de Noël pour un couple : nos idées complices",
+        "lead": "Sous le sapin, un cadeau à deux qui invite à ralentir : massage, cocooning, petites attentions. Nos idées pour un Noël à deux réussi.",
+        "category": "cadeaux", "date": "16 juin 2026", "read": "4 min",
+        "cover_color": "#5b1a26", "product_cats": ["cadeaux"], "max_products": 3,
+        "intro": [
+            "À Noël, le plus beau cadeau pour un couple n'est pas toujours un objet : c'est une invitation à passer du temps ensemble. Un coffret bien choisi crée ce moment de pause complice, loin de l'agitation des fêtes.",
+        ],
+        "sections": [
+            ("L'esprit cocooning", [
+                "Un **coffret massage** (huile, bougie, accessoire doux) transforme une soirée d'hiver en rituel à deux.",
+                "Misez sur le **confort partagé** : peignoirs assortis, plaid douillet, tout ce qui dit « on prend soin de nous ».",
+            ]),
+            ("Le coffret qui surprend", [
+                "Un **kit découverte** mêlant petites attentions et jeux complices casse la routine sans intimider.",
+                "Pour les couples qui ont tout, l'**expérience à vivre** (un moment, pas un objet) reste le cadeau le plus mémorable.",
+            ]),
+            ("Bien le présenter", [
+                "Un emballage soigné et un **mot manuscrit** valent plus que le contenu : c'est l'intention qui touche.",
+                "Glissez-y un seul **bel objet** plutôt que dix gadgets : la qualité crée le souvenir, pas la quantité.",
+            ]),
+        ],
+        "outro": [
+            DISCLAIMER_PRIME,
+            "Le meilleur coffret de Noël pour un couple, c'est celui qui invite à éteindre les écrans et à se retrouver. Le reste n'est qu'un joli prétexte.",
+        ],
+    },
 ]
 
 
