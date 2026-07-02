@@ -46,3 +46,9 @@ h1{font-family:"Cormorant Garamond",serif;font-size:clamp(40px,6vw,64px);line-he
 
 .foot{background:var(--bg-2);text-align:center;padding:30px 24px;font-size:12px;color:var(--muted);border-top:1px solid var(--line)}
 .foot a{color:var(--ink-2);margin:0 10px}
+
+.related{margin:48px 0 0;padding:22px 24px;background:var(--paper);border:1px solid var(--line);border-radius:10px}
+.related-title{color:var(--accent);margin-bottom:12px;display:block}
+.related ul{margin:0;padding-left:20px}
+.related li{margin-bottom:8px;font-size:16px}
+.related a{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
