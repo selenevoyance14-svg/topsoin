@@ -52,9 +52,8 @@ function TopBar() {
       background:'var(--ink)', color:'var(--paper)', fontSize:12,
       padding:'10px 24px', textAlign:'center', letterSpacing:'.04em'
     }}>
-      <span style={{opacity:.6}}>●</span> &nbsp;Sélection 100% disponible sur Amazon ·
-      Livraison Prime en 24h · Colis neutre Amazon · &nbsp;
-      <a href="#" style={{textDecoration:'underline', textUnderlineOffset:3}}>En savoir plus</a>
+      <span style={{opacity:.6}}>●</span> &nbsp;Sélection éditoriale indépendante · Liens Amazon affiliés signalés · &nbsp;
+      <a href="/affiliation.html" style={{textDecoration:'underline', textUnderlineOffset:3}}>En savoir plus</a>
     </div>
   );
 }
@@ -159,12 +158,9 @@ function Hero() {
             <a href="/journal/" style={{...btnGhost, display:'inline-flex', alignItems:'center', textDecoration:'none'}}>Le journal de Léa</a>
           </div>
 
-          {/* Preuve sociale honnête juste sous les CTA */}
+          {/* Informations sur la sélection */}
           <div style={{display:'flex', alignItems:'center', gap:10, marginTop:22, fontSize:13, color:'var(--ink-2)', flexWrap:'wrap'}}>
-            <div style={{display:'flex', gap:2, color:'#d4a017'}}>
-              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-            </div>
-            <span><strong style={{color:'var(--ink)'}}>4,5+</strong> sur Amazon — produits notés par des milliers d'acheteur·euse·s</span>
+            <span><strong style={{color:'var(--ink)'}}>Prix et disponibilité</strong> vérifiés sur Amazon lors de la mise à jour automatique.</span>
           </div>
         </div>
 
@@ -174,8 +170,8 @@ function Hero() {
         }}>
           {[
             ['◇', 'Sélection indépendante','Curation française'],
-            ['◐', 'Colis neutre Amazon','Discrétion garantie'],
-            ['☉', 'Livraison Prime','24h, retours gratuits'],
+            ['◐', 'Liens transparents','Affiliation clairement indiquée'],
+            ['☉', 'Achat sur Amazon','Conditions à vérifier chez le vendeur'],
           ].map(([i,a,b],idx) => (
             <div key={idx}>
               <div style={{fontSize:18, color:'var(--accent)', marginBottom:6}}>{i}</div>

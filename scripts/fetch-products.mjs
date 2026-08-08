@@ -1,108 +1,87 @@
 // scripts/fetch-products.mjs
-// Récupère des produits Amazon via PA-API 5.0 et génère data.jsx pour Maison Léa.
+// Récupère les produits Amazon via Creators API et génère data.jsx.
 //
 // Usage:
 //   node scripts/fetch-products.mjs            → fait toutes les catégories
 //   node scripts/fetch-products.mjs --test     → test rapide avec une seule recherche
 //
-// Variables d'env requises (lues depuis bonsplansmania/.env ou env shell):
-//   AMAZON_ACCESS_KEY  AMAZON_SECRET_KEY  AMAZON_PARTNER_TAG  AMAZON_MARKETPLACE
+// Variables d'env requises :
+//   AMAZON_CREATORS_CREDENTIAL_ID
+//   AMAZON_CREATORS_CREDENTIAL_SECRET
+//   AMAZON_CREATORS_CREDENTIAL_VERSION (3.2 pour l'Europe)
+//   AMAZON_PARTNER_TAG
 
-import { createHash, createHmac } from "node:crypto";
 import { readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 
 // ────────────────────────────────────────────────────────────────────────────
-// Charge .env depuis bonsplansmania (où Yann a mis les clés)
+// Charge d'abord l'environnement du processus, puis les .env locaux disponibles.
 async function loadEnv() {
-    const envPath = "/Users/Yann/Documents/oracle/bonsplansmania/.env";
-    const raw = await readFile(envPath, "utf-8");
-    const env = {};
-    for (const line of raw.split("\n")) {
-        const m = line.match(/^([A-Z_][A-Z0-9_]*)=(.*)$/);
-        if (m) env[m[1]] = m[2].replace(/^["']|["']$/g, "");
+    const env = { ...process.env };
+    for (const envPath of [join(process.cwd(), ".env"), "/Users/Yann/Documents/oracle/bonsplansmania/.env"]) {
+        try {
+            const raw = await readFile(envPath, "utf-8");
+            for (const line of raw.split("\n")) {
+                const m = line.match(/^([A-Z_][A-Z0-9_]*)=(.*)$/);
+                if (m && !env[m[1]]) env[m[1]] = m[2].replace(/^["']|["']$/g, "");
+            }
+        } catch {
+            // Fichier facultatif : les secrets CI viennent de l'environnement.
+        }
     }
     return env;
 }
 
-// ────────────────────────────────────────────────────────────────────────────
-// Signature AWS SigV4 pour PA-API 5.0
-function sign(env, payload) {
-    const HOST = "webservices.amazon.fr";
-    const REGION = "eu-west-1";
-    const SERVICE = "ProductAdvertisingAPI";
-    const PATH = "/paapi5/searchitems";
-    const TARGET = "com.amazon.paapi5.v1.ProductAdvertisingAPIv1.SearchItems";
-
-    const now = new Date();
-    const amzDate = now.toISOString().replace(/[:\-]|\.\d{3}/g, "");
-    const dateStamp = amzDate.slice(0, 8);
-
-    const body = JSON.stringify(payload);
-    const payloadHash = createHash("sha256").update(body).digest("hex");
-
-    const headers = {
-        "host": HOST,
-        "x-amz-date": amzDate,
-        "x-amz-target": TARGET,
-        "content-encoding": "amz-1.0",
-        "content-type": "application/json; charset=UTF-8",
-    };
-    const sortedHeaders = Object.keys(headers).sort();
-    const canonicalHeaders = sortedHeaders.map(k => `${k}:${headers[k]}\n`).join("");
-    const signedHeaders = sortedHeaders.join(";");
-
-    const canonicalRequest = [
-        "POST",
-        PATH,
-        "",
-        canonicalHeaders,
-        signedHeaders,
-        payloadHash,
-    ].join("\n");
-
-    const credentialScope = `${dateStamp}/${REGION}/${SERVICE}/aws4_request`;
-    const stringToSign = [
-        "AWS4-HMAC-SHA256",
-        amzDate,
-        credentialScope,
-        createHash("sha256").update(canonicalRequest).digest("hex"),
-    ].join("\n");
-
-    const kDate = createHmac("sha256", `AWS4${env.AMAZON_SECRET_KEY}`).update(dateStamp).digest();
-    const kRegion = createHmac("sha256", kDate).update(REGION).digest();
-    const kService = createHmac("sha256", kRegion).update(SERVICE).digest();
-    const kSigning = createHmac("sha256", kService).update("aws4_request").digest();
-    const signature = createHmac("sha256", kSigning).update(stringToSign).digest("hex");
-
-    const authorization = `AWS4-HMAC-SHA256 Credential=${env.AMAZON_ACCESS_KEY}/${credentialScope}, SignedHeaders=${signedHeaders}, Signature=${signature}`;
-
-    return { url: `https://${HOST}${PATH}`, headers: { ...headers, Authorization: authorization }, body };
+function creatorsConfig(env) {
+    const version = env.AMAZON_CREATORS_CREDENTIAL_VERSION || "3.2";
+    const tokenUrl = version.startsWith("3.")
+        ? "https://api.amazon.co.uk/auth/o2/token"
+        : "https://creatorsapi.auth.eu-south-2.amazoncognito.com/oauth2/token";
+    return { version, tokenUrl };
 }
 
-async function searchItems(env, { keywords, searchIndex = "All", itemCount = 10 }) {
+async function getAccessToken(env) {
+    const id = env.AMAZON_CREATORS_CREDENTIAL_ID;
+    const secret = env.AMAZON_CREATORS_CREDENTIAL_SECRET;
+    const { version, tokenUrl } = creatorsConfig(env);
+    const isV3 = version.startsWith("3.");
+    const headers = { "content-type": isV3 ? "application/json" : "application/x-www-form-urlencoded" };
+    const body = isV3
+        ? JSON.stringify({ grant_type: "client_credentials", client_id: id, client_secret: secret, scope: "creatorsapi::default" })
+        : new URLSearchParams({ grant_type: "client_credentials", client_id: id, client_secret: secret, scope: "creatorsapi/default" });
+    const res = await fetch(tokenUrl, { method: "POST", headers, body });
+    const data = await res.json();
+    if (!res.ok || !data.access_token) throw new Error(`Creators API auth ${res.status}: ${JSON.stringify(data).slice(0, 300)}`);
+    return { token: data.access_token, version };
+}
+
+async function searchItems(env, auth, { keywords, searchIndex = "All", itemCount = 10 }) {
     const payload = {
-        PartnerTag: env.AMAZON_PARTNER_TAG,
-        PartnerType: "Associates",
-        Marketplace: env.AMAZON_MARKETPLACE || "www.amazon.fr",
-        Keywords: keywords,
-        SearchIndex: searchIndex,
-        ItemCount: itemCount,
-        Resources: [
-            "Images.Primary.Large",
-            "ItemInfo.Title",
-            "ItemInfo.ByLineInfo",
-            "Offers.Listings.Price",
-            "Offers.Listings.SavingBasis",
-            "Offers.Listings.DeliveryInfo.IsPrimeEligible",
+        partnerTag: env.AMAZON_PARTNER_TAG,
+        marketplace: env.AMAZON_MARKETPLACE || "www.amazon.fr",
+        keywords,
+        searchIndex,
+        itemCount,
+        resources: [
+            "images.primary.large",
+            "itemInfo.title",
+            "itemInfo.byLineInfo",
+            "offersV2.listings.price",
+            "offersV2.listings.availability",
+            "offersV2.listings.deliveryInfo",
         ],
     };
-
-    const { url, headers, body } = sign(env, payload);
-    const res = await fetch(url, { method: "POST", headers, body });
+    const authorization = auth.version.startsWith("2.")
+        ? `Bearer ${auth.token}, Version ${auth.version}`
+        : `Bearer ${auth.token}`;
+    const res = await fetch("https://creatorsapi.amazon/catalog/v1/searchItems", {
+        method: "POST",
+        headers: { authorization, "content-type": "application/json", "x-marketplace": payload.marketplace },
+        body: JSON.stringify(payload),
+    });
     const text = await res.text();
     if (!res.ok) {
-        throw new Error(`PA-API ${res.status}: ${text.slice(0, 500)}`);
+        throw new Error(`Creators API ${res.status}: ${text.slice(0, 500)}`);
     }
     return JSON.parse(text);
 }
@@ -110,19 +89,21 @@ async function searchItems(env, { keywords, searchIndex = "All", itemCount = 10 
 // ────────────────────────────────────────────────────────────────────────────
 async function main() {
     const env = await loadEnv();
-    if (!env.AMAZON_ACCESS_KEY || !env.AMAZON_SECRET_KEY) {
-        console.error("❌ Clés Amazon introuvables dans .env");
+    if (!env.AMAZON_CREATORS_CREDENTIAL_ID || !env.AMAZON_CREATORS_CREDENTIAL_SECRET) {
+        console.error("❌ Identifiants Creators API manquants. Créez-les dans Associates Central > Outils > Creators API.");
         process.exit(1);
     }
-    console.log("🔑 Clés chargées · Tag:", env.AMAZON_PARTNER_TAG, "· Marketplace:", env.AMAZON_MARKETPLACE || "www.amazon.fr");
+    if (!env.AMAZON_PARTNER_TAG) throw new Error("AMAZON_PARTNER_TAG manquant");
+    const auth = await getAccessToken(env);
+    console.log("🔑 Creators API connectée · Tag:", env.AMAZON_PARTNER_TAG, "· Version:", auth.version);
 
     if (process.argv.includes("--test")) {
         console.log("\n🧪 Test : recherche 'soutien-gorge dentelle'");
-        const data = await searchItems(env, { keywords: "soutien-gorge dentelle", searchIndex: "Apparel", itemCount: 3 });
-        const items = data?.SearchResult?.Items || [];
+        const data = await searchItems(env, auth, { keywords: "soutien-gorge dentelle", searchIndex: "Apparel", itemCount: 3 });
+        const items = data?.searchResult?.items || [];
         console.log(`✅ API OK — ${items.length} produits reçus`);
         for (const it of items.slice(0, 3)) {
-            console.log(`  · ${it.ASIN} — ${(it.ItemInfo?.Title?.DisplayValue || "").slice(0, 70)} — ${it.Offers?.Listings?.[0]?.Price?.DisplayAmount || "—"}`);
+            console.log(`  · ${it.asin} — ${(it.itemInfo?.title?.displayValue || "").slice(0, 70)} — ${it.offersV2?.listings?.[0]?.price?.money?.displayAmount || "—"}`);
         }
         return;
     }
@@ -146,24 +127,26 @@ async function main() {
         for (const kw of cat.keywords) {
             if (allProducts.filter(p => p.cat === cat.id).length >= cat.count) break;
             try {
-                const data = await searchItems(env, { keywords: kw, searchIndex: cat.searchIndex, itemCount: 8 });
-                const items = data?.SearchResult?.Items || [];
+                const data = await searchItems(env, auth, { keywords: kw, searchIndex: cat.searchIndex, itemCount: 8 });
+                const items = data?.searchResult?.items || [];
                 for (const it of items) {
                     if (allProducts.filter(p => p.cat === cat.id).length >= cat.count) break;
-                    if (seen.has(it.ASIN)) continue;
-                    seen.add(it.ASIN);
-                    const title = it.ItemInfo?.Title?.DisplayValue;
-                    const image = it.Images?.Primary?.Large?.URL;
-                    const offer = it.Offers?.Listings?.[0];
-                    const priceDisplay = offer?.Price?.DisplayAmount;
-                    const wasDisplay = offer?.SavingBasis?.DisplayAmount;
-                    const prime = !!offer?.DeliveryInfo?.IsPrimeEligible;
+                    if (seen.has(it.asin)) continue;
+                    seen.add(it.asin);
+                    const title = it.itemInfo?.title?.displayValue;
+                    const image = it.images?.primary?.large?.url;
+                    const offer = it.offersV2?.listings?.[0];
+                    const priceDisplay = offer?.price?.money?.displayAmount || "";
+                    const priceAmount = offer?.price?.money?.amount;
+                    const wasDisplay = offer?.price?.savingBasis?.money?.displayAmount || "";
+                    const wasAmount = offer?.price?.savingBasis?.money?.amount;
+                    const prime = !!offer?.deliveryInfo?.isPrimeEligible;
                     if (!title || !image) continue;
-                    const brand = it.ItemInfo?.ByLineInfo?.Brand?.DisplayValue || it.ItemInfo?.ByLineInfo?.Manufacturer?.DisplayValue || "";
+                    const brand = it.itemInfo?.byLineInfo?.brand?.displayValue || it.itemInfo?.byLineInfo?.manufacturer?.displayValue || "";
 
                     let off = "";
-                    if (priceDisplay && wasDisplay && offer?.Price?.Amount && offer?.SavingBasis?.Amount) {
-                        const pct = Math.round((1 - offer.Price.Amount / offer.SavingBasis.Amount) * 100);
+                    if (priceDisplay && wasDisplay && priceAmount && wasAmount && wasAmount > priceAmount) {
+                        const pct = Math.round((1 - priceAmount / wasAmount) * 100);
                         if (pct >= 5) off = `-${pct}%`;
                     }
 
@@ -175,15 +158,16 @@ async function main() {
                         price: priceDisplay || "",
                         was: wasDisplay || "",
                         off,
-                        rating: 4.5,
-                        reviews: Math.floor(Math.random() * 800) + 50,
+                        rating: 0,
+                        reviews: 0,
                         prime,
                         tag: "",
                         color: cat.color,
-                        asin: it.ASIN,
+                        asin: it.asin,
                         image,
+                        url: it.detailPageURL || `https://www.amazon.fr/dp/${it.asin}?tag=${env.AMAZON_PARTNER_TAG}`,
                     });
-                    console.log(`  ✓ ${it.ASIN} — ${title.slice(0, 55)} — ${priceDisplay || "no price"}`);
+                    console.log(`  ✓ ${it.asin} — ${title.slice(0, 55)} — ${priceDisplay || "no price"}`);
                 }
             } catch (e) {
                 console.error(`  ⚠ ${kw}: ${e.message.slice(0, 100)}`);
@@ -193,7 +177,9 @@ async function main() {
 
     console.log(`\n📝 ${allProducts.length} produits collectés. Génération de data.jsx...`);
 
+    const generatedAt = new Date().toISOString();
     const dataJsx = `// data.jsx — Maison Léa: Amazon affiliate edition (généré automatiquement)
+const AMAZON_DATA_UPDATED_AT = ${JSON.stringify(generatedAt)};
 const COLLECTIONS = [
   { id:'lingerie',   label:'Lingerie',          fr:'Soutiens-gorge, culottes, bodies', count: ${allProducts.filter(p => p.cat === "lingerie").length} },
   { id:'nuit',       label:'Nuit & loungewear', fr:'Nuisettes, peignoirs, kimonos',     count: ${allProducts.filter(p => p.cat === "nuit").length} },
@@ -206,27 +192,27 @@ const COLLECTIONS = [
 const PRODUCTS = ${JSON.stringify(allProducts, null, 2)};
 
 const PROMISES = [
-  { kicker:'01', title:'Sélection Léa, achat Amazon', body:'Léa teste, sélectionne et classe. Vous achetez directement chez Amazon, en toute sécurité.' },
-  { kicker:'02', title:'Livraison Prime, prix Amazon', body:'Mêmes prix qu\\u2019Amazon, livraison Prime, retours simples. Aucun surcoût pour vous.' },
+  { kicker:'01', title:'Sélection éditoriale', body:'Maison Léa compare et organise des produits disponibles sur Amazon selon des critères utiles.' },
+  { kicker:'02', title:'Prix vérifiés automatiquement', body:'Les prix sont affichés uniquement lorsqu\\u2019ils ont été actualisés récemment via l\\u2019API Amazon.' },
   { kicker:'03', title:'Transparence totale',          body:'Liens affiliés signalés clairement. Une commission Amazon nous rémunère, jamais vous.' },
-  { kicker:'04', title:'Discrétion garantie',          body:'Amazon expédie en colis neutre. Vous restez en maison de confiance.' },
+  { kicker:'04', title:'Achat chez le vendeur',         body:'Vérifiez le vendeur, la livraison, les retours et la disponibilité directement sur Amazon.' },
 ];
 
 const EDITORIAL = {
   kicker:'LE GUIDE · ÉDITION N°1',
   title:'Mes indispensables intimes.',
-  excerpt:'Léa partage sa sélection du moment : pièces testées et approuvées, du soutien-gorge sans armatures au massage sensoriel. Tous disponibles sur Amazon, livrés en 24h.',
+  excerpt:'Maison Léa partage une sélection éditoriale du moment, du soutien-gorge sans armatures au massage sensoriel. Prix et disponibilité sont confirmés sur Amazon.',
   read:'8 min'
 };
 
 const STATS = [
   { num:'${allProducts.length}', label:'produits sélectionnés' },
   { num:'6', label:'territoires' },
-  { num:'24h', label:'livraison Prime' },
-  { num:'100%', label:'colis neutre' },
+  { num:'24h', label:'fraîcheur maximale des prix' },
+  { num:'100%', label:'liens affiliés signalés' },
 ];
 
-Object.assign(window, { COLLECTIONS, PRODUCTS, PROMISES, EDITORIAL, STATS });
+Object.assign(window, { AMAZON_DATA_UPDATED_AT, COLLECTIONS, PRODUCTS, PROMISES, EDITORIAL, STATS });
 `;
 
     await writeFile(join(process.cwd(), "data.jsx"), dataJsx);

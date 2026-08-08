@@ -1,0 +1,65 @@
+name: Actualiser les prix Amazon
+
+on:
+  schedule:
+    - cron: "17 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: amazon-prices
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Vérifier la configuration Creators API
+        id: credentials
+        env:
+          CREDENTIAL_ID: ${{ secrets.AMAZON_CREATORS_CREDENTIAL_ID }}
+          CREDENTIAL_SECRET: ${{ secrets.AMAZON_CREATORS_CREDENTIAL_SECRET }}
+        run: |
+          if [ -n "$CREDENTIAL_ID" ] && [ -n "$CREDENTIAL_SECRET" ]; then
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+            echo "Identifiants Creators API absents : aucun prix n'est modifié."
+          fi
+
+      - name: Récupérer les produits et prix Amazon
+        if: steps.credentials.outputs.ready == 'true'
+        env:
+          AMAZON_CREATORS_CREDENTIAL_ID: ${{ secrets.AMAZON_CREATORS_CREDENTIAL_ID }}
+          AMAZON_CREATORS_CREDENTIAL_SECRET: ${{ secrets.AMAZON_CREATORS_CREDENTIAL_SECRET }}
+          AMAZON_CREATORS_CREDENTIAL_VERSION: ${{ vars.AMAZON_CREATORS_CREDENTIAL_VERSION || '3.2' }}
+          AMAZON_PARTNER_TAG: ${{ vars.AMAZON_PARTNER_TAG || 'lebrunnathali-21' }}
+          AMAZON_MARKETPLACE: www.amazon.fr
+        run: npm run amazon:update
+
+      - name: Vérifier le build
+        if: steps.credentials.outputs.ready == 'true'
+        run: npm run build
+
+      - name: Publier les données actualisées
+        if: steps.credentials.outputs.ready == 'true'
+        run: |
+          if git diff --quiet -- data.jsx; then
+            echo "Aucune modification de produit ou de prix."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data.jsx
+          git commit -m "Actualise les prix Amazon"
+          git push

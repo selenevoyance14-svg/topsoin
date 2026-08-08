@@ -184,6 +184,8 @@ function Collections() {
 // ─────────────────────────────────────────────────────────────────────────────
 // Amazon-style product card
 function AffiliateCard({ p, onFav, faved }) {
+  const updatedAt = window.AMAZON_DATA_UPDATED_AT ? new Date(window.AMAZON_DATA_UPDATED_AT) : null;
+  const priceIsFresh = updatedAt && !Number.isNaN(updatedAt.getTime()) && (Date.now() - updatedAt.getTime()) < 24 * 60 * 60 * 1000;
   return (
     <article style={{
       background:'var(--paper)', borderRadius:12, overflow:'hidden',
@@ -206,32 +208,34 @@ function AffiliateCard({ p, onFav, faved }) {
         <div className="serif" style={{fontSize:20, color:'var(--ink)', lineHeight:1.15}}>{p.name}</div>
         <div style={{fontSize:12, color:'var(--muted)'}}>{p.sub}</div>
 
-        <div style={{display:'flex', alignItems:'center', gap:8, marginTop:2}}>
-          <Stars rating={p.rating} size={13}/>
-          <span style={{fontSize:12, color:'var(--ink-2)', fontWeight:600}}>{p.rating}</span>
-          <span style={{fontSize:12, color:'var(--muted)'}}>({p.reviews.toLocaleString('fr-FR')})</span>
-        </div>
+        {p.reviewsVerified && p.rating > 0 && p.reviews > 0 && (
+          <div style={{display:'flex', alignItems:'center', gap:8, marginTop:2}}>
+            <Stars rating={p.rating} size={13}/>
+            <span style={{fontSize:12, color:'var(--ink-2)', fontWeight:600}}>{p.rating}</span>
+            <span style={{fontSize:12, color:'var(--muted)'}}>({p.reviews.toLocaleString('fr-FR')})</span>
+          </div>
+        )}
 
         <div style={{display:'flex', alignItems:'baseline', gap:8, marginTop:6}}>
-          <span className="serif" style={{fontSize:26, color:'var(--ink)', fontWeight:600}}>{p.price}</span>
-          {p.was && <span style={{fontSize:13, color:'var(--muted)', textDecoration:'line-through'}}>{p.was}</span>}
-          {p.off && <span className="mono" style={{
+          <span className="serif" style={{fontSize:26, color:'var(--ink)', fontWeight:600}}>{priceIsFresh && p.price ? p.price : 'Voir le prix sur Amazon'}</span>
+          {priceIsFresh && p.was && <span style={{fontSize:13, color:'var(--muted)', textDecoration:'line-through'}}>{p.was}</span>}
+          {priceIsFresh && p.off && <span className="mono" style={{
             fontSize:11, fontWeight:700, color:'var(--accent)',
             background:'rgba(91,26,38,.08)', padding:'2px 7px', borderRadius:4
           }}>{p.off}</span>}
         </div>
 
-        {p.prime && (
+        {priceIsFresh && p.prime && (
           <div style={{display:'flex', alignItems:'center', gap:6, fontSize:11, color:'var(--ink-2)'}}>
             <span style={{
               fontSize:10, fontWeight:700, color:'#fff', background:'#00a8e1',
               padding:'2px 6px', borderRadius:3, letterSpacing:'.04em'
             }}>prime</span>
-            <span>Livraison gratuite en 24h</span>
+            <span>Éligibilité indiquée par Amazon lors de la mise à jour</span>
           </div>
         )}
 
-        <a href={`https://www.amazon.fr/dp/${p.asin}?tag=lebrunnathali-21`} target="_blank" rel="sponsored noopener nofollow" style={{
+        <a href={p.url || `https://www.amazon.fr/dp/${p.asin}?tag=lebrunnathali-21`} target="_blank" rel="sponsored noopener nofollow" style={{
           marginTop:'auto', padding:'12px 14px', background:'#febd69',
           color:'#0f1111', textAlign:'center', borderRadius:999,
           fontSize:13, fontWeight:600, fontFamily:'inherit',
@@ -243,6 +247,11 @@ function AffiliateCard({ p, onFav, faved }) {
         <div className="mono" style={{fontSize:10, color:'var(--muted)', textAlign:'center', letterSpacing:'.06em'}}>
           Lien sponsorisé Amazon
         </div>
+        {priceIsFresh && p.price && (
+          <div style={{fontSize:10, color:'var(--muted)', textAlign:'center', lineHeight:1.4}}>
+            Prix relevé sur Amazon le {updatedAt.toLocaleString('fr-FR', {dateStyle:'short', timeStyle:'short'})}. Prix et disponibilité susceptibles de changer.
+          </div>
+        )}
       </div>
     </article>
   );
@@ -279,7 +288,7 @@ function ProductGrid({ favs, onFav }) {
             Choisies <em style={{fontStyle:'italic'}}>une à une.</em>
           </h2>
           <p style={{fontSize:14, color:'var(--muted)', marginTop:10, maxWidth:480}}>
-            Léa teste, classe et sélectionne. Vous achetez en sécurité chez Amazon — mêmes prix, livraison Prime.
+            Sélection éditoriale indépendante. Le prix et la disponibilité sont confirmés directement sur Amazon avant l'achat.
           </p>
         </div>
 
@@ -349,11 +358,11 @@ function Editorial() {
         </div>
         <blockquote style={{margin:0, padding:'24px 0 24px 32px', borderLeft:'2px solid rgba(251,246,237,.4)'}}>
           <div className="serif" style={{fontSize:'clamp(28px,3vw,42px)', fontStyle:'italic', lineHeight:1.25, color:'var(--paper)'}}>
-            "Je ne recommande que ce que j'utilise vraiment. Si c'est dans la sélection,
-            c'est que ça a passé six mois sur ma table de chevet."
+            "Chaque sélection explique les critères utiles pour comparer. Le choix final
+            et les conditions d'achat se vérifient directement sur Amazon."
           </div>
           <div className="smallcaps" style={{marginTop:24, color:'rgba(251,246,237,.7)'}}>
-            — Léa, fondatrice & curatrice
+            — La méthode Maison Léa
           </div>
         </blockquote>
       </div>
@@ -424,9 +433,8 @@ function DisclosureBar() {
       padding:'14px 24px', textAlign:'center'
     }}>
       <div style={{maxWidth:900, margin:'0 auto', fontSize:12, color:'var(--ink-2)', lineHeight:1.5}}>
-        <b style={{color:'var(--accent)'}}>Transparence :</b> Maison Léa est un site de curation indépendant.
-        En tant que <i>Partenaire Amazon</i>, nous percevons une commission sur les achats éligibles —
-        sans surcoût pour vous. Nous ne recommandons que des produits testés.
+        <b style={{color:'var(--accent)'}}>Transparence :</b> Maison Léa est un site de sélection indépendant.{' '}
+        En tant que Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises.
       </div>
     </div>
   );
@@ -443,8 +451,8 @@ function Footer() {
         </div>
         <div style={{display:'grid', gridTemplateColumns:'2fr repeat(3,1fr)', gap:32, paddingBottom:32}}>
           <p style={{fontSize:13, color:'var(--muted)', lineHeight:1.6, margin:0, maxWidth:360}}>
-            Site indépendant de curation, partenaire Amazon. Léa sélectionne le meilleur de la
-            lingerie et de l'intimité disponible sur Amazon.fr — vous achetez chez Amazon, en confiance.
+            Site indépendant de sélection éditoriale. Les achats, paiements, livraisons et retours
+            sont réalisés directement auprès d'Amazon ou du vendeur indiqué sur Amazon.fr.
           </p>
           {[
             ['Univers', [['Lingerie','#collections'],['Nuit','#collections'],['Sensualité','#collections'],['Érotisme','#collections'],['Soins','#collections'],['Coffrets','#collections']]],

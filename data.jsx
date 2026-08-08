@@ -3180,24 +3180,24 @@ const PRODUCTS = [
 ];
 
 const PROMISES = [
-  { kicker:'01', title:'Sélection Léa, achat Amazon', body:'Léa teste, sélectionne et classe. Vous achetez directement chez Amazon, en toute sécurité.' },
-  { kicker:'02', title:'Livraison Prime, prix Amazon', body:'Mêmes prix qu\u2019Amazon, livraison Prime, retours simples. Aucun surcoût pour vous.' },
+  { kicker:'01', title:'Sélection éditoriale', body:'Maison Léa compare et organise des produits disponibles sur Amazon selon des critères utiles.' },
+  { kicker:'02', title:'Prix vérifiés automatiquement', body:'Les prix sont affichés uniquement lorsqu’ils ont été actualisés récemment via l’API Amazon.' },
   { kicker:'03', title:'Transparence totale',          body:'Liens affiliés signalés clairement. Une commission Amazon nous rémunère, jamais vous.' },
-  { kicker:'04', title:'Discrétion garantie',          body:'Amazon expédie en colis neutre. Vous restez en maison de confiance.' },
+  { kicker:'04', title:'Achat chez le vendeur',         body:'Vérifiez le vendeur, la livraison, les retours et la disponibilité directement sur Amazon.' },
 ];
 
 const EDITORIAL = {
   kicker:'LE GUIDE · ÉDITION N°1',
   title:'Mes indispensables intimes.',
-  excerpt:'Léa partage sa sélection du moment : pièces testées et approuvées, du soutien-gorge sans armatures au massage sensoriel. Tous disponibles sur Amazon, livrés en 24h.',
+  excerpt:'Maison Léa partage une sélection éditoriale du moment. Prix et disponibilité sont confirmés directement sur Amazon.',
   read:'8 min'
 };
 
 const STATS = [
   { num:'198', label:'produits sélectionnés' },
   { num:'6', label:'territoires' },
-  { num:'24h', label:'livraison Prime' },
-  { num:'100%', label:'colis neutre' },
+  { num:'24h', label:'fraîcheur maximale des prix' },
+  { num:'100%', label:'liens affiliés signalés' },
 ];
 
 Object.assign(window, { COLLECTIONS, PRODUCTS, PROMISES, EDITORIAL, STATS });

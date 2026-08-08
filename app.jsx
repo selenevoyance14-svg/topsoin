@@ -53,7 +53,6 @@ function App() {
       <window.Collections/>
       <window.ProductGrid favs={favs} onFav={onFav}/>
       <window.Editorial/>
-      <window.Newsletter/>
       <window.Footer/>
     </div>
   );

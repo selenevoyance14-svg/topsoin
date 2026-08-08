@@ -4,6 +4,8 @@
   "private": true,
   "description": "Maison Léa — Sélection lingerie & intimité, affiliation Amazon",
   "scripts": {
-    "build": "node scripts/build.mjs"
+    "build": "node scripts/build.mjs",
+    "amazon:update": "node scripts/fetch-products.mjs",
+    "amazon:test": "node scripts/fetch-products.mjs --test"
   }
 }
