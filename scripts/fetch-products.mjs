@@ -68,7 +68,6 @@ async function searchItems(env, auth, { keywords, searchIndex = "All", itemCount
             "itemInfo.byLineInfo",
             "offersV2.listings.price",
             "offersV2.listings.availability",
-            "offersV2.listings.deliveryInfo",
         ],
     };
     const authorization = auth.version.startsWith("2.")
@@ -140,7 +139,8 @@ async function main() {
                     const priceAmount = offer?.price?.money?.amount;
                     const wasDisplay = offer?.price?.savingBasis?.money?.displayAmount || "";
                     const wasAmount = offer?.price?.savingBasis?.money?.amount;
-                    const prime = !!offer?.deliveryInfo?.isPrimeEligible;
+                    // OffersV2 ne fournit plus l'éligibilité Prime. Ne jamais l'inventer.
+                    const prime = false;
                     if (!title || !image) continue;
                     const brand = it.itemInfo?.byLineInfo?.brand?.displayValue || it.itemInfo?.byLineInfo?.manufacturer?.displayValue || "";
 
@@ -173,6 +173,10 @@ async function main() {
                 console.error(`  ⚠ ${kw}: ${e.message.slice(0, 100)}`);
             }
         }
+    }
+
+    if (allProducts.length === 0) {
+        throw new Error("Aucun produit Amazon reçu : data.jsx est conservé et la publication est annulée.");
     }
 
     console.log(`\n📝 ${allProducts.length} produits collectés. Génération de data.jsx...`);
