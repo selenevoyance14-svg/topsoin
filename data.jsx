@@ -1,5 +1,5 @@
 // data.jsx — Maison Léa: Amazon affiliate edition (généré automatiquement)
-const AMAZON_DATA_UPDATED_AT = "2026-08-10T05:44:34.847Z";
+const AMAZON_DATA_UPDATED_AT = "2026-08-11T05:29:56.576Z";
 const COLLECTIONS = [
   { id:'lingerie',   label:'Lingerie',          fr:'Soutiens-gorge, culottes, bodies', count: 4 },
   { id:'nuit',       label:'Nuit & loungewear', fr:'Nuisettes, peignoirs, kimonos',     count: 3 },
@@ -12,6 +12,40 @@ const COLLECTIONS = [
 const PRODUCTS = [
   {
     "id": 1,
+    "cat": "lingerie",
+    "name": "Rayson Ensemble Lingerie Sexy Dentelle Femme Soutien Gorg...",
+    "sub": "Marque · Rayson",
+    "price": "11,99 €",
+    "was": "14,99 €",
+    "off": "-20%",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#8b1d2c",
+    "asin": "B0GY4PQ7RY",
+    "image": "https://m.media-amazon.com/images/I/411Fz+G3sTL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0GY4PQ7RY?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
+    "id": 2,
+    "cat": "lingerie",
+    "name": "JFAN Ensembles de Lingerie pour Femmes 2 Pièces Push up s...",
+    "sub": "Marque · JFAN",
+    "price": "9,99 €",
+    "was": "11,99 €",
+    "off": "-17%",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#8b1d2c",
+    "asin": "B0GXZ39Y5X",
+    "image": "https://m.media-amazon.com/images/I/41yvAtpjO3L._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0GXZ39Y5X?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
+    "id": 3,
     "cat": "lingerie",
     "name": "Avidlove Sexy Ensemble de Lingerie pour Femme Dentelle Bo...",
     "sub": "Marque · Avidlove",
@@ -26,40 +60,6 @@ const PRODUCTS = [
     "asin": "B0D639NBQ2",
     "image": "https://m.media-amazon.com/images/I/41gsZONCyUL._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B0D639NBQ2?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
-    "id": 2,
-    "cat": "lingerie",
-    "name": "Avidlove Sexy Ensemble de Lingerie pour Femme Dentelle Bo...",
-    "sub": "Marque · Avidlove",
-    "price": "24,99 €",
-    "was": "",
-    "off": "",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#8b1d2c",
-    "asin": "B0DH2KQQ9P",
-    "image": "https://m.media-amazon.com/images/I/41A9dPftREL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0DH2KQQ9P?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
-    "id": 3,
-    "cat": "lingerie",
-    "name": "Femme Dentelle Ensemble de Lingerie Sexy Transparente 2 P...",
-    "sub": "Marque · PARUPRUP",
-    "price": "8,99 €",
-    "was": "",
-    "off": "",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#8b1d2c",
-    "asin": "B0FZTWH9W9",
-    "image": "https://m.media-amazon.com/images/I/419RdnKYOvL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0FZTWH9W9?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 4,
@@ -98,23 +98,6 @@ const PRODUCTS = [
   {
     "id": 6,
     "cat": "nuit",
-    "name": "Marvmys Nuisette Femme Sexy Chemise de Nuit Dentelle Slin...",
-    "sub": "Marque · Marvmys",
-    "price": "10,99 €",
-    "was": "",
-    "off": "",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#3a2e1f",
-    "asin": "B09NGG1YQS",
-    "image": "https://m.media-amazon.com/images/I/41IhYqdelpL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B09NGG1YQS?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
-    "id": 7,
-    "cat": "nuit",
     "name": "Litherday Chemise de Nuit Femme Satin Nuisette Sling Robe...",
     "sub": "Marque · Litherday",
     "price": "11,99 €",
@@ -128,6 +111,23 @@ const PRODUCTS = [
     "asin": "B09C8CWKCH",
     "image": "https://m.media-amazon.com/images/I/41bw-OrW8+L._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B09C8CWKCH?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
+    "id": 7,
+    "cat": "nuit",
+    "name": "Vlazom Chemise Nuisette de Nuit Femme Satin Sexy Bretelle...",
+    "sub": "Marque · Vlazom",
+    "price": "9,99 €",
+    "was": "12,99 €",
+    "off": "-23%",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#3a2e1f",
+    "asin": "B07QH6H1HL",
+    "image": "https://m.media-amazon.com/images/I/3133PdQsV8L._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B07QH6H1HL?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 8,
@@ -185,9 +185,9 @@ const PRODUCTS = [
     "cat": "erotisme",
     "name": "JUDUKU OSMOOZ Red - Jeu Couple - Jeux de société - Jeu de...",
     "sub": "Marque · ATM Gaming",
-    "price": "15,99 €",
-    "was": "19,99 €",
-    "off": "-20%",
+    "price": "19,99 €",
+    "was": "",
+    "off": "",
     "rating": 0,
     "reviews": 0,
     "prime": false,
@@ -285,9 +285,9 @@ const PRODUCTS = [
   {
     "id": 17,
     "cat": "cadeaux",
-    "name": "YINUO LIGHT coffret cadeau de bougies parfumées pour femm...",
-    "sub": "Marque · YINUO LIGHT",
-    "price": "19,99 €",
+    "name": "Obsessive ensemble de lingerie guêpière avec string dans ...",
+    "sub": "Marque · Obsessive",
+    "price": "46,95 €",
     "was": "",
     "off": "",
     "rating": 0,
@@ -295,16 +295,16 @@ const PRODUCTS = [
     "prime": false,
     "tag": "",
     "color": "#5b1a26",
-    "asin": "B0D4YVYXJZ",
-    "image": "https://m.media-amazon.com/images/I/51yagU2JYmL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0D4YVYXJZ?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+    "asin": "B09RZTR4QN",
+    "image": "https://m.media-amazon.com/images/I/413AJIkQnPL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B09RZTR4QN?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 18,
     "cat": "cadeaux",
-    "name": "QWORK® Grande Boîte Cadeau Magnétique 33 x 25 x 12 cm – C...",
-    "sub": "Marque · QWORK",
-    "price": "17,55 €",
+    "name": "Obsessive ensemble de lingerie 2 pièces: guêpière ou cors...",
+    "sub": "Marque · Obsessive",
+    "price": "49,95 €",
     "was": "",
     "off": "",
     "rating": 0,
@@ -312,9 +312,9 @@ const PRODUCTS = [
     "prime": false,
     "tag": "",
     "color": "#5b1a26",
-    "asin": "B0GJ5FH37Z",
-    "image": "https://m.media-amazon.com/images/I/31cCP4aUXrL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0GJ5FH37Z?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+    "asin": "B09HXTPQV3",
+    "image": "https://m.media-amazon.com/images/I/41VCSxSy90L._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B09HXTPQV3?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   }
 ];
 
