@@ -1,5 +1,5 @@
 // data.jsx — Maison Léa: Amazon affiliate edition (généré automatiquement)
-const AMAZON_DATA_UPDATED_AT = "2026-08-12T05:47:32.563Z";
+const AMAZON_DATA_UPDATED_AT = "2026-08-13T05:49:23.443Z";
 const COLLECTIONS = [
   { id:'lingerie',   label:'Lingerie',          fr:'Soutiens-gorge, culottes, bodies', count: 4 },
   { id:'nuit',       label:'Nuit & loungewear', fr:'Nuisettes, peignoirs, kimonos',     count: 3 },
@@ -12,23 +12,6 @@ const COLLECTIONS = [
 const PRODUCTS = [
   {
     "id": 1,
-    "cat": "lingerie",
-    "name": "JFAN Ensembles de Lingerie pour Femmes 2 Pièces Push up s...",
-    "sub": "Marque · JFAN",
-    "price": "9,99 €",
-    "was": "11,99 €",
-    "off": "-17%",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#8b1d2c",
-    "asin": "B0GXZ39Y5X",
-    "image": "https://m.media-amazon.com/images/I/41yvAtpjO3L._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0GXZ39Y5X?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
-    "id": 2,
     "cat": "lingerie",
     "name": "Femme Dentelle Ensemble de Lingerie Sexy Transparente 2 P...",
     "sub": "Marque · PARUPRUP",
@@ -45,7 +28,7 @@ const PRODUCTS = [
     "url": "https://www.amazon.fr/dp/B0FZTL81YF?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
-    "id": 3,
+    "id": 2,
     "cat": "lingerie",
     "name": "Femme Dentelle Ensemble de Lingerie Sexy Transparente 2 P...",
     "sub": "Marque · PARUPRUP",
@@ -60,6 +43,23 @@ const PRODUCTS = [
     "asin": "B0FZTWH9W9",
     "image": "https://m.media-amazon.com/images/I/419RdnKYOvL._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B0FZTWH9W9?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
+    "id": 3,
+    "cat": "lingerie",
+    "name": "Rayson Ensemble Lingerie Sexy Dentelle Femme Soutien Gorg...",
+    "sub": "Marque · Rayson",
+    "price": "11,99 €",
+    "was": "14,99 €",
+    "off": "-20%",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#8b1d2c",
+    "asin": "B0GY4GJ1YS",
+    "image": "https://m.media-amazon.com/images/I/41m-E-1RR2L._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0GY4GJ1YS?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 4,
@@ -285,6 +285,23 @@ const PRODUCTS = [
   {
     "id": 17,
     "cat": "cadeaux",
+    "name": "TAHJOS Ensemble Lingerie Taille XXL pour Femmes Curvy – B...",
+    "sub": "Marque · TAHJOS",
+    "price": "9,99 €",
+    "was": "",
+    "off": "",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#5b1a26",
+    "asin": "B0H53945FQ",
+    "image": "https://m.media-amazon.com/images/I/414297wlfoL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0H53945FQ?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
+    "id": 18,
+    "cat": "cadeaux",
     "name": "Obsessive ensemble de lingerie guêpière avec string dans ...",
     "sub": "Marque · Obsessive",
     "price": "46,95 €",
@@ -298,23 +315,6 @@ const PRODUCTS = [
     "asin": "B09RZTR4QN",
     "image": "https://m.media-amazon.com/images/I/413AJIkQnPL._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B09RZTR4QN?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
-    "id": 18,
-    "cat": "cadeaux",
-    "name": "Obsessive ensemble de lingerie 2 pièces: guêpière ou cors...",
-    "sub": "Marque · Obsessive",
-    "price": "49,95 €",
-    "was": "",
-    "off": "",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#5b1a26",
-    "asin": "B09HXTPQV3",
-    "image": "https://m.media-amazon.com/images/I/41VCSxSy90L._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B09HXTPQV3?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   }
 ];
 
