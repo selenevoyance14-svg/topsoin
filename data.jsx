@@ -1,5 +1,5 @@
 // data.jsx — Maison Léa: Amazon affiliate edition (généré automatiquement)
-const AMAZON_DATA_UPDATED_AT = "2026-08-14T05:47:20.785Z";
+const AMAZON_DATA_UPDATED_AT = "2026-08-15T04:48:30.829Z";
 const COLLECTIONS = [
   { id:'lingerie',   label:'Lingerie',          fr:'Soutiens-gorge, culottes, bodies', count: 4 },
   { id:'nuit',       label:'Nuit & loungewear', fr:'Nuisettes, peignoirs, kimonos',     count: 3 },
@@ -30,40 +30,6 @@ const PRODUCTS = [
   {
     "id": 2,
     "cat": "lingerie",
-    "name": "Femme Dentelle Ensemble de Lingerie Sexy Transparente 2 P...",
-    "sub": "Marque · PARUPRUP",
-    "price": "8,99 €",
-    "was": "",
-    "off": "",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#8b1d2c",
-    "asin": "B0FZTL81YF",
-    "image": "https://m.media-amazon.com/images/I/41DGJFSe-xL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0FZTL81YF?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
-    "id": 3,
-    "cat": "lingerie",
-    "name": "Femme Dentelle Ensemble de Lingerie Sexy Transparente 2 P...",
-    "sub": "Marque · PARUPRUP",
-    "price": "9,99 €",
-    "was": "",
-    "off": "",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#8b1d2c",
-    "asin": "B0FZTWH9W9",
-    "image": "https://m.media-amazon.com/images/I/419RdnKYOvL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0FZTWH9W9?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
-    "id": 4,
-    "cat": "lingerie",
     "name": "Avidlove Sexy Ensemble de Lingerie pour Femme Dentelle Bo...",
     "sub": "Marque · Avidlove",
     "price": "24,99 €",
@@ -77,6 +43,40 @@ const PRODUCTS = [
     "asin": "B0DH2KQQ9P",
     "image": "https://m.media-amazon.com/images/I/41A9dPftREL._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B0DH2KQQ9P?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
+    "id": 3,
+    "cat": "lingerie",
+    "name": "Femme Dentelle Ensemble de Lingerie Sexy Transparente 2 P...",
+    "sub": "Marque · PARUPRUP",
+    "price": "7,99 €",
+    "was": "",
+    "off": "",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#8b1d2c",
+    "asin": "B0FZTNPMFB",
+    "image": "https://m.media-amazon.com/images/I/41Xhfhg+alL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0FZTNPMFB?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
+    "id": 4,
+    "cat": "lingerie",
+    "name": "JFAN Ensembles de Lingerie pour Femmes 2 Pièces Push up s...",
+    "sub": "Marque · JFAN",
+    "price": "9,99 €",
+    "was": "11,99 €",
+    "off": "-17%",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#8b1d2c",
+    "asin": "B0GXZ39Y5X",
+    "image": "https://m.media-amazon.com/images/I/41yvAtpjO3L._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0GXZ39Y5X?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 5,
@@ -98,23 +98,6 @@ const PRODUCTS = [
   {
     "id": 6,
     "cat": "nuit",
-    "name": "Vlazom Chemise Nuisette de Nuit Femme Satin Sexy Bretelle...",
-    "sub": "Marque · Vlazom",
-    "price": "9,99 €",
-    "was": "12,99 €",
-    "off": "-23%",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#3a2e1f",
-    "asin": "B07QH6H1HL",
-    "image": "https://m.media-amazon.com/images/I/3133PdQsV8L._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B07QH6H1HL?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
-    "id": 7,
-    "cat": "nuit",
     "name": "Litherday Chemise de Nuit Femme Satin Nuisette Sling Robe...",
     "sub": "Marque · Litherday",
     "price": "11,99 €",
@@ -128,6 +111,23 @@ const PRODUCTS = [
     "asin": "B09C8CWKCH",
     "image": "https://m.media-amazon.com/images/I/41bw-OrW8+L._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B09C8CWKCH?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
+    "id": 7,
+    "cat": "nuit",
+    "name": "Lovasy Nuisette Femme Satin Spaghetti Nuisette en Soie po...",
+    "sub": "Marque · Lovasy",
+    "price": "9,69 €",
+    "was": "10,79 €",
+    "off": "-10%",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#3a2e1f",
+    "asin": "B0B92Y1P19",
+    "image": "https://m.media-amazon.com/images/I/31bpGqsDtsL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0B92Y1P19?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 8,
@@ -166,19 +166,19 @@ const PRODUCTS = [
   {
     "id": 10,
     "cat": "sensualite",
-    "name": "Unikrealer Rabbit Vibromasseurs Feminin Clitoridien Sexto...",
-    "sub": "Marque · Unikrealer",
-    "price": "23,95 €",
-    "was": "",
-    "off": "",
+    "name": "Vibromasseur Bullet Sex Toys Femme - 35 dB Ultra-Silencie...",
+    "sub": "Marque · DAZINER",
+    "price": "9,99 €",
+    "was": "12,99 €",
+    "off": "-23%",
     "rating": 0,
     "reviews": 0,
     "prime": false,
     "tag": "",
     "color": "#1a1a1a",
-    "asin": "B0F1CKJ5Q1",
-    "image": "https://m.media-amazon.com/images/I/31N264dHuwL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0F1CKJ5Q1?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+    "asin": "B0GRGK1MQB",
+    "image": "https://m.media-amazon.com/images/I/41GOvrTQsjL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0GRGK1MQB?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 11,
@@ -285,23 +285,6 @@ const PRODUCTS = [
   {
     "id": 17,
     "cat": "cadeaux",
-    "name": "TAHJOS Ensemble Lingerie Taille XXL pour Femmes Curvy – B...",
-    "sub": "Marque · TAHJOS",
-    "price": "9,99 €",
-    "was": "",
-    "off": "",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#5b1a26",
-    "asin": "B0H53945FQ",
-    "image": "https://m.media-amazon.com/images/I/414297wlfoL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0H53945FQ?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
-    "id": 18,
-    "cat": "cadeaux",
     "name": "Obsessive ensemble de lingerie guêpière avec string dans ...",
     "sub": "Marque · Obsessive",
     "price": "46,95 €",
@@ -315,6 +298,23 @@ const PRODUCTS = [
     "asin": "B09RZTR4QN",
     "image": "https://m.media-amazon.com/images/I/413AJIkQnPL._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B09RZTR4QN?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
+    "id": 18,
+    "cat": "cadeaux",
+    "name": "TAHJOS Ensemble Lingerie Taille XXL pour Femmes Curvy – B...",
+    "sub": "Marque · TAHJOS",
+    "price": "9,99 €",
+    "was": "",
+    "off": "",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#5b1a26",
+    "asin": "B0H53945FQ",
+    "image": "https://m.media-amazon.com/images/I/414297wlfoL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0H53945FQ?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   }
 ];
 
