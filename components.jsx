@@ -199,7 +199,7 @@ function Hero() {
       </div>
 
       {/* Right: Léa portrait */}
-      <div style={{position:'relative', minHeight:680}}>
+      <div style={{position:'relative', minHeight:570}}>
         <div style={{
           position:'absolute', inset:0, borderRadius:8, overflow:'hidden',
           background:'#3a2e26'
