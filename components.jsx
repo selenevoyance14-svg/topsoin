@@ -84,7 +84,7 @@ function Header({ favCount = 0 }) {
           ))}
         </nav>
 
-        <a href="#" className="serif" style={{
+        <a href="/" className="serif" aria-label="Maison Léa, accueil" style={{
           fontSize:30, color:'var(--ink)', lineHeight:.9, textAlign:'center',
           display:'flex', flexDirection:'column', alignItems:'center'
         }}>
@@ -95,10 +95,10 @@ function Header({ favCount = 0 }) {
         </a>
 
         <div style={{display:'flex', justifyContent:'flex-end', gap:18, alignItems:'center'}}>
-          <a href="#" style={{fontSize:13, color:'var(--ink-2)'}}>Le Journal</a>
-          <a href="#" style={{fontSize:13, color:'var(--ink-2)'}}>Conseils</a>
-          <button style={iconBtn}>⌕</button>
-          <button style={{...iconBtn, position:'relative'}}>
+          <a href="/journal/" style={{fontSize:13, color:'var(--ink-2)'}}>Le Journal</a>
+          <a href="/journal/" style={{fontSize:13, color:'var(--ink-2)'}}>Conseils</a>
+          <a href="/journal/" aria-label="Rechercher dans les guides" title="Rechercher dans les guides" style={iconBtn}>⌕</a>
+          <a href="#produits" aria-label="Voir la sélection sauvegardée" title="Voir la sélection" style={{...iconBtn, position:'relative'}}>
             ♡
             {favCount > 0 && (
               <span style={{
@@ -107,11 +107,11 @@ function Header({ favCount = 0 }) {
                 display:'flex', alignItems:'center', justifyContent:'center', padding:'0 4px'
               }}>{favCount}</span>
             )}
-          </button>
-          <a href="https://www.amazon.fr/?tag=lebrunnathali-21" target="_blank" rel="sponsored noopener nofollow" style={{
+          </a>
+          <a href="#produits" style={{
             padding:'8px 14px', background:'#febd69', color:'#0f1111',
             borderRadius:999, fontSize:12, fontWeight:600
-          }}>Voir sur Amazon →</a>
+          }}>Voir la sélection →</a>
         </div>
       </div>
     </header>
@@ -156,6 +156,22 @@ function Hero() {
           <div style={{display:'flex', gap:12, flexWrap:'wrap'}}>
             <a href="#produits" style={{...btnPrimary, display:'inline-flex', alignItems:'center', textDecoration:'none'}}>Découvrir la sélection →</a>
             <a href="/journal/" style={{...btnGhost, display:'inline-flex', alignItems:'center', textDecoration:'none'}}>Le journal de Léa</a>
+          </div>
+
+          <div style={{marginTop:24}}>
+            <div className="smallcaps" style={{fontSize:9, color:'var(--muted)', marginBottom:10}}>Guides d’achat populaires</div>
+            <div style={{display:'flex', gap:8, flexWrap:'wrap'}}>
+              {[
+                ['Lingerie', '/journal/meilleure-lingerie-selection-comparatif.html'],
+                ['Pyjamas & nuisettes', '/journal/meilleur-pyjama-nuisette-comparatif.html'],
+                ['Coffrets couple', '/journal/meilleurs-coffrets-cadeaux-couple-comparatif.html'],
+              ].map(([label, href]) => (
+                <a key={href} href={href} style={{
+                  padding:'8px 12px', border:'1px solid var(--line)', borderRadius:999,
+                  fontSize:11, fontWeight:600, color:'var(--ink-2)', background:'rgba(251,246,237,.55)'
+                }}>{label} →</a>
+              ))}
+            </div>
           </div>
 
           {/* Informations sur la sélection */}
