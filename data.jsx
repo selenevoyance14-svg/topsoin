@@ -1,5 +1,5 @@
 // data.jsx — Maison Léa: Amazon affiliate edition (généré automatiquement)
-const AMAZON_DATA_UPDATED_AT = "2026-08-17T04:59:08.205Z";
+const AMAZON_DATA_UPDATED_AT = "2026-08-18T04:53:31.363Z";
 const COLLECTIONS = [
   { id:'lingerie',   label:'Lingerie',          fr:'Soutiens-gorge, culottes, bodies', count: 4 },
   { id:'nuit',       label:'Nuit & loungewear', fr:'Nuisettes, peignoirs, kimonos',     count: 3 },
@@ -64,19 +64,19 @@ const PRODUCTS = [
   {
     "id": 4,
     "cat": "lingerie",
-    "name": "JFAN Ensembles de Lingerie pour Femmes 2 Pièces Push up s...",
-    "sub": "Marque · JFAN",
-    "price": "9,99 €",
-    "was": "11,99 €",
-    "off": "-17%",
+    "name": "ROSVAJFY Ensemble de Lingerie Sexy pour Femme en Dentelle...",
+    "sub": "Marque · ROSVAJFY",
+    "price": "11,99 €",
+    "was": "",
+    "off": "",
     "rating": 0,
     "reviews": 0,
     "prime": false,
     "tag": "",
     "color": "#8b1d2c",
-    "asin": "B0GXZ39Y5X",
-    "image": "https://m.media-amazon.com/images/I/41yvAtpjO3L._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0GXZ39Y5X?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+    "asin": "B0D7ZRXC5J",
+    "image": "https://m.media-amazon.com/images/I/417Whbn2Q+L._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0D7ZRXC5J?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 5,
@@ -132,9 +132,9 @@ const PRODUCTS = [
   {
     "id": 8,
     "cat": "sensualite",
-    "name": "Vibromasseurs Sex Toýs Femme, 3 IN 1 Gode Vibro-Masseur S...",
-    "sub": "Marque · Eherson",
-    "price": "39,99 €",
+    "name": "Godemichets Gode Vibro-masseur va et Vient, 20cm Gode Ven...",
+    "sub": "Marque · Cosyfun",
+    "price": "25,99 €",
     "was": "",
     "off": "",
     "rating": 0,
@@ -142,18 +142,35 @@ const PRODUCTS = [
     "prime": false,
     "tag": "",
     "color": "#1a1a1a",
-    "asin": "B0D25MZT4T",
-    "image": "https://m.media-amazon.com/images/I/41IVUQRhDhL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0D25MZT4T?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+    "asin": "B0FF9R919P",
+    "image": "https://m.media-amazon.com/images/I/41-5OkX47fL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0FF9R919P?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 9,
     "cat": "sensualite",
-    "name": "Unikrealer Rabbit Vibromasseurs Feminin Clitoridien Sexto...",
-    "sub": "Marque · Unikrealer",
-    "price": "23,95 €",
+    "name": "Sex Toys Vibromasseur Oeuf Vibrant Femme à Distance, Sex ...",
+    "sub": "Marque · Kaiagame",
+    "price": "19,99 €",
     "was": "",
     "off": "",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#1a1a1a",
+    "asin": "B0CRKL35YT",
+    "image": "https://m.media-amazon.com/images/I/41kKstqk4pL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0CRKL35YT?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
+    "id": 10,
+    "cat": "sensualite",
+    "name": "Unikrealer Rabbit Vibromasseurs Feminin Clitoridien Sexto...",
+    "sub": "Marque · Unikrealer",
+    "price": "21,99 €",
+    "was": "23,99 €",
+    "off": "-8%",
     "rating": 0,
     "reviews": 0,
     "prime": false,
@@ -162,23 +179,6 @@ const PRODUCTS = [
     "asin": "B0F1CKJ5Q1",
     "image": "https://m.media-amazon.com/images/I/31N264dHuwL._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B0F1CKJ5Q1?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
-    "id": 10,
-    "cat": "sensualite",
-    "name": "Sex Toys Femme Clitoridien I Vibro-masseur Silencieux 10 ...",
-    "sub": "Marque · Sensuelle Bliss",
-    "price": "15,99 €",
-    "was": "22,90 €",
-    "off": "-30%",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#1a1a1a",
-    "asin": "B0FWRLMN4Y",
-    "image": "https://m.media-amazon.com/images/I/419uiSWhxYL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0FWRLMN4Y?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 11,
@@ -217,9 +217,9 @@ const PRODUCTS = [
   {
     "id": 13,
     "cat": "erotisme",
-    "name": "Dimoi Jeu de Couple 240 Cartes pour entamer des Conversat...",
-    "sub": "Marque · Tailemi",
-    "price": "19,99 €",
+    "name": "JUDUKU Jeu Couple - OSMOOZ Couple - 180 Cartes fabriquées...",
+    "sub": "Marque · ATM Gaming",
+    "price": "19,88 €",
     "was": "",
     "off": "",
     "rating": 0,
@@ -227,9 +227,9 @@ const PRODUCTS = [
     "prime": false,
     "tag": "",
     "color": "#3a1a26",
-    "asin": "B08DG3539L",
-    "image": "https://m.media-amazon.com/images/I/31E1g1BoyqL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B08DG3539L?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+    "asin": "B0926YDQNS",
+    "image": "https://m.media-amazon.com/images/I/41cUNIWxbHL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0926YDQNS?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 14,
@@ -268,7 +268,7 @@ const PRODUCTS = [
   {
     "id": 16,
     "cat": "soins",
-    "name": "MY LUBIE - Lubrifiant Naturel à Base d'Eau avec Calendula...",
+    "name": "MY LUBIE - Lubrifiant Naturel à Base d'Eau Riche avec Alo...",
     "sub": "Marque · My Lubie",
     "price": "15,50 €",
     "was": "",
@@ -278,29 +278,12 @@ const PRODUCTS = [
     "prime": false,
     "tag": "",
     "color": "#c9a961",
-    "asin": "B08W3FNPVD",
-    "image": "https://m.media-amazon.com/images/I/317L97YgabL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B08W3FNPVD?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+    "asin": "B0D7PYG28R",
+    "image": "https://m.media-amazon.com/images/I/31sPV0Mx+fL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0D7PYG28R?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 17,
-    "cat": "cadeaux",
-    "name": "YINUO LIGHT coffret cadeau de bougies parfumées pour femm...",
-    "sub": "Marque · YINUO LIGHT",
-    "price": "19,99 €",
-    "was": "",
-    "off": "",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#5b1a26",
-    "asin": "B0D4YVYXJZ",
-    "image": "https://m.media-amazon.com/images/I/51yagU2JYmL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0D4YVYXJZ?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
-    "id": 18,
     "cat": "cadeaux",
     "name": "Obsessive ensemble de lingerie guêpière avec string dans ...",
     "sub": "Marque · Obsessive",
@@ -315,6 +298,23 @@ const PRODUCTS = [
     "asin": "B09RZTR4QN",
     "image": "https://m.media-amazon.com/images/I/413AJIkQnPL._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B09RZTR4QN?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
+    "id": 18,
+    "cat": "cadeaux",
+    "name": "Obsessive ensemble de lingerie guêpière avec string dans ...",
+    "sub": "Marque · Obsessive",
+    "price": "47,95 €",
+    "was": "",
+    "off": "",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#5b1a26",
+    "asin": "B09RZXHFMY",
+    "image": "https://m.media-amazon.com/images/I/413AJIkQnPL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B09RZXHFMY?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   }
 ];
 
