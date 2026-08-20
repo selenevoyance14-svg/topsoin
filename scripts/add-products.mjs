@@ -113,32 +113,32 @@ async function main() {
     // Nouveaux keywords (complémentaires aux 120 existants)
     const CATEGORIES = [
         {
-            id: "lingerie", color: "#8b1d2c", count: 8,
+            id: "lingerie", color: "#8b1d2c", count: 5,
             keywords: ["soutien-gorge sport femme", "culotte coton bio femme", "shapewear gainant", "lingerie grande taille", "string dentelle femme"],
             searchIndex: "Apparel",
         },
         {
-            id: "nuit", color: "#3a2e1f", count: 8,
+            id: "nuit", color: "#3a2e1f", count: 5,
             keywords: ["pyjama satin femme", "robe d'intérieur femme", "chemise de nuit longue", "chaussons femme cocooning", "nuisette plus size"],
             searchIndex: "Apparel",
         },
         {
-            id: "sensualite", color: "#1a1a1a", count: 8,
+            id: "sensualite", color: "#1a1a1a", count: 5,
             keywords: ["huile massage chauffante couple", "kit massage tantra", "anneau pour couple", "boules de geisha kegel", "stimulateur clitoridien"],
             searchIndex: "HealthPersonalCare",
         },
         {
-            id: "erotisme", color: "#3a1a26", count: 8,
+            id: "erotisme", color: "#3a1a26", count: 5,
             keywords: ["livre kamasutra moderne", "jeu carte couple intime", "menottes velours doux", "bandeau yeux satin couple", "carnet fantasmes"],
             searchIndex: "All",
         },
         {
-            id: "soins", color: "#c9a961", count: 8,
+            id: "soins", color: "#c9a961", count: 5,
             keywords: ["gel intime hydratant bio", "savon intime ph neutre", "bougie massage huile", "huile parfumée corps", "déodorant intime naturel"],
             searchIndex: "HealthPersonalCare",
         },
         {
-            id: "cadeaux", color: "#5b1a26", count: 8,
+            id: "cadeaux", color: "#5b1a26", count: 5,
             keywords: ["box couple saint valentin", "coffret cadeau femme cocooning", "coffret massage duo", "kit surprise anniversaire couple", "boîte cadeau lingerie"],
             searchIndex: "All",
         },
@@ -183,8 +183,8 @@ async function main() {
                         price: priceDisplay || "",
                         was: wasDisplay || "",
                         off,
-                        rating: 4.5,
-                        reviews: Math.floor(Math.random() * 800) + 50,
+                        rating: 0,
+                        reviews: 0,
                         prime,
                         tag: "",
                         color: cat.color,
