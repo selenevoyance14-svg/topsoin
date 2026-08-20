@@ -1,5 +1,5 @@
 // data.jsx — Maison Léa: Amazon affiliate edition (généré automatiquement)
-const AMAZON_DATA_UPDATED_AT = "2026-08-19T04:53:13.729Z";
+const AMAZON_DATA_UPDATED_AT = "2026-08-20T04:54:33.014Z";
 const COLLECTIONS = [
   { id:'lingerie',   label:'Lingerie',          fr:'Soutiens-gorge, culottes, bodies', count: 4 },
   { id:'nuit',       label:'Nuit & loungewear', fr:'Nuisettes, peignoirs, kimonos',     count: 3 },
@@ -47,9 +47,9 @@ const PRODUCTS = [
   {
     "id": 3,
     "cat": "lingerie",
-    "name": "ROSVAJFY Ensemble de Lingerie Sexy pour Femme en Dentelle...",
-    "sub": "Marque · ROSVAJFY",
-    "price": "11,99 €",
+    "name": "Femme Dentelle Ensemble de Lingerie Sexy Transparente 2 P...",
+    "sub": "Marque · PARUPRUP",
+    "price": "10,99 €",
     "was": "",
     "off": "",
     "rating": 0,
@@ -57,9 +57,9 @@ const PRODUCTS = [
     "prime": false,
     "tag": "",
     "color": "#8b1d2c",
-    "asin": "B0D7ZSQNYZ",
-    "image": "https://m.media-amazon.com/images/I/41jRXINDUQL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0D7ZSQNYZ?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+    "asin": "B0FZTL81YF",
+    "image": "https://m.media-amazon.com/images/I/41DGJFSe-xL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0FZTL81YF?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 4,
@@ -185,9 +185,9 @@ const PRODUCTS = [
     "cat": "erotisme",
     "name": "JUDUKU OSMOOZ Red - Jeu Couple - Jeux de société - Jeu de...",
     "sub": "Marque · ATM Gaming",
-    "price": "15,99 €",
+    "price": "13,54 €",
     "was": "19,99 €",
-    "off": "-20%",
+    "off": "-32%",
     "rating": 0,
     "reviews": 0,
     "prime": false,
@@ -219,9 +219,9 @@ const PRODUCTS = [
     "cat": "erotisme",
     "name": "JUDUKU Jeu Couple - OSMOOZ Couple - 180 Cartes fabriquées...",
     "sub": "Marque · ATM Gaming",
-    "price": "19,88 €",
-    "was": "",
-    "off": "",
+    "price": "17,44 €",
+    "was": "20,00 €",
+    "off": "-13%",
     "rating": 0,
     "reviews": 0,
     "prime": false,
@@ -234,9 +234,26 @@ const PRODUCTS = [
   {
     "id": 14,
     "cat": "soins",
-    "name": "Yum'Lube - Huile de Massage Comestible Érotique Vanille -...",
-    "sub": "Marque · Yum'Lube",
-    "price": "16,90 €",
+    "name": "Durex - Gel Lubrifiant 100% d'origine Naturel – Extra Sen...",
+    "sub": "Marque · Durex",
+    "price": "8,08 €",
+    "was": "8,81 €",
+    "off": "-8%",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#c9a961",
+    "asin": "B07V221CV1",
+    "image": "https://m.media-amazon.com/images/I/41U6dPj1rML._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B07V221CV1?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
+    "id": 15,
+    "cat": "soins",
+    "name": "Lubido Gel Lubrifiant Intime Original à Base d'Eau Sans P...",
+    "sub": "Marque · Lubido",
+    "price": "9,99 €",
     "was": "",
     "off": "",
     "rating": 0,
@@ -244,43 +261,26 @@ const PRODUCTS = [
     "prime": false,
     "tag": "",
     "color": "#c9a961",
-    "asin": "B0CNZDGLH4",
-    "image": "https://m.media-amazon.com/images/I/31-yipbCXTL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0CNZDGLH4?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
-    "id": 15,
-    "cat": "soins",
-    "name": "LOVEA - Huile de Massage Corps Multi-Usages - Monoï - Nou...",
-    "sub": "Marque · Lovea",
-    "price": "4,99 €",
-    "was": "5,49 €",
-    "off": "-9%",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#c9a961",
-    "asin": "B0BYF9L893",
-    "image": "https://m.media-amazon.com/images/I/31B+UKdusgL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0BYF9L893?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+    "asin": "B00TU70ZFE",
+    "image": "https://m.media-amazon.com/images/I/41i9MD+3v9L._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B00TU70ZFE?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 16,
     "cat": "soins",
-    "name": "Huile de Massage Monoï, Relaxante et Aphrodisiaque, Hydra...",
-    "sub": "Marque · bleu & marine Bretania",
-    "price": "14,90 €",
-    "was": "15,42 €",
+    "name": "MY LUBIE - Lubrifiant Naturel à Base d'Eau avec Calendula...",
+    "sub": "Marque · My Lubie",
+    "price": "15,50 €",
+    "was": "",
     "off": "",
     "rating": 0,
     "reviews": 0,
     "prime": false,
     "tag": "",
     "color": "#c9a961",
-    "asin": "B01LBK1VIW",
-    "image": "https://m.media-amazon.com/images/I/41AfEk+-m3L._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B01LBK1VIW?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+    "asin": "B08W3FNPVD",
+    "image": "https://m.media-amazon.com/images/I/317L97YgabL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B08W3FNPVD?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 17,
@@ -302,9 +302,9 @@ const PRODUCTS = [
   {
     "id": 18,
     "cat": "cadeaux",
-    "name": "Obsessive ensemble de lingerie guêpière avec string dans ...",
+    "name": "Obsessive ensemble de lingerie 2 pièces: guêpière ou cors...",
     "sub": "Marque · Obsessive",
-    "price": "47,95 €",
+    "price": "49,95 €",
     "was": "",
     "off": "",
     "rating": 0,
@@ -312,9 +312,9 @@ const PRODUCTS = [
     "prime": false,
     "tag": "",
     "color": "#5b1a26",
-    "asin": "B09RZXHFMY",
-    "image": "https://m.media-amazon.com/images/I/413AJIkQnPL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B09RZXHFMY?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+    "asin": "B09HXTPQV3",
+    "image": "https://m.media-amazon.com/images/I/41VCSxSy90L._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B09HXTPQV3?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   }
 ];
 
