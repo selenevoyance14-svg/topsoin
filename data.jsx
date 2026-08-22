@@ -1,5 +1,5 @@
 // data.jsx — Maison Léa: Amazon affiliate edition (généré automatiquement)
-const AMAZON_DATA_UPDATED_AT = "2026-08-21T04:55:29.468Z";
+const AMAZON_DATA_UPDATED_AT = "2026-08-22T04:50:52.480Z";
 const COLLECTIONS = [
   { id:'lingerie',   label:'Lingerie',          fr:'Soutiens-gorge, culottes, bodies', count: 4 },
   { id:'nuit',       label:'Nuit & loungewear', fr:'Nuisettes, peignoirs, kimonos',     count: 3 },
@@ -47,6 +47,23 @@ const PRODUCTS = [
   {
     "id": 3,
     "cat": "lingerie",
+    "name": "Femme Dentelle Ensemble de Lingerie Sexy Transparente 2 P...",
+    "sub": "Marque · PARUPRUP",
+    "price": "10,99 €",
+    "was": "",
+    "off": "",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#8b1d2c",
+    "asin": "B0FZTL81YF",
+    "image": "https://m.media-amazon.com/images/I/41DGJFSe-xL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0FZTL81YF?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
+    "id": 4,
+    "cat": "lingerie",
     "name": "ROSVAJFY Ensemble de Lingerie Sexy pour Femme en Dentelle...",
     "sub": "Marque · ROSVAJFY",
     "price": "11,99 €",
@@ -60,23 +77,6 @@ const PRODUCTS = [
     "asin": "B0D7ZRXC5J",
     "image": "https://m.media-amazon.com/images/I/417Whbn2Q+L._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B0D7ZRXC5J?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
-    "id": 4,
-    "cat": "lingerie",
-    "name": "Femme Dentelle Ensemble de Lingerie Sexy Transparente 2 P...",
-    "sub": "Marque · PARUPRUP",
-    "price": "7,99 €",
-    "was": "",
-    "off": "",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#8b1d2c",
-    "asin": "B0FZTNPMFB",
-    "image": "https://m.media-amazon.com/images/I/41Xhfhg+alL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0FZTNPMFB?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 5,
@@ -132,22 +132,39 @@ const PRODUCTS = [
   {
     "id": 8,
     "cat": "sensualite",
-    "name": "Godemichets Gode Vibro-masseur va et Vient, 20cm Gode Ven...",
-    "sub": "Marque · Cosyfun",
-    "price": "25,99 €",
-    "was": "",
+    "name": "Vibromasseurs Sex Toýs Femme, 3 IN 1 Gode Vibro-Masseur S...",
+    "sub": "Marque · Eherson",
+    "price": "38,99 €",
+    "was": "39,99 €",
     "off": "",
     "rating": 0,
     "reviews": 0,
     "prime": false,
     "tag": "",
     "color": "#1a1a1a",
-    "asin": "B0FF9R919P",
-    "image": "https://m.media-amazon.com/images/I/41-5OkX47fL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0FF9R919P?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+    "asin": "B0D25MZT4T",
+    "image": "https://m.media-amazon.com/images/I/41IVUQRhDhL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0D25MZT4T?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 9,
+    "cat": "sensualite",
+    "name": "Sex Toys Femme Clitoridien I Vibro-masseur Silencieux 10 ...",
+    "sub": "Marque · Sensuelle Bliss",
+    "price": "15,99 €",
+    "was": "22,90 €",
+    "off": "-30%",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#1a1a1a",
+    "asin": "B0FWRLMN4Y",
+    "image": "https://m.media-amazon.com/images/I/419uiSWhxYL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0FWRLMN4Y?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
+    "id": 10,
     "cat": "sensualite",
     "name": "Unikrealer Rabbit Vibromasseurs Feminin Clitoridien Sexto...",
     "sub": "Marque · Unikrealer",
@@ -164,45 +181,28 @@ const PRODUCTS = [
     "url": "https://www.amazon.fr/dp/B0F1CKJ5Q1?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
-    "id": 10,
-    "cat": "sensualite",
-    "name": "Gode Vibromasseurs Feminin Clitoridien va et vient APP Si...",
-    "sub": "Marque · Cacuola",
-    "price": "21,99 €",
-    "was": "",
-    "off": "",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#1a1a1a",
-    "asin": "B0FDQ1JTS4",
-    "image": "https://m.media-amazon.com/images/I/213eknRvC7L._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0FDQ1JTS4?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
     "id": 11,
     "cat": "erotisme",
-    "name": "Festi'Couple - Cap ou pas cap: 80 cartes pour jouer à deux",
-    "sub": "Marque · MERCILESLIVRES",
-    "price": "5,95 €",
-    "was": "",
-    "off": "",
+    "name": "JUDUKU OSMOOZ Red - Jeu Couple - Jeux de société - Jeu de...",
+    "sub": "Marque · ATM Gaming",
+    "price": "15,99 €",
+    "was": "19,99 €",
+    "off": "-20%",
     "rating": 0,
     "reviews": 0,
     "prime": false,
     "tag": "",
     "color": "#3a1a26",
-    "asin": "2383559946",
-    "image": "https://m.media-amazon.com/images/I/41bIGG5DG9L._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/2383559946?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+    "asin": "B0BF6192CK",
+    "image": "https://m.media-amazon.com/images/I/41ZbS5+L5jL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0BF6192CK?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 12,
     "cat": "erotisme",
-    "name": "CARTA SUTRA Jeux de Hasard – Jeu Couple - Jeux de société...",
+    "name": "CARTA SUTRA - Jeu Couple - Jeux de société - Jeu de Carte...",
     "sub": "Marque · CARTA SUTRA",
-    "price": "19,69 €",
+    "price": "24,99 €",
     "was": "",
     "off": "",
     "rating": 0,
@@ -210,16 +210,16 @@ const PRODUCTS = [
     "prime": false,
     "tag": "",
     "color": "#3a1a26",
-    "asin": "B0FCJ5LGG3",
-    "image": "https://m.media-amazon.com/images/I/41QEJpdK7mL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0FCJ5LGG3?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+    "asin": "B09CB784JD",
+    "image": "https://m.media-amazon.com/images/I/41hfFcN33nL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B09CB784JD?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 13,
     "cat": "erotisme",
-    "name": "CARTA SUTRA Jeu Couple - Jeux de Rôle – Jeux de société -...",
-    "sub": "Marque · CARTA SUTRA",
-    "price": "19,69 €",
+    "name": "JUDUKU Jeu Couple - OSMOOZ Couple - 180 Cartes fabriquées...",
+    "sub": "Marque · ATM Gaming",
+    "price": "19,88 €",
     "was": "",
     "off": "",
     "rating": 0,
@@ -227,9 +227,9 @@ const PRODUCTS = [
     "prime": false,
     "tag": "",
     "color": "#3a1a26",
-    "asin": "B0FCJDQFZX",
-    "image": "https://m.media-amazon.com/images/I/51jfV+I5NkL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0FCJDQFZX?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+    "asin": "B0926YDQNS",
+    "image": "https://m.media-amazon.com/images/I/41cUNIWxbHL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0926YDQNS?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 14,
@@ -285,6 +285,23 @@ const PRODUCTS = [
   {
     "id": 17,
     "cat": "cadeaux",
+    "name": "RSLOVE Lingerie Sexy pour Femme Soutien-Gorge et Culotte ...",
+    "sub": "Marque · RSLOVE",
+    "price": "23,99 €",
+    "was": "35,99 €",
+    "off": "-33%",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#5b1a26",
+    "asin": "B08VFHJC2K",
+    "image": "https://m.media-amazon.com/images/I/41eQ5iqqXPL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B08VFHJC2K?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
+    "id": 18,
+    "cat": "cadeaux",
     "name": "Obsessive ensemble de lingerie guêpière avec string dans ...",
     "sub": "Marque · Obsessive",
     "price": "46,95 €",
@@ -298,23 +315,6 @@ const PRODUCTS = [
     "asin": "B09RZTR4QN",
     "image": "https://m.media-amazon.com/images/I/413AJIkQnPL._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B09RZTR4QN?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
-    "id": 18,
-    "cat": "cadeaux",
-    "name": "Obsessive ensemble de lingerie guêpière avec string dans ...",
-    "sub": "Marque · Obsessive",
-    "price": "47,95 €",
-    "was": "",
-    "off": "",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#5b1a26",
-    "asin": "B09RZXHFMY",
-    "image": "https://m.media-amazon.com/images/I/413AJIkQnPL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B09RZXHFMY?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   }
 ];
 
