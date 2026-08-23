@@ -1,5 +1,5 @@
 // data.jsx — Maison Léa: Amazon affiliate edition (généré automatiquement)
-const AMAZON_DATA_UPDATED_AT = "2026-08-22T04:50:52.480Z";
+const AMAZON_DATA_UPDATED_AT = "2026-08-23T04:53:05.096Z";
 const COLLECTIONS = [
   { id:'lingerie',   label:'Lingerie',          fr:'Soutiens-gorge, culottes, bodies', count: 4 },
   { id:'nuit',       label:'Nuit & loungewear', fr:'Nuisettes, peignoirs, kimonos',     count: 3 },
@@ -49,7 +49,7 @@ const PRODUCTS = [
     "cat": "lingerie",
     "name": "Femme Dentelle Ensemble de Lingerie Sexy Transparente 2 P...",
     "sub": "Marque · PARUPRUP",
-    "price": "10,99 €",
+    "price": "9,99 €",
     "was": "",
     "off": "",
     "rating": 0,
@@ -57,9 +57,9 @@ const PRODUCTS = [
     "prime": false,
     "tag": "",
     "color": "#8b1d2c",
-    "asin": "B0FZTL81YF",
-    "image": "https://m.media-amazon.com/images/I/41DGJFSe-xL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0FZTL81YF?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+    "asin": "B0FZTNPMFB",
+    "image": "https://m.media-amazon.com/images/I/41Xhfhg+alL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0FZTNPMFB?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 4,
@@ -98,23 +98,6 @@ const PRODUCTS = [
   {
     "id": 6,
     "cat": "nuit",
-    "name": "Marvmys Nuisette Femme Sexy Chemise de Nuit Dentelle Slin...",
-    "sub": "Marque · Marvmys",
-    "price": "10,99 €",
-    "was": "",
-    "off": "",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#3a2e1f",
-    "asin": "B09NGG1YQS",
-    "image": "https://m.media-amazon.com/images/I/41IhYqdelpL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B09NGG1YQS?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
-    "id": 7,
-    "cat": "nuit",
     "name": "Lovasy Nuisette Femme Satin Spaghetti Nuisette en Soie po...",
     "sub": "Marque · Lovasy",
     "price": "10,79 €",
@@ -130,38 +113,55 @@ const PRODUCTS = [
     "url": "https://www.amazon.fr/dp/B0B92Y1P19?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
+    "id": 7,
+    "cat": "nuit",
+    "name": "Bresdk Chemise Homme de Nuit en Satin pour Femme Col en V...",
+    "sub": "Marque · Bresdk",
+    "price": "13,99 €",
+    "was": "",
+    "off": "",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#3a2e1f",
+    "asin": "B0DBQ39GCQ",
+    "image": "https://m.media-amazon.com/images/I/41npZvXa1zL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0DBQ39GCQ?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
     "id": 8,
     "cat": "sensualite",
-    "name": "Vibromasseurs Sex Toýs Femme, 3 IN 1 Gode Vibro-Masseur S...",
-    "sub": "Marque · Eherson",
-    "price": "38,99 €",
-    "was": "39,99 €",
+    "name": "Godemichets Gode Vibro-masseur va et Vient, 20cm Gode Ven...",
+    "sub": "Marque · Cosyfun",
+    "price": "25,99 €",
+    "was": "",
     "off": "",
     "rating": 0,
     "reviews": 0,
     "prime": false,
     "tag": "",
     "color": "#1a1a1a",
-    "asin": "B0D25MZT4T",
-    "image": "https://m.media-amazon.com/images/I/41IVUQRhDhL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0D25MZT4T?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+    "asin": "B0FF9R919P",
+    "image": "https://m.media-amazon.com/images/I/41-5OkX47fL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0FF9R919P?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 9,
     "cat": "sensualite",
-    "name": "Sex Toys Femme Clitoridien I Vibro-masseur Silencieux 10 ...",
-    "sub": "Marque · Sensuelle Bliss",
-    "price": "15,99 €",
-    "was": "22,90 €",
-    "off": "-30%",
+    "name": "Vibromasseur pour Femme,Clitoridien Puissant Silencieux P...",
+    "sub": "Marque · Aphaca",
+    "price": "21,99 €",
+    "was": "",
+    "off": "",
     "rating": 0,
     "reviews": 0,
     "prime": false,
     "tag": "",
     "color": "#1a1a1a",
-    "asin": "B0FWRLMN4Y",
-    "image": "https://m.media-amazon.com/images/I/419uiSWhxYL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0FWRLMN4Y?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+    "asin": "B07HJ419Y4",
+    "image": "https://m.media-amazon.com/images/I/31d8ETR3rmL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B07HJ419Y4?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 10,
@@ -285,23 +285,6 @@ const PRODUCTS = [
   {
     "id": 17,
     "cat": "cadeaux",
-    "name": "RSLOVE Lingerie Sexy pour Femme Soutien-Gorge et Culotte ...",
-    "sub": "Marque · RSLOVE",
-    "price": "23,99 €",
-    "was": "35,99 €",
-    "off": "-33%",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#5b1a26",
-    "asin": "B08VFHJC2K",
-    "image": "https://m.media-amazon.com/images/I/41eQ5iqqXPL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B08VFHJC2K?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
-    "id": 18,
-    "cat": "cadeaux",
     "name": "Obsessive ensemble de lingerie guêpière avec string dans ...",
     "sub": "Marque · Obsessive",
     "price": "46,95 €",
@@ -315,6 +298,23 @@ const PRODUCTS = [
     "asin": "B09RZTR4QN",
     "image": "https://m.media-amazon.com/images/I/413AJIkQnPL._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B09RZTR4QN?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
+    "id": 18,
+    "cat": "cadeaux",
+    "name": "TAHJOS Ensemble Lingerie Taille XXL pour Femmes Curvy – B...",
+    "sub": "Marque · TAHJOS",
+    "price": "9,99 €",
+    "was": "",
+    "off": "",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#5b1a26",
+    "asin": "B0H53945FQ",
+    "image": "https://m.media-amazon.com/images/I/414297wlfoL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0H53945FQ?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   }
 ];
 
