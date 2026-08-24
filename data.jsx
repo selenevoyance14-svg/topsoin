@@ -1,12 +1,12 @@
 // data.jsx — Maison Léa: Amazon affiliate edition (généré automatiquement)
-const AMAZON_DATA_UPDATED_AT = "2026-08-23T04:53:05.096Z";
+const AMAZON_DATA_UPDATED_AT = "2026-08-24T05:02:50.630Z";
 const COLLECTIONS = [
   { id:'lingerie',   label:'Lingerie',          fr:'Soutiens-gorge, culottes, bodies', count: 4 },
   { id:'nuit',       label:'Nuit & loungewear', fr:'Nuisettes, peignoirs, kimonos',     count: 3 },
   { id:'sensualite', label:'Sensualité',        fr:'Accessoires intimes & jeux',         count: 3, adult:true },
   { id:'erotisme',   label:'Érotisme',          fr:'Lecture, jeux coquins, fantaisies',  count: 3, adult:true },
   { id:'soins',      label:'Soins intimes',     fr:'Lubrifiants, huiles, bougies',       count: 3 },
-  { id:'cadeaux',    label:'Coffrets',          fr:'Édition limitée, idées cadeaux',    count: 2 },
+  { id:'cadeaux',    label:'Coffrets',          fr:'Édition limitée, idées cadeaux',    count: 0 },
 ];
 
 const PRODUCTS = [
@@ -15,9 +15,9 @@ const PRODUCTS = [
     "cat": "lingerie",
     "name": "Avidlove Sexy Ensemble de Lingerie pour Femme Dentelle Bo...",
     "sub": "Marque · Avidlove",
-    "price": "19,54 €",
-    "was": "24,99 €",
-    "off": "-22%",
+    "price": "24,99 €",
+    "was": "",
+    "off": "",
     "rating": 0,
     "reviews": 0,
     "prime": false,
@@ -47,23 +47,6 @@ const PRODUCTS = [
   {
     "id": 3,
     "cat": "lingerie",
-    "name": "Femme Dentelle Ensemble de Lingerie Sexy Transparente 2 P...",
-    "sub": "Marque · PARUPRUP",
-    "price": "9,99 €",
-    "was": "",
-    "off": "",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#8b1d2c",
-    "asin": "B0FZTNPMFB",
-    "image": "https://m.media-amazon.com/images/I/41Xhfhg+alL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0FZTNPMFB?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
-    "id": 4,
-    "cat": "lingerie",
     "name": "ROSVAJFY Ensemble de Lingerie Sexy pour Femme en Dentelle...",
     "sub": "Marque · ROSVAJFY",
     "price": "11,99 €",
@@ -77,6 +60,23 @@ const PRODUCTS = [
     "asin": "B0D7ZRXC5J",
     "image": "https://m.media-amazon.com/images/I/417Whbn2Q+L._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B0D7ZRXC5J?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
+    "id": 4,
+    "cat": "lingerie",
+    "name": "Femme Dentelle Ensemble de Lingerie Sexy Transparente 2 P...",
+    "sub": "Marque · PARUPRUP",
+    "price": "7,99 €",
+    "was": "",
+    "off": "",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#8b1d2c",
+    "asin": "B0FZTZ634P",
+    "image": "https://m.media-amazon.com/images/I/41DGJFSe-xL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0FZTZ634P?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 5,
@@ -115,9 +115,9 @@ const PRODUCTS = [
   {
     "id": 7,
     "cat": "nuit",
-    "name": "Bresdk Chemise Homme de Nuit en Satin pour Femme Col en V...",
-    "sub": "Marque · Bresdk",
-    "price": "13,99 €",
+    "name": "Marvmys Nuisette Femme Sexy Chemise de Nuit Dentelle Slin...",
+    "sub": "Marque · Marvmys",
+    "price": "10,99 €",
     "was": "",
     "off": "",
     "rating": 0,
@@ -125,9 +125,9 @@ const PRODUCTS = [
     "prime": false,
     "tag": "",
     "color": "#3a2e1f",
-    "asin": "B0DBQ39GCQ",
-    "image": "https://m.media-amazon.com/images/I/41npZvXa1zL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0DBQ39GCQ?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+    "asin": "B09NGG1YQS",
+    "image": "https://m.media-amazon.com/images/I/41IhYqdelpL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B09NGG1YQS?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 8,
@@ -149,23 +149,6 @@ const PRODUCTS = [
   {
     "id": 9,
     "cat": "sensualite",
-    "name": "Vibromasseur pour Femme,Clitoridien Puissant Silencieux P...",
-    "sub": "Marque · Aphaca",
-    "price": "21,99 €",
-    "was": "",
-    "off": "",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#1a1a1a",
-    "asin": "B07HJ419Y4",
-    "image": "https://m.media-amazon.com/images/I/31d8ETR3rmL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B07HJ419Y4?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
-    "id": 10,
-    "cat": "sensualite",
     "name": "Unikrealer Rabbit Vibromasseurs Feminin Clitoridien Sexto...",
     "sub": "Marque · Unikrealer",
     "price": "21,99 €",
@@ -181,13 +164,30 @@ const PRODUCTS = [
     "url": "https://www.amazon.fr/dp/B0F1CKJ5Q1?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
+    "id": 10,
+    "cat": "sensualite",
+    "name": "Vibromasseur pour Femme,Clitoridien Puissant Silencieux P...",
+    "sub": "Marque · Aphaca",
+    "price": "21,99 €",
+    "was": "",
+    "off": "",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#1a1a1a",
+    "asin": "B07HJ419Y4",
+    "image": "https://m.media-amazon.com/images/I/31d8ETR3rmL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B07HJ419Y4?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
     "id": 11,
     "cat": "erotisme",
     "name": "JUDUKU OSMOOZ Red - Jeu Couple - Jeux de société - Jeu de...",
     "sub": "Marque · ATM Gaming",
-    "price": "15,99 €",
+    "price": "14,99 €",
     "was": "19,99 €",
-    "off": "-20%",
+    "off": "-25%",
     "rating": 0,
     "reviews": 0,
     "prime": false,
@@ -219,9 +219,9 @@ const PRODUCTS = [
     "cat": "erotisme",
     "name": "JUDUKU Jeu Couple - OSMOOZ Couple - 180 Cartes fabriquées...",
     "sub": "Marque · ATM Gaming",
-    "price": "19,88 €",
-    "was": "",
-    "off": "",
+    "price": "14,99 €",
+    "was": "17,44 €",
+    "off": "-14%",
     "rating": 0,
     "reviews": 0,
     "prime": false,
@@ -281,40 +281,6 @@ const PRODUCTS = [
     "asin": "B00TU70ZFE",
     "image": "https://m.media-amazon.com/images/I/41i9MD+3v9L._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B00TU70ZFE?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
-    "id": 17,
-    "cat": "cadeaux",
-    "name": "Obsessive ensemble de lingerie guêpière avec string dans ...",
-    "sub": "Marque · Obsessive",
-    "price": "46,95 €",
-    "was": "",
-    "off": "",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#5b1a26",
-    "asin": "B09RZTR4QN",
-    "image": "https://m.media-amazon.com/images/I/413AJIkQnPL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B09RZTR4QN?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
-    "id": 18,
-    "cat": "cadeaux",
-    "name": "TAHJOS Ensemble Lingerie Taille XXL pour Femmes Curvy – B...",
-    "sub": "Marque · TAHJOS",
-    "price": "9,99 €",
-    "was": "",
-    "off": "",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#5b1a26",
-    "asin": "B0H53945FQ",
-    "image": "https://m.media-amazon.com/images/I/414297wlfoL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0H53945FQ?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   }
 ];
 
@@ -333,7 +299,7 @@ const EDITORIAL = {
 };
 
 const STATS = [
-  { num:'18', label:'produits sélectionnés' },
+  { num:'16', label:'produits sélectionnés' },
   { num:'6', label:'territoires' },
   { num:'24h', label:'fraîcheur maximale des prix' },
   { num:'100%', label:'liens affiliés signalés' },
