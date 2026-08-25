@@ -1,34 +1,17 @@
 // data.jsx — Maison Léa: Amazon affiliate edition (généré automatiquement)
-const AMAZON_DATA_UPDATED_AT = "2026-08-24T05:02:50.630Z";
+const AMAZON_DATA_UPDATED_AT = "2026-08-25T04:55:03.585Z";
 const COLLECTIONS = [
   { id:'lingerie',   label:'Lingerie',          fr:'Soutiens-gorge, culottes, bodies', count: 4 },
   { id:'nuit',       label:'Nuit & loungewear', fr:'Nuisettes, peignoirs, kimonos',     count: 3 },
   { id:'sensualite', label:'Sensualité',        fr:'Accessoires intimes & jeux',         count: 3, adult:true },
   { id:'erotisme',   label:'Érotisme',          fr:'Lecture, jeux coquins, fantaisies',  count: 3, adult:true },
   { id:'soins',      label:'Soins intimes',     fr:'Lubrifiants, huiles, bougies',       count: 3 },
-  { id:'cadeaux',    label:'Coffrets',          fr:'Édition limitée, idées cadeaux',    count: 0 },
+  { id:'cadeaux',    label:'Coffrets',          fr:'Édition limitée, idées cadeaux',    count: 2 },
 ];
 
 const PRODUCTS = [
   {
     "id": 1,
-    "cat": "lingerie",
-    "name": "Avidlove Sexy Ensemble de Lingerie pour Femme Dentelle Bo...",
-    "sub": "Marque · Avidlove",
-    "price": "24,99 €",
-    "was": "",
-    "off": "",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#8b1d2c",
-    "asin": "B0DH2KQQ9P",
-    "image": "https://m.media-amazon.com/images/I/41A9dPftREL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0DH2KQQ9P?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
-    "id": 2,
     "cat": "lingerie",
     "name": "Femme Dentelle Ensemble de Lingerie Sexy Transparente 2 P...",
     "sub": "Marque · PARUPRUP",
@@ -45,7 +28,7 @@ const PRODUCTS = [
     "url": "https://www.amazon.fr/dp/B0FZTWH9W9?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
-    "id": 3,
+    "id": 2,
     "cat": "lingerie",
     "name": "ROSVAJFY Ensemble de Lingerie Sexy pour Femme en Dentelle...",
     "sub": "Marque · ROSVAJFY",
@@ -62,7 +45,7 @@ const PRODUCTS = [
     "url": "https://www.amazon.fr/dp/B0D7ZRXC5J?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
-    "id": 4,
+    "id": 3,
     "cat": "lingerie",
     "name": "Femme Dentelle Ensemble de Lingerie Sexy Transparente 2 P...",
     "sub": "Marque · PARUPRUP",
@@ -77,6 +60,23 @@ const PRODUCTS = [
     "asin": "B0FZTZ634P",
     "image": "https://m.media-amazon.com/images/I/41DGJFSe-xL._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B0FZTZ634P?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
+    "id": 4,
+    "cat": "lingerie",
+    "name": "Avidlove Sexy Ensemble de Lingerie pour Femme Dentelle Bo...",
+    "sub": "Marque · Avidlove",
+    "price": "24,99 €",
+    "was": "",
+    "off": "",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#8b1d2c",
+    "asin": "B0DH2KQQ9P",
+    "image": "https://m.media-amazon.com/images/I/41A9dPftREL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0DH2KQQ9P?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 5,
@@ -98,23 +98,6 @@ const PRODUCTS = [
   {
     "id": 6,
     "cat": "nuit",
-    "name": "Lovasy Nuisette Femme Satin Spaghetti Nuisette en Soie po...",
-    "sub": "Marque · Lovasy",
-    "price": "10,79 €",
-    "was": "11,99 €",
-    "off": "-10%",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#3a2e1f",
-    "asin": "B0B92Y1P19",
-    "image": "https://m.media-amazon.com/images/I/31bpGqsDtsL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0B92Y1P19?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
-    "id": 7,
-    "cat": "nuit",
     "name": "Marvmys Nuisette Femme Sexy Chemise de Nuit Dentelle Slin...",
     "sub": "Marque · Marvmys",
     "price": "10,99 €",
@@ -130,11 +113,28 @@ const PRODUCTS = [
     "url": "https://www.amazon.fr/dp/B09NGG1YQS?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
+    "id": 7,
+    "cat": "nuit",
+    "name": "Lovasy Nuisette Femme Satin Spaghetti Nuisette en Soie po...",
+    "sub": "Marque · Lovasy",
+    "price": "10,79 €",
+    "was": "11,99 €",
+    "off": "-10%",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#3a2e1f",
+    "asin": "B0B92Y1P19",
+    "image": "https://m.media-amazon.com/images/I/31bpGqsDtsL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0B92Y1P19?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
     "id": 8,
     "cat": "sensualite",
     "name": "Godemichets Gode Vibro-masseur va et Vient, 20cm Gode Ven...",
     "sub": "Marque · Cosyfun",
-    "price": "25,99 €",
+    "price": "24,99 €",
     "was": "",
     "off": "",
     "rating": 0,
@@ -281,6 +281,40 @@ const PRODUCTS = [
     "asin": "B00TU70ZFE",
     "image": "https://m.media-amazon.com/images/I/41i9MD+3v9L._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B00TU70ZFE?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
+    "id": 17,
+    "cat": "cadeaux",
+    "name": "YINUO LIGHT coffret cadeau de bougies parfumées pour femm...",
+    "sub": "Marque · YINUO LIGHT",
+    "price": "19,99 €",
+    "was": "",
+    "off": "",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#5b1a26",
+    "asin": "B0D4YVYXJZ",
+    "image": "https://m.media-amazon.com/images/I/51yagU2JYmL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0D4YVYXJZ?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
+    "id": 18,
+    "cat": "cadeaux",
+    "name": "TAHJOS Ensemble Lingerie Taille XXL pour Femmes Curvy – B...",
+    "sub": "Marque · TAHJOS",
+    "price": "9,99 €",
+    "was": "",
+    "off": "",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#5b1a26",
+    "asin": "B0H53945FQ",
+    "image": "https://m.media-amazon.com/images/I/414297wlfoL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0H53945FQ?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   }
 ];
 
@@ -299,7 +333,7 @@ const EDITORIAL = {
 };
 
 const STATS = [
-  { num:'16', label:'produits sélectionnés' },
+  { num:'18', label:'produits sélectionnés' },
   { num:'6', label:'territoires' },
   { num:'24h', label:'fraîcheur maximale des prix' },
   { num:'100%', label:'liens affiliés signalés' },
