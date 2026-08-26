@@ -1,5 +1,5 @@
 // data.jsx — Maison Léa: Amazon affiliate edition (généré automatiquement)
-const AMAZON_DATA_UPDATED_AT = "2026-08-25T04:55:03.585Z";
+const AMAZON_DATA_UPDATED_AT = "2026-08-26T04:56:57.173Z";
 const COLLECTIONS = [
   { id:'lingerie',   label:'Lingerie',          fr:'Soutiens-gorge, culottes, bodies', count: 4 },
   { id:'nuit',       label:'Nuit & loungewear', fr:'Nuisettes, peignoirs, kimonos',     count: 3 },
@@ -30,23 +30,6 @@ const PRODUCTS = [
   {
     "id": 2,
     "cat": "lingerie",
-    "name": "ROSVAJFY Ensemble de Lingerie Sexy pour Femme en Dentelle...",
-    "sub": "Marque · ROSVAJFY",
-    "price": "11,99 €",
-    "was": "",
-    "off": "",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#8b1d2c",
-    "asin": "B0D7ZRXC5J",
-    "image": "https://m.media-amazon.com/images/I/417Whbn2Q+L._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0D7ZRXC5J?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
-    "id": 3,
-    "cat": "lingerie",
     "name": "Femme Dentelle Ensemble de Lingerie Sexy Transparente 2 P...",
     "sub": "Marque · PARUPRUP",
     "price": "7,99 €",
@@ -57,12 +40,12 @@ const PRODUCTS = [
     "prime": false,
     "tag": "",
     "color": "#8b1d2c",
-    "asin": "B0FZTZ634P",
+    "asin": "B0FZTL81YF",
     "image": "https://m.media-amazon.com/images/I/41DGJFSe-xL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0FZTZ634P?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+    "url": "https://www.amazon.fr/dp/B0FZTL81YF?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
-    "id": 4,
+    "id": 3,
     "cat": "lingerie",
     "name": "Avidlove Sexy Ensemble de Lingerie pour Femme Dentelle Bo...",
     "sub": "Marque · Avidlove",
@@ -77,6 +60,23 @@ const PRODUCTS = [
     "asin": "B0DH2KQQ9P",
     "image": "https://m.media-amazon.com/images/I/41A9dPftREL._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B0DH2KQQ9P?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
+    "id": 4,
+    "cat": "lingerie",
+    "name": "ROSVAJFY Ensemble de Lingerie Sexy pour Femme en Dentelle...",
+    "sub": "Marque · ROSVAJFY",
+    "price": "11,99 €",
+    "was": "",
+    "off": "",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#8b1d2c",
+    "asin": "B0D7ZRXC5J",
+    "image": "https://m.media-amazon.com/images/I/417Whbn2Q+L._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0D7ZRXC5J?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 5,
@@ -134,7 +134,7 @@ const PRODUCTS = [
     "cat": "sensualite",
     "name": "Godemichets Gode Vibro-masseur va et Vient, 20cm Gode Ven...",
     "sub": "Marque · Cosyfun",
-    "price": "24,99 €",
+    "price": "25,99 €",
     "was": "",
     "off": "",
     "rating": 0,
@@ -166,19 +166,19 @@ const PRODUCTS = [
   {
     "id": 10,
     "cat": "sensualite",
-    "name": "Vibromasseur pour Femme,Clitoridien Puissant Silencieux P...",
-    "sub": "Marque · Aphaca",
-    "price": "21,99 €",
-    "was": "",
-    "off": "",
+    "name": "Gode Vibromasseurs Feminin Clitoridien va et vient APP Si...",
+    "sub": "Marque · Cacuola",
+    "price": "20,99 €",
+    "was": "21,99 €",
+    "off": "-5%",
     "rating": 0,
     "reviews": 0,
     "prime": false,
     "tag": "",
     "color": "#1a1a1a",
-    "asin": "B07HJ419Y4",
-    "image": "https://m.media-amazon.com/images/I/31d8ETR3rmL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B07HJ419Y4?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+    "asin": "B0FDQ1JTS4",
+    "image": "https://m.media-amazon.com/images/I/213eknRvC7L._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0FDQ1JTS4?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 11,
@@ -234,26 +234,26 @@ const PRODUCTS = [
   {
     "id": 14,
     "cat": "soins",
-    "name": "Durex - Gel Lubrifiant 100% d'origine Naturel – Extra Sen...",
-    "sub": "Marque · Durex",
-    "price": "8,08 €",
-    "was": "8,81 €",
-    "off": "-8%",
+    "name": "Natessance huile de massage ylang ylang éveil des sens 100ml",
+    "sub": "Marque · Natessance",
+    "price": "5,99 €",
+    "was": "",
+    "off": "",
     "rating": 0,
     "reviews": 0,
     "prime": false,
     "tag": "",
     "color": "#c9a961",
-    "asin": "B07V221CV1",
-    "image": "https://m.media-amazon.com/images/I/41U6dPj1rML._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B07V221CV1?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+    "asin": "B015V1UVNS",
+    "image": "https://m.media-amazon.com/images/I/31V-Als3A5L._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B015V1UVNS?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 15,
     "cat": "soins",
-    "name": "MY LUBIE - Lubrifiant Naturel à Base d'Eau avec Calendula...",
-    "sub": "Marque · My Lubie",
-    "price": "15,50 €",
+    "name": "Huile de Massage Monoï, Relaxante et Aphrodisiaque, Hydra...",
+    "sub": "Marque · bleu & marine Bretania",
+    "price": "14,90 €",
     "was": "",
     "off": "",
     "rating": 0,
@@ -261,16 +261,16 @@ const PRODUCTS = [
     "prime": false,
     "tag": "",
     "color": "#c9a961",
-    "asin": "B08W3FNPVD",
-    "image": "https://m.media-amazon.com/images/I/317L97YgabL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B08W3FNPVD?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+    "asin": "B01LBK1VIW",
+    "image": "https://m.media-amazon.com/images/I/41AfEk+-m3L._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B01LBK1VIW?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 16,
     "cat": "soins",
-    "name": "Lubido Gel Lubrifiant Intime Original à Base d'Eau Sans P...",
-    "sub": "Marque · Lubido",
-    "price": "9,99 €",
+    "name": "Yum'Lube - Huile de Massage Comestible Érotique Vanille -...",
+    "sub": "Marque · Yum'Lube",
+    "price": "16,90 €",
     "was": "",
     "off": "",
     "rating": 0,
@@ -278,16 +278,16 @@ const PRODUCTS = [
     "prime": false,
     "tag": "",
     "color": "#c9a961",
-    "asin": "B00TU70ZFE",
-    "image": "https://m.media-amazon.com/images/I/41i9MD+3v9L._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B00TU70ZFE?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+    "asin": "B0CNZDGLH4",
+    "image": "https://m.media-amazon.com/images/I/31-yipbCXTL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0CNZDGLH4?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 17,
     "cat": "cadeaux",
     "name": "YINUO LIGHT coffret cadeau de bougies parfumées pour femm...",
     "sub": "Marque · YINUO LIGHT",
-    "price": "19,99 €",
+    "price": "22,99 €",
     "was": "",
     "off": "",
     "rating": 0,
@@ -302,19 +302,19 @@ const PRODUCTS = [
   {
     "id": 18,
     "cat": "cadeaux",
-    "name": "TAHJOS Ensemble Lingerie Taille XXL pour Femmes Curvy – B...",
-    "sub": "Marque · TAHJOS",
-    "price": "9,99 €",
-    "was": "",
-    "off": "",
+    "name": "RSLOVE Lingerie Sexy pour Femme Soutien-Gorge et Culotte ...",
+    "sub": "Marque · RSLOVE",
+    "price": "23,99 €",
+    "was": "35,99 €",
+    "off": "-33%",
     "rating": 0,
     "reviews": 0,
     "prime": false,
     "tag": "",
     "color": "#5b1a26",
-    "asin": "B0H53945FQ",
-    "image": "https://m.media-amazon.com/images/I/414297wlfoL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0H53945FQ?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+    "asin": "B08VFHJC2K",
+    "image": "https://m.media-amazon.com/images/I/41eQ5iqqXPL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B08VFHJC2K?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   }
 ];
 
