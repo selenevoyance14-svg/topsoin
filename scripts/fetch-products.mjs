@@ -109,12 +109,12 @@ async function main() {
 
     // Catégories Maison Léa
     const CATEGORIES = [
-        { id: "lingerie", keywords: ["ensemble dentelle femme", "soutien-gorge balconnet", "body dentelle"], searchIndex: "Apparel", color: "#8b1d2c", count: 4 },
-        { id: "nuit", keywords: ["nuisette satin", "kimono soie femme", "peignoir femme"], searchIndex: "Apparel", color: "#3a2e1f", count: 3 },
-        { id: "sensualite", keywords: ["vibromasseur silicone", "stimulateur intime"], searchIndex: "HealthPersonalCare", color: "#1a1a1a", count: 3 },
-        { id: "erotisme", keywords: ["jeu couple coquin", "carte couple sexy"], searchIndex: "All", color: "#3a1a26", count: 3 },
-        { id: "soins", keywords: ["lubrifiant intime naturel", "huile massage sensorielle"], searchIndex: "HealthPersonalCare", color: "#c9a961", count: 3 },
-        { id: "cadeaux", keywords: ["coffret lingerie cadeau", "coffret massage couple"], searchIndex: "All", color: "#5b1a26", count: 2 },
+        { id: "lingerie", keywords: ["ensemble dentelle femme", "soutien-gorge balconnet", "body dentelle", "bralette sans armature", "culotte taille haute femme"], searchIndex: "Apparel", color: "#8b1d2c", count: 13 },
+        { id: "nuit", keywords: ["nuisette satin", "kimono satin femme", "peignoir femme", "pyjama femme élégant"], searchIndex: "Apparel", color: "#3a2e1f", count: 12 },
+        { id: "sensualite", keywords: ["vibromasseur silicone", "stimulateur intime", "anneau vibrant couple"], searchIndex: "HealthPersonalCare", color: "#1a1a1a", count: 11 },
+        { id: "erotisme", keywords: ["jeu couple coquin", "carte couple sexy", "livre couple intimité"], searchIndex: "All", color: "#3a1a26", count: 11 },
+        { id: "soins", keywords: ["lubrifiant intime naturel", "huile massage sensorielle", "bougie massage", "soin corps femme"], searchIndex: "HealthPersonalCare", color: "#c9a961", count: 11 },
+        { id: "cadeaux", keywords: ["coffret lingerie cadeau", "coffret massage couple", "coffret bien être femme", "cadeau couple"], searchIndex: "All", color: "#5b1a26", count: 10 },
     ];
 
     const allProducts = [];

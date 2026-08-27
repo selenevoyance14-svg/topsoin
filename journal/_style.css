@@ -23,7 +23,8 @@ h1{font-family:"Cormorant Garamond",serif;font-size:clamp(40px,6vw,64px);line-he
 .lead{font-size:18px;color:var(--ink-2);margin-bottom:28px;line-height:1.6;font-style:italic;font-family:"Cormorant Garamond",serif}
 .meta{font-size:13px;color:var(--muted);margin-bottom:50px;padding-bottom:24px;border-bottom:1px solid var(--line)}
 .cover{margin-bottom:40px;border-radius:12px;overflow:hidden;background:var(--bg-2);aspect-ratio:16/9;display:flex;align-items:center;justify-content:center}
-.cover-bg{width:100%;height:100%;background-size:cover;background-position:center}
+.cover-bg{width:100%;height:100%;background-size:cover;background-position:center;transition:transform .6s ease}
+.cover:hover .cover-bg{transform:scale(1.015)}
 
 .wrap h2{font-family:"Cormorant Garamond",serif;font-size:32px;font-weight:500;margin:48px 0 18px;color:var(--ink)}
 .wrap h3{font-family:"Cormorant Garamond",serif;font-size:24px;font-weight:500;margin:32px 0 12px;color:var(--ink)}

@@ -10,10 +10,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="_style.css" />
 <style>
-  .articles-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px;margin-top:40px}
+  .articles-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(300px,100%),1fr));gap:24px;margin-top:40px}
   .article-card{display:block;text-decoration:none;color:inherit;background:var(--paper);border:1px solid var(--line);border-radius:12px;overflow:hidden;transition:transform .25s ease, box-shadow .25s ease}
   .article-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(0,0,0,.08)}
-  .ac-cover{aspect-ratio:16/10;width:100%}
+  .ac-cover{aspect-ratio:16/10;width:100%;object-fit:cover;border-radius:0;transition:transform .5s ease,filter .5s ease}
+  .article-card:hover .ac-cover{transform:scale(1.025);filter:saturate(1.05)}
+  .article-card{isolation:isolate}
   .ac-body{padding:18px 22px 24px}
   .ac-kicker{color:var(--accent);margin-bottom:10px}
   .ac-title{font-size:22px;line-height:1.2;margin-bottom:8px;color:var(--ink)}
@@ -36,7 +38,7 @@
 
   <div class="articles-grid">
     <a href="/journal/soutien-gorge-triangle-sans-armatures-douceur.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #8b1d2c 0%, #8b1d2caa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lingerie-editorial.webp" alt="Soutien-gorge triangle sans armatures : la douceur" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE LINGERIE</div>
     <div class="ac-title serif">Soutien-gorge triangle sans armatures : la douceur</div>
@@ -45,7 +47,7 @@
   </div>
 </a>
     <a href="/journal/brassiere-sport-femme-comment-choisir-guide.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #8b1d2c 0%, #8b1d2caa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lingerie-editorial.webp" alt="Brassière de sport femme : la choisir vraiment bien" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE LINGERIE</div>
     <div class="ac-title serif">Brassière de sport femme : la choisir vraiment bien</div>
@@ -54,7 +56,7 @@
   </div>
 </a>
     <a href="/journal/soutien-gorge-forte-poitrine-maintien-guide.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #8b1d2c 0%, #8b1d2caa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lingerie-editorial.webp" alt="Forte poitrine : le soutien-gorge qui maintient vraiment" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE MORPHOLOGIE</div>
     <div class="ac-title serif">Forte poitrine : le soutien-gorge qui maintient vraiment</div>
@@ -63,7 +65,7 @@
   </div>
 </a>
     <a href="/journal/soutien-gorge-petite-poitrine-mettre-en-valeur.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #8b1d2c 0%, #8b1d2caa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lingerie-editorial.webp" alt="Petite poitrine : sublimer son décolleté avec finesse" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE MORPHOLOGIE</div>
     <div class="ac-title serif">Petite poitrine : sublimer son décolleté avec finesse</div>
@@ -72,7 +74,7 @@
   </div>
 </a>
     <a href="/journal/culotte-gainante-shapewear-silhouette-guide.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #8b1d2c 0%, #8b1d2caa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lingerie-editorial.webp" alt="Culotte gainante : silhouette impeccable sous la robe" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE LINGERIE</div>
     <div class="ac-title serif">Culotte gainante : silhouette impeccable sous la robe</div>
@@ -81,7 +83,7 @@
   </div>
 </a>
     <a href="/journal/body-transparent-audace-elegance-guide.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #8b1d2c 0%, #8b1d2caa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lingerie-editorial.webp" alt="Le body transparent : oser l'audace en élégance" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE LINGERIE</div>
     <div class="ac-title serif">Le body transparent : oser l'audace en élégance</div>
@@ -90,7 +92,7 @@
   </div>
 </a>
     <a href="/journal/corset-serre-taille-cambrer-silhouette-guide.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #8b1d2c 0%, #8b1d2caa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lingerie-editorial.webp" alt="Le corset serre-taille : cambrer sa silhouette" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE LINGERIE</div>
     <div class="ac-title serif">Le corset serre-taille : cambrer sa silhouette</div>
@@ -99,7 +101,7 @@
   </div>
 </a>
     <a href="/journal/pyjama-court-femme-ete-fraicheur-guide.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #3a2e1f 0%, #3a2e1faa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/nuit-cocooning.webp" alt="Pyjama court femme : rester au frais toute la nuit" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE NUIT</div>
     <div class="ac-title serif">Pyjama court femme : rester au frais toute la nuit</div>
@@ -108,7 +110,7 @@
   </div>
 </a>
     <a href="/journal/debardeur-nuit-femme-confort-choisir-guide.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #3a2e1f 0%, #3a2e1faa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/nuit-cocooning.webp" alt="Débardeur de nuit femme : le basique du sommeil" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE NUIT</div>
     <div class="ac-title serif">Débardeur de nuit femme : le basique du sommeil</div>
@@ -117,7 +119,7 @@
   </div>
 </a>
     <a href="/journal/peignoir-bambou-douceur-alternative-guide.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #3a2e1f 0%, #3a2e1faa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/nuit-cocooning.webp" alt="Peignoir en bambou : l'alternative douce au coton" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE COCOONING</div>
     <div class="ac-title serif">Peignoir en bambou : l'alternative douce au coton</div>
@@ -126,7 +128,7 @@
   </div>
 </a>
     <a href="/journal/pyjama-couple-assorti-cadeau-guide.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #3a2e1f 0%, #3a2e1faa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/cadeau-couple.webp" alt="Pyjama couple assorti : le cadeau qui touche" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">IDÉES CADEAU</div>
     <div class="ac-title serif">Pyjama couple assorti : le cadeau qui touche</div>
@@ -135,7 +137,7 @@
   </div>
 </a>
     <a href="/journal/nuisette-rouge-cadeau-saint-valentin-guide.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #3a2e1f 0%, #3a2e1faa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/cadeau-couple.webp" alt="La nuisette rouge : cadeau intense de Saint-Valentin" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE LINGERIE</div>
     <div class="ac-title serif">La nuisette rouge : cadeau intense de Saint-Valentin</div>
@@ -144,7 +146,7 @@
   </div>
 </a>
     <a href="/journal/pyjama-polaire-femme-hiver-cocooning-guide.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #3a2e1f 0%, #3a2e1faa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/nuit-cocooning.webp" alt="Pyjama polaire femme : dormir au chaud tout l'hiver" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE COCOONING</div>
     <div class="ac-title serif">Pyjama polaire femme : dormir au chaud tout l'hiver</div>
@@ -153,7 +155,7 @@
   </div>
 </a>
     <a href="/journal/vibromasseur-waterproof-bain-douche-guide.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #5b1a26 0%, #5b1a26aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/soins-massage.webp" alt="Vibromasseur waterproof : bain, douche, aucun souci" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE PLAISIR</div>
     <div class="ac-title serif">Vibromasseur waterproof : bain, douche, aucun souci</div>
@@ -162,7 +164,7 @@
   </div>
 </a>
     <a href="/journal/vibromasseur-telecommande-couple-distance-guide.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #5b1a26 0%, #5b1a26aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/plaisir-bien-etre.webp" alt="Vibromasseur à télécommande : jouer à distance" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE PLAISIR</div>
     <div class="ac-title serif">Vibromasseur à télécommande : jouer à distance</div>
@@ -171,7 +173,7 @@
   </div>
 </a>
     <a href="/journal/vibromasseur-rechargeable-usb-autonomie-guide.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #5b1a26 0%, #5b1a26aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/plaisir-bien-etre.webp" alt="Vibromasseur rechargeable USB : liberté et autonomie" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE PLAISIR</div>
     <div class="ac-title serif">Vibromasseur rechargeable USB : liberté et autonomie</div>
@@ -180,7 +182,7 @@
   </div>
 </a>
     <a href="/journal/sextoys-premium-luxe-investir-guide.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #5b1a26 0%, #5b1a26aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/plaisir-bien-etre.webp" alt="Sextoys premium : investir dans la qualité" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE PLAISIR</div>
     <div class="ac-title serif">Sextoys premium : investir dans la qualité</div>
@@ -189,7 +191,7 @@
   </div>
 </a>
     <a href="/journal/sextoys-budget-qualite-prix-guide.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #5b1a26 0%, #5b1a26aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/plaisir-bien-etre.webp" alt="Sextoys petit budget : la qualité sans se ruiner" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE PLAISIR</div>
     <div class="ac-title serif">Sextoys petit budget : la qualité sans se ruiner</div>
@@ -198,7 +200,7 @@
   </div>
 </a>
     <a href="/journal/sextoys-couple-partager-debuter-guide.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #5b1a26 0%, #5b1a26aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/plaisir-bien-etre.webp" alt="Sextoys en couple : partager sans se braquer" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE COUPLE</div>
     <div class="ac-title serif">Sextoys en couple : partager sans se braquer</div>
@@ -207,7 +209,7 @@
   </div>
 </a>
     <a href="/journal/rangement-discret-sextoys-organisation-guide.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #5b1a26 0%, #5b1a26aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/plaisir-bien-etre.webp" alt="Ranger ses sextoys discrètement : nos idées" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE PRATIQUE</div>
     <div class="ac-title serif">Ranger ses sextoys discrètement : nos idées</div>
@@ -216,7 +218,7 @@
   </div>
 </a>
     <a href="/journal/roman-erotique-femme-selection-guide.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #3a1420 0%, #3a1420aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lecture-jeux.webp" alt="Romans érotiques pour femmes : notre sélection" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE LECTURE</div>
     <div class="ac-title serif">Romans érotiques pour femmes : notre sélection</div>
@@ -225,7 +227,7 @@
   </div>
 </a>
     <a href="/journal/livre-audio-erotique-podcast-decouvrir-guide.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #3a1420 0%, #3a1420aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lecture-jeux.webp" alt="Livre audio érotique : la nouvelle façon de lire chaud" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE LECTURE</div>
     <div class="ac-title serif">Livre audio érotique : la nouvelle façon de lire chaud</div>
@@ -234,7 +236,7 @@
   </div>
 </a>
     <a href="/journal/kamasutra-livre-debutant-poses-guide.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #3a1420 0%, #3a1420aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lecture-jeux.webp" alt="Kamasutra : le guide pour débuter à deux" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE LECTURE</div>
     <div class="ac-title serif">Kamasutra : le guide pour débuter à deux</div>
@@ -243,7 +245,7 @@
   </div>
 </a>
     <a href="/journal/jeu-questions-intimes-couple-communiquer-guide.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #3a1420 0%, #3a1420aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lecture-jeux.webp" alt="Jeu de questions intimes : parler vraiment à deux" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE JEU</div>
     <div class="ac-title serif">Jeu de questions intimes : parler vraiment à deux</div>
@@ -252,7 +254,7 @@
   </div>
 </a>
     <a href="/journal/lubrifiant-grossesse-enceinte-securite-guide.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #2a3a2a 0%, #2a3a2aaa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/soins-massage.webp" alt="Lubrifiant pendant la grossesse : ce qui est sûr" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE SOIN</div>
     <div class="ac-title serif">Lubrifiant pendant la grossesse : ce qui est sûr</div>
@@ -261,7 +263,7 @@
   </div>
 </a>
     <a href="/journal/lubrifiant-menopause-secheresse-apaiser-guide.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #2a3a2a 0%, #2a3a2aaa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/soins-massage.webp" alt="Lubrifiant ménopause : apaiser la sécheresse intime" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE SOIN</div>
     <div class="ac-title serif">Lubrifiant ménopause : apaiser la sécheresse intime</div>
@@ -270,7 +272,7 @@
   </div>
 </a>
     <a href="/journal/lubrifiant-preservatif-compatible-choisir-guide.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #2a3a2a 0%, #2a3a2aaa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/soins-massage.webp" alt="Lubrifiant compatible préservatif : les bons choix" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE SOIN</div>
     <div class="ac-title serif">Lubrifiant compatible préservatif : les bons choix</div>
@@ -279,7 +281,7 @@
   </div>
 </a>
     <a href="/journal/huile-perinee-grossesse-preparer-accouchement.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #2a3a2a 0%, #2a3a2aaa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/soins-massage.webp" alt="Huile pour le périnée : préparer son accouchement" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE SOIN</div>
     <div class="ac-title serif">Huile pour le périnée : préparer son accouchement</div>
@@ -288,7 +290,7 @@
   </div>
 </a>
     <a href="/journal/bougie-parfumee-chambre-ambiance-couple-guide.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #2a3a2a 0%, #2a3a2aaa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/soins-massage.webp" alt="Bougie parfumée pour la chambre : ambiance couple" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE AMBIANCE</div>
     <div class="ac-title serif">Bougie parfumée pour la chambre : ambiance couple</div>
@@ -297,7 +299,7 @@
   </div>
 </a>
     <a href="/journal/bain-moussant-couple-rituel-detente-guide.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #2a3a2a 0%, #2a3a2aaa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/soins-massage.webp" alt="Bain moussant à deux : le rituel détente du soir" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE RITUEL</div>
     <div class="ac-title serif">Bain moussant à deux : le rituel détente du soir</div>
@@ -306,7 +308,7 @@
   </div>
 </a>
     <a href="/journal/idee-cadeau-femme-30-ans-elegance-guide.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #5a3a1a 0%, #5a3a1aaa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/cadeau-couple.webp" alt="Idée cadeau femme 30 ans : l'élégance intemporelle" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">IDÉES CADEAU</div>
     <div class="ac-title serif">Idée cadeau femme 30 ans : l'élégance intemporelle</div>
@@ -315,7 +317,7 @@
   </div>
 </a>
     <a href="/journal/idee-cadeau-femme-40-ans-raffinement-guide.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #5a3a1a 0%, #5a3a1aaa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/cadeau-couple.webp" alt="Idée cadeau femme 40 ans : raffinement et douceur" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">IDÉES CADEAU</div>
     <div class="ac-title serif">Idée cadeau femme 40 ans : raffinement et douceur</div>
@@ -324,7 +326,7 @@
   </div>
 </a>
     <a href="/journal/cadeau-mariage-couple-original-idees-guide.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #5a3a1a 0%, #5a3a1aaa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/cadeau-couple.webp" alt="Cadeau mariage couple : nos idées qui touchent" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">IDÉES CADEAU</div>
     <div class="ac-title serif">Cadeau mariage couple : nos idées qui touchent</div>
@@ -333,7 +335,7 @@
   </div>
 </a>
     <a href="/journal/cadeau-cremaillere-couple-emmenager-idees.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #5a3a1a 0%, #5a3a1aaa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/cadeau-couple.webp" alt="Cadeau crémaillère couple : marquer le nouveau chez-eux" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">IDÉES CADEAU</div>
     <div class="ac-title serif">Cadeau crémaillère couple : marquer le nouveau chez-eux</div>
@@ -342,7 +344,7 @@
   </div>
 </a>
     <a href="/journal/cadeau-anniversaire-mariage-10-ans-etain-idees.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #5a3a1a 0%, #5a3a1aaa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/cadeau-couple.webp" alt="Anniversaire de mariage 10 ans : les noces d'étain" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">IDÉES CADEAU</div>
     <div class="ac-title serif">Anniversaire de mariage 10 ans : les noces d'étain</div>
@@ -351,7 +353,7 @@
   </div>
 </a>
     <a href="/journal/soins-intimes-guide-complet.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #c9a961 0%, #c9a961aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/soins-massage.webp" alt="Soins intimes : le guide complet" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">LE GUIDE COMPLET</div>
     <div class="ac-title serif">Soins intimes : le guide complet</div>
@@ -360,7 +362,7 @@
   </div>
 </a>
     <a href="/journal/bien-choisir-lingerie-guide-morphologie.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #8b1d2c 0%, #8b1d2caa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lingerie-editorial.webp" alt="Bien choisir sa lingerie par morphologie" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">LE GUIDE COMPLET</div>
     <div class="ac-title serif">Bien choisir sa lingerie par morphologie</div>
@@ -369,7 +371,7 @@
   </div>
 </a>
     <a href="/journal/idees-cadeaux-couple-guide-complet.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #5b1a26 0%, #5b1a26aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/cadeau-couple.webp" alt="Idées cadeaux couple : le guide complet" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">LE GUIDE COMPLET</div>
     <div class="ac-title serif">Idées cadeaux couple : le guide complet</div>
@@ -378,7 +380,7 @@
   </div>
 </a>
     <a href="/journal/meilleure-lingerie-selection-comparatif.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #8b1d2c 0%, #8b1d2caa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lingerie-editorial.webp" alt="Meilleure lingerie : notre sélection coup de cœur" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">COMPARATIF</div>
     <div class="ac-title serif">Meilleure lingerie : notre sélection coup de cœur</div>
@@ -387,7 +389,7 @@
   </div>
 </a>
     <a href="/journal/meilleur-pyjama-nuisette-comparatif.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #3a2e1f 0%, #3a2e1faa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/nuit-cocooning.webp" alt="Meilleurs pyjamas et nuisettes : le comparatif" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">COMPARATIF</div>
     <div class="ac-title serif">Meilleurs pyjamas et nuisettes : le comparatif</div>
@@ -396,7 +398,7 @@
   </div>
 </a>
     <a href="/journal/meilleurs-soins-corps-selection.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #2a3a2a 0%, #2a3a2aaa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/soins-massage.webp" alt="Meilleurs soins du corps : notre sélection" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">COMPARATIF</div>
     <div class="ac-title serif">Meilleurs soins du corps : notre sélection</div>
@@ -405,7 +407,7 @@
   </div>
 </a>
     <a href="/journal/meilleures-huiles-bougies-massage-comparatif.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #5b1a26 0%, #5b1a26aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/soins-massage.webp" alt="Meilleures huiles et bougies de massage" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">COMPARATIF</div>
     <div class="ac-title serif">Meilleures huiles et bougies de massage</div>
@@ -414,7 +416,7 @@
   </div>
 </a>
     <a href="/journal/meilleurs-vibromasseurs-comparatif-guide.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #3a1420 0%, #3a1420aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/plaisir-bien-etre.webp" alt="Meilleurs vibromasseurs : le comparatif" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">COMPARATIF</div>
     <div class="ac-title serif">Meilleurs vibromasseurs : le comparatif</div>
@@ -423,7 +425,7 @@
   </div>
 </a>
     <a href="/journal/meilleurs-coffrets-cadeaux-couple-comparatif.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #5a3a1a 0%, #5a3a1aaa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/cadeau-couple.webp" alt="Meilleurs coffrets cadeaux couple : le top" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">COMPARATIF</div>
     <div class="ac-title serif">Meilleurs coffrets cadeaux couple : le top</div>
@@ -432,7 +434,7 @@
   </div>
 </a>
     <a href="/journal/culotte-invisible-fini-marques-sous-vetement.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #8b1d2c 0%, #8b1d2caa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lingerie-editorial.webp" alt="Culotte invisible : dire adieu aux marques" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE LINGERIE</div>
     <div class="ac-title serif">Culotte invisible : dire adieu aux marques</div>
@@ -441,7 +443,7 @@
   </div>
 </a>
     <a href="/journal/soutien-gorge-allaitement-confort-style.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #8b1d2c 0%, #8b1d2caa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lingerie-editorial.webp" alt="Soutien-gorge d'allaitement : confort et style" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE LINGERIE</div>
     <div class="ac-title serif">Soutien-gorge d'allaitement : confort et style</div>
@@ -450,7 +452,7 @@
   </div>
 </a>
     <a href="/journal/entretien-lingerie-delicate-laver-guide.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #8b1d2c 0%, #8b1d2caa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lingerie-editorial.webp" alt="Laver sa lingerie délicate sans l'abîmer" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE LINGERIE</div>
     <div class="ac-title serif">Laver sa lingerie délicate sans l'abîmer</div>
@@ -459,7 +461,7 @@
   </div>
 </a>
     <a href="/journal/culotte-menstruelle-confort-regles-guide.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #8b1d2c 0%, #8b1d2caa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lingerie-editorial.webp" alt="La culotte menstruelle : confort et sérénité" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE LINGERIE</div>
     <div class="ac-title serif">La culotte menstruelle : confort et sérénité</div>
@@ -468,7 +470,7 @@
   </div>
 </a>
     <a href="/journal/body-gainant-silhouette-elegance.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #8b1d2c 0%, #8b1d2caa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lingerie-editorial.webp" alt="Le body gainant : lisser sa silhouette" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE LINGERIE</div>
     <div class="ac-title serif">Le body gainant : lisser sa silhouette</div>
@@ -477,7 +479,7 @@
   </div>
 </a>
     <a href="/journal/lingerie-rouge-oser-couleur-seduction.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #8b1d2c 0%, #8b1d2caa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lingerie-editorial.webp" alt="La lingerie rouge : oser la couleur" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE LINGERIE</div>
     <div class="ac-title serif">La lingerie rouge : oser la couleur</div>
@@ -486,7 +488,7 @@
   </div>
 </a>
     <a href="/journal/lingerie-noire-indemodable-guide.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #8b1d2c 0%, #8b1d2caa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lingerie-editorial.webp" alt="La lingerie noire : l'indémodable absolu" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE LINGERIE</div>
     <div class="ac-title serif">La lingerie noire : l'indémodable absolu</div>
@@ -495,7 +497,7 @@
   </div>
 </a>
     <a href="/journal/nuisette-grande-taille-sublimer-nuit.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #3a2e1f 0%, #3a2e1faa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/nuit-cocooning.webp" alt="Nuisette grande taille : élégance la nuit" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE NUIT</div>
     <div class="ac-title serif">Nuisette grande taille : élégance la nuit</div>
@@ -504,7 +506,7 @@
   </div>
 </a>
     <a href="/journal/combinaison-pyjama-cocooning-hiver.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #3a2e1f 0%, #3a2e1faa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/nuit-cocooning.webp" alt="La combinaison pyjama : le cocon de l'hiver" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE NUIT</div>
     <div class="ac-title serif">La combinaison pyjama : le cocon de l'hiver</div>
@@ -513,7 +515,7 @@
   </div>
 </a>
     <a href="/journal/short-de-nuit-ete-leger-fraicheur.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #3a2e1f 0%, #3a2e1faa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/nuit-cocooning.webp" alt="Le short de nuit : fraîcheur des nuits d'été" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE NUIT</div>
     <div class="ac-title serif">Le short de nuit : fraîcheur des nuits d'été</div>
@@ -522,7 +524,7 @@
   </div>
 </a>
     <a href="/journal/matiere-pyjama-modal-bambou-coton-comparatif.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #3a2e1f 0%, #3a2e1faa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/nuit-cocooning.webp" alt="Modal, bambou ou coton : quel pyjama ?" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE NUIT</div>
     <div class="ac-title serif">Modal, bambou ou coton : quel pyjama ?</div>
@@ -531,7 +533,7 @@
   </div>
 </a>
     <a href="/journal/pyjama-grossesse-bien-dormir-enceinte.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #3a2e1f 0%, #3a2e1faa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/nuit-cocooning.webp" alt="Bien dormir enceinte : le pyjama de grossesse" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE NUIT</div>
     <div class="ac-title serif">Bien dormir enceinte : le pyjama de grossesse</div>
@@ -540,7 +542,7 @@
   </div>
 </a>
     <a href="/journal/peignoir-eponge-apres-bain-choisir.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #3a2e1f 0%, #3a2e1faa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/soins-massage.webp" alt="Le peignoir éponge : le confort d'après-bain" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE NUIT</div>
     <div class="ac-title serif">Le peignoir éponge : le confort d'après-bain</div>
@@ -549,7 +551,7 @@
   </div>
 </a>
     <a href="/journal/loungewear-tenue-detente-maison-style.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #3a2e1f 0%, #3a2e1faa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/nuit-cocooning.webp" alt="Le loungewear : stylée même à la maison" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE NUIT</div>
     <div class="ac-title serif">Le loungewear : stylée même à la maison</div>
@@ -558,7 +560,7 @@
   </div>
 </a>
     <a href="/journal/peau-seche-routine-hydratation-corps.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #2a3a2a 0%, #2a3a2aaa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/soins-massage.webp" alt="Peau sèche : la routine hydratation" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">RITUEL SOINS</div>
     <div class="ac-title serif">Peau sèche : la routine hydratation</div>
@@ -567,7 +569,7 @@
   </div>
 </a>
     <a href="/journal/creme-ou-huile-corps-choisir.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #2a3a2a 0%, #2a3a2aaa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/soins-massage.webp" alt="Crème ou huile pour le corps : que choisir ?" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">RITUEL SOINS</div>
     <div class="ac-title serif">Crème ou huile pour le corps : que choisir ?</div>
@@ -576,7 +578,7 @@
   </div>
 </a>
     <a href="/journal/gommage-corps-avant-epilation-peau-douce.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #2a3a2a 0%, #2a3a2aaa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/soins-massage.webp" alt="Le gommage : préparer sa peau en douceur" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">RITUEL SOINS</div>
     <div class="ac-title serif">Le gommage : préparer sa peau en douceur</div>
@@ -585,7 +587,7 @@
   </div>
 </a>
     <a href="/journal/soin-mains-douces-hiver-guide.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #2a3a2a 0%, #2a3a2aaa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/soins-massage.webp" alt="Mains douces en hiver : le soin oublié" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">RITUEL SOINS</div>
     <div class="ac-title serif">Mains douces en hiver : le soin oublié</div>
@@ -594,7 +596,7 @@
   </div>
 </a>
     <a href="/journal/lubrifiant-hybride-eau-silicone-comprendre.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #2a3a2a 0%, #2a3a2aaa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/soins-massage.webp" alt="Le lubrifiant hybride : le duo gagnant" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">SOINS INTIMES</div>
     <div class="ac-title serif">Le lubrifiant hybride : le duo gagnant</div>
@@ -603,7 +605,7 @@
   </div>
 </a>
     <a href="/journal/secheresse-intime-comprendre-apaiser.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #2a3a2a 0%, #2a3a2aaa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/soins-massage.webp" alt="Sécheresse intime : comprendre et apaiser" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">SOINS INTIMES</div>
     <div class="ac-title serif">Sécheresse intime : comprendre et apaiser</div>
@@ -612,7 +614,7 @@
   </div>
 </a>
     <a href="/journal/brume-parfumee-corps-touche-finale.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #2a3a2a 0%, #2a3a2aaa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/soins-massage.webp" alt="Brume parfumée : la touche finale sensuelle" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">RITUEL SOINS</div>
     <div class="ac-title serif">Brume parfumée : la touche finale sensuelle</div>
@@ -621,7 +623,7 @@
   </div>
 </a>
     <a href="/journal/massage-dos-couple-detente-rapprochement.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #5b1a26 0%, #5b1a26aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/soins-massage.webp" alt="Le massage du dos à deux : la détente" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">SENSUALITÉ</div>
     <div class="ac-title serif">Le massage du dos à deux : la détente</div>
@@ -630,7 +632,7 @@
   </div>
 </a>
     <a href="/journal/rituel-massage-sensuel-debuter-couple.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #5b1a26 0%, #5b1a26aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/soins-massage.webp" alt="Le massage sensuel : créer un rituel à deux" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">SENSUALITÉ</div>
     <div class="ac-title serif">Le massage sensuel : créer un rituel à deux</div>
@@ -639,7 +641,7 @@
   </div>
 </a>
     <a href="/journal/ambiance-sensuelle-chambre-lumiere-parfum.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #5b1a26 0%, #5b1a26aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/soins-massage.webp" alt="Créer une ambiance sensuelle : les clés" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">SENSUALITÉ</div>
     <div class="ac-title serif">Créer une ambiance sensuelle : les clés</div>
@@ -648,7 +650,7 @@
   </div>
 </a>
     <a href="/journal/bain-a-deux-rituel-detente-couple.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #5b1a26 0%, #5b1a26aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/soins-massage.webp" alt="Le bain à deux : le rituel détente" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">SENSUALITÉ</div>
     <div class="ac-title serif">Le bain à deux : le rituel détente</div>
@@ -657,7 +659,7 @@
   </div>
 </a>
     <a href="/journal/parfum-seduction-pouvoir-des-senteurs.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #5b1a26 0%, #5b1a26aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/soins-massage.webp" alt="Parfum et séduction : le pouvoir des senteurs" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">SENSUALITÉ</div>
     <div class="ac-title serif">Parfum et séduction : le pouvoir des senteurs</div>
@@ -666,7 +668,7 @@
   </div>
 </a>
     <a href="/journal/lenteur-jeu-seduction-couple.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #5b1a26 0%, #5b1a26aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lecture-jeux.webp" alt="La lenteur : un jeu de séduction" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">SENSUALITÉ</div>
     <div class="ac-title serif">La lenteur : un jeu de séduction</div>
@@ -675,7 +677,7 @@
   </div>
 </a>
     <a href="/journal/sensualite-solo-prendre-soin-de-soi.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #5b1a26 0%, #5b1a26aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/soins-massage.webp" alt="Sensualité en solo : (re)découvrir son corps" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">SENSUALITÉ</div>
     <div class="ac-title serif">Sensualité en solo : (re)découvrir son corps</div>
@@ -684,7 +686,7 @@
   </div>
 </a>
     <a href="/journal/vibromasseur-double-stimulation-comprendre.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #3a1420 0%, #3a1420aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/plaisir-bien-etre.webp" alt="Le vibromasseur double stimulation expliqué" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">ÉROTISME</div>
     <div class="ac-title serif">Le vibromasseur double stimulation expliqué</div>
@@ -693,7 +695,7 @@
   </div>
 </a>
     <a href="/journal/jouets-connectes-distance-couple.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #3a1420 0%, #3a1420aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/plaisir-bien-etre.webp" alt="Jouets connectés : pimenter même à distance" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">ÉROTISME</div>
     <div class="ac-title serif">Jouets connectés : pimenter même à distance</div>
@@ -702,7 +704,7 @@
   </div>
 </a>
     <a href="/journal/premier-jouet-couple-par-ou-commencer.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #3a1420 0%, #3a1420aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/plaisir-bien-etre.webp" alt="Premier jouet à deux : par où commencer" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">ÉROTISME</div>
     <div class="ac-title serif">Premier jouet à deux : par où commencer</div>
@@ -711,7 +713,7 @@
   </div>
 </a>
     <a href="/journal/entretien-hygiene-jouets-intimes-guide.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #3a1420 0%, #3a1420aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/soins-massage.webp" alt="Nettoyer et ranger ses jouets intimes" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">ÉROTISME</div>
     <div class="ac-title serif">Nettoyer et ranger ses jouets intimes</div>
@@ -720,7 +722,7 @@
   </div>
 </a>
     <a href="/journal/parler-de-ses-envies-couple-intimite.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #3a1420 0%, #3a1420aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lingerie-editorial.webp" alt="Parler de ses envies : la clé de l'intimité" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">ÉROTISME</div>
     <div class="ac-title serif">Parler de ses envies : la clé de l'intimité</div>
@@ -729,7 +731,7 @@
   </div>
 </a>
     <a href="/journal/varier-preliminaires-raviver-desir-couple.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #3a1420 0%, #3a1420aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/plaisir-bien-etre.webp" alt="Varier les préliminaires pour raviver le désir" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">ÉROTISME</div>
     <div class="ac-title serif">Varier les préliminaires pour raviver le désir</div>
@@ -738,7 +740,7 @@
   </div>
 </a>
     <a href="/journal/cadeau-saint-valentin-homme-idees.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #5a3a1a 0%, #5a3a1aaa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/cadeau-couple.webp" alt="Cadeaux Saint-Valentin pour lui : nos idées" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">IDÉES CADEAUX</div>
     <div class="ac-title serif">Cadeaux Saint-Valentin pour lui : nos idées</div>
@@ -747,7 +749,7 @@
   </div>
 </a>
     <a href="/journal/fete-des-meres-cadeau-bien-etre.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #5a3a1a 0%, #5a3a1aaa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/cadeau-couple.webp" alt="Fête des Mères : offrir du bien-être" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">IDÉES CADEAUX</div>
     <div class="ac-title serif">Fête des Mères : offrir du bien-être</div>
@@ -756,7 +758,7 @@
   </div>
 </a>
     <a href="/journal/evjf-idees-cadeaux-qui-font-mouche.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #5a3a1a 0%, #5a3a1aaa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/cadeau-couple.webp" alt="EVJF : des cadeaux qui font mouche" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">IDÉES CADEAUX</div>
     <div class="ac-title serif">EVJF : des cadeaux qui font mouche</div>
@@ -765,7 +767,7 @@
   </div>
 </a>
     <a href="/journal/couple-distance-cadeaux-qui-rapprochent.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #5a3a1a 0%, #5a3a1aaa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/cadeau-couple.webp" alt="Couple à distance : des cadeaux qui rapprochent" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">IDÉES CADEAUX</div>
     <div class="ac-title serif">Couple à distance : des cadeaux qui rapprochent</div>
@@ -774,7 +776,7 @@
   </div>
 </a>
     <a href="/journal/cadeau-couple-petit-budget-moins-30-euros.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #5a3a1a 0%, #5a3a1aaa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/cadeau-couple.webp" alt="Faire plaisir à deux pour moins de 30 €" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">IDÉES CADEAUX</div>
     <div class="ac-title serif">Faire plaisir à deux pour moins de 30 €</div>
@@ -783,7 +785,7 @@
   </div>
 </a>
     <a href="/journal/offrir-cadeau-intime-avec-tact-elegance.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #5a3a1a 0%, #5a3a1aaa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/cadeau-couple.webp" alt="Offrir un cadeau intime avec tact" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">IDÉES CADEAUX</div>
     <div class="ac-title serif">Offrir un cadeau intime avec tact</div>
@@ -792,7 +794,7 @@
   </div>
 </a>
     <a href="/journal/soutien-gorge-push-up-guide.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #8b1d2c 0%, #8b1d2caa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lingerie-editorial.webp" alt="Le soutien-gorge push-up : du galbe et de l'assurance" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE LINGERIE</div>
     <div class="ac-title serif">Le soutien-gorge push-up : du galbe et de l'assurance</div>
@@ -801,7 +803,7 @@
   </div>
 </a>
     <a href="/journal/lingerie-mariee-nuit-de-noces.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #8b1d2c 0%, #8b1d2caa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/nuit-cocooning.webp" alt="Lingerie de mariée : la pièce de la nuit de noces" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE LINGERIE</div>
     <div class="ac-title serif">Lingerie de mariée : la pièce de la nuit de noces</div>
@@ -810,7 +812,7 @@
   </div>
 </a>
     <a href="/journal/deshabille-neglige-art-choisir.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #3a2e1f 0%, #3a2e1faa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/nuit-cocooning.webp" alt="Le déshabillé : l'art de la pièce qui se devine" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">NUIT & LOUNGEWEAR</div>
     <div class="ac-title serif">Le déshabillé : l'art de la pièce qui se devine</div>
@@ -819,7 +821,7 @@
   </div>
 </a>
     <a href="/journal/pyjama-hiver-chaud-cocooning.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #3a2e1f 0%, #3a2e1faa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/nuit-cocooning.webp" alt="Pyjama d'hiver : chaud, doux, et toujours joli" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">NUIT & LOUNGEWEAR</div>
     <div class="ac-title serif">Pyjama d'hiver : chaud, doux, et toujours joli</div>
@@ -828,7 +830,7 @@
   </div>
 </a>
     <a href="/journal/perles-anales-debuter-guide.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #1a1a1a 0%, #1a1a1aaa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lingerie-editorial.webp" alt="Perles anales : débuter en douceur et en sécurité" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">SENSUALITÉ</div>
     <div class="ac-title serif">Perles anales : débuter en douceur et en sécurité</div>
@@ -837,7 +839,7 @@
   </div>
 </a>
     <a href="/journal/lubrifiant-silicone-vs-eau-choisir.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #c9a961 0%, #c9a961aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/soins-massage.webp" alt="Lubrifiant silicone ou eau : lequel choisir" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">SOINS INTIMES</div>
     <div class="ac-title serif">Lubrifiant silicone ou eau : lequel choisir</div>
@@ -846,7 +848,7 @@
   </div>
 </a>
     <a href="/journal/jeu-de-role-couple-scenarios-debuter.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #3a1a26 0%, #3a1a26aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lecture-jeux.webp" alt="Jeu de rôle en couple : oser sans malaise" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">ÉROTISME</div>
     <div class="ac-title serif">Jeu de rôle en couple : oser sans malaise</div>
@@ -855,7 +857,7 @@
   </div>
 </a>
     <a href="/journal/carnet-fantasmes-couple-oser.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #3a1a26 0%, #3a1a26aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lecture-jeux.webp" alt="Le carnet de fantasmes : écrire pour mieux oser" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">ÉROTISME</div>
     <div class="ac-title serif">Le carnet de fantasmes : écrire pour mieux oser</div>
@@ -864,7 +866,7 @@
   </div>
 </a>
     <a href="/journal/huile-seche-corps-peau-satinee.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #c9a961 0%, #c9a961aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/soins-massage.webp" alt="L'huile sèche : une peau satinée sans effet gras" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">SOINS INTIMES</div>
     <div class="ac-title serif">L'huile sèche : une peau satinée sans effet gras</div>
@@ -873,7 +875,7 @@
   </div>
 </a>
     <a href="/journal/coffret-cadeau-noel-couple-idees.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #5b1a26 0%, #5b1a26aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/cadeau-couple.webp" alt="Coffret de Noël pour un couple : nos idées complices" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">COFFRETS & CADEAUX</div>
     <div class="ac-title serif">Coffret de Noël pour un couple : nos idées complices</div>
@@ -882,7 +884,7 @@
   </div>
 </a>
     <a href="/journal/soutien-gorge-balconnet-mettre-en-valeur.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #8b1d2c 0%, #8b1d2caa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lingerie-editorial.webp" alt="Le soutien-gorge balconnet : sublimer son décolleté" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE LINGERIE</div>
     <div class="ac-title serif">Le soutien-gorge balconnet : sublimer son décolleté</div>
@@ -891,7 +893,7 @@
   </div>
 </a>
     <a href="/journal/guepiere-bustier-occasion-speciale-choisir.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #8b1d2c 0%, #8b1d2caa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lingerie-editorial.webp" alt="Guêpière ou bustier : la pièce des grandes occasions" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE LINGERIE</div>
     <div class="ac-title serif">Guêpière ou bustier : la pièce des grandes occasions</div>
@@ -900,7 +902,7 @@
   </div>
 </a>
     <a href="/journal/chemise-de-nuit-coton-ou-satin-choisir.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #3a2e1f 0%, #3a2e1faa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/nuit-cocooning.webp" alt="Chemise de nuit : coton ou satin, laquelle pour toi ?" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE NUIT</div>
     <div class="ac-title serif">Chemise de nuit : coton ou satin, laquelle pour toi ?</div>
@@ -909,7 +911,7 @@
   </div>
 </a>
     <a href="/journal/chaussons-cocooning-femme-choisir.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #3a2e1f 0%, #3a2e1faa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/nuit-cocooning.webp" alt="Chaussons cocooning : le détail qui change tout" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE NUIT</div>
     <div class="ac-title serif">Chaussons cocooning : le détail qui change tout</div>
@@ -918,7 +920,7 @@
   </div>
 </a>
     <a href="/journal/plug-debutant-guide-securite-confort.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #1a1a1a 0%, #1a1a1aaa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/plaisir-bien-etre.webp" alt="Débuter en douceur : bien choisir son premier plug" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE BIEN-ÊTRE INTIME</div>
     <div class="ac-title serif">Débuter en douceur : bien choisir son premier plug</div>
@@ -927,7 +929,7 @@
   </div>
 </a>
     <a href="/journal/suceur-clitoridien-air-pulse-comprendre.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #1a1a1a 0%, #1a1a1aaa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lingerie-editorial.webp" alt="Stimulateur à air pulsé : comprendre la sensation" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE BIEN-ÊTRE INTIME</div>
     <div class="ac-title serif">Stimulateur à air pulsé : comprendre la sensation</div>
@@ -936,7 +938,7 @@
   </div>
 </a>
     <a href="/journal/huile-massage-chauffante-sensation-couple.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #c9a961 0%, #c9a961aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/soins-massage.webp" alt="Huile de massage chauffante : la chaleur qui détend" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">RITUEL COUPLE</div>
     <div class="ac-title serif">Huile de massage chauffante : la chaleur qui détend</div>
@@ -945,7 +947,7 @@
   </div>
 </a>
     <a href="/journal/gommage-corps-peau-douce-rituel-maison.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #c9a961 0%, #c9a961aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/soins-massage.webp" alt="Gommage corps : le secret d'une peau douce" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">RITUEL SOINS</div>
     <div class="ac-title serif">Gommage corps : le secret d'une peau douce</div>
@@ -954,7 +956,7 @@
   </div>
 </a>
     <a href="/journal/coffret-cadeau-pour-lui-idees-homme.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #b07d2b 0%, #b07d2baa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/cadeau-couple.webp" alt="Coffret cadeau pour lui : des idées qui font mouche" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">IDÉES CADEAUX</div>
     <div class="ac-title serif">Coffret cadeau pour lui : des idées qui font mouche</div>
@@ -963,7 +965,7 @@
   </div>
 </a>
     <a href="/journal/jeu-de-des-coquin-pimenter-couple.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #3a1a26 0%, #3a1a26aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lecture-jeux.webp" alt="Jeu de dés coquin : pimenter la soirée en riant" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">JEUX DE COUPLE</div>
     <div class="ac-title serif">Jeu de dés coquin : pimenter la soirée en riant</div>
@@ -972,7 +974,7 @@
   </div>
 </a>
         <a href="/journal/ensemble-lingerie-dentelle-assortir-guide.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #8b1d2c 0%, #8b1d2caa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lingerie-editorial.webp" alt="Ensemble de lingerie en dentelle : l'art de bien assortir" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE LINGERIE</div>
     <div class="ac-title serif">Ensemble de lingerie en dentelle : l'art de bien assortir</div>
@@ -981,7 +983,7 @@
   </div>
 </a>
     <a href="/journal/lingerie-grande-taille-sublimer-courbes.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #5b1a26 0%, #5b1a26aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lingerie-editorial.webp" alt="Lingerie grande taille : sublimer ses courbes avec confort" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE LINGERIE</div>
     <div class="ac-title serif">Lingerie grande taille : sublimer ses courbes avec confort</div>
@@ -990,7 +992,7 @@
   </div>
 </a>
     <a href="/journal/couleur-lingerie-selon-carnation-choisir.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #a04848 0%, #a04848aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lingerie-editorial.webp" alt="Quelle couleur de lingerie selon sa carnation ?" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">TENDANCE</div>
     <div class="ac-title serif">Quelle couleur de lingerie selon sa carnation ?</div>
@@ -999,7 +1001,7 @@
   </div>
 </a>
     <a href="/journal/string-tanga-shorty-quelle-culotte-choisir.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #8b1d2c 0%, #8b1d2caa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lingerie-editorial.webp" alt="String, tanga, shorty : quelle culotte pour quelle occasion ?" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE LINGERIE</div>
     <div class="ac-title serif">String, tanga, shorty : quelle culotte pour quelle occasion ?</div>
@@ -1008,7 +1010,7 @@
   </div>
 </a>
     <a href="/journal/nuisette-dentelle-morphologie-choisir.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #3a2e1f 0%, #3a2e1faa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/nuit-cocooning.webp" alt="Nuisette en dentelle : la choisir selon sa morphologie" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE NUIT</div>
     <div class="ac-title serif">Nuisette en dentelle : la choisir selon sa morphologie</div>
@@ -1017,7 +1019,7 @@
   </div>
 </a>
     <a href="/journal/peignoir-satin-elegance-reveil-choisir.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #241c16 0%, #241c16aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/nuit-cocooning.webp" alt="Peignoir en satin : l'élégance dès le réveil" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE NUIT</div>
     <div class="ac-title serif">Peignoir en satin : l'élégance dès le réveil</div>
@@ -1026,7 +1028,7 @@
   </div>
 </a>
     <a href="/journal/tenue-nuit-ete-respirante-bien-dormir.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #3a2e1f 0%, #3a2e1faa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/nuit-cocooning.webp" alt="Bien dormir l'été : la tenue de nuit idéale" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE NUIT</div>
     <div class="ac-title serif">Bien dormir l'été : la tenue de nuit idéale</div>
@@ -1035,7 +1037,7 @@
   </div>
 </a>
     <a href="/journal/caraco-short-pyjama-duo-confort.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #241c16 0%, #241c16aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/nuit-cocooning.webp" alt="Caraco et short : le duo pyjama confort par excellence" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE NUIT</div>
     <div class="ac-title serif">Caraco et short : le duo pyjama confort par excellence</div>
@@ -1044,7 +1046,7 @@
   </div>
 </a>
     <a href="/journal/vibromasseur-point-g-comprendre-courbe.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #1a1a1a 0%, #1a1a1aaa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/plaisir-bien-etre.webp" alt="Vibromasseur point G : comprendre la courbe" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">SENSUALITÉ</div>
     <div class="ac-title serif">Vibromasseur point G : comprendre la courbe</div>
@@ -1053,7 +1055,7 @@
   </div>
 </a>
     <a href="/journal/wand-vibromasseur-puissant-mode-emploi.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #1a1a1a 0%, #1a1a1aaa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/plaisir-bien-etre.webp" alt="Le wand : le vibromasseur puissant, mode d'emploi" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">SENSUALITÉ</div>
     <div class="ac-title serif">Le wand : le vibromasseur puissant, mode d'emploi</div>
@@ -1062,7 +1064,7 @@
   </div>
 </a>
     <a href="/journal/anneau-vibrant-couple-plaisir-partage.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #1a1a1a 0%, #1a1a1aaa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/plaisir-bien-etre.webp" alt="Anneau vibrant : le plaisir partagé, simplement" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">SENSUALITÉ</div>
     <div class="ac-title serif">Anneau vibrant : le plaisir partagé, simplement</div>
@@ -1071,7 +1073,7 @@
   </div>
 </a>
     <a href="/journal/boules-geisha-perinee-plaisir-guide.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #1a1a1a 0%, #1a1a1aaa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/soins-massage.webp" alt="Boules de geisha : plaisir et tonus du périnée" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">SENSUALITÉ</div>
     <div class="ac-title serif">Boules de geisha : plaisir et tonus du périnée</div>
@@ -1080,7 +1082,7 @@
   </div>
 </a>
     <a href="/journal/bondage-leger-debuter-menottes-foulards.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #3a1a26 0%, #3a1a26aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/plaisir-bien-etre.webp" alt="Bondage léger : débuter en douceur (menottes, foulards)" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">ÉROTISME</div>
     <div class="ac-title serif">Bondage léger : débuter en douceur (menottes, foulards)</div>
@@ -1089,7 +1091,7 @@
   </div>
 </a>
     <a href="/journal/des-jeux-coquins-soiree-couple.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #3a1a26 0%, #3a1a26aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lecture-jeux.webp" alt="Dés et jeux coquins : pimenter une soirée à deux" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">ÉROTISME</div>
     <div class="ac-title serif">Dés et jeux coquins : pimenter une soirée à deux</div>
@@ -1098,7 +1100,7 @@
   </div>
 </a>
     <a href="/journal/lecture-erotique-par-quel-livre-commencer.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #3a1a26 0%, #3a1a26aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lecture-jeux.webp" alt="Lecture érotique : par quel livre commencer ?" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">ÉROTISME</div>
     <div class="ac-title serif">Lecture érotique : par quel livre commencer ?</div>
@@ -1107,7 +1109,7 @@
   </div>
 </a>
     <a href="/journal/gel-retardant-comprendre-utiliser.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #c9a961 0%, #c9a961aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/soins-massage.webp" alt="Gel retardant : comprendre et bien l'utiliser" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">SOINS INTIMES</div>
     <div class="ac-title serif">Gel retardant : comprendre et bien l'utiliser</div>
@@ -1116,7 +1118,7 @@
   </div>
 </a>
     <a href="/journal/soin-intime-ph-equilibre-routine.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #c9a961 0%, #c9a961aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/soins-massage.webp" alt="Soin intime : respecter son pH au quotidien" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">SOINS INTIMES</div>
     <div class="ac-title serif">Soin intime : respecter son pH au quotidien</div>
@@ -1125,7 +1127,7 @@
   </div>
 </a>
     <a href="/journal/huile-massage-parfumee-ou-neutre-choisir.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #c9a961 0%, #c9a961aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/soins-massage.webp" alt="Huile de massage : parfumée ou neutre, laquelle choisir ?" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">SOINS INTIMES</div>
     <div class="ac-title serif">Huile de massage : parfumée ou neutre, laquelle choisir ?</div>
@@ -1134,7 +1136,7 @@
   </div>
 </a>
     <a href="/journal/coffret-decouverte-sensualite-debuter-couple.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #5b1a26 0%, #5b1a26aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/cadeau-couple.webp" alt="Coffret découverte sensualité : par où commencer à deux" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">COFFRETS</div>
     <div class="ac-title serif">Coffret découverte sensualité : par où commencer à deux</div>
@@ -1143,7 +1145,7 @@
   </div>
 </a>
     <a href="/journal/coffret-lune-de-miel-jeunes-maries-idees.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #5b1a26 0%, #5b1a26aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lecture-jeux.webp" alt="Coffret lune de miel : nos idées pour jeunes mariés" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">COFFRETS</div>
     <div class="ac-title serif">Coffret lune de miel : nos idées pour jeunes mariés</div>
@@ -1152,7 +1154,7 @@
   </div>
 </a>
     <a href="/journal/gode-debutante-comment-choisir.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #1a1a1a 0%, #1a1a1aaa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/plaisir-bien-etre.webp" alt="Gode pour débutante : comment choisir son premier sans se tromper" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">SENSUALITÉ</div>
     <div class="ac-title serif">Gode pour débutante : comment choisir son premier sans se tromper</div>
@@ -1161,7 +1163,7 @@
   </div>
 </a>
 <a href="/journal/vibromasseur-rabbit-pourquoi-adore.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #1a1a1a 0%, #1a1a1aaa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/plaisir-bien-etre.webp" alt="Vibromasseur rabbit : pourquoi tout le monde l'adore" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">SENSUALITÉ</div>
     <div class="ac-title serif">Vibromasseur rabbit : pourquoi tout le monde l'adore</div>
@@ -1170,7 +1172,7 @@
   </div>
 </a>
 <a href="/journal/jeux-cartes-coquins-couple-selection.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #3a1a26 0%, #3a1a26aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lecture-jeux.webp" alt="Jeux de cartes coquins pour couple : notre sélection" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">ÉROTISME</div>
     <div class="ac-title serif">Jeux de cartes coquins pour couple : notre sélection</div>
@@ -1179,7 +1181,7 @@
   </div>
 </a>
 <a href="/journal/action-ou-verite-version-adulte-couple.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #3a1a26 0%, #3a1a26aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lecture-jeux.webp" alt="Action ou Vérité version adulte : le jeu qui ranime un couple" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">ÉROTISME</div>
     <div class="ac-title serif">Action ou Vérité version adulte : le jeu qui ranime un couple</div>
@@ -1188,7 +1190,7 @@
   </div>
 </a>
 <a href="/journal/huile-massage-comestible-rituel-couple.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #c9a961 0%, #c9a961aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/soins-massage.webp" alt="Huile de massage comestible : le rituel sensuel à deux" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">SOINS INTIMES</div>
     <div class="ac-title serif">Huile de massage comestible : le rituel sensuel à deux</div>
@@ -1197,7 +1199,7 @@
   </div>
 </a>
 <a href="/journal/lingerie-coquine-premiere-fois-guide.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #8b1d2c 0%, #8b1d2caa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lingerie-editorial.webp" alt="Lingerie coquine pour la première fois : oser sans en faire trop" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE LINGERIE</div>
     <div class="ac-title serif">Lingerie coquine pour la première fois : oser sans en faire trop</div>
@@ -1206,7 +1208,7 @@
   </div>
 </a>
 <a href="/journal/coffret-cadeau-couple-anniversaire-idees.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #5b1a26 0%, #5b1a26aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/cadeau-couple.webp" alt="Coffret cadeau couple : 5 idées pour un anniversaire mémorable" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">COFFRETS</div>
     <div class="ac-title serif">Coffret cadeau couple : 5 idées pour un anniversaire mémorable</div>
@@ -1215,7 +1217,7 @@
   </div>
 </a>
 <a href="/journal/lubrifiant-naturel-base-eau-bien-choisir.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #c9a961 0%, #c9a961aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/soins-massage.webp" alt="Lubrifiant naturel à base d'eau : pourquoi et comment choisir" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">SOINS INTIMES</div>
     <div class="ac-title serif">Lubrifiant naturel à base d'eau : pourquoi et comment choisir</div>
@@ -1224,7 +1226,7 @@
   </div>
 </a>
 <a href="/journal/mini-vibromasseur-discret-voyage.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #1a1a1a 0%, #1a1a1aaa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/plaisir-bien-etre.webp" alt="Mini vibromasseur discret : le compagnon de voyage idéal" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">SENSUALITÉ</div>
     <div class="ac-title serif">Mini vibromasseur discret : le compagnon de voyage idéal</div>
@@ -1233,7 +1235,7 @@
   </div>
 </a>
 <a href="/journal/porte-jarretelles-comment-porter-elegant.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #8b1d2c 0%, #8b1d2caa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lingerie-editorial.webp" alt="Porte-jarretelles : comment le porter sans avoir l'air déguisée" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE LINGERIE</div>
     <div class="ac-title serif">Porte-jarretelles : comment le porter sans avoir l'air déguisée</div>
@@ -1242,7 +1244,7 @@
   </div>
 </a>
 <a href="/journal/comment-choisir-soutien-gorge-sans-armatures.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #8b1d2c 0%, #8b1d2caa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lingerie-editorial.webp" alt="Comment choisir un soutien-gorge sans armatures qui tient vraiment" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE LINGERIE</div>
     <div class="ac-title serif">Comment choisir un soutien-gorge sans armatures qui tient vraiment</div>
@@ -1251,7 +1253,7 @@
   </div>
 </a>
 <a href="/journal/guide-nuisette-satin-tomber-amoureuse-tissu.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #3a2e1f 0%, #3a2e1faa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/nuit-cocooning.webp" alt="Nuisette en satin : tomber amoureuse du bon tissu" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE NUIT</div>
     <div class="ac-title serif">Nuisette en satin : tomber amoureuse du bon tissu</div>
@@ -1260,7 +1262,7 @@
   </div>
 </a>
 <a href="/journal/bien-choisir-lubrifiant-intime-guide.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #c9a961 0%, #c9a961aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/soins-massage.webp" alt="Bien choisir son lubrifiant intime : guide complet" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">SOINS INTIMES</div>
     <div class="ac-title serif">Bien choisir son lubrifiant intime : guide complet</div>
@@ -1269,7 +1271,7 @@
   </div>
 </a>
 <a href="/journal/vibromasseurs-debutantes-selection.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #1a1a1a 0%, #1a1a1aaa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/plaisir-bien-etre.webp" alt="Vibromasseurs pour débutantes : par quoi commencer ?" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">SENSUALITÉ</div>
     <div class="ac-title serif">Vibromasseurs pour débutantes : par quoi commencer ?</div>
@@ -1278,7 +1280,7 @@
   </div>
 </a>
 <a href="/journal/idees-cadeaux-couple-romantique.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #5b1a26 0%, #5b1a26aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lecture-jeux.webp" alt="Idées cadeaux couple : 5 coffrets qui font vraiment plaisir" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">COFFRETS</div>
     <div class="ac-title serif">Idées cadeaux couple : 5 coffrets qui font vraiment plaisir</div>
@@ -1287,7 +1289,7 @@
   </div>
 </a>
 <a href="/journal/lingerie-et-confiance-soi.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #a04848 0%, #a04848aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lingerie-editorial.webp" alt="La lingerie pour soi, pas pour les autres" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">RÉFLEXION</div>
     <div class="ac-title serif">La lingerie pour soi, pas pour les autres</div>
@@ -1296,7 +1298,7 @@
   </div>
 </a>
 <a href="/journal/comment-trouver-sa-taille-soutien-gorge.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #8b1d2c 0%, #8b1d2caa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lingerie-editorial.webp" alt="Comment trouver sa vraie taille de soutien-gorge" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE LINGERIE</div>
     <div class="ac-title serif">Comment trouver sa vraie taille de soutien-gorge</div>
@@ -1305,7 +1307,7 @@
   </div>
 </a>
 <a href="/journal/bralette-confort-elegance.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #a04848 0%, #a04848aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lingerie-editorial.webp" alt="Bralette : pourquoi tout le monde l'adore" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">TENDANCE</div>
     <div class="ac-title serif">Bralette : pourquoi tout le monde l'adore</div>
@@ -1314,7 +1316,7 @@
   </div>
 </a>
 <a href="/journal/body-dentelle-guide-bien-choisir.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #5b1a26 0%, #5b1a26aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lingerie-editorial.webp" alt="Body en dentelle : guide pour bien choisir" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE LINGERIE</div>
     <div class="ac-title serif">Body en dentelle : guide pour bien choisir</div>
@@ -1323,7 +1325,7 @@
   </div>
 </a>
 <a href="/journal/culotte-taille-haute-confort-style.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #8b1d2c 0%, #8b1d2caa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lingerie-editorial.webp" alt="La culotte taille haute : confort et silhouette" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">TENDANCE</div>
     <div class="ac-title serif">La culotte taille haute : confort et silhouette</div>
@@ -1332,7 +1334,7 @@
   </div>
 </a>
 <a href="/journal/kimono-peignoir-robe-chambre-difference.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #3a2e1f 0%, #3a2e1faa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/nuit-cocooning.webp" alt="Kimono, peignoir, robe de chambre : quelle différence ?" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE NUIT</div>
     <div class="ac-title serif">Kimono, peignoir, robe de chambre : quelle différence ?</div>
@@ -1341,7 +1343,7 @@
   </div>
 </a>
 <a href="/journal/pyjama-satin-luxe-quotidien.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #241c16 0%, #241c16aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/nuit-cocooning.webp" alt="Pyjama satin : le luxe au quotidien" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE NUIT</div>
     <div class="ac-title serif">Pyjama satin : le luxe au quotidien</div>
@@ -1350,7 +1352,7 @@
   </div>
 </a>
 <a href="/journal/stimulateur-clitoridien-tout-comprendre.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #1a1a1a 0%, #1a1a1aaa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lingerie-editorial.webp" alt="Stimulateur clitoridien : tout comprendre" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">SENSUALITÉ</div>
     <div class="ac-title serif">Stimulateur clitoridien : tout comprendre</div>
@@ -1359,7 +1361,7 @@
   </div>
 </a>
 <a href="/journal/bougie-massage-rituel-sensoriel.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #c9a961 0%, #c9a961aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/soins-massage.webp" alt="Bougie de massage : le rituel sensoriel à découvrir" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">SOINS INTIMES</div>
     <div class="ac-title serif">Bougie de massage : le rituel sensoriel à découvrir</div>
@@ -1368,7 +1370,7 @@
   </div>
 </a>
 <a href="/journal/pimenter-couple-7-idees-simples.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #3a1a26 0%, #3a1a26aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lingerie-editorial.webp" alt="Pimenter le couple : 7 idées simples pour rallumer la flamme" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">ÉROTISME</div>
     <div class="ac-title serif">Pimenter le couple : 7 idées simples pour rallumer la flamme</div>
@@ -1377,7 +1379,7 @@
   </div>
 </a>
 <a href="/journal/saint-valentin-7-idees-cadeaux.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #5b1a26 0%, #5b1a26aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/cadeau-couple.webp" alt="Saint-Valentin : 7 idées cadeaux pour vraiment lui faire plaisir" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">COFFRETS</div>
     <div class="ac-title serif">Saint-Valentin : 7 idées cadeaux pour vraiment lui faire plaisir</div>
@@ -1387,7 +1389,7 @@
 </a>
 
     <a href="/journal/babydoll-piece-essentielle-guide.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #8b1d2c 0%, #8b1d2caa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lingerie-editorial.webp" alt="Babydoll : la pièce qui fait fondre sans en faire trop" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE LINGERIE</div>
     <div class="ac-title serif">Babydoll : la pièce qui fait fondre sans en faire trop</div>
@@ -1396,7 +1398,7 @@
   </div>
 </a>
     <a href="/journal/bas-couture-classique-elegance.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #8b1d2c 0%, #8b1d2caa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lingerie-editorial.webp" alt="Bas couture : le retour d'un classique d'élégance" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE LINGERIE</div>
     <div class="ac-title serif">Bas couture : le retour d'un classique d'élégance</div>
@@ -1405,7 +1407,7 @@
   </div>
 </a>
     <a href="/journal/calecon-homme-personnalise-cadeau.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #5b1a26 0%, #5b1a26aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/cadeau-couple.webp" alt="Caleçon homme personnalisé : l'idée cadeau couple qui fait mouche" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">COFFRETS</div>
     <div class="ac-title serif">Caleçon homme personnalisé : l'idée cadeau couple qui fait mouche</div>
@@ -1414,7 +1416,7 @@
   </div>
 </a>
     <a href="/journal/coffret-cadeau-bien-etre-femme-idees.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #5b1a26 0%, #5b1a26aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/cadeau-couple.webp" alt="Coffret cadeau bien-être femme : 7 idées qui font vraiment plaisir" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">COFFRETS</div>
     <div class="ac-title serif">Coffret cadeau bien-être femme : 7 idées qui font vraiment plaisir</div>
@@ -1423,7 +1425,7 @@
   </div>
 </a>
     <a href="/journal/coffret-romance-couple-saint-valentin.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #5b1a26 0%, #5b1a26aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lecture-jeux.webp" alt="Coffret romance couple : 6 idées qui sortent du cliché" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">COFFRETS</div>
     <div class="ac-title serif">Coffret romance couple : 6 idées qui sortent du cliché</div>
@@ -1432,7 +1434,7 @@
   </div>
 </a>
     <a href="/journal/gel-intime-bio-quotidien-choisir.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #c9a961 0%, #c9a961aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/soins-massage.webp" alt="Gel intime bio : comment choisir le bon au quotidien" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">SOINS INTIMES</div>
     <div class="ac-title serif">Gel intime bio : comment choisir le bon au quotidien</div>
@@ -1441,7 +1443,7 @@
   </div>
 </a>
     <a href="/journal/lubrifiant-chauffant-sensation-guide.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #c9a961 0%, #c9a961aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/soins-massage.webp" alt="Lubrifiant chauffant : sensation et confort, mode d'emploi" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">SOINS INTIMES</div>
     <div class="ac-title serif">Lubrifiant chauffant : sensation et confort, mode d'emploi</div>
@@ -1450,7 +1452,7 @@
   </div>
 </a>
     <a href="/journal/massage-pieds-reflexologie-couple.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #c9a961 0%, #c9a961aa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/soins-massage.webp" alt="Massage des pieds en couple : le rituel réflexologie à découvrir" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">SOINS INTIMES</div>
     <div class="ac-title serif">Massage des pieds en couple : le rituel réflexologie à découvrir</div>
@@ -1459,7 +1461,7 @@
   </div>
 </a>
     <a href="/journal/oeuf-vibrant-connecte-initiation.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #1a1a1a 0%, #1a1a1aaa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/lingerie-editorial.webp" alt="Œuf vibrant connecté : l'initiation au plaisir à distance" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">SENSUALITÉ</div>
     <div class="ac-title serif">Œuf vibrant connecté : l'initiation au plaisir à distance</div>
@@ -1468,7 +1470,7 @@
   </div>
 </a>
     <a href="/journal/pyjama-satin-femme-investir-bien.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #3a2e1f 0%, #3a2e1faa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/nuit-cocooning.webp" alt="Pyjama satin femme : pourquoi investir et comment bien choisir" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE NUIT</div>
     <div class="ac-title serif">Pyjama satin femme : pourquoi investir et comment bien choisir</div>
@@ -1477,7 +1479,7 @@
   </div>
 </a>
     <a href="/journal/robe-chambre-femme-cocooning-choisir.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #3a2e1f 0%, #3a2e1faa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/nuit-cocooning.webp" alt="Robe de chambre femme : la pièce cocooning essentielle" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">GUIDE NUIT</div>
     <div class="ac-title serif">Robe de chambre femme : la pièce cocooning essentielle</div>
@@ -1486,7 +1488,7 @@
   </div>
 </a>
     <a href="/journal/vibromasseur-connecte-app-couple.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #1a1a1a 0%, #1a1a1aaa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/plaisir-bien-etre.webp" alt="Vibromasseur connecté : la révolution app pour pimenter le couple" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">SENSUALITÉ</div>
     <div class="ac-title serif">Vibromasseur connecté : la révolution app pour pimenter le couple</div>
@@ -1495,7 +1497,7 @@
   </div>
 </a>
     <a href="/journal/vibromasseur-silencieux-discretion-guide.html" class="article-card">
-  <div class="ac-cover" style="background:linear-gradient(135deg, #1a1a1a 0%, #1a1a1aaa 100%)"></div>
+  <img class="ac-cover" src="/assets/journal/plaisir-bien-etre.webp" alt="Vibromasseur silencieux : discrétion absolue, mode d'emploi" loading="lazy" decoding="async">
   <div class="ac-body">
     <div class="ac-kicker smallcaps">SENSUALITÉ</div>
     <div class="ac-title serif">Vibromasseur silencieux : discrétion absolue, mode d'emploi</div>
