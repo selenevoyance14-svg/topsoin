@@ -1,5 +1,5 @@
 // data.jsx — Maison Léa: Amazon affiliate edition (généré automatiquement)
-const AMAZON_DATA_UPDATED_AT = "2026-08-28T16:40:16.370Z";
+const AMAZON_DATA_UPDATED_AT = "2026-08-29T11:07:25.369Z";
 const COLLECTIONS = [
   { id:'lingerie',   label:'Lingerie',          fr:'Soutiens-gorge, culottes, bodies', count: 13 },
   { id:'nuit',       label:'Nuit & loungewear', fr:'Nuisettes, peignoirs, kimonos',     count: 12 },
@@ -12,23 +12,6 @@ const COLLECTIONS = [
 const PRODUCTS = [
   {
     "id": 1,
-    "cat": "lingerie",
-    "name": "HIVTE Ensemble de Lingerie Nuisette en Dentelle avec Sout...",
-    "sub": "Marque · HIVTE",
-    "price": "12,99 €",
-    "was": "",
-    "off": "",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#8b1d2c",
-    "asin": "B0H2YZ5MC9",
-    "image": "https://m.media-amazon.com/images/I/41LvYrytl7L._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0H2YZ5MC9?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
-    "id": 2,
     "cat": "lingerie",
     "name": "Avidlove Sexy Ensemble de Lingerie pour Femme Dentelle Bo...",
     "sub": "Marque · Avidlove",
@@ -43,6 +26,23 @@ const PRODUCTS = [
     "asin": "B0DH2KQQ9P",
     "image": "https://m.media-amazon.com/images/I/41A9dPftREL._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B0DH2KQQ9P?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
+    "id": 2,
+    "cat": "lingerie",
+    "name": "HIVTE Ensemble de Lingerie Nuisette en Dentelle avec Sout...",
+    "sub": "Marque · HIVTE",
+    "price": "12,99 €",
+    "was": "",
+    "off": "",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#8b1d2c",
+    "asin": "B0H2YZ5MC9",
+    "image": "https://m.media-amazon.com/images/I/41LvYrytl7L._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0H2YZ5MC9?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 3,
@@ -64,9 +64,9 @@ const PRODUCTS = [
   {
     "id": 4,
     "cat": "lingerie",
-    "name": "VicSec Ensemble de Lingerie 2 Pièces Sexy, Nuisette Flora...",
-    "sub": "Marque · VicSec",
-    "price": "6,99 €",
+    "name": "Femme Dentelle Ensemble de Lingerie Sexy Transparente 2 P...",
+    "sub": "Marque · PARUPRUP",
+    "price": "7,99 €",
     "was": "",
     "off": "",
     "rating": 0,
@@ -74,9 +74,9 @@ const PRODUCTS = [
     "prime": false,
     "tag": "",
     "color": "#8b1d2c",
-    "asin": "B0H4QC1Z16",
-    "image": "https://m.media-amazon.com/images/I/514+dNNDUSL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0H4QC1Z16?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+    "asin": "B0FZTNPMFB",
+    "image": "https://m.media-amazon.com/images/I/41Xhfhg+alL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0FZTNPMFB?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 5,
@@ -98,6 +98,23 @@ const PRODUCTS = [
   {
     "id": 6,
     "cat": "lingerie",
+    "name": "VicSec Ensemble de Lingerie 2 Pièces Sexy, Nuisette Flora...",
+    "sub": "Marque · VicSec",
+    "price": "6,99 €",
+    "was": "",
+    "off": "",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#8b1d2c",
+    "asin": "B0H4QC1Z16",
+    "image": "https://m.media-amazon.com/images/I/514+dNNDUSL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0H4QC1Z16?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
+    "id": 7,
+    "cat": "lingerie",
     "name": "ROSVAJFY Ensemble de Lingerie Sexy pour Femme en Dentelle...",
     "sub": "Marque · ROSVAJFY",
     "price": "11,99 €",
@@ -111,23 +128,6 @@ const PRODUCTS = [
     "asin": "B0D7ZRXC5J",
     "image": "https://m.media-amazon.com/images/I/417Whbn2Q+L._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B0D7ZRXC5J?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
-    "id": 7,
-    "cat": "lingerie",
-    "name": "Femme Dentelle Ensemble de Lingerie Sexy Transparente 2 P...",
-    "sub": "Marque · PARUPRUP",
-    "price": "9,99 €",
-    "was": "",
-    "off": "",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#8b1d2c",
-    "asin": "B0FZTNPMFB",
-    "image": "https://m.media-amazon.com/images/I/41Xhfhg+alL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0FZTNPMFB?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 8,
@@ -217,19 +217,19 @@ const PRODUCTS = [
   {
     "id": 13,
     "cat": "lingerie",
-    "name": "Cotonella, Soutien-Gorge à Balconnet Vera, avec Bonnets e...",
-    "sub": "Marque · Cotonella",
-    "price": "11,30 €",
-    "was": "11,90 €",
-    "off": "-5%",
+    "name": "BUBBLEFOX Soutien Gorge Dos Nu-Balconnet Demi Invisible À...",
+    "sub": "Marque · BUBBLEFOX",
+    "price": "29,99 €",
+    "was": "",
+    "off": "",
     "rating": 0,
     "reviews": 0,
     "prime": false,
     "tag": "",
     "color": "#8b1d2c",
-    "asin": "B06X8YRJ3Z",
-    "image": "https://m.media-amazon.com/images/I/31FpEZXFtoL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B06X8YRJ3Z?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+    "asin": "B0H11R1DRV",
+    "image": "https://m.media-amazon.com/images/I/41L5lSvJx+L._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0H11R1DRV?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 14,
@@ -336,23 +336,6 @@ const PRODUCTS = [
   {
     "id": 20,
     "cat": "nuit",
-    "name": "Marvmys Nuisette Femme Sexy Chemise de Nuit Dentelle Slin...",
-    "sub": "Marque · Marvmys",
-    "price": "11,99 €",
-    "was": "",
-    "off": "",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#3a2e1f",
-    "asin": "B09N11XVB1",
-    "image": "https://m.media-amazon.com/images/I/31LCXHuy93L._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B09N11XVB1?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
-    "id": 21,
-    "cat": "nuit",
     "name": "Vlazom Nuisette Femme Sexy Satin Chemise de Nuit Courte B...",
     "sub": "Marque · Vlazom",
     "price": "10,99 €",
@@ -366,6 +349,23 @@ const PRODUCTS = [
     "asin": "B09F36HYMF",
     "image": "https://m.media-amazon.com/images/I/41OqQrXFbiL._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B09F36HYMF?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
+    "id": 21,
+    "cat": "nuit",
+    "name": "Bresdk Chemise Homme de Nuit en Satin pour Femme Col en V...",
+    "sub": "Marque · Bresdk",
+    "price": "12,99 €",
+    "was": "13,99 €",
+    "off": "-7%",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#3a2e1f",
+    "asin": "B0CZ8GY9LM",
+    "image": "https://m.media-amazon.com/images/I/41ckhqZpSlL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0CZ8GY9LM?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 22,
@@ -421,28 +421,28 @@ const PRODUCTS = [
   {
     "id": 25,
     "cat": "nuit",
-    "name": "Sopesil Peignoir Satin Femme Robes Longues pour Femmes Ro...",
-    "sub": "Marque · Sopesil",
-    "price": "16,99 €",
-    "was": "19,99 €",
-    "off": "-15%",
+    "name": "Coucoland Robe de chambre longue en satin pour Femme Robe...",
+    "sub": "Marque · BABEYOND",
+    "price": "33,99 €",
+    "was": "",
+    "off": "",
     "rating": 0,
     "reviews": 0,
     "prime": false,
     "tag": "",
     "color": "#3a2e1f",
-    "asin": "B0CSJR3C3Z",
-    "image": "https://m.media-amazon.com/images/I/41Lhk9V1iTL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0CSJR3C3Z?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+    "asin": "B088K3JWQQ",
+    "image": "https://m.media-amazon.com/images/I/41n36Cq1lYL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B088K3JWQQ?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 26,
     "cat": "sensualite",
     "name": "Godemichets Gode Vibro-masseur va et Vient, 20cm Gode Ven...",
     "sub": "Marque · Cosyfun",
-    "price": "23,99 €",
+    "price": "19,99 €",
     "was": "25,99 €",
-    "off": "-8%",
+    "off": "-23%",
     "rating": 0,
     "reviews": 0,
     "prime": false,
@@ -523,23 +523,6 @@ const PRODUCTS = [
   {
     "id": 31,
     "cat": "sensualite",
-    "name": "Gode Vibro-masseur Va et Vient Sex Toys - Gode Xxl Réalis...",
-    "sub": "Marque · Banysin",
-    "price": "25,99 €",
-    "was": "27,79 €",
-    "off": "-6%",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#1a1a1a",
-    "asin": "B0FFMGW6G9",
-    "image": "https://m.media-amazon.com/images/I/31IOJ6cg+qL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0FFMGW6G9?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
-    "id": 32,
-    "cat": "sensualite",
     "name": "Gode Femme Sex Vibromasseur Feminin Va et Vient,Sex Toys ...",
     "sub": "Marque · AZOI",
     "price": "25,99 €",
@@ -553,6 +536,23 @@ const PRODUCTS = [
     "asin": "B0FNRPBZMR",
     "image": "https://m.media-amazon.com/images/I/415M2F71L2L._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B0FNRPBZMR?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
+    "id": 32,
+    "cat": "sensualite",
+    "name": "Gode Vibro-masseur Va et Vient Sex Toys - Gode Xxl Réalis...",
+    "sub": "Marque · Banysin",
+    "price": "25,99 €",
+    "was": "27,79 €",
+    "off": "-6%",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#1a1a1a",
+    "asin": "B0FFMGW6G9",
+    "image": "https://m.media-amazon.com/images/I/31IOJ6cg+qL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0FFMGW6G9?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 33,
@@ -591,6 +591,23 @@ const PRODUCTS = [
   {
     "id": 35,
     "cat": "sensualite",
+    "name": "3 IN 1 Gode Vibro-Masseur Vibromasseur Point G pour Femme...",
+    "sub": "Marque · JR JOURLOVE",
+    "price": "27,99 €",
+    "was": "",
+    "off": "",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#1a1a1a",
+    "asin": "B0D1QNM4TF",
+    "image": "https://m.media-amazon.com/images/I/41PLTwh0HnL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0D1QNM4TF?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
+    "id": 36,
+    "cat": "sensualite",
     "name": "Sex Toys Femme Clitoridien I Vibro-masseur Silencieux 10 ...",
     "sub": "Marque · Sensuelle Bliss",
     "price": "16,99 €",
@@ -604,23 +621,6 @@ const PRODUCTS = [
     "asin": "B0FWRLMN4Y",
     "image": "https://m.media-amazon.com/images/I/41+vJbXgTFL._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B0FWRLMN4Y?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
-    "id": 36,
-    "cat": "sensualite",
-    "name": "MySecretCase Vibromasseurs Feminin Multifonction 3-en-1 S...",
-    "sub": "Marque · MySecretCase",
-    "price": "21,25 €",
-    "was": "",
-    "off": "",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#1a1a1a",
-    "asin": "B0DVD4JMYV",
-    "image": "https://m.media-amazon.com/images/I/41rZJvDxJXL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0DVD4JMYV?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 37,
@@ -948,23 +948,6 @@ const PRODUCTS = [
   {
     "id": 56,
     "cat": "soins",
-    "name": "Natessance huile de massage ylang ylang éveil des sens 100ml",
-    "sub": "Marque · Natessance",
-    "price": "5,99 €",
-    "was": "",
-    "off": "",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#c9a961",
-    "asin": "B015V1UVNS",
-    "image": "https://m.media-amazon.com/images/I/31V-Als3A5L._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B015V1UVNS?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
-    "id": 57,
-    "cat": "soins",
     "name": "Huile de Massage Monoï, Relaxante et Aphrodisiaque, Hydra...",
     "sub": "Marque · bleu & marine Bretania",
     "price": "14,90 €",
@@ -978,6 +961,23 @@ const PRODUCTS = [
     "asin": "B01LBK1VIW",
     "image": "https://m.media-amazon.com/images/I/41AfEk+-m3L._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B01LBK1VIW?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
+    "id": 57,
+    "cat": "soins",
+    "name": "Natessance huile de massage ylang ylang éveil des sens 100ml",
+    "sub": "Marque · Natessance",
+    "price": "5,99 €",
+    "was": "",
+    "off": "",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#c9a961",
+    "asin": "B015V1UVNS",
+    "image": "https://m.media-amazon.com/images/I/31V-Als3A5L._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B015V1UVNS?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 58,
@@ -1016,23 +1016,6 @@ const PRODUCTS = [
   {
     "id": 60,
     "cat": "cadeaux",
-    "name": "Jarretière Dentelle Blanche Mariage - 1 Pièce avec Coffre...",
-    "sub": "Marque · YongChiMaoYi",
-    "price": "6,99 €",
-    "was": "",
-    "off": "",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#5b1a26",
-    "asin": "B0H95BHDLG",
-    "image": "https://m.media-amazon.com/images/I/31-yjmL8KbL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0H95BHDLG?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
-    "id": 61,
-    "cat": "cadeaux",
     "name": "Obsessive ensemble de lingerie guêpière avec string dans ...",
     "sub": "Marque · Obsessive",
     "price": "46,95 €",
@@ -1048,7 +1031,7 @@ const PRODUCTS = [
     "url": "https://www.amazon.fr/dp/B09RZTR4QN?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
-    "id": 62,
+    "id": 61,
     "cat": "cadeaux",
     "name": "RSLOVE Lingerie Sexy pour Femme Soutien-Gorge et Culotte ...",
     "sub": "Marque · RSLOVE",
@@ -1065,7 +1048,7 @@ const PRODUCTS = [
     "url": "https://www.amazon.fr/dp/B08VFHJC2K?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
-    "id": 63,
+    "id": 62,
     "cat": "cadeaux",
     "name": "Dstymkler Femmes sexy sangle arrière halter lingerie cost...",
     "sub": "Marque · Dstymkler",
@@ -1080,6 +1063,23 @@ const PRODUCTS = [
     "asin": "B0CN745J8Z",
     "image": "https://m.media-amazon.com/images/I/41HqWM5lJpL._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B0CN745J8Z?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
+    "id": 63,
+    "cat": "cadeaux",
+    "name": "Jarretière Dentelle Blanche Mariage - 1 Pièce avec Coffre...",
+    "sub": "Marque · YongChiMaoYi",
+    "price": "6,99 €",
+    "was": "",
+    "off": "",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#5b1a26",
+    "asin": "B0H95BHDLG",
+    "image": "https://m.media-amazon.com/images/I/31-yjmL8KbL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0H95BHDLG?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 64,
@@ -1118,6 +1118,23 @@ const PRODUCTS = [
   {
     "id": 66,
     "cat": "cadeaux",
+    "name": "Obsessive ensemble de lingerie guêpière avec string dans ...",
+    "sub": "Marque · Obsessive",
+    "price": "47,95 €",
+    "was": "",
+    "off": "",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#5b1a26",
+    "asin": "B09RZXHFMY",
+    "image": "https://m.media-amazon.com/images/I/413AJIkQnPL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B09RZXHFMY?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
+    "id": 67,
+    "cat": "cadeaux",
     "name": "Coffret Massages Amoureux - nouvelle édition",
     "sub": "Marque · Hugo Image",
     "price": "19,99 €",
@@ -1133,7 +1150,7 @@ const PRODUCTS = [
     "url": "https://www.amazon.fr/dp/B0FF44K9GF?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
-    "id": 67,
+    "id": 68,
     "cat": "cadeaux",
     "name": "Blancrème Coffret Jeux de Massages Saveurs Gourmandes pou...",
     "sub": "Marque · Blancreme",
@@ -1148,23 +1165,6 @@ const PRODUCTS = [
     "asin": "B0CQKJLM7Y",
     "image": "https://m.media-amazon.com/images/I/51C1asyN4SL._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B0CQKJLM7Y?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
-    "id": 68,
-    "cat": "cadeaux",
-    "name": "Kneipp Coffret cadeau - Massage apaisant - Le cadeau parf...",
-    "sub": "Marque · Kneipp",
-    "price": "9,01 €",
-    "was": "9,51 €",
-    "off": "-5%",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#5b1a26",
-    "asin": "B0DG94D99S",
-    "image": "https://m.media-amazon.com/images/I/41pPT-tMHVL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0DG94D99S?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   }
 ];
 
