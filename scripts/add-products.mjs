@@ -110,36 +110,37 @@ async function main() {
     const existingAsins = new Set(existing.map(p => p.asin));
     console.log(`📦 ${existing.length} produits déjà présents (${existingAsins.size} ASIN uniques)`);
 
-    // Nouveaux keywords (complémentaires aux 120 existants)
+    // Sélection saisonnière : 30 ajouts, avec priorité aux cadeaux de couple
+    // et calendriers de l'Avent adultes. Les résultats restent ceux de l'API Amazon.
     const CATEGORIES = [
         {
-            id: "lingerie", color: "#8b1d2c", count: 5,
-            keywords: ["soutien-gorge sport femme", "culotte coton bio femme", "shapewear gainant", "lingerie grande taille", "string dentelle femme"],
+            id: "lingerie", color: "#8b1d2c", count: 4,
+            keywords: ["lingerie cadeau couple", "body dentelle femme", "ensemble lingerie rouge noël", "nuisette cadeau femme"],
             searchIndex: "Apparel",
         },
         {
-            id: "nuit", color: "#3a2e1f", count: 5,
-            keywords: ["pyjama satin femme", "robe d'intérieur femme", "chemise de nuit longue", "chaussons femme cocooning", "nuisette plus size"],
+            id: "nuit", color: "#3a2e1f", count: 4,
+            keywords: ["pyjama couple assorti noël", "peignoir couple cadeau", "pyjama satin femme cadeau", "chaussons cocooning femme"],
             searchIndex: "Apparel",
         },
         {
             id: "sensualite", color: "#1a1a1a", count: 5,
-            keywords: ["huile massage chauffante couple", "kit massage tantra", "anneau pour couple", "boules de geisha kegel", "stimulateur clitoridien"],
+            keywords: ["coffret massage couple", "huile massage chauffante couple", "kit massage tantra couple", "anneau vibrant couple", "accessoire intime couple cadeau"],
             searchIndex: "HealthPersonalCare",
         },
         {
-            id: "erotisme", color: "#3a1a26", count: 5,
-            keywords: ["livre kamasutra moderne", "jeu carte couple intime", "menottes velours doux", "bandeau yeux satin couple", "carnet fantasmes"],
+            id: "erotisme", color: "#3a1a26", count: 6,
+            keywords: ["calendrier de l'avent couple érotique", "calendrier avent adulte couple", "jeu couple coquin cadeau", "jeu carte couple intime", "livre couple érotique", "carnet défis couple"],
             searchIndex: "All",
         },
         {
-            id: "soins", color: "#c9a961", count: 5,
-            keywords: ["gel intime hydratant bio", "savon intime ph neutre", "bougie massage huile", "huile parfumée corps", "déodorant intime naturel"],
+            id: "soins", color: "#c9a961", count: 4,
+            keywords: ["bougie massage couple", "huile massage parfumée couple", "coffret bain couple", "soin corps cocooning cadeau"],
             searchIndex: "HealthPersonalCare",
         },
         {
-            id: "cadeaux", color: "#5b1a26", count: 5,
-            keywords: ["box couple saint valentin", "coffret cadeau femme cocooning", "coffret massage duo", "kit surprise anniversaire couple", "boîte cadeau lingerie"],
+            id: "cadeaux", color: "#5b1a26", count: 7,
+            keywords: ["calendrier de l'avent couple", "calendrier avent bien être femme", "calendrier avent beauté adulte", "box couple saint valentin", "coffret cadeau couple", "coffret cocooning femme", "coffret massage duo"],
             searchIndex: "All",
         },
     ];

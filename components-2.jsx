@@ -317,6 +317,43 @@ function ProductGrid({ favs, onFav }) {
   );
 }
 
+// Sélection saisonnière : les éditions changent chaque année, les liens de recherche
+// Amazon évitent de laisser en avant un calendrier épuisé ou daté.
+function AdventSpotlight() {
+  const ideas = [
+    { icon:'♥', title:'Calendrier de l’Avent pour couple', text:'Défis, attentions et moments à partager à deux.', query:'calendrier+avent+couple' },
+    { icon:'✦', title:'Calendrier de l’Avent sensuel 18+', text:'Une sélection adulte pour pimenter le mois de décembre.', query:'calendrier+avent+couple+adulte+erotique' },
+    { icon:'◇', title:'Calendrier beauté pour elle', text:'Soins, maquillage et découvertes bien-être en 24 cases.', query:'calendrier+avent+beaute+femme' },
+    { icon:'☾', title:'Calendrier cocooning', text:'Bougies, bain, massage et petites attentions réconfortantes.', query:'calendrier+avent+bien+etre+cocooning' },
+  ];
+  return (
+    <section style={{maxWidth:1360, margin:'0 auto', padding:'72px 32px 12px'}} aria-labelledby="avent-title">
+      <div className="smallcaps" style={{color:'var(--accent)', marginBottom:10}}>● Sélection saisonnière · Noël 2026</div>
+      <h2 id="avent-title" className="serif" style={{fontSize:'clamp(38px,5vw,68px)', margin:'0 0 12px', color:'var(--ink)'}}>
+        Calendriers de l’Avent <em style={{fontStyle:'italic'}}>pour adultes.</em>
+      </h2>
+      <p style={{fontSize:15, color:'var(--muted)', maxWidth:720, lineHeight:1.6, margin:'0 0 30px'}}>
+        Des idées à ouvrir à deux ou à savourer pour soi. Les éditions évoluent vite : vérifiez le contenu,
+        le nombre de cases, la date de livraison et les conditions du vendeur avant de commander.
+      </p>
+      <div style={{display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(220px,1fr))', gap:16}}>
+        {ideas.map((idea) => (
+          <a key={idea.title}
+            href={`https://www.amazon.fr/s?k=${idea.query}&tag=lebrunnathali-21`}
+            target="_blank" rel="sponsored noopener nofollow"
+            style={{display:'block', padding:24, borderRadius:12, background:'var(--paper)', border:'1px solid var(--line-2)'}}>
+            <span className="serif" style={{fontSize:30, color:'var(--accent)'}}>{idea.icon}</span>
+            <h3 className="serif" style={{fontSize:24, color:'var(--ink)', margin:'12px 0 8px'}}>{idea.title}</h3>
+            <p style={{fontSize:13, color:'var(--muted)', lineHeight:1.55, margin:'0 0 16px'}}>{idea.text}</p>
+            <span style={{fontSize:13, fontWeight:600, color:'var(--accent)'}}>Voir les éditions sur Amazon →</span>
+          </a>
+        ))}
+      </div>
+      <p className="mono" style={{fontSize:10, color:'var(--muted)', marginTop:12}}>Liens sponsorisés Amazon · section réservée aux personnes majeures</p>
+    </section>
+  );
+}
+
 // ─────────────────────────────────────────────────────────────────────────────
 // Stats strip
 function StatsStrip() {
@@ -478,4 +515,4 @@ function Footer() {
   );
 }
 
-Object.assign(window, { Stars, AffiliateCard, Collections, ProductGrid, StatsStrip, Editorial, Newsletter, DisclosureBar, Footer });
+Object.assign(window, { Stars, AffiliateCard, Collections, ProductGrid, AdventSpotlight, StatsStrip, Editorial, Newsletter, DisclosureBar, Footer });

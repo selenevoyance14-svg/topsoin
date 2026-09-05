@@ -51,6 +51,7 @@ function App() {
       <window.Promises/>
       <window.StatsStrip/>
       <window.Collections/>
+      <window.AdventSpotlight/>
       <window.ProductGrid favs={favs} onFav={onFav}/>
       <window.Editorial/>
       <window.Footer/>
