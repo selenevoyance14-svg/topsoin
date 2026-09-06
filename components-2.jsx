@@ -130,6 +130,18 @@ const ILLUS = {
   ),
 };
 
+// Photos éditoriales locales : rapides, stables et plus incarnées que les
+// anciens aplats illustrés. Une même photo peut couvrir deux univers proches,
+// avec un cadrage distinct pour conserver une composition variée.
+const COLLECTION_PHOTOS = {
+  lingerie: { src:'/assets/journal/lingerie-editorial.webp', alt:'Lingerie féminine élégante en dentelle', pos:'50% 48%' },
+  nuit: { src:'/assets/journal/nuit-cocooning.webp', alt:'Ambiance cocooning et tenue de nuit', pos:'50% 50%' },
+  sensualite: { src:'/assets/journal/plaisir-bien-etre.webp', alt:'Accessoires de bien-être et de sensualité pour couple', pos:'50% 52%' },
+  erotisme: { src:'/assets/journal/lecture-jeux.webp', alt:'Livres et jeux complices pour adultes', pos:'50% 48%' },
+  soins: { src:'/assets/journal/soins-massage.webp', alt:'Huile de massage et rituel de soin du corps', pos:'50% 50%' },
+  cadeaux: { src:'/assets/journal/cadeau-couple.webp', alt:'Coffret cadeau romantique pour couple', pos:'50% 50%' },
+};
+
 function Collections() {
   return (
     <section id="collections" style={{maxWidth:1360, margin:'0 auto', padding:'80px 32px 24px'}}>
@@ -142,7 +154,7 @@ function Collections() {
         </div>
         <a href="#produits" style={{fontSize:14, color:'var(--ink)', borderBottom:'1px solid var(--ink)', paddingBottom:2}}>Tout parcourir →</a>
       </div>
-      <div style={{display:'grid', gridTemplateColumns:'repeat(auto-fit, minmax(180px, 1fr))', gap:14}}>
+      <div className="collections-grid" style={{display:'grid', gridTemplateColumns:'repeat(auto-fit, minmax(180px, 1fr))', gap:14}}>
         {window.COLLECTIONS.map((c, i) => (
           <a key={c.id} href={`#cat=${c.id}`} style={{display:'block'}}>
             <div style={{
@@ -154,21 +166,16 @@ function Collections() {
             }}
               onMouseEnter={e => e.currentTarget.style.transform='translateY(-4px)'}
               onMouseLeave={e => e.currentTarget.style.transform='translateY(0)'}>
-
-              {/* Illustration line-art */}
-              <svg viewBox="0 0 140 160" style={{position:'absolute', top:'8%', left:'50%', transform:'translateX(-50%)', width:'70%', height:'auto', opacity:.95}}>
-                {ILLUS[c.id]}
-              </svg>
-
-              <div style={{
-                position:'absolute', inset:0, opacity:.06,
-                backgroundImage:'repeating-linear-gradient(45deg, transparent 0 12px, rgba(255,255,255,.7) 12px 13px)'
-              }}/>
+              <img src={COLLECTION_PHOTOS[c.id].src} alt={COLLECTION_PHOTOS[c.id].alt}
+                width="640" height="800" loading="lazy"
+                style={{position:'absolute', inset:0, width:'100%', height:'100%', objectFit:'cover', objectPosition:COLLECTION_PHOTOS[c.id].pos}}/>
+              <div style={{position:'absolute', inset:0, background:'linear-gradient(180deg,rgba(15,10,8,.06) 20%,rgba(15,10,8,.84) 100%)'}}/>
               <div style={{
                 position:'absolute', top:14, left:14,
-                fontSize:10, fontFamily:'Geist Mono', color: c.id==='soins' ? 'rgba(20,16,10,.55)' : 'rgba(255,255,255,.7)', letterSpacing:'.12em'
+                fontSize:10, fontFamily:'Geist Mono', color:'rgba(255,255,255,.9)', letterSpacing:'.12em',
+                textShadow:'0 1px 8px rgba(0,0,0,.45)'
               }}>0{i+1}{c.adult ? ' · 18+' : ''}</div>
-              <div style={{position:'absolute', bottom:0, left:0, right:0, padding:18, color: c.id==='soins' ? '#1a1410' : '#fff'}}>
+              <div style={{position:'absolute', bottom:0, left:0, right:0, padding:18, color:'#fff'}}>
                 <div className="serif" style={{fontSize:28, lineHeight:1, marginBottom:6}}>{c.label}</div>
                 <div style={{fontSize:12, opacity:.78, marginBottom:10}}>{c.fr}</div>
                 <div className="mono" style={{fontSize:10, letterSpacing:'.12em', opacity:.6}}>{c.count} produits →</div>
@@ -176,6 +183,68 @@ function Collections() {
             </div>
           </a>
         ))}
+      </div>
+    </section>
+  );
+}
+
+// Contenu durable et indexable autour de l'intention « cadeau couple ».
+// Les liens renvoient vers des guides détaillés plutôt que directement vers une vente.
+function GiftGuide() {
+  const guides = [
+    {
+      image:'/assets/journal/cadeau-couple.webp',
+      alt:'Coffret cadeau élégant à offrir à un couple',
+      title:'Quel cadeau offrir à un couple ?',
+      text:'Anniversaire, mariage ou simple attention : comparez des idées à vivre à deux, adaptées au budget et au degré de complicité.',
+      href:'/journal/idees-cadeaux-couple-guide-complet.html'
+    },
+    {
+      image:'/assets/journal/soins-massage.webp',
+      alt:'Coffret bien-être avec huile de massage',
+      title:'Coffrets bien-être et massage',
+      text:'Une sélection pour créer un vrai moment de détente : huiles, bougies et rituels à partager, avec nos critères de choix.',
+      href:'/journal/coffret-cadeau-bien-etre-femme-idees.html'
+    },
+    {
+      image:'/assets/journal/nuit-cocooning.webp',
+      alt:'Ambiance cocooning pour une idée cadeau romantique',
+      title:'Une attention romantique',
+      text:'Des idées chaleureuses, personnelles et faciles à offrir pour la Saint-Valentin, Noël ou un anniversaire de couple.',
+      href:'/journal/idees-cadeaux-couple-romantique.html'
+    }
+  ];
+  return (
+    <section id="guide-cadeaux" style={{maxWidth:1360, margin:'0 auto', padding:'88px 32px 24px'}} aria-labelledby="gift-guide-title">
+      <div className="smallcaps" style={{color:'var(--accent)', marginBottom:10}}>● Guide cadeaux · idées pour deux</div>
+      <h2 id="gift-guide-title" className="serif" style={{fontSize:'clamp(42px,5vw,72px)', margin:'0 0 16px', color:'var(--ink)'}}>
+        Trouver un cadeau de couple <em style={{fontStyle:'italic'}}>qui a du sens.</em>
+      </h2>
+      <p style={{fontSize:16, lineHeight:1.7, color:'var(--ink-2)', maxWidth:820, margin:'0 0 34px'}}>
+        Un bon cadeau ne se résume pas à un bel emballage. Pour choisir un coffret cadeau couple,
+        partez de l'occasion, des goûts des deux personnes et du moment qu'elles pourront réellement partager.
+        Maison Léa privilégie les idées utiles, élégantes et simples à offrir, puis explique ce qu'il faut vérifier avant l'achat.
+      </p>
+      <div className="gift-grid" style={{display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(260px,1fr))', gap:20}}>
+        {guides.map(g => (
+          <article key={g.href} style={{background:'var(--paper)', border:'1px solid var(--line-2)', borderRadius:12, overflow:'hidden'}}>
+            <img src={g.image} alt={g.alt} width="640" height="400" loading="lazy"
+              style={{width:'100%', aspectRatio:'16/10', objectFit:'cover'}}/>
+            <div style={{padding:22}}>
+              <h3 className="serif" style={{fontSize:28, lineHeight:1.05, margin:'0 0 10px'}}>{g.title}</h3>
+              <p style={{fontSize:13, lineHeight:1.65, color:'var(--muted)', margin:'0 0 18px'}}>{g.text}</p>
+              <a href={g.href} style={{fontSize:13, fontWeight:600, color:'var(--accent)', borderBottom:'1px solid currentColor', paddingBottom:2}}>Lire le guide →</a>
+            </div>
+          </article>
+        ))}
+      </div>
+      <div style={{marginTop:34, padding:'26px 28px', background:'var(--bg-2)', borderRadius:12}}>
+        <h3 className="serif" style={{fontSize:30, margin:'0 0 12px'}}>Comment bien choisir un coffret cadeau ?</h3>
+        <p style={{fontSize:14, lineHeight:1.7, color:'var(--ink-2)', margin:0}}>
+          Vérifiez la composition exacte, les dimensions, les matériaux, le vendeur, les délais de livraison et les conditions de retour.
+          Pour un cadeau intime, choisissez selon le niveau de confiance et les préférences connues du destinataire ; en cas de doute,
+          un coffret bien-être ou cocooning reste le choix le plus facile à offrir.
+        </p>
       </div>
     </section>
   );
@@ -308,7 +377,7 @@ function ProductGrid({ favs, onFav }) {
         </div>
       </div>
 
-      <div style={{display:'grid', gridTemplateColumns:'repeat(4,1fr)', gap:24}}>
+      <div className="product-grid" style={{display:'grid', gridTemplateColumns:'repeat(4,1fr)', gap:24}}>
         {filtered.map(p => (
           <AffiliateCard key={p.id} p={p} onFav={onFav} faved={favs.has(p.id)}/>
         ))}
@@ -359,7 +428,7 @@ function AdventSpotlight() {
 function StatsStrip() {
   return (
     <section style={{borderTop:'1px solid var(--line-2)', borderBottom:'1px solid var(--line-2)', background:'var(--paper)'}}>
-      <div style={{maxWidth:1360, margin:'0 auto', padding:'32px 32px',
+      <div className="stats-grid" style={{maxWidth:1360, margin:'0 auto', padding:'32px 32px',
         display:'grid', gridTemplateColumns:'repeat(4,1fr)', gap:24}}>
         {window.STATS.map((s,i) => (
           <div key={i} style={{display:'flex', flexDirection:'column', gap:4}}>
@@ -380,7 +449,7 @@ function Editorial() {
     <section style={{marginTop:80, padding:'96px 0', background:'var(--accent)', color:'var(--paper)', position:'relative', overflow:'hidden'}}>
       <div style={{position:'absolute', inset:0, opacity:.06,
         backgroundImage:'repeating-linear-gradient(135deg, transparent 0 18px, #fff 18px 19px)'}}/>
-      <div style={{maxWidth:1100, margin:'0 auto', padding:'0 32px', position:'relative',
+      <div className="editorial-grid" style={{maxWidth:1100, margin:'0 auto', padding:'0 32px', position:'relative',
         display:'grid', gridTemplateColumns:'1fr 1fr', gap:64, alignItems:'center'}}>
         <div>
           <div className="smallcaps" style={{color:'rgba(251,246,237,.6)', marginBottom:18}}>
@@ -486,7 +555,7 @@ function Footer() {
         <div className="serif" style={{fontSize:'clamp(56px, 9vw, 144px)', color:'var(--ink)', lineHeight:.9, marginBottom:48}}>
           Maison <em style={{fontStyle:'italic', color:'var(--accent)'}}>Léa.</em>
         </div>
-        <div style={{display:'grid', gridTemplateColumns:'2fr repeat(3,1fr)', gap:32, paddingBottom:32}}>
+        <div className="footer-grid" style={{display:'grid', gridTemplateColumns:'2fr repeat(3,1fr)', gap:32, paddingBottom:32}}>
           <p style={{fontSize:13, color:'var(--muted)', lineHeight:1.6, margin:0, maxWidth:360}}>
             Site indépendant de sélection éditoriale. Les achats, paiements, livraisons et retours
             sont réalisés directement auprès d'Amazon ou du vendeur indiqué sur Amazon.fr.
@@ -515,4 +584,4 @@ function Footer() {
   );
 }
 
-Object.assign(window, { Stars, AffiliateCard, Collections, ProductGrid, AdventSpotlight, StatsStrip, Editorial, Newsletter, DisclosureBar, Footer });
+Object.assign(window, { Stars, AffiliateCard, Collections, ProductGrid, GiftGuide, AdventSpotlight, StatsStrip, Editorial, Newsletter, DisclosureBar, Footer });

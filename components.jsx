@@ -67,7 +67,7 @@ function Header({ favCount = 0 }) {
       position:'sticky', top:0, zIndex:50,
       backgroundColor:'rgba(245,239,230,.94)', backdropFilter:'blur(12px)'
     }}>
-      <div style={{
+      <div className="site-header-inner" style={{
         maxWidth:1360, margin:'0 auto', padding:'18px 32px',
         display:'grid', gridTemplateColumns:'1fr auto 1fr', alignItems:'center', gap:24
       }}>
@@ -127,7 +127,7 @@ const iconBtn = {
 // Hero — editorial, Léa portrait + serif headline + collection card
 function Hero() {
   return (
-    <section style={{
+    <section className="hero-grid" style={{
       maxWidth:1360, margin:'0 auto', padding:'40px 32px 24px',
       display:'grid', gridTemplateColumns:'1fr 1fr', gap:32, alignItems:'stretch'
     }}>
@@ -263,7 +263,7 @@ function Promises() {
       borderTop:'1px solid var(--line-2)', borderBottom:'1px solid var(--line-2)',
       background:'var(--paper)'
     }}>
-      <div style={{
+      <div className="promise-grid" style={{
         maxWidth:1360, margin:'0 auto', padding:'40px 32px',
         display:'grid', gridTemplateColumns:'repeat(4,1fr)', gap:32
       }}>

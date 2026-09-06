@@ -53,6 +53,7 @@ function App() {
       <window.Collections/>
       <window.AdventSpotlight/>
       <window.ProductGrid favs={favs} onFav={onFav}/>
+      <window.GiftGuide/>
       <window.Editorial/>
       <window.Footer/>
     </div>
