@@ -329,6 +329,9 @@ function AffiliateCard({ p, onFav, faved }) {
 // Product grid
 function ProductGrid({ favs, onFav }) {
   const [active, setActive] = useState2('all');
+  const [priceRange, setPriceRange] = useState2('all');
+  const [brand, setBrand] = useState2('all');
+  const [sort, setSort] = useState2('selection');
 
   // Synchronise avec l'URL : #cat=lingerie filtre + scroll vers la grille
   React.useEffect(() => {
@@ -347,7 +350,41 @@ function ProductGrid({ favs, onFav }) {
     return () => window.removeEventListener('hashchange', apply);
   }, []);
 
-  const filtered = active === 'all' ? window.PRODUCTS : window.PRODUCTS.filter(p => p.cat === active);
+  const priceValue = (value) => {
+    if (!value || value.toLowerCase().includes('voir')) return null;
+    const parsed = Number(value.replace(/[^0-9,]/g, '').replace(',', '.'));
+    return Number.isFinite(parsed) ? parsed : null;
+  };
+  const productBrand = (product) => product.sub?.replace(/^Marque\s*·\s*/i, '').trim() || 'Autres marques';
+  const brands = [...new Set(window.PRODUCTS.map(productBrand))].sort((a, b) => a.localeCompare(b, 'fr'));
+  const filtered = window.PRODUCTS
+    .filter(p => active === 'all' || p.cat === active)
+    .filter(p => brand === 'all' || productBrand(p) === brand)
+    .filter(p => {
+      const price = priceValue(p.price);
+      if (priceRange === 'all') return true;
+      if (price === null) return false;
+      if (priceRange === 'under-20') return price < 20;
+      if (priceRange === '20-50') return price >= 20 && price <= 50;
+      if (priceRange === '50-100') return price > 50 && price <= 100;
+      return price > 100;
+    })
+    .sort((a, b) => {
+      if (sort === 'price-asc') return (priceValue(a.price) ?? Infinity) - (priceValue(b.price) ?? Infinity);
+      if (sort === 'price-desc') return (priceValue(b.price) ?? -1) - (priceValue(a.price) ?? -1);
+      if (sort === 'rating') return (b.rating || 0) - (a.rating || 0);
+      return a.id - b.id;
+    });
+  const resetFilters = () => {
+    setActive('all');
+    setPriceRange('all');
+    setBrand('all');
+    setSort('selection');
+  };
+  const filterStyle = {
+    minHeight:46, width:'100%', padding:'0 38px 0 13px', border:'1px solid var(--line)',
+    borderRadius:8, background:'var(--paper)', color:'var(--ink)', fontSize:13, cursor:'pointer'
+  };
   return (
     <section id="produits" style={{maxWidth:1360, margin:'0 auto', padding:'80px 32px 24px', scrollMarginTop:'80px'}}>
       <div style={{display:'flex', alignItems:'flex-end', justifyContent:'space-between', marginBottom:32, flexWrap:'wrap', gap:24}}>
@@ -361,27 +398,64 @@ function ProductGrid({ favs, onFav }) {
           </p>
         </div>
 
-        <div style={{display:'flex', gap:6, flexWrap:'wrap'}}>
-          {[{id:'all',label:'Tout'}, ...window.COLLECTIONS].map(c => {
-            const on = c.id === active;
-            return (
-              <button key={c.id} onClick={() => setActive(c.id)} style={{
-                padding:'8px 14px', borderRadius:999,
-                border: on ? '1px solid var(--ink)' : '1px solid var(--line)',
-                background: on ? 'var(--ink)' : 'transparent',
-                color: on ? 'var(--paper)' : 'var(--ink-2)',
-                fontWeight:500, fontSize:12, cursor:'pointer', fontFamily:'inherit'
-              }}>{c.label}</button>
-            );
-          })}
+      </div>
+
+      <div style={{background:'var(--paper)', border:'1px solid var(--line-2)', borderRadius:12, padding:18, marginBottom:28}}>
+        <div className="catalog-filter-grid" style={{display:'grid', gridTemplateColumns:'repeat(4,minmax(0,1fr))', gap:12}}>
+          <label style={{display:'grid', gap:7}}>
+            <span className="smallcaps" style={{color:'var(--muted)'}}>Catégorie</span>
+            <select value={active} onChange={e => setActive(e.target.value)} style={filterStyle}>
+              <option value="all">Toutes les catégories</option>
+              {window.COLLECTIONS.map(c => <option key={c.id} value={c.id}>{c.label} ({c.count})</option>)}
+            </select>
+          </label>
+          <label style={{display:'grid', gap:7}}>
+            <span className="smallcaps" style={{color:'var(--muted)'}}>Prix</span>
+            <select value={priceRange} onChange={e => setPriceRange(e.target.value)} style={filterStyle}>
+              <option value="all">Tous les prix</option>
+              <option value="under-20">Moins de 20 €</option>
+              <option value="20-50">De 20 à 50 €</option>
+              <option value="50-100">De 50 à 100 €</option>
+              <option value="over-100">Plus de 100 €</option>
+            </select>
+          </label>
+          <label style={{display:'grid', gap:7}}>
+            <span className="smallcaps" style={{color:'var(--muted)'}}>Marque</span>
+            <select value={brand} onChange={e => setBrand(e.target.value)} style={filterStyle}>
+              <option value="all">Toutes les marques</option>
+              {brands.map(value => <option key={value} value={value}>{value}</option>)}
+            </select>
+          </label>
+          <label style={{display:'grid', gap:7}}>
+            <span className="smallcaps" style={{color:'var(--muted)'}}>Trier par</span>
+            <select value={sort} onChange={e => setSort(e.target.value)} style={filterStyle}>
+              <option value="selection">Sélection Léa</option>
+              <option value="price-asc">Prix : moins cher</option>
+              <option value="price-desc">Prix : plus cher</option>
+              <option value="rating">Mieux notés</option>
+            </select>
+          </label>
+        </div>
+        <div style={{display:'flex', alignItems:'center', justifyContent:'space-between', gap:16, marginTop:14, color:'var(--muted)', fontSize:13}} aria-live="polite">
+          <span><strong style={{color:'var(--ink)'}}>{filtered.length}</strong> produits trouvés</span>
+          {(active !== 'all' || priceRange !== 'all' || brand !== 'all' || sort !== 'selection') && (
+            <button type="button" onClick={resetFilters} style={{border:0, background:'transparent', color:'var(--accent)', fontWeight:600, cursor:'pointer'}}>Réinitialiser les filtres</button>
+          )}
         </div>
       </div>
 
-      <div className="product-grid" style={{display:'grid', gridTemplateColumns:'repeat(4,1fr)', gap:24}}>
-        {filtered.map(p => (
-          <AffiliateCard key={p.id} p={p} onFav={onFav} faved={favs.has(p.id)}/>
-        ))}
-      </div>
+      {filtered.length ? (
+        <div className="product-grid" style={{display:'grid', gridTemplateColumns:'repeat(4,1fr)', gap:24}}>
+          {filtered.map(p => (
+            <AffiliateCard key={p.id} p={p} onFav={onFav} faved={favs.has(p.id)}/>
+          ))}
+        </div>
+      ) : (
+        <div style={{padding:'54px 20px', textAlign:'center', border:'1px dashed var(--line)', borderRadius:12}}>
+          <p style={{color:'var(--muted)', margin:'0 0 16px'}}>Aucun produit ne correspond à ces critères.</p>
+          <button type="button" onClick={resetFilters} style={{border:0, borderRadius:999, padding:'11px 18px', background:'var(--accent)', color:'#fff', cursor:'pointer'}}>Voir tous les produits</button>
+        </div>
+      )}
     </section>
   );
 }
