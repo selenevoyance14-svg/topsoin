@@ -1,5 +1,5 @@
 // data.jsx — Maison Léa: Amazon affiliate edition (généré automatiquement)
-const AMAZON_DATA_UPDATED_AT = "2026-09-12T08:38:59.867Z";
+const AMAZON_DATA_UPDATED_AT = "2026-09-13T09:34:20.232Z";
 const COLLECTIONS = [
   { id:'lingerie',   label:'Lingerie',          fr:'Soutiens-gorge, culottes, bodies', count: 13 },
   { id:'nuit',       label:'Nuit & loungewear', fr:'Nuisettes, peignoirs, kimonos',     count: 12 },
@@ -12,23 +12,6 @@ const COLLECTIONS = [
 const PRODUCTS = [
   {
     "id": 1,
-    "cat": "lingerie",
-    "name": "VicSec Ensemble de Lingerie 2 Pièces Sexy, Nuisette Flora...",
-    "sub": "Marque · VicSec",
-    "price": "7,99 €",
-    "was": "",
-    "off": "",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#8b1d2c",
-    "asin": "B0H4QC1Z16",
-    "image": "https://m.media-amazon.com/images/I/514+dNNDUSL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0H4QC1Z16?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
-    "id": 2,
     "cat": "lingerie",
     "name": "HIVTE Ensemble de Lingerie Nuisette en Dentelle avec Sout...",
     "sub": "Marque · HIVTE",
@@ -43,6 +26,23 @@ const PRODUCTS = [
     "asin": "B0H2YZ5MC9",
     "image": "https://m.media-amazon.com/images/I/41LvYrytl7L._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B0H2YZ5MC9?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
+    "id": 2,
+    "cat": "lingerie",
+    "name": "Ensemble Lingerie Broderie Sexy Femme Soutien Gorge Brete...",
+    "sub": "Marque · Gatamiau",
+    "price": "10,99 €",
+    "was": "",
+    "off": "",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#8b1d2c",
+    "asin": "B0H6FKKQS4",
+    "image": "https://m.media-amazon.com/images/I/41sBCIsi-VL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0H6FKKQS4?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 3,
@@ -98,9 +98,9 @@ const PRODUCTS = [
   {
     "id": 6,
     "cat": "lingerie",
-    "name": "ROSVAJFY Ensemble de Lingerie Sexy pour Femme en Dentelle...",
-    "sub": "Marque · ROSVAJFY",
-    "price": "11,99 €",
+    "name": "Gatamiau Femme Ensemble de Lingerie Sexy Broderie Lys Col...",
+    "sub": "Marque · Gatamiau",
+    "price": "15,99 €",
     "was": "",
     "off": "",
     "rating": 0,
@@ -108,12 +108,29 @@ const PRODUCTS = [
     "prime": false,
     "tag": "",
     "color": "#8b1d2c",
-    "asin": "B0D7ZSQNYZ",
-    "image": "https://m.media-amazon.com/images/I/41jRXINDUQL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0D7ZSQNYZ?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+    "asin": "B0H6F6G1NN",
+    "image": "https://m.media-amazon.com/images/I/41WaePSRCIL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0H6F6G1NN?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 7,
+    "cat": "lingerie",
+    "name": "VicSec Ensemble de Lingerie 2 Pièces Sexy, Nuisette Flora...",
+    "sub": "Marque · VicSec",
+    "price": "7,99 €",
+    "was": "",
+    "off": "",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#8b1d2c",
+    "asin": "B0H4QC1Z16",
+    "image": "https://m.media-amazon.com/images/I/514+dNNDUSL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0H4QC1Z16?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
+    "id": 8,
     "cat": "lingerie",
     "name": "Avidlove Ensemble de Lingerie pour Femme Dentelle 4 Pièce...",
     "sub": "Marque · Avidlove",
@@ -128,23 +145,6 @@ const PRODUCTS = [
     "asin": "B0DH2KQQ9P",
     "image": "https://m.media-amazon.com/images/I/41A9dPftREL._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B0DH2KQQ9P?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
-    "id": 8,
-    "cat": "lingerie",
-    "name": "ROSVAJFY Ensemble de Lingerie Sexy pour Femme en Dentelle...",
-    "sub": "Marque · ROSVAJFY",
-    "price": "11,99 €",
-    "was": "",
-    "off": "",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#8b1d2c",
-    "asin": "B0D7ZRXC5J",
-    "image": "https://m.media-amazon.com/images/I/417Whbn2Q+L._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0D7ZRXC5J?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 9,
@@ -166,23 +166,6 @@ const PRODUCTS = [
   {
     "id": 10,
     "cat": "lingerie",
-    "name": "Avidlove Soutien-Gorge Balconnet pour Femmes à Armatures ...",
-    "sub": "Marque · Avidlove",
-    "price": "18,99 €",
-    "was": "",
-    "off": "",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#8b1d2c",
-    "asin": "B0FJWQRD4P",
-    "image": "https://m.media-amazon.com/images/I/41mtqrk3WnL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0FJWQRD4P?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
-    "id": 11,
-    "cat": "lingerie",
     "name": "Avidlove Soutien-Gorge Balconnet pour Femmes Dirndl Armat...",
     "sub": "Marque · Avidlove",
     "price": "18,99 €",
@@ -196,6 +179,23 @@ const PRODUCTS = [
     "asin": "B0FJWNP3YT",
     "image": "https://m.media-amazon.com/images/I/41y8GiT92xL._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B0FJWNP3YT?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
+    "id": 11,
+    "cat": "lingerie",
+    "name": "Avidlove Soutien-Gorge Balconnet pour Femmes à Armatures ...",
+    "sub": "Marque · Avidlove",
+    "price": "18,99 €",
+    "was": "",
+    "off": "",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#8b1d2c",
+    "asin": "B0FJWQRD4P",
+    "image": "https://m.media-amazon.com/images/I/41mtqrk3WnL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0FJWQRD4P?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 12,
@@ -217,9 +217,9 @@ const PRODUCTS = [
   {
     "id": 13,
     "cat": "lingerie",
-    "name": "Cotonella, Soutien-Gorge à Balconnet Vera, avec Bonnets e...",
-    "sub": "Marque · Cotonella",
-    "price": "11,90 €",
+    "name": "DOBREVA Femme Soutien Gorge Transparent à Armature Noir#P...",
+    "sub": "Marque · DOBREVA",
+    "price": "30,99 €",
     "was": "",
     "off": "",
     "rating": 0,
@@ -227,9 +227,9 @@ const PRODUCTS = [
     "prime": false,
     "tag": "",
     "color": "#8b1d2c",
-    "asin": "B06X8YRJ3Z",
-    "image": "https://m.media-amazon.com/images/I/31FpEZXFtoL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B06X8YRJ3Z?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+    "asin": "B07K3WL1HC",
+    "image": "https://m.media-amazon.com/images/I/41CnN6uPV3S._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B07K3WL1HC?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 14,
@@ -251,23 +251,6 @@ const PRODUCTS = [
   {
     "id": 15,
     "cat": "nuit",
-    "name": "Marvmys Nuisette Femme Sexy Chemise de Nuit Dentelle Slin...",
-    "sub": "Marque · Marvmys",
-    "price": "10,99 €",
-    "was": "",
-    "off": "",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#3a2e1f",
-    "asin": "B09NGG1YQS",
-    "image": "https://m.media-amazon.com/images/I/41IhYqdelpL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B09NGG1YQS?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
-    "id": 16,
-    "cat": "nuit",
     "name": "Litherday Chemise de Nuit Femme Satin Nuisette Sling Robe...",
     "sub": "Marque · Litherday",
     "price": "10,99 €",
@@ -283,7 +266,7 @@ const PRODUCTS = [
     "url": "https://www.amazon.fr/dp/B09C8CWKCH?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
-    "id": 17,
+    "id": 16,
     "cat": "nuit",
     "name": "Vlazom Chemise Nuisette de Nuit Femme Satin Sexy Bretelle...",
     "sub": "Marque · Vlazom",
@@ -298,6 +281,23 @@ const PRODUCTS = [
     "asin": "B07QH6H1HL",
     "image": "https://m.media-amazon.com/images/I/3133PdQsV8L._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B07QH6H1HL?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
+    "id": 17,
+    "cat": "nuit",
+    "name": "Marvmys Nuisette Femme Sexy Chemise de Nuit Dentelle Slin...",
+    "sub": "Marque · Marvmys",
+    "price": "10,99 €",
+    "was": "",
+    "off": "",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#3a2e1f",
+    "asin": "B09NGG1YQS",
+    "image": "https://m.media-amazon.com/images/I/41IhYqdelpL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B09NGG1YQS?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 18,
@@ -336,23 +336,6 @@ const PRODUCTS = [
   {
     "id": 20,
     "cat": "nuit",
-    "name": "Marvmys Nuisette Femme Sexy Chemise de Nuit Dentelle Slin...",
-    "sub": "Marque · Marvmys",
-    "price": "11,99 €",
-    "was": "",
-    "off": "",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#3a2e1f",
-    "asin": "B09N12BNW5",
-    "image": "https://m.media-amazon.com/images/I/31N2dIUyxUL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B09N12BNW5?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
-    "id": 21,
-    "cat": "nuit",
     "name": "Vlazom Nuisette Femme Sexy Satin Chemise de Nuit Courte B...",
     "sub": "Marque · Vlazom",
     "price": "9,99 €",
@@ -366,6 +349,23 @@ const PRODUCTS = [
     "asin": "B07D5G4JNY",
     "image": "https://m.media-amazon.com/images/I/31uxjj0gTdL._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B07D5G4JNY?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
+    "id": 21,
+    "cat": "nuit",
+    "name": "Ekouaer Nuisette Femme Satin Manches sans Bretelles Regla...",
+    "sub": "Marque · Ekouaer",
+    "price": "19,99 €",
+    "was": "",
+    "off": "",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#3a2e1f",
+    "asin": "B0CYQFVN6M",
+    "image": "https://m.media-amazon.com/images/I/41TIB6FHBHL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0CYQFVN6M?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 22,
@@ -540,23 +540,6 @@ const PRODUCTS = [
   {
     "id": 32,
     "cat": "sensualite",
-    "name": "Vibromasseurs Feminin Sextoyse Femme Clitoridienne 9 Mode...",
-    "sub": "Marque · AYCA",
-    "price": "13,99 €",
-    "was": "14,99 €",
-    "off": "-7%",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#1a1a1a",
-    "asin": "B0G5QVZ7PB",
-    "image": "https://m.media-amazon.com/images/I/31l92rUePKL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0G5QVZ7PB?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
-    "id": 33,
-    "cat": "sensualite",
     "name": "Gode Vibro-masseur Va et Vient Sex Toys - Gode Xxl Réalis...",
     "sub": "Marque · Banysin",
     "price": "25,79 €",
@@ -570,6 +553,23 @@ const PRODUCTS = [
     "asin": "B0FFMGW6G9",
     "image": "https://m.media-amazon.com/images/I/31IOJ6cg+qL._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B0FFMGW6G9?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
+    "id": 33,
+    "cat": "sensualite",
+    "name": "Vibromasseurs Feminin Sextoyse Femme Clitoridienne 9 Mode...",
+    "sub": "Marque · AYCA",
+    "price": "13,99 €",
+    "was": "14,99 €",
+    "off": "-7%",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#1a1a1a",
+    "asin": "B0G5QVZ7PB",
+    "image": "https://m.media-amazon.com/images/I/31l92rUePKL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0G5QVZ7PB?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 34,
@@ -710,23 +710,6 @@ const PRODUCTS = [
   {
     "id": 42,
     "cat": "erotisme",
-    "name": "Oh Happy Games - Orgazmo - Le Jeu de Couple Ultime pour E...",
-    "sub": "Marque · Oh Happy Games",
-    "price": "19,99 €",
-    "was": "",
-    "off": "",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#3a1a26",
-    "asin": "B0CHN9FRGB",
-    "image": "https://m.media-amazon.com/images/I/41f72NjEuYL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0CHN9FRGB?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
-    "id": 43,
-    "cat": "erotisme",
     "name": "The Sensual Lab 54 Blocs – Jeux Couple – Relation & Compl...",
     "sub": "Marque · The Sensual Lab",
     "price": "18,98 €",
@@ -742,7 +725,7 @@ const PRODUCTS = [
     "url": "https://www.amazon.fr/dp/B0FBRQG945?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
-    "id": 44,
+    "id": 43,
     "cat": "erotisme",
     "name": "DASIAUTOEM Jeu de Tour de Blocs Coquins 48 Pièces, Lust T...",
     "sub": "Marque · DASIAUTOEM",
@@ -757,6 +740,23 @@ const PRODUCTS = [
     "asin": "B0F7HMSXZS",
     "image": "https://m.media-amazon.com/images/I/51B-PcI8rHL._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B0F7HMSXZS?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
+    "id": 44,
+    "cat": "erotisme",
+    "name": "Oh Happy Games - Orgazmo - Le Jeu de Couple Ultime pour E...",
+    "sub": "Marque · Oh Happy Games",
+    "price": "19,99 €",
+    "was": "",
+    "off": "",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#3a1a26",
+    "asin": "B0CHN9FRGB",
+    "image": "https://m.media-amazon.com/images/I/41f72NjEuYL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0CHN9FRGB?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 45,
@@ -795,9 +795,9 @@ const PRODUCTS = [
   {
     "id": 47,
     "cat": "erotisme",
-    "name": "Jeux de Cartes Romantiques pour Couples avec Cadeaux Pers...",
-    "sub": "Marque · yilemeiyile",
-    "price": "9,99 €",
+    "name": "CARTA SUTRA Jeux de Hasard – Jeu Couple - Jeux de société...",
+    "sub": "Marque · CARTA SUTRA",
+    "price": "19,69 €",
     "was": "",
     "off": "",
     "rating": 0,
@@ -805,9 +805,9 @@ const PRODUCTS = [
     "prime": false,
     "tag": "",
     "color": "#3a1a26",
-    "asin": "B0GV24K5ZY",
-    "image": "https://m.media-amazon.com/images/I/41fWXXi6oGL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0GV24K5ZY?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+    "asin": "B0FCJ5LGG3",
+    "image": "https://m.media-amazon.com/images/I/41QEJpdK7mL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0FCJ5LGG3?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 48,
@@ -1001,7 +1001,7 @@ const PRODUCTS = [
     "cat": "cadeaux",
     "name": "Coffret cadeau Eternal Oud (3pièces) - Lattafa Pride",
     "sub": "Marque · Lattafa",
-    "price": "42,76 €",
+    "price": "44,26 €",
     "was": "",
     "off": "",
     "rating": 0,
@@ -1050,23 +1050,6 @@ const PRODUCTS = [
   {
     "id": 62,
     "cat": "cadeaux",
-    "name": "TAHJOS Ensemble Lingerie Taille XXL pour Femmes Curvy – B...",
-    "sub": "Marque · TAHJOS",
-    "price": "9,99 €",
-    "was": "",
-    "off": "",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#5b1a26",
-    "asin": "B0H53945FQ",
-    "image": "https://m.media-amazon.com/images/I/414297wlfoL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0H53945FQ?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
-    "id": 63,
-    "cat": "cadeaux",
     "name": "Jarretière Dentelle Blanche Mariage - 1 Pièce avec Coffre...",
     "sub": "Marque · YongChiMaoYi",
     "price": "6,99 €",
@@ -1080,6 +1063,23 @@ const PRODUCTS = [
     "asin": "B0H95BHDLG",
     "image": "https://m.media-amazon.com/images/I/31-yjmL8KbL._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B0H95BHDLG?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
+    "id": 63,
+    "cat": "cadeaux",
+    "name": "TAHJOS Ensemble Lingerie Taille XXL pour Femmes Curvy – B...",
+    "sub": "Marque · TAHJOS",
+    "price": "9,99 €",
+    "was": "",
+    "off": "",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#5b1a26",
+    "asin": "B0H53945FQ",
+    "image": "https://m.media-amazon.com/images/I/414297wlfoL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0H53945FQ?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 64,
@@ -1101,9 +1101,9 @@ const PRODUCTS = [
   {
     "id": 65,
     "cat": "cadeaux",
-    "name": "Perfumer's Choice No 8 par Valerie et No 2 par Sofia - Pa...",
-    "sub": "Marque · PERFUMER'S CHOICE",
-    "price": "22,77 €",
+    "name": "PHYNDR 3 Pièces Jarretiere Mariage,Jarretières de Mariée ...",
+    "sub": "Marque · PHYNDR",
+    "price": "7,99 €",
     "was": "",
     "off": "",
     "rating": 0,
@@ -1111,9 +1111,9 @@ const PRODUCTS = [
     "prime": false,
     "tag": "",
     "color": "#5b1a26",
-    "asin": "B08BZBYTMH",
-    "image": "https://m.media-amazon.com/images/I/41oXZ+Smf-L._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B08BZBYTMH?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+    "asin": "B0H8P37FJY",
+    "image": "https://m.media-amazon.com/images/I/41yl-LGi7pL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0H8P37FJY?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 66,
