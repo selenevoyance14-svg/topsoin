@@ -195,23 +195,23 @@ function GiftGuide() {
     {
       image:'/assets/journal/cadeau-couple.webp',
       alt:'Coffret cadeau élégant à offrir à un couple',
-      title:'Quel cadeau offrir à un couple ?',
-      text:'Anniversaire, mariage ou simple attention : comparez des idées à vivre à deux, adaptées au budget et au degré de complicité.',
-      href:'/journal/idees-cadeaux-couple-guide-complet.html'
+      title:'Comparer un coffret bien-être',
+      text:'Comparez les volumes, le contenu et les préférences de la personne avant de choisir un coffret.',
+      href:'/journal/coffret-bien-etre-femme-comment-comparer.html'
     },
     {
       image:'/assets/journal/soins-massage.webp',
       alt:'Coffret bien-être avec huile de massage',
-      title:'Coffrets bien-être et massage',
-      text:'Une sélection pour créer un vrai moment de détente : huiles, bougies et rituels à partager, avec nos critères de choix.',
-      href:'/journal/coffret-cadeau-bien-etre-femme-idees.html'
+      title:'Décrypter les étiquettes',
+      text:'Composition, durée après ouverture et précautions : les points à vérifier sur un produit cosmétique.',
+      href:'/journal/cosmetiques-etiquette-inci-precautions.html'
     },
     {
       image:'/assets/journal/nuit-cocooning.webp',
       alt:'Ambiance cocooning pour une idée cadeau romantique',
-      title:'Une attention romantique',
-      text:'Des idées chaleureuses, personnelles et faciles à offrir pour la Saint-Valentin, Noël ou un anniversaire de couple.',
-      href:'/journal/idees-cadeaux-couple-romantique.html'
+      title:'Satin ou soie ?',
+      text:'Un guide pour comprendre la composition des vêtements de nuit et choisir leur entretien.',
+      href:'/journal/pyjama-satin-soie-difference-entretien.html'
     }
   ];
   return (
@@ -373,7 +373,7 @@ function ProductGrid({ favs, onFav }) {
       if (sort === 'price-asc') return (priceValue(a.price) ?? Infinity) - (priceValue(b.price) ?? Infinity);
       if (sort === 'price-desc') return (priceValue(b.price) ?? -1) - (priceValue(a.price) ?? -1);
       if (sort === 'rating') return (b.rating || 0) - (a.rating || 0);
-      return a.id - b.id;
+      return (b.addedAt || "").localeCompare(a.addedAt || "") || a.id - b.id;
     });
   const resetFilters = () => {
     setActive('all');

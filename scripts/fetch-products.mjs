@@ -85,6 +85,30 @@ async function searchItems(env, auth, { keywords, searchIndex = "All", itemCount
     return JSON.parse(text);
 }
 
+async function refreshAdditions(env, auth) {
+    const pinned = JSON.parse(await readFile(join(process.cwd(), "data/catalog-additions.json"), "utf8"));
+    const refreshed = [];
+    for (let i = 0; i < pinned.length; i += 10) {
+        const batch = pinned.slice(i, i + 10);
+        let items = [];
+        try {
+            const res = await fetch("https://creatorsapi.amazon/catalog/v1/getItems", {
+                method: "POST",
+                headers: { authorization: auth.version.startsWith("2.") ? `Bearer ${auth.token}, Version ${auth.version}` : `Bearer ${auth.token}`, "content-type": "application/json", "x-marketplace": "www.amazon.fr" },
+                body: JSON.stringify({ itemIds: batch.map(p => p.asin), partnerTag: env.AMAZON_PARTNER_TAG, marketplace: "www.amazon.fr", resources: ["images.primary.large", "offersV2.listings.price", "offersV2.listings.availability"] })
+            });
+            if (!res.ok) throw new Error(`GetItems ${res.status}`);
+            const data = await res.json();
+            items = data.itemsResult?.items || [];
+        } catch (e) { console.warn("Actualisation de la sélection :", e.message); }
+        for (const product of batch) {
+            const item = items.find(it => it.asin === product.asin);
+            refreshed.push({ ...product, price: item?.offersV2?.listings?.[0]?.price?.money?.displayAmount || "", was: "", off: "", image: item?.images?.primary?.large?.url || product.image, checkedAt: item ? new Date().toISOString() : null });
+        }
+    }
+    return refreshed;
+}
+
 // ────────────────────────────────────────────────────────────────────────────
 async function main() {
     const env = await loadEnv();
@@ -179,6 +203,11 @@ async function main() {
         throw new Error("Aucun produit Amazon reçu : data.jsx est conservé et la publication est annulée.");
     }
 
+    const additions = await refreshAdditions(env, auth);
+    const pinnedAsins = new Set(additions.map(p => p.asin));
+    const unique = [...additions, ...allProducts.filter(p => !pinnedAsins.has(p.asin))];
+    const seenAsins = new Set();
+    allProducts.splice(0, allProducts.length, ...unique.filter(p => { if (seenAsins.has(p.asin)) return false; seenAsins.add(p.asin); return true; }).map((p, index) => ({ ...p, id: index + 1 })));
     console.log(`\n📝 ${allProducts.length} produits collectés. Génération de data.jsx...`);
 
     const generatedAt = new Date().toISOString();
@@ -197,7 +226,7 @@ const PRODUCTS = ${JSON.stringify(allProducts, null, 2)};
 
 const PROMISES = [
   { kicker:'01', title:'Sélection éditoriale', body:'Maison Léa compare et organise des produits disponibles sur Amazon selon des critères utiles.' },
-  { kicker:'02', title:'Prix vérifiés automatiquement', body:'Les prix sont affichés uniquement lorsqu\\u2019ils ont été actualisés récemment via l\\u2019API Amazon.' },
+  { kicker:'02', title:'Prix indicatifs', body:'Vérifiez le prix et la disponibilité sur Amazon avant chaque achat.' },
   { kicker:'03', title:'Transparence totale',          body:'Liens affiliés signalés clairement. Une commission Amazon nous rémunère, jamais vous.' },
   { kicker:'04', title:'Achat chez le vendeur',         body:'Vérifiez le vendeur, la livraison, les retours et la disponibilité directement sur Amazon.' },
 ];
@@ -212,7 +241,7 @@ const EDITORIAL = {
 const STATS = [
   { num:'${allProducts.length}', label:'produits sélectionnés' },
   { num:'6', label:'territoires' },
-  { num:'24h', label:'fraîcheur maximale des prix' },
+  { num:'30', label:'références de la nouvelle sélection' },
   { num:'100%', label:'liens affiliés signalés' },
 ];
 
