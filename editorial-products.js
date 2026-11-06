@@ -1,0 +1,61 @@
+// Sélection vérifiée sur les fiches fabricants le 6 novembre 2026. Aucun prix repris.
+window.PRODUCTS.push(...[
+  {
+    "id": 9001,
+    "cat": "soins",
+    "name": "NUXE — Huile Prodigieuse 100 ml",
+    "sub": "Marque · NUXE",
+    "url": "https://fr.nuxe.com/products/huile-prodigieuse-100ml",
+    "merchant": "NUXE",
+    "description": "Une huile sèche multi-usages pour le corps et les cheveux. Comparez le format et la version parfumée avant de choisir.",
+    "price": "",
+    "was": "",
+    "off": "",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "Nouveauté",
+    "color": "#b8965e",
+    "image": "",
+    "addedAt": "2026-11-06"
+  },
+  {
+    "id": 9002,
+    "cat": "soins",
+    "name": "L’Occitane — Crème Mains Karité 150 ml",
+    "sub": "Marque · L’Occitane",
+    "url": "https://fr.loccitane.com/creme-mains-karite-01MA150K26.html",
+    "merchant": "L’Occitane",
+    "description": "Une crème mains au karité en grand tube. À comparer selon la texture recherchée et la place disponible dans le sac.",
+    "price": "",
+    "was": "",
+    "off": "",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "Nouveauté",
+    "color": "#b8965e",
+    "image": "",
+    "addedAt": "2026-11-06"
+  },
+  {
+    "id": 9003,
+    "cat": "soins",
+    "name": "Weleda — Huile de Massage à l’Arnica",
+    "sub": "Marque · Weleda",
+    "url": "https://www.weleda.fr/produit/huile-de-massage-a-larnica-g009922?variant=004281F0",
+    "merchant": "Weleda",
+    "description": "Une huile de massage corporel proposée en plusieurs contenances. Consultez la composition et les indications du fabricant.",
+    "price": "",
+    "was": "",
+    "off": "",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "Nouveauté",
+    "color": "#b8965e",
+    "image": "",
+    "addedAt": "2026-11-06"
+  }
+]);
+window.COLLECTIONS.forEach(c => { c.count = window.PRODUCTS.filter(p => p.cat === c.id).length; });

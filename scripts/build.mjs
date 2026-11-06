@@ -36,6 +36,7 @@ const filesToCopy = [
     "components.jsx",
     "components-2.jsx",
     "data.jsx",
+    "editorial-products.js",
     "assets",
     "ads.txt",
     "google90481d72c7059505.html",
@@ -52,7 +53,6 @@ for (const f of filesToCopy) {
 
 const robots = `User-agent: *
 Allow: /
-Disallow: /assets/
 Sitemap: https://guide-soin.fr/sitemap.xml
 `;
 await writeFile(join(out, "robots.txt"), robots);

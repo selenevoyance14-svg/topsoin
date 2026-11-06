@@ -55,9 +55,10 @@ function App() {
       <window.ProductGrid favs={favs} onFav={onFav}/>
       <window.GiftGuide/>
       <window.Editorial/>
-      <window.Footer/>
     </div>
   );
 }
 
 ReactDOM.createRoot(document.getElementById('app')).render(<App/>);
+
+ReactDOM.createRoot(document.getElementById('site-footer')).render(<window.Footer/>);

@@ -56,6 +56,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
 <style>
+  .product-card{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:24px}
+  .pc-name{font-size:24px;font-family:"Cormorant Garamond",serif}
+  .pc-body p{font-size:14px;line-height:1.6}
+  .pc-cta{display:inline-block;padding:12px 18px;border-radius:24px;background:var(--accent);color:var(--paper)}
   :root{
     --bg:#f5efe6;
     --bg-2:#ede4d3;
@@ -129,8 +133,9 @@
 <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<div id="app"></div>
+<div id="app"><header style="padding:48px 24px;max-width:1100px;margin:auto"><a href="/">Maison Léa</a><h1>Lingerie, soins corporels et idées cadeaux</h1><p>Des guides pratiques pour comparer les matières, les formats et les usages avant d’acheter.</p><a href="/journal/">Consulter le journal et nos conseils</a></header></div><section class="wrap" style="max-width:1200px;margin:48px auto;padding:24px" aria-labelledby="soins-title"><p class="smallcaps">Nouveautés · 6 novembre 2026</p><h2 id="soins-title" class="serif">Soins corporels : notre nouvelle sélection</h2><p>Trois références à comparer selon vos habitudes, avec des liens directs vers les fabricants. Aucun prix ni disponibilité ne sont garantis.</p><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:24px"><div class="product-card"><div class="pc-body"><h3 class="pc-name">NUXE — Huile Prodigieuse 100 ml</h3><p>Une huile sèche multi-usages pour le corps et les cheveux. Comparez le format et la version parfumée avant de choisir.</p><p>Prix et disponibilité à consulter chez le fabricant.</p><a class="pc-cta" href="https://fr.nuxe.com/products/huile-prodigieuse-100ml" target="_blank" rel="noopener">Voir chez NUXE</a></div></div><div class="product-card"><div class="pc-body"><h3 class="pc-name">L’Occitane — Crème Mains Karité 150 ml</h3><p>Une crème mains au karité en grand tube. À comparer selon la texture recherchée et la place disponible dans le sac.</p><p>Prix et disponibilité à consulter chez le fabricant.</p><a class="pc-cta" href="https://fr.loccitane.com/creme-mains-karite-01MA150K26.html" target="_blank" rel="noopener">Voir chez L’Occitane</a></div></div><div class="product-card"><div class="pc-body"><h3 class="pc-name">Weleda — Huile de Massage à l’Arnica</h3><p>Une huile de massage corporel proposée en plusieurs contenances. Consultez la composition et les indications du fabricant.</p><p>Prix et disponibilité à consulter chez le fabricant.</p><a class="pc-cta" href="https://www.weleda.fr/produit/huile-de-massage-a-larnica-g009922?variant=004281F0" target="_blank" rel="noopener">Voir chez Weleda</a></div></div></div><h2>À lire aussi</h2><ul><li><a href="/journal/huile-seche-ou-huile-massage-differences.html">Huile sèche ou huile de massage : comment choisir ?</a></li><li><a href="/journal/creme-mains-sac-ou-grand-format.html">Crème mains : petit tube ou grand format ?</a></li><li><a href="/journal/coffret-soins-ou-selection-personnalisee.html">Coffret soins ou sélection personnalisée : que choisir ?</a></li><li><a href="/journal/cosmetiques-etiquette-inci-precautions.html">Lire les étiquettes cosmétiques</a></li></ul></section>
 
+<div id="site-footer"></div>
 <div id="cookie-banner" class="cookie-banner hidden">
   Maison Léa utilise uniquement des cookies techniques et des liens d'affiliation Amazon.
   Aucun traçage publicitaire tiers. <a href="/confidentialite.html">En savoir plus</a>.
@@ -138,6 +143,7 @@
 </div>
 
 <script type="text/babel" src="data.jsx"></script>
+<script type="text/babel" src="editorial-products.js"></script>
 <script type="text/babel" src="components.jsx"></script>
 <script type="text/babel" src="components-2.jsx"></script>
 <script type="text/babel" src="app.jsx"></script>

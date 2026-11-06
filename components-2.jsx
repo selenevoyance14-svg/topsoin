@@ -253,7 +253,7 @@ function GiftGuide() {
 // ─────────────────────────────────────────────────────────────────────────────
 // Amazon-style product card
 function AffiliateCard({ p, onFav, faved }) {
-  const updatedAt = window.AMAZON_DATA_UPDATED_AT ? new Date(window.AMAZON_DATA_UPDATED_AT) : null;
+  const updatedAt = p.checkedAt ? new Date(p.checkedAt) : null;
   const priceIsFresh = updatedAt && !Number.isNaN(updatedAt.getTime()) && (Date.now() - updatedAt.getTime()) < 24 * 60 * 60 * 1000;
   return (
     <article style={{
@@ -286,7 +286,7 @@ function AffiliateCard({ p, onFav, faved }) {
         )}
 
         <div style={{display:'flex', alignItems:'baseline', gap:8, marginTop:6}}>
-          <span className="serif" style={{fontSize:26, color:'var(--ink)', fontWeight:600}}>{priceIsFresh && p.price ? p.price : 'Voir le prix sur Amazon'}</span>
+          <span className="serif" style={{fontSize:26, color:'var(--ink)', fontWeight:600}}>{priceIsFresh && p.price ? p.price : `Voir le prix chez ${p.merchant || 'Amazon'}`}</span>
           {priceIsFresh && p.was && <span style={{fontSize:13, color:'var(--muted)', textDecoration:'line-through'}}>{p.was}</span>}
           {priceIsFresh && p.off && <span className="mono" style={{
             fontSize:11, fontWeight:700, color:'var(--accent)',
@@ -304,17 +304,17 @@ function AffiliateCard({ p, onFav, faved }) {
           </div>
         )}
 
-        <a href={p.url || `https://www.amazon.fr/dp/${p.asin}?tag=lebrunnathali-21`} target="_blank" rel="sponsored noopener nofollow" style={{
+        <a href={p.url || `https://www.amazon.fr/dp/${p.asin}?tag=lebrunnathali-21`} target="_blank" rel={p.merchant ? "noopener" : "sponsored noopener nofollow"} style={{
           marginTop:'auto', padding:'12px 14px', background:'#febd69',
           color:'#0f1111', textAlign:'center', borderRadius:999,
           fontSize:13, fontWeight:600, fontFamily:'inherit',
           display:'flex', alignItems:'center', justifyContent:'center', gap:8
         }}>
-          Voir sur Amazon
+          Voir chez {p.merchant || 'Amazon'}
           <span style={{fontSize:14}}>→</span>
         </a>
         <div className="mono" style={{fontSize:10, color:'var(--muted)', textAlign:'center', letterSpacing:'.06em'}}>
-          Lien sponsorisé Amazon
+          {p.merchant ? 'Lien direct vers le fabricant · non affilié' : 'Lien sponsorisé Amazon'}
         </div>
         {priceIsFresh && p.price && (
           <div style={{fontSize:10, color:'var(--muted)', textAlign:'center', lineHeight:1.4}}>
@@ -350,6 +350,7 @@ function ProductGrid({ favs, onFav }) {
     return () => window.removeEventListener('hashchange', apply);
   }, []);
 
+  const currentPrice = (p) => p.checkedAt && Date.now() - new Date(p.checkedAt).getTime() < 86400000 ? priceValue(p.price) : null;
   const priceValue = (value) => {
     if (!value || value.toLowerCase().includes('voir')) return null;
     const parsed = Number(value.replace(/[^0-9,]/g, '').replace(',', '.'));
@@ -361,7 +362,8 @@ function ProductGrid({ favs, onFav }) {
     .filter(p => active === 'all' || p.cat === active)
     .filter(p => brand === 'all' || productBrand(p) === brand)
     .filter(p => {
-      const price = priceValue(p.price);
+      const fresh = p.checkedAt && Date.now() - new Date(p.checkedAt).getTime() < 86400000;
+      const price = fresh ? priceValue(p.price) : null;
       if (priceRange === 'all') return true;
       if (price === null) return false;
       if (priceRange === 'under-20') return price < 20;
@@ -370,8 +372,8 @@ function ProductGrid({ favs, onFav }) {
       return price > 100;
     })
     .sort((a, b) => {
-      if (sort === 'price-asc') return (priceValue(a.price) ?? Infinity) - (priceValue(b.price) ?? Infinity);
-      if (sort === 'price-desc') return (priceValue(b.price) ?? -1) - (priceValue(a.price) ?? -1);
+      if (sort === 'price-asc') return (currentPrice(a) ?? Infinity) - (currentPrice(b) ?? Infinity);
+      if (sort === 'price-desc') return (currentPrice(b) ?? -1) - (currentPrice(a) ?? -1);
       if (sort === 'rating') return (b.rating || 0) - (a.rating || 0);
       return (b.addedAt || "").localeCompare(a.addedAt || "") || a.id - b.id;
     });
@@ -394,7 +396,7 @@ function ProductGrid({ favs, onFav }) {
             Choisies <em style={{fontStyle:'italic'}}>une à une.</em>
           </h2>
           <p style={{fontSize:14, color:'var(--muted)', marginTop:10, maxWidth:480}}>
-            Sélection éditoriale indépendante. Le prix et la disponibilité sont confirmés directement sur Amazon avant l'achat.
+            Sélection éditoriale indépendante. Le prix et la disponibilité sont à vérifier chez le vendeur indiqué avant l’achat.
           </p>
         </div>
 
