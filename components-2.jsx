@@ -212,6 +212,13 @@ function GiftGuide() {
       title:'Satin ou soie ?',
       text:'Un guide pour comprendre la composition des vêtements de nuit et choisir leur entretien.',
       href:'/journal/pyjama-satin-soie-difference-entretien.html'
+    },
+    {
+      image:'/assets/journal/cadeau-couple.webp',
+      alt:'Coffret cadeau à offrir à deux',
+      title:'Offrir un coffret spa en duo',
+      text:'Vérifiez les lieux, les créneaux et les prestations prévues pour les deux personnes.',
+      href:'/journal/coffret-spa-duo-verifier-prestation-reservation.html'
     }
   ];
   return (
@@ -276,6 +283,7 @@ function AffiliateCard({ p, onFav, faved }) {
       <div style={{padding:16, display:'flex', flexDirection:'column', gap:8, flex:1}}>
         <div className="serif" style={{fontSize:20, color:'var(--ink)', lineHeight:1.15}}>{p.name}</div>
         <div style={{fontSize:12, color:'var(--muted)'}}>{p.sub}</div>
+        {p.description && <p style={{fontSize:13, lineHeight:1.5, color:'var(--ink-2)', margin:0}}>{p.description}</p>}
 
         {p.reviewsVerified && p.rating > 0 && p.reviews > 0 && (
           <div style={{display:'flex', alignItems:'center', gap:8, marginTop:2}}>
