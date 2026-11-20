@@ -98,7 +98,7 @@ function Header({ favCount = 0 }) {
           <a href="/journal/" style={{fontSize:13, color:'var(--ink-2)'}}>Le Journal</a>
           <a href="/journal/" style={{fontSize:13, color:'var(--ink-2)'}}>Conseils</a>
           <a href="/journal/" aria-label="Rechercher dans les guides" title="Rechercher dans les guides" style={iconBtn}>⌕</a>
-          <a href="#produits" aria-label="Voir la sélection sauvegardée" title="Voir la sélection" style={{...iconBtn, position:'relative'}}>
+          <a href="#favoris" onClick={() => { if (window.location.hash === "#favoris") window.dispatchEvent(new Event("hashchange")); }} aria-label="Voir mes favoris" title="Mes favoris" style={{...iconBtn, position:'relative'}}>
             ♡
             {favCount > 0 && (
               <span style={{

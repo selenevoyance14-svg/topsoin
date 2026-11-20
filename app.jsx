@@ -26,7 +26,7 @@ function applyPalette() {
 function App() {
   const [gateOpen, setGateOpen] = useStateApp(() => {
     if (typeof window === 'undefined') return true;
-    return window.localStorage.getItem('ml_age_ok') !== '1';
+    try { return window.localStorage.getItem('ml_age_ok') !== '1'; } catch { return true; }
   });
   const [favs, setFavs] = useStateApp(new Set());
 

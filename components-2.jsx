@@ -193,6 +193,24 @@ function Collections() {
 function GiftGuide() {
   const guides = [
     {
+      image:'/assets/journal/cadeau-couple.webp', alt:'Illustration de cadeaux pour un couple',
+      title:'Noël sans deviner leurs goûts',
+      text:'Trois pistes pour offrir à deux sans connaître les tailles ni les parfums préférés.',
+      href:'/journal/cadeau-couple-noel-sans-taille-ni-parfum.html'
+    },
+    {
+      image:'/assets/journal/soins-massage.webp', alt:'Illustration de soins à offrir',
+      title:'Le contenu avant l’emballage',
+      text:'Comparez les formats, les accessoires et le coût final d’un coffret de Noël.',
+      href:'/journal/coffret-noel-comparer-contenances-budget.html'
+    },
+    {
+      image:'/assets/journal/nuit-cocooning.webp', alt:'Illustration de vêtements de nuit',
+      title:'Un pyjama prêt à offrir',
+      text:'Coupe, tailles et entretien : les vérifications utiles avant de commander.',
+      href:'/journal/pyjama-cadeau-noel-verifications-avant-achat.html'
+    },
+    {
       image:'/assets/journal/cadeau-couple.webp',
       alt:'Coffret cadeau élégant à offrir à un couple',
       title:'Comparer un coffret bien-être',
@@ -272,7 +290,7 @@ function AffiliateCard({ p, onFav, faved }) {
     onMouseLeave={e => { e.currentTarget.style.transform='translateY(0)'; e.currentTarget.style.boxShadow='none'; }}>
       <div style={{position:'relative'}}>
         <ProductVisual color={p.color} label={`${p.sub.toUpperCase()}`} tag={p.tag} image={p.image} alt={p.name}/>
-        <button onClick={() => onFav(p.id)} style={{
+        <button type="button" aria-label={`${faved ? "Retirer" : "Ajouter"} ${p.name} ${faved ? "des" : "aux"} favoris`} aria-pressed={faved} onClick={() => onFav(p.id)} style={{
           position:'absolute', top:10, right:10, width:32, height:32, borderRadius:'50%',
           background:'var(--paper)', border:0, cursor:'pointer', fontSize:14,
           color: faved ? 'var(--accent)' : 'var(--muted)',
@@ -336,6 +354,8 @@ function AffiliateCard({ p, onFav, faved }) {
 
 // Product grid
 function ProductGrid({ favs, onFav }) {
+  const [query, setQuery] = useState2('');
+  const [onlyFavorites, setOnlyFavorites] = useState2(false);
   const [active, setActive] = useState2('all');
   const [priceRange, setPriceRange] = useState2('all');
   const [brand, setBrand] = useState2('all');
@@ -345,11 +365,20 @@ function ProductGrid({ favs, onFav }) {
   React.useEffect(() => {
     const apply = () => {
       const m = window.location.hash.match(/cat=([a-z]+)/);
-      if (m && window.COLLECTIONS.some(c => c.id === m[1])) {
+      if (window.location.hash === '#favoris') {
+        setOnlyFavorites(true);
+        setActive('all');
+        setPriceRange('all');
+        setBrand('all');
+        setQuery('');
+        document.getElementById('produits')?.scrollIntoView({ behavior: 'smooth' });
+      } else if (m && window.COLLECTIONS.some(c => c.id === m[1])) {
+        setOnlyFavorites(false);
         setActive(m[1]);
         const el = document.getElementById('produits');
         if (el) el.scrollIntoView({ behavior: 'smooth' });
       } else if (window.location.hash === '#produits') {
+        setOnlyFavorites(false);
         setActive('all');
       }
     };
@@ -366,7 +395,11 @@ function ProductGrid({ favs, onFav }) {
   };
   const productBrand = (product) => product.sub?.replace(/^Marque\s*·\s*/i, '').trim() || 'Autres marques';
   const brands = [...new Set(window.PRODUCTS.map(productBrand))].sort((a, b) => a.localeCompare(b, 'fr'));
+  const normalizeSearch = value => String(value || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  const terms = normalizeSearch(query).trim().split(/\s+/).filter(Boolean);
   const filtered = window.PRODUCTS
+    .filter(p => !onlyFavorites || favs.has(p.id))
+    .filter(p => terms.every(term => normalizeSearch(`${p.name} ${p.sub} ${p.description || ''}`).includes(term)))
     .filter(p => active === 'all' || p.cat === active)
     .filter(p => brand === 'all' || productBrand(p) === brand)
     .filter(p => {
@@ -386,6 +419,7 @@ function ProductGrid({ favs, onFav }) {
       return (b.addedAt || "").localeCompare(a.addedAt || "") || a.id - b.id;
     });
   const resetFilters = () => {
+    setQuery('');
     setActive('all');
     setPriceRange('all');
     setBrand('all');
@@ -410,7 +444,16 @@ function ProductGrid({ favs, onFav }) {
 
       </div>
 
+      <div style={{display:'flex', flexWrap:'wrap', gap:12, marginBottom:20}} aria-label="Vue du catalogue">
+        <button type="button" aria-pressed={!onlyFavorites} onClick={() => { setOnlyFavorites(false); resetFilters(); }} style={{...filterStyle, width:'auto', padding:'12px 18px', fontSize:14}}>Toute la sélection</button>
+        <button type="button" aria-pressed={onlyFavorites} onClick={() => { setOnlyFavorites(true); resetFilters(); }} style={{...filterStyle, width:'auto', padding:'12px 18px', fontSize:14}}>Mes favoris ({favs.size})</button>
+      </div>
+      <p style={{fontSize:14, color:'var(--ink-2)', marginBottom:18}}>Les favoris restent disponibles pendant cette visite et disparaissent au rechargement de la page.</p>
       <div style={{background:'var(--paper)', border:'1px solid var(--line-2)', borderRadius:12, padding:18, marginBottom:28}}>
+        <label htmlFor="catalog-search" style={{display:'grid', gap:8, marginBottom:18, fontSize:16, color:'var(--ink)'}}>
+          Rechercher un produit ou une marque
+          <input id="catalog-search" type="search" value={query} onChange={event => setQuery(event.target.value)} placeholder="Ex. : pyjama, NUXE, coffret…" style={{...filterStyle, cursor:'text', fontSize:16, padding:'12px 14px'}} />
+        </label>
         <div className="catalog-filter-grid" style={{display:'grid', gridTemplateColumns:'repeat(4,minmax(0,1fr))', gap:12}}>
           <label style={{display:'grid', gap:7}}>
             <span className="smallcaps" style={{color:'var(--muted)'}}>Catégorie</span>
@@ -448,7 +491,7 @@ function ProductGrid({ favs, onFav }) {
         </div>
         <div style={{display:'flex', alignItems:'center', justifyContent:'space-between', gap:16, marginTop:14, color:'var(--muted)', fontSize:13}} aria-live="polite">
           <span><strong style={{color:'var(--ink)'}}>{filtered.length}</strong> produits trouvés</span>
-          {(active !== 'all' || priceRange !== 'all' || brand !== 'all' || sort !== 'selection') && (
+          {(query || active !== 'all' || priceRange !== 'all' || brand !== 'all' || sort !== 'selection') && (
             <button type="button" onClick={resetFilters} style={{border:0, background:'transparent', color:'var(--accent)', fontWeight:600, cursor:'pointer'}}>Réinitialiser les filtres</button>
           )}
         </div>
@@ -462,8 +505,8 @@ function ProductGrid({ favs, onFav }) {
         </div>
       ) : (
         <div style={{padding:'54px 20px', textAlign:'center', border:'1px dashed var(--line)', borderRadius:12}}>
-          <p style={{color:'var(--muted)', margin:'0 0 16px'}}>Aucun produit ne correspond à ces critères.</p>
-          <button type="button" onClick={resetFilters} style={{border:0, borderRadius:999, padding:'11px 18px', background:'var(--accent)', color:'#fff', cursor:'pointer'}}>Voir tous les produits</button>
+          <p style={{color:'var(--muted)', margin:'0 0 16px'}}>{onlyFavorites && favs.size === 0 ? 'Votre sélection est vide. Utilisez le cœur sur une fiche produit pour y ajouter une idée.' : 'Aucun produit ne correspond à ces critères.'}</p>
+          <button type="button" onClick={() => { setOnlyFavorites(false); resetFilters(); }} style={{border:0, borderRadius:999, padding:'11px 18px', background:'var(--accent)', color:'#fff', cursor:'pointer'}}>Voir tous les produits</button>
         </div>
       )}
     </section>
