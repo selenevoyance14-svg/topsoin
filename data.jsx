@@ -1,11 +1,11 @@
 // data.jsx — Maison Léa: Amazon affiliate edition (généré automatiquement)
-const AMAZON_DATA_UPDATED_AT = "2026-11-26T13:55:36.593Z";
+const AMAZON_DATA_UPDATED_AT = "2026-11-27T13:53:45.559Z";
 const COLLECTIONS = [
   { id:'lingerie',   label:'Lingerie',          fr:'Soutiens-gorge, culottes, bodies', count: 28 },
   { id:'nuit',       label:'Nuit & loungewear', fr:'Nuisettes, peignoirs, kimonos',     count: 28 },
   { id:'sensualite', label:'Sensualité',        fr:'Accessoires intimes & jeux',         count: 11, adult:true },
   { id:'erotisme',   label:'Érotisme',          fr:'Lecture, jeux coquins, fantaisies',  count: 11, adult:true },
-  { id:'soins',      label:'Soins intimes',     fr:'Lubrifiants, huiles, bougies',       count: 18 },
+  { id:'soins',      label:'Soins intimes',     fr:'Lubrifiants, huiles, bougies',       count: 19 },
   { id:'cadeaux',    label:'Coffrets',          fr:'Édition limitée, idées cadeaux',    count: 24 },
 ];
 
@@ -26,7 +26,7 @@ const PRODUCTS = [
     "asin": "2846285985",
     "image": "https://m.media-amazon.com/images/I/41t7EOUl2KL._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/2846285985?tag=lebrunnathali-21",
-    "checkedAt": "2026-11-26T13:55:34.055Z",
+    "checkedAt": "2026-11-27T13:53:43.835Z",
     "addedAt": "2026-10-14"
   },
   {
@@ -45,7 +45,7 @@ const PRODUCTS = [
     "asin": "B0CH38ZZ6F",
     "image": "https://m.media-amazon.com/images/I/41M83PaHP8L._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B0CH38ZZ6F?tag=lebrunnathali-21",
-    "checkedAt": "2026-11-26T13:55:34.055Z",
+    "checkedAt": "2026-11-27T13:53:43.835Z",
     "addedAt": "2026-10-14"
   },
   {
@@ -64,7 +64,7 @@ const PRODUCTS = [
     "asin": "B0B91TGPST",
     "image": "https://m.media-amazon.com/images/I/31Zso8fyR9L._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B0B91TGPST?tag=lebrunnathali-21",
-    "checkedAt": "2026-11-26T13:55:34.055Z",
+    "checkedAt": "2026-11-27T13:53:43.835Z",
     "addedAt": "2026-10-14"
   },
   {
@@ -72,7 +72,7 @@ const PRODUCTS = [
     "cat": "soins",
     "name": "Huile de Massage Professionnelle pour le Corps + Distributeur GRATUIT. Format économique. LE MASSAGE QUE VOUS ",
     "sub": "Sélection Léa",
-    "price": "27,36 €",
+    "price": "21,95 €",
     "was": "",
     "off": "",
     "rating": 0,
@@ -83,7 +83,7 @@ const PRODUCTS = [
     "asin": "B0B2KBHHK8",
     "image": "https://m.media-amazon.com/images/I/41ITVHKNfqL._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B0B2KBHHK8?tag=lebrunnathali-21",
-    "checkedAt": "2026-11-26T13:55:34.055Z",
+    "checkedAt": "2026-11-27T13:53:43.835Z",
     "addedAt": "2026-10-14"
   },
   {
@@ -102,7 +102,7 @@ const PRODUCTS = [
     "asin": "B07XDD2QMB",
     "image": "https://m.media-amazon.com/images/I/41xSRKphCTL._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B07XDD2QMB?tag=lebrunnathali-21",
-    "checkedAt": "2026-11-26T13:55:34.055Z",
+    "checkedAt": "2026-11-27T13:53:43.835Z",
     "addedAt": "2026-10-14"
   },
   {
@@ -121,7 +121,7 @@ const PRODUCTS = [
     "asin": "B07P7L8P39",
     "image": "https://m.media-amazon.com/images/I/51zYPcnS1fL._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B07P7L8P39?tag=lebrunnathali-21",
-    "checkedAt": "2026-11-26T13:55:34.055Z",
+    "checkedAt": "2026-11-27T13:53:43.835Z",
     "addedAt": "2026-10-14"
   },
   {
@@ -140,7 +140,7 @@ const PRODUCTS = [
     "asin": "B0FQJ2D4NB",
     "image": "https://m.media-amazon.com/images/I/41hnZjljq-L._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B0FQJ2D4NB?tag=lebrunnathali-21",
-    "checkedAt": "2026-11-26T13:55:34.055Z",
+    "checkedAt": "2026-11-27T13:53:43.835Z",
     "addedAt": "2026-10-14"
   },
   {
@@ -159,7 +159,7 @@ const PRODUCTS = [
     "asin": "B0D639M5VM",
     "image": "https://m.media-amazon.com/images/I/41gsZONCyUL._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B0D639M5VM?tag=lebrunnathali-21",
-    "checkedAt": "2026-11-26T13:55:34.055Z",
+    "checkedAt": "2026-11-27T13:53:43.835Z",
     "addedAt": "2026-10-14"
   },
   {
@@ -178,7 +178,7 @@ const PRODUCTS = [
     "asin": "B09JCGKMYZ",
     "image": "https://m.media-amazon.com/images/I/31qPl-DPZeL._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B09JCGKMYZ?tag=lebrunnathali-21",
-    "checkedAt": "2026-11-26T13:55:34.055Z",
+    "checkedAt": "2026-11-27T13:53:43.835Z",
     "addedAt": "2026-10-14"
   },
   {
@@ -197,7 +197,7 @@ const PRODUCTS = [
     "asin": "B0F3JKZKBK",
     "image": "https://m.media-amazon.com/images/I/41ZBwvEWJ6L._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B0F3JKZKBK?tag=lebrunnathali-21",
-    "checkedAt": "2026-11-26T13:55:34.055Z",
+    "checkedAt": "2026-11-27T13:53:43.835Z",
     "addedAt": "2026-10-14"
   },
   {
@@ -216,7 +216,7 @@ const PRODUCTS = [
     "asin": "B0FMJTHKJZ",
     "image": "https://m.media-amazon.com/images/I/41slS7WdTlL._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B0FMJTHKJZ?tag=lebrunnathali-21",
-    "checkedAt": "2026-11-26T13:55:34.501Z",
+    "checkedAt": "2026-11-27T13:53:44.208Z",
     "addedAt": "2026-10-14"
   },
   {
@@ -235,7 +235,7 @@ const PRODUCTS = [
     "asin": "B075L6TBZ5",
     "image": "https://m.media-amazon.com/images/I/51+RwbAOLpL._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B075L6TBZ5?tag=lebrunnathali-21",
-    "checkedAt": "2026-11-26T13:55:34.501Z",
+    "checkedAt": "2026-11-27T13:53:44.208Z",
     "addedAt": "2026-10-14"
   },
   {
@@ -243,7 +243,7 @@ const PRODUCTS = [
     "cat": "lingerie",
     "name": "Femme Dentelle Ensemble de Lingerie Sexy Transparente 2 Pièces, Soutien-Gorge Bralette Bretelles Réglables and",
     "sub": "Sélection Léa",
-    "price": "7,99 €",
+    "price": "7,49 €",
     "was": "",
     "off": "",
     "rating": 0,
@@ -254,7 +254,7 @@ const PRODUCTS = [
     "asin": "B0FZTKRX29",
     "image": "https://m.media-amazon.com/images/I/41Xhfhg+alL._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B0FZTKRX29?tag=lebrunnathali-21",
-    "checkedAt": "2026-11-26T13:55:34.501Z",
+    "checkedAt": "2026-11-27T13:53:44.208Z",
     "addedAt": "2026-10-14"
   },
   {
@@ -273,7 +273,7 @@ const PRODUCTS = [
     "asin": "B07CPTGV2X",
     "image": "https://m.media-amazon.com/images/I/41AClDkY6gL._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B07CPTGV2X?tag=lebrunnathali-21",
-    "checkedAt": "2026-11-26T13:55:34.501Z",
+    "checkedAt": "2026-11-27T13:53:44.208Z",
     "addedAt": "2026-10-14"
   },
   {
@@ -292,7 +292,7 @@ const PRODUCTS = [
     "asin": "B0D1TGVJZT",
     "image": "https://m.media-amazon.com/images/I/31VS9SnlxnL._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B0D1TGVJZT?tag=lebrunnathali-21",
-    "checkedAt": "2026-11-26T13:55:34.501Z",
+    "checkedAt": "2026-11-27T13:53:44.208Z",
     "addedAt": "2026-10-14"
   },
   {
@@ -311,7 +311,7 @@ const PRODUCTS = [
     "asin": "B0BRT2T99X",
     "image": "https://m.media-amazon.com/images/I/41TWYH2QwYL._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B0BRT2T99X?tag=lebrunnathali-21",
-    "checkedAt": "2026-11-26T13:55:34.501Z",
+    "checkedAt": "2026-11-27T13:53:44.208Z",
     "addedAt": "2026-10-14"
   },
   {
@@ -330,7 +330,7 @@ const PRODUCTS = [
     "asin": "B09M4SSJWG",
     "image": "https://m.media-amazon.com/images/I/41esEOPQ1VL._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B09M4SSJWG?tag=lebrunnathali-21",
-    "checkedAt": "2026-11-26T13:55:34.501Z",
+    "checkedAt": "2026-11-27T13:53:44.208Z",
     "addedAt": "2026-10-14"
   },
   {
@@ -349,7 +349,7 @@ const PRODUCTS = [
     "asin": "B09LHZHTNH",
     "image": "https://m.media-amazon.com/images/I/51z2+r7DGzL._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B09LHZHTNH?tag=lebrunnathali-21",
-    "checkedAt": "2026-11-26T13:55:34.501Z",
+    "checkedAt": "2026-11-27T13:53:44.208Z",
     "addedAt": "2026-10-14"
   },
   {
@@ -368,7 +368,7 @@ const PRODUCTS = [
     "asin": "B099JZ9L9Y",
     "image": "https://m.media-amazon.com/images/I/51wWYhn7MAS._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B099JZ9L9Y?tag=lebrunnathali-21",
-    "checkedAt": "2026-11-26T13:55:34.501Z",
+    "checkedAt": "2026-11-27T13:53:44.208Z",
     "addedAt": "2026-10-14"
   },
   {
@@ -387,7 +387,7 @@ const PRODUCTS = [
     "asin": "B0FC2XF77M",
     "image": "https://m.media-amazon.com/images/I/41KnerniCrL._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B0FC2XF77M?tag=lebrunnathali-21",
-    "checkedAt": "2026-11-26T13:55:34.501Z",
+    "checkedAt": "2026-11-27T13:53:44.208Z",
     "addedAt": "2026-10-14"
   },
   {
@@ -406,7 +406,7 @@ const PRODUCTS = [
     "asin": "B0DNF2NBT6",
     "image": "https://m.media-amazon.com/images/I/31Csny9ayzL._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B0DNF2NBT6?tag=lebrunnathali-21",
-    "checkedAt": "2026-11-26T13:55:35.221Z",
+    "checkedAt": "2026-11-27T13:53:44.539Z",
     "addedAt": "2026-10-14"
   },
   {
@@ -425,7 +425,7 @@ const PRODUCTS = [
     "asin": "B09C8CWKCH",
     "image": "https://m.media-amazon.com/images/I/416VLuOdEAL._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B09C8CWKCH?tag=lebrunnathali-21",
-    "checkedAt": "2026-11-26T13:55:35.221Z",
+    "checkedAt": "2026-11-27T13:53:44.539Z",
     "addedAt": "2026-10-14"
   },
   {
@@ -444,7 +444,7 @@ const PRODUCTS = [
     "asin": "B0CZ8JZHHQ",
     "image": "https://m.media-amazon.com/images/I/41HaPAZ8tuL._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B0CZ8JZHHQ?tag=lebrunnathali-21",
-    "checkedAt": "2026-11-26T13:55:35.221Z",
+    "checkedAt": "2026-11-27T13:53:44.539Z",
     "addedAt": "2026-10-14"
   },
   {
@@ -463,7 +463,7 @@ const PRODUCTS = [
     "asin": "B0CST1HWFJ",
     "image": "https://m.media-amazon.com/images/I/41yzsipc-rL._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B0CST1HWFJ?tag=lebrunnathali-21",
-    "checkedAt": "2026-11-26T13:55:35.221Z",
+    "checkedAt": "2026-11-27T13:53:44.539Z",
     "addedAt": "2026-10-14"
   },
   {
@@ -482,7 +482,7 @@ const PRODUCTS = [
     "asin": "B0B145GD9J",
     "image": "https://m.media-amazon.com/images/I/511xM9sXzAL._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B0B145GD9J?tag=lebrunnathali-21",
-    "checkedAt": "2026-11-26T13:55:35.221Z",
+    "checkedAt": "2026-11-27T13:53:44.539Z",
     "addedAt": "2026-10-14"
   },
   {
@@ -501,7 +501,7 @@ const PRODUCTS = [
     "asin": "B082VVXMP3",
     "image": "https://m.media-amazon.com/images/I/31+TwVYfQRL._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B082VVXMP3?tag=lebrunnathali-21",
-    "checkedAt": "2026-11-26T13:55:35.221Z",
+    "checkedAt": "2026-11-27T13:53:44.539Z",
     "addedAt": "2026-10-14"
   },
   {
@@ -520,7 +520,7 @@ const PRODUCTS = [
     "asin": "B01M0WUCCB",
     "image": "https://m.media-amazon.com/images/I/31dniDl839L._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B01M0WUCCB?tag=lebrunnathali-21",
-    "checkedAt": "2026-11-26T13:55:35.221Z",
+    "checkedAt": "2026-11-27T13:53:44.539Z",
     "addedAt": "2026-10-14"
   },
   {
@@ -528,7 +528,7 @@ const PRODUCTS = [
     "cat": "nuit",
     "name": "Ledamon Robe longue kimono pour femme - Robe de nuit classique à motif floral, champagne, Taille unique",
     "sub": "Sélection Léa",
-    "price": "97,22 €",
+    "price": "97,24 €",
     "was": "",
     "off": "",
     "rating": 0,
@@ -539,7 +539,7 @@ const PRODUCTS = [
     "asin": "B0BJ8GTXFP",
     "image": "https://m.media-amazon.com/images/I/41nKEdKbkFL._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B0BJ8GTXFP?tag=lebrunnathali-21",
-    "checkedAt": "2026-11-26T13:55:35.221Z",
+    "checkedAt": "2026-11-27T13:53:44.539Z",
     "addedAt": "2026-10-14"
   },
   {
@@ -558,7 +558,7 @@ const PRODUCTS = [
     "asin": "B0DBHMJ97F",
     "image": "https://m.media-amazon.com/images/I/31Y3MI6QWUL._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B0DBHMJ97F?tag=lebrunnathali-21",
-    "checkedAt": "2026-11-26T13:55:35.221Z",
+    "checkedAt": "2026-11-27T13:53:44.539Z",
     "addedAt": "2026-10-14"
   },
   {
@@ -577,7 +577,7 @@ const PRODUCTS = [
     "asin": "B0DBHL6KDV",
     "image": "https://m.media-amazon.com/images/I/319xBOvsTkL._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B0DBHL6KDV?tag=lebrunnathali-21",
-    "checkedAt": "2026-11-26T13:55:35.221Z",
+    "checkedAt": "2026-11-27T13:53:44.539Z",
     "addedAt": "2026-10-14"
   },
   {
@@ -598,7 +598,7 @@ const PRODUCTS = [
     "url": "https://www.amazon.fr/dp/B0DCBCXBL1?tag=lebrunnathali-21",
     "addedAt": "2026-11-10",
     "description": "Coussinets amovibles · Vérifier le maintien au mouvement",
-    "checkedAt": "2026-11-26T13:55:35.679Z"
+    "checkedAt": "2026-11-27T13:53:44.900Z"
   },
   {
     "id": 32,
@@ -618,7 +618,7 @@ const PRODUCTS = [
     "url": "https://www.amazon.fr/dp/B07VBRC3DP?tag=lebrunnathali-21",
     "addedAt": "2026-11-10",
     "description": "Coussinets amovibles · Comparer la bande sous poitrine",
-    "checkedAt": "2026-11-26T13:55:35.679Z"
+    "checkedAt": "2026-11-27T13:53:44.900Z"
   },
   {
     "id": 33,
@@ -638,7 +638,7 @@ const PRODUCTS = [
     "url": "https://www.amazon.fr/dp/B075L8N33Y?tag=lebrunnathali-21",
     "addedAt": "2026-11-10",
     "description": "Blanc, noir et beige · Vérifier la taille de la variante",
-    "checkedAt": "2026-11-26T13:55:35.679Z"
+    "checkedAt": "2026-11-27T13:53:44.900Z"
   },
   {
     "id": 34,
@@ -658,7 +658,7 @@ const PRODUCTS = [
     "url": "https://www.amazon.fr/dp/B06X6DYF82?tag=lebrunnathali-21",
     "addedAt": "2026-11-10",
     "description": "Avec armatures · Bonnets rembourrés",
-    "checkedAt": "2026-11-26T13:55:35.679Z"
+    "checkedAt": "2026-11-27T13:53:44.900Z"
   },
   {
     "id": 35,
@@ -678,7 +678,7 @@ const PRODUCTS = [
     "url": "https://www.amazon.fr/dp/B071P2JDXJ?tag=lebrunnathali-21",
     "addedAt": "2026-11-10",
     "description": "Avec armatures · Renforts en tulle",
-    "checkedAt": "2026-11-26T13:55:35.679Z"
+    "checkedAt": "2026-11-27T13:53:44.900Z"
   },
   {
     "id": 36,
@@ -698,7 +698,7 @@ const PRODUCTS = [
     "url": "https://www.amazon.fr/dp/B08XGQ9G69?tag=lebrunnathali-21",
     "addedAt": "2026-11-10",
     "description": "Rose et noir, 115E · Vérifier le système de tailles",
-    "checkedAt": "2026-11-26T13:55:35.679Z"
+    "checkedAt": "2026-11-27T13:53:44.900Z"
   },
   {
     "id": 37,
@@ -718,7 +718,7 @@ const PRODUCTS = [
     "url": "https://www.amazon.fr/dp/B0BVBKCQZV?tag=lebrunnathali-21",
     "addedAt": "2026-11-10",
     "description": "Ensemble deux pièces · Vérifier la composition",
-    "checkedAt": "2026-11-26T13:55:35.679Z"
+    "checkedAt": "2026-11-27T13:53:44.900Z"
   },
   {
     "id": 38,
@@ -738,14 +738,14 @@ const PRODUCTS = [
     "url": "https://www.amazon.fr/dp/B0BW5R31D8?tag=lebrunnathali-21",
     "addedAt": "2026-11-10",
     "description": "Variante S · Vérifier les mesures du short",
-    "checkedAt": "2026-11-26T13:55:35.679Z"
+    "checkedAt": "2026-11-27T13:53:44.900Z"
   },
   {
     "id": 39,
     "cat": "nuit",
     "name": "Ekouaer — pyjama satin avec pantalon",
     "sub": "Marque · Ekouaer",
-    "price": "26,75 €",
+    "price": "20,75 €",
     "was": "",
     "off": "",
     "rating": 0,
@@ -758,7 +758,7 @@ const PRODUCTS = [
     "url": "https://www.amazon.fr/dp/B0C58PGVLJ?tag=lebrunnathali-21",
     "addedAt": "2026-11-10",
     "description": "Bleu canard, XL · Vérifier les mesures du pantalon",
-    "checkedAt": "2026-11-26T13:55:35.679Z"
+    "checkedAt": "2026-11-27T13:53:44.900Z"
   },
   {
     "id": 40,
@@ -778,7 +778,7 @@ const PRODUCTS = [
     "url": "https://www.amazon.fr/dp/B07F9V7ZZH?tag=lebrunnathali-21",
     "addedAt": "2026-11-10",
     "description": "Manches courtes · Vérifier la composition et le tableau des tailles",
-    "checkedAt": "2026-11-26T13:55:35.679Z"
+    "checkedAt": "2026-11-27T13:53:44.900Z"
   },
   {
     "id": 41,
@@ -798,7 +798,7 @@ const PRODUCTS = [
     "url": "https://www.amazon.fr/dp/B09CH1V7YD?tag=lebrunnathali-21",
     "addedAt": "2026-11-10",
     "description": "Violet, M · Vérifier longueur et fermeture",
-    "checkedAt": "2026-11-26T13:55:36.302Z"
+    "checkedAt": "2026-11-27T13:53:45.258Z"
   },
   {
     "id": 42,
@@ -818,7 +818,7 @@ const PRODUCTS = [
     "url": "https://www.amazon.fr/dp/B0B5TYQFMV?tag=lebrunnathali-21",
     "addedAt": "2026-11-10",
     "description": "Taille unique · Vérifier les mesures et l’entretien",
-    "checkedAt": "2026-11-26T13:55:36.302Z"
+    "checkedAt": "2026-11-27T13:53:45.258Z"
   },
   {
     "id": 43,
@@ -838,7 +838,7 @@ const PRODUCTS = [
     "url": "https://www.amazon.fr/dp/B07FMHN31T?tag=lebrunnathali-21",
     "addedAt": "2026-11-10",
     "description": "Noir, S · Vérifier la composition exacte",
-    "checkedAt": "2026-11-26T13:55:36.302Z"
+    "checkedAt": "2026-11-27T13:53:45.258Z"
   },
   {
     "id": 44,
@@ -858,7 +858,7 @@ const PRODUCTS = [
     "url": "https://www.amazon.fr/dp/B0D53LVGKV?tag=lebrunnathali-21",
     "addedAt": "2026-11-10",
     "description": "Col en V · Vérifier la longueur de la variante",
-    "checkedAt": "2026-11-26T13:55:36.302Z"
+    "checkedAt": "2026-11-27T13:53:45.258Z"
   },
   {
     "id": 45,
@@ -878,7 +878,7 @@ const PRODUCTS = [
     "url": "https://www.amazon.fr/dp/B075D9RWPP?tag=lebrunnathali-21",
     "addedAt": "2026-11-10",
     "description": "Version neutre · Lire la liste d’ingrédients et la notice",
-    "checkedAt": "2026-11-26T13:55:36.302Z"
+    "checkedAt": "2026-11-27T13:53:45.258Z"
   },
   {
     "id": 46,
@@ -898,7 +898,7 @@ const PRODUCTS = [
     "url": "https://www.amazon.fr/dp/B09M7J3CQW?tag=lebrunnathali-21",
     "addedAt": "2026-11-10",
     "description": "Soin corporel parfumé · Vérifier la formule",
-    "checkedAt": "2026-11-26T13:55:36.302Z"
+    "checkedAt": "2026-11-27T13:53:45.258Z"
   },
   {
     "id": 47,
@@ -918,7 +918,7 @@ const PRODUCTS = [
     "url": "https://www.amazon.fr/dp/B0746PVGGW?tag=lebrunnathali-21",
     "addedAt": "2026-11-10",
     "description": "Vérifier les prestations duo dans la région choisie",
-    "checkedAt": "2026-11-26T13:55:36.302Z"
+    "checkedAt": "2026-11-27T13:53:45.258Z"
   },
   {
     "id": 48,
@@ -938,7 +938,7 @@ const PRODUCTS = [
     "url": "https://www.amazon.fr/dp/B0744JBW67?tag=lebrunnathali-21",
     "addedAt": "2026-11-10",
     "description": "Vérifier les accès et les soins inclus chez le partenaire",
-    "checkedAt": "2026-11-26T13:55:36.302Z"
+    "checkedAt": "2026-11-27T13:53:45.258Z"
   },
   {
     "id": 49,
@@ -958,7 +958,7 @@ const PRODUCTS = [
     "url": "https://www.amazon.fr/dp/B0748GK317?tag=lebrunnathali-21",
     "addedAt": "2026-11-10",
     "description": "Activité au choix · Comparer les options locales",
-    "checkedAt": "2026-11-26T13:55:36.302Z"
+    "checkedAt": "2026-11-27T13:53:45.258Z"
   },
   {
     "id": 50,
@@ -978,7 +978,7 @@ const PRODUCTS = [
     "url": "https://www.amazon.fr/dp/B0BBS1711L?tag=lebrunnathali-21",
     "addedAt": "2026-11-10",
     "description": "Une à deux personnes selon la prestation",
-    "checkedAt": "2026-11-26T13:55:36.302Z"
+    "checkedAt": "2026-11-27T13:53:45.258Z"
   },
   {
     "id": 51,
@@ -998,14 +998,14 @@ const PRODUCTS = [
     "url": "https://www.amazon.fr/dp/B09HRJY6SB?tag=lebrunnathali-21",
     "addedAt": "2026-11-10",
     "description": "Vérifier les parfums et les contenances",
-    "checkedAt": "2026-11-26T13:55:36.592Z"
+    "checkedAt": "2026-11-27T13:53:45.559Z"
   },
   {
     "id": 52,
     "cat": "cadeaux",
     "name": "Canards Maqués — jeu de cartes pour couples",
     "sub": "Marque · Canards Maqués",
-    "price": "19,69 €",
+    "price": "15,69 €",
     "was": "",
     "off": "",
     "rating": 0,
@@ -1018,7 +1018,7 @@ const PRODUCTS = [
     "url": "https://www.amazon.fr/dp/B0CBNJ2SDY?tag=lebrunnathali-21",
     "addedAt": "2026-11-10",
     "description": "Vérifier le ton du jeu et lire des cartes d’exemple",
-    "checkedAt": "2026-11-26T13:55:36.592Z"
+    "checkedAt": "2026-11-27T13:53:45.559Z"
   },
   {
     "id": 53,
@@ -1038,7 +1038,7 @@ const PRODUCTS = [
     "url": "https://www.amazon.fr/dp/B0FFPG8LL9?tag=lebrunnathali-21",
     "addedAt": "2026-11-10",
     "description": "Cartes de questions · Vérifier la langue et les thèmes",
-    "checkedAt": "2026-11-26T13:55:36.592Z"
+    "checkedAt": "2026-11-27T13:53:45.559Z"
   },
   {
     "id": 54,
@@ -1058,14 +1058,14 @@ const PRODUCTS = [
     "url": "https://www.amazon.fr/dp/B08S72PJMT?tag=lebrunnathali-21",
     "addedAt": "2026-11-10",
     "description": "220 questions · Deux joueurs, dès 16 ans selon la fiche",
-    "checkedAt": "2026-11-26T13:55:36.592Z"
+    "checkedAt": "2026-11-27T13:53:45.559Z"
   },
   {
     "id": 55,
     "cat": "lingerie",
     "name": "Femme Dentelle Ensemble de Lingerie Sexy Transparente 2 P...",
     "sub": "Marque · PARUPRUP",
-    "price": "8,99 €",
+    "price": "7,99 €",
     "was": "",
     "off": "",
     "rating": 0,
@@ -1148,6 +1148,23 @@ const PRODUCTS = [
   {
     "id": 60,
     "cat": "lingerie",
+    "name": "Femme Ensemble Lingerie Dentelle Sexy 3 Pièces, Body Cors...",
+    "sub": "Marque · ROSVAJFY",
+    "price": "11,99 €",
+    "was": "",
+    "off": "",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#8b1d2c",
+    "asin": "B0H4R1KG4X",
+    "image": "https://m.media-amazon.com/images/I/41Kf7ovJdNL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0H4R1KG4X?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
+    "id": 61,
+    "cat": "lingerie",
     "name": "ROSVAJFY Ensemble de Lingerie Sexy pour Femme en Dentelle...",
     "sub": "Marque · ROSVAJFY",
     "price": "11,99 €",
@@ -1163,38 +1180,21 @@ const PRODUCTS = [
     "url": "https://www.amazon.fr/dp/B0D7ZSQNYZ?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
-    "id": 61,
-    "cat": "lingerie",
-    "name": "Gatamiau Femme Ensemble de Lingerie Sexy Broderie Lys Col...",
-    "sub": "Marque · Gatamiau",
-    "price": "11,99 €",
-    "was": "13,99 €",
-    "off": "-14%",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#8b1d2c",
-    "asin": "B0H6F7LP3D",
-    "image": "https://m.media-amazon.com/images/I/41NBeSC-V1L._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0H6F7LP3D?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
     "id": 62,
     "cat": "lingerie",
-    "name": "Femme Ensemble Lingerie Dentelle Sexy 3 Pièces, Body Cors...",
-    "sub": "Marque · ROSVAJFY",
-    "price": "11,99 €",
-    "was": "",
-    "off": "",
+    "name": "Avidlove Soutien-Gorge Balconnet à Armatures pour Femmes ...",
+    "sub": "Marque · Avidlove",
+    "price": "14,24 €",
+    "was": "18,99 €",
+    "off": "-25%",
     "rating": 0,
     "reviews": 0,
     "prime": false,
     "tag": "",
     "color": "#8b1d2c",
-    "asin": "B0H4R1KG4X",
-    "image": "https://m.media-amazon.com/images/I/41Kf7ovJdNL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0H4R1KG4X?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+    "asin": "B0FJWL1BJ5",
+    "image": "https://m.media-amazon.com/images/I/41y8GiT92xL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0FJWL1BJ5?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 63,
@@ -1216,23 +1216,6 @@ const PRODUCTS = [
   {
     "id": 64,
     "cat": "lingerie",
-    "name": "Avidlove Soutien-Gorge Balconnet à Armatures pour Femmes ...",
-    "sub": "Marque · Avidlove",
-    "price": "14,24 €",
-    "was": "18,99 €",
-    "off": "-25%",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#8b1d2c",
-    "asin": "B0FJWL1BJ5",
-    "image": "https://m.media-amazon.com/images/I/41y8GiT92xL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0FJWL1BJ5?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
-    "id": 65,
-    "cat": "lingerie",
     "name": "Avidlove Soutien-Gorge Balconnet pour Femmes Dirndl Armat...",
     "sub": "Marque · Avidlove",
     "price": "14,24 €",
@@ -1248,7 +1231,7 @@ const PRODUCTS = [
     "url": "https://www.amazon.fr/dp/B0FJWJJMJB?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
-    "id": 66,
+    "id": 65,
     "cat": "lingerie",
     "name": "DOBREVA Femme Soutien Gorge Balconnet Push up Noir 90B | ...",
     "sub": "Marque · DOBREVA",
@@ -1265,7 +1248,7 @@ const PRODUCTS = [
     "url": "https://www.amazon.fr/dp/B09YDDVRCX?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
-    "id": 67,
+    "id": 66,
     "cat": "lingerie",
     "name": "DOBREVA Femme Soutien Gorge Transparent à Armature Noir#P...",
     "sub": "Marque · DOBREVA",
@@ -1280,6 +1263,23 @@ const PRODUCTS = [
     "asin": "B09VJVFF75",
     "image": "https://m.media-amazon.com/images/I/41CnN6uPV3S._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B09VJVFF75?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
+    "id": 67,
+    "cat": "lingerie",
+    "name": "Curve Muse Soutien-gorge Armatures Non doublé-x2-Crème,No...",
+    "sub": "Marque · Curve Muse",
+    "price": "34,19 €",
+    "was": "35,99 €",
+    "off": "-5%",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#8b1d2c",
+    "asin": "B0B14991FX",
+    "image": "https://m.media-amazon.com/images/I/511xM9sXzAL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0B14991FX?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 68,
@@ -1454,19 +1454,19 @@ const PRODUCTS = [
   {
     "id": 78,
     "cat": "nuit",
-    "name": "Coucoland Kimono Robe de Chambre longue Satin Robe de Nui...",
-    "sub": "Marque · BABEYOND",
-    "price": "29,99 €",
-    "was": "",
-    "off": "",
+    "name": "Lovasy Peignoir Satin Femme Court en Dentelle,A-Rouge fon...",
+    "sub": "Marque · Lovasy",
+    "price": "14,24 €",
+    "was": "19,99 €",
+    "off": "-29%",
     "rating": 0,
     "reviews": 0,
     "prime": false,
     "tag": "",
     "color": "#3a2e1f",
-    "asin": "B087CM4X57",
-    "image": "https://m.media-amazon.com/images/I/318XBIeJyNL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B087CM4X57?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+    "asin": "B0GWD9NVPZ",
+    "image": "https://m.media-amazon.com/images/I/41kDdWydypL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0GWD9NVPZ?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 79,
@@ -1488,6 +1488,23 @@ const PRODUCTS = [
   {
     "id": 80,
     "cat": "sensualite",
+    "name": "Unikrealer Rabbit Vibromasseurs Feminin Clitoridien Sexto...",
+    "sub": "Marque · Unikrealer",
+    "price": "21,99 €",
+    "was": "",
+    "off": "",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#1a1a1a",
+    "asin": "B0F1CKJ5Q1",
+    "image": "https://m.media-amazon.com/images/I/31N264dHuwL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0F1CKJ5Q1?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
+    "id": 81,
+    "cat": "sensualite",
     "name": "Lovehoney Vibromasseur Bullet Sex Toy Femme Appareil de m...",
     "sub": "Marque · Lovehoney",
     "price": "11,99 €",
@@ -1503,38 +1520,21 @@ const PRODUCTS = [
     "url": "https://www.amazon.fr/dp/B0HK3YPW5H?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
-    "id": 81,
-    "cat": "sensualite",
-    "name": "Gode Vibro-masseur Va et Vient Sex Toys - Gode Xxl Réalis...",
-    "sub": "Marque · Banysin",
-    "price": "24,79 €",
-    "was": "",
-    "off": "",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#1a1a1a",
-    "asin": "B0FFMGW6G9",
-    "image": "https://m.media-amazon.com/images/I/21R9rUEZv7L._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0FFMGW6G9?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
     "id": 82,
     "cat": "sensualite",
-    "name": "Unikrealer Rabbit Vibromasseurs Feminin Clitoridien Sexto...",
-    "sub": "Marque · Unikrealer",
-    "price": "21,99 €",
-    "was": "",
-    "off": "",
+    "name": "Sex Toys Vibromasseur Oeuf Vibrant Femme à Distance Telec...",
+    "sub": "Marque · Kaiagame",
+    "price": "16,99 €",
+    "was": "19,99 €",
+    "off": "-15%",
     "rating": 0,
     "reviews": 0,
     "prime": false,
     "tag": "",
     "color": "#1a1a1a",
-    "asin": "B0F1CKJ5Q1",
-    "image": "https://m.media-amazon.com/images/I/31N264dHuwL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0F1CKJ5Q1?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+    "asin": "B0CRKL35YT",
+    "image": "https://m.media-amazon.com/images/I/41kKstqk4pL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0CRKL35YT?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 83,
@@ -1556,40 +1556,6 @@ const PRODUCTS = [
   {
     "id": 84,
     "cat": "sensualite",
-    "name": "Godemichets Gode Vibro-masseur va et Vient, 20cm Gode Ven...",
-    "sub": "Marque · Cosyfun",
-    "price": "21,99 €",
-    "was": "",
-    "off": "",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#1a1a1a",
-    "asin": "B0FF9R919P",
-    "image": "https://m.media-amazon.com/images/I/41-5OkX47fL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0FF9R919P?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
-    "id": 85,
-    "cat": "sensualite",
-    "name": "Vibromasseurs Feminin Clitoridien Puissant Succion & Vibr...",
-    "sub": "Marque · MKGD",
-    "price": "14,99 €",
-    "was": "",
-    "off": "",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#1a1a1a",
-    "asin": "B0HQYVG5KH",
-    "image": "https://m.media-amazon.com/images/I/41Bq0rT0RVL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0HQYVG5KH?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
-    "id": 86,
-    "cat": "sensualite",
     "name": "Vibromasseurs Feminin va et vient avec Léchage Réaliste G...",
     "sub": "Marque · Unikrealer",
     "price": "35,99 €",
@@ -1603,6 +1569,40 @@ const PRODUCTS = [
     "asin": "B0G7G3QZ95",
     "image": "https://m.media-amazon.com/images/I/41ef25+XlJL._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B0G7G3QZ95?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
+    "id": 85,
+    "cat": "sensualite",
+    "name": "Vibromasseurs Feminin Vibrant à Double Embout Sex Toys, 1...",
+    "sub": "Marque · Cacuola",
+    "price": "20,55 €",
+    "was": "21,55 €",
+    "off": "-5%",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#1a1a1a",
+    "asin": "B0FX1V94R9",
+    "image": "https://m.media-amazon.com/images/I/21RbGVXFNyL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0FX1V94R9?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
+    "id": 86,
+    "cat": "sensualite",
+    "name": "Gode Vibromasseurs Feminin Clitoridien va et vient APP Si...",
+    "sub": "Marque · Cacuola",
+    "price": "20,99 €",
+    "was": "",
+    "off": "",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#1a1a1a",
+    "asin": "B0FDQ1JTS4",
+    "image": "https://m.media-amazon.com/images/I/317lA7-qdeL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0FDQ1JTS4?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 87,
@@ -1624,6 +1624,23 @@ const PRODUCTS = [
   {
     "id": 88,
     "cat": "sensualite",
+    "name": "Vibromasseurs Feminin Clitoridien Puissant Succion Sex To...",
+    "sub": "Marque · Mrtecher",
+    "price": "16,99 €",
+    "was": "",
+    "off": "",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#1a1a1a",
+    "asin": "B0GF7FJ49W",
+    "image": "https://m.media-amazon.com/images/I/41sMhfuHE7L._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0GF7FJ49W?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
+    "id": 89,
+    "cat": "sensualite",
     "name": "Vibromasseur Sex Toýs Femme, 5EN1 Sex Toys Vibromasseurs...",
     "sub": "Marque · Gobeken",
     "price": "29,99 €",
@@ -1637,23 +1654,6 @@ const PRODUCTS = [
     "asin": "B0FVSMZ7VR",
     "image": "https://m.media-amazon.com/images/I/31jVoJWAJ7L._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B0FVSMZ7VR?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
-    "id": 89,
-    "cat": "sensualite",
-    "name": "Sex Toys Femme Clitoridien I Vibro-masseur Silencieux 10 ...",
-    "sub": "Marque · Sensuelle Bliss",
-    "price": "15,99 €",
-    "was": "",
-    "off": "",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#1a1a1a",
-    "asin": "B0FWRLMN4Y",
-    "image": "https://m.media-amazon.com/images/I/41n8eizCbTL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0FWRLMN4Y?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 90,
@@ -1675,6 +1675,23 @@ const PRODUCTS = [
   {
     "id": 91,
     "cat": "erotisme",
+    "name": "CARTA SUTRA - Jeu Couple - Jeux de société - Jeu de Carte...",
+    "sub": "Marque · CARTA SUTRA",
+    "price": "19,99 €",
+    "was": "29,99 €",
+    "off": "-33%",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#3a1a26",
+    "asin": "B09CB784JD",
+    "image": "https://m.media-amazon.com/images/I/41hfFcN33nL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B09CB784JD?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
+    "id": 92,
+    "cat": "erotisme",
     "name": "MARKETIFAR Jeu de dés ludique – 2 Dés Actions, Jeu d'Ambi...",
     "sub": "Marque · MARKETIFAR",
     "price": "9,49 €",
@@ -1688,23 +1705,6 @@ const PRODUCTS = [
     "asin": "B0FJ8MRW25",
     "image": "https://m.media-amazon.com/images/I/41gkDdMOVQL._SL500_.jpg",
     "url": "https://www.amazon.fr/dp/B0FJ8MRW25?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
-    "id": 92,
-    "cat": "erotisme",
-    "name": "CARTA SUTRA - Jeu Couple - Jeux de société - Jeu de Carte...",
-    "sub": "Marque · CARTA SUTRA",
-    "price": "24,69 €",
-    "was": "29,99 €",
-    "off": "-18%",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#3a1a26",
-    "asin": "B09CB784JD",
-    "image": "https://m.media-amazon.com/images/I/41hfFcN33nL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B09CB784JD?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 93,
@@ -1726,23 +1726,6 @@ const PRODUCTS = [
   {
     "id": 94,
     "cat": "erotisme",
-    "name": "CARTA SUTRA Action ou Vérité – Jeu Couple - Jeux de socié...",
-    "sub": "Marque · CARTA SUTRA",
-    "price": "19,69 €",
-    "was": "24,99 €",
-    "off": "-21%",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#3a1a26",
-    "asin": "B0DC71LB5M",
-    "image": "https://m.media-amazon.com/images/I/41HUEHRPN4L._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0DC71LB5M?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
-    "id": 95,
-    "cat": "erotisme",
     "name": "Défis en couple : spécial jeux coquins | 50 Défis sexe: P...",
     "sub": "Marque · Independently published",
     "price": "9,08 €",
@@ -1758,41 +1741,7 @@ const PRODUCTS = [
     "url": "https://www.amazon.fr/dp/B08LNG9S5Z?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
-    "id": 96,
-    "cat": "erotisme",
-    "name": "Orgazmo – Jeu de couple coquin et sensuel pour adultes, d...",
-    "sub": "Marque · Oh Happy Games",
-    "price": "16,99 €",
-    "was": "19,99 €",
-    "off": "-15%",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#3a1a26",
-    "asin": "B0CHN9FRGB",
-    "image": "https://m.media-amazon.com/images/I/41f72NjEuYL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0CHN9FRGB?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
-    "id": 97,
-    "cat": "erotisme",
-    "name": "Coople – Jeu de Couple – 55 Défis pour Une soirée imprévi...",
-    "sub": "Marque · Coople",
-    "price": "22,90 €",
-    "was": "",
-    "off": "",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#3a1a26",
-    "asin": "B0H41RJFMB",
-    "image": "https://m.media-amazon.com/images/I/41aoSVEp5qL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0H41RJFMB?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
-    "id": 98,
+    "id": 95,
     "cat": "erotisme",
     "name": "Dimoi Jeu de Couple 240 Cartes pour entamer des Conversat...",
     "sub": "Marque · Tailemi",
@@ -1809,7 +1758,41 @@ const PRODUCTS = [
     "url": "https://www.amazon.fr/dp/B08DG3539L?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
-    "id": 99,
+    "id": 96,
+    "cat": "erotisme",
+    "name": "CARTA SUTRA Action ou Vérité – Jeu Couple - Jeux de socié...",
+    "sub": "Marque · CARTA SUTRA",
+    "price": "15,69 €",
+    "was": "24,99 €",
+    "off": "-37%",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#3a1a26",
+    "asin": "B0DC71LB5M",
+    "image": "https://m.media-amazon.com/images/I/41HUEHRPN4L._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0DC71LB5M?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
+    "id": 97,
+    "cat": "erotisme",
+    "name": "Orgazmo – Jeu de couple coquin et sensuel pour adultes, d...",
+    "sub": "Marque · Oh Happy Games",
+    "price": "16,99 €",
+    "was": "19,99 €",
+    "off": "-15%",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#3a1a26",
+    "asin": "B0CHN9FRGB",
+    "image": "https://m.media-amazon.com/images/I/41f72NjEuYL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0CHN9FRGB?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
+    "id": 98,
     "cat": "erotisme",
     "name": "Action ou Vérité version Hot et Sexy: Le jeu coquin Actio...",
     "sub": "Marque · Independently published",
@@ -1826,11 +1809,28 @@ const PRODUCTS = [
     "url": "https://www.amazon.fr/dp/B08J1Y6Y7C?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
+    "id": 99,
+    "cat": "erotisme",
+    "name": "CARTA SUTRA Couples sans tabou – Jeu Couple - Jeux de soc...",
+    "sub": "Marque · CARTA SUTRA",
+    "price": "18,69 €",
+    "was": "19,69 €",
+    "off": "-5%",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#3a1a26",
+    "asin": "B0FCHYR57J",
+    "image": "https://m.media-amazon.com/images/I/41NH-pQpVYL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0FCHYR57J?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
     "id": 100,
     "cat": "erotisme",
-    "name": "CARTA SUTRA Jeu Couple - Jeux de Rôle – Jeux de société -...",
-    "sub": "Marque · CARTA SUTRA",
-    "price": "19,69 €",
+    "name": "Jeux de Cartes Romantiques pour Couples avec Cadeaux Pers...",
+    "sub": "Marque · yilemeiyile",
+    "price": "13,99 €",
     "was": "",
     "off": "",
     "rating": 0,
@@ -1838,9 +1838,9 @@ const PRODUCTS = [
     "prime": false,
     "tag": "",
     "color": "#3a1a26",
-    "asin": "B0FCJDQFZX",
-    "image": "https://m.media-amazon.com/images/I/51jfV+I5NkL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0FCJDQFZX?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+    "asin": "B0GV24K5ZY",
+    "image": "https://m.media-amazon.com/images/I/41fWXXi6oGL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0GV24K5ZY?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 101,
@@ -1964,19 +1964,19 @@ const PRODUCTS = [
   {
     "id": 108,
     "cat": "soins",
-    "name": "Durex Gel Lubrifiant Crazy Cherry - Goût Cerise - Lubrifi...",
-    "sub": "Marque · Durex",
-    "price": "3,49 €",
-    "was": "6,53 €",
-    "off": "-47%",
+    "name": "Corine de Farme Lubrifiant Intime Hydratant Aloe Vera 75m...",
+    "sub": "Marque · Corine de Farme",
+    "price": "6,67 €",
+    "was": "7,50 €",
+    "off": "-11%",
     "rating": 0,
     "reviews": 0,
     "prime": false,
     "tag": "",
     "color": "#c9a961",
-    "asin": "B08YB1BQRP",
-    "image": "https://m.media-amazon.com/images/I/31dpF4YhazL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B08YB1BQRP?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+    "asin": "B0DYV7CT66",
+    "image": "https://m.media-amazon.com/images/I/31XPU4Tq5+L._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0DYV7CT66?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
     "id": 109,
@@ -2014,6 +2014,23 @@ const PRODUCTS = [
   },
   {
     "id": 111,
+    "cat": "soins",
+    "name": "NYSAYA | Huile de Massage Comestible Vanille - Massage Se...",
+    "sub": "Marque · NYSAYA",
+    "price": "14,90 €",
+    "was": "",
+    "off": "",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#c9a961",
+    "asin": "B0GYDQK28D",
+    "image": "https://m.media-amazon.com/images/I/31pYblT5x-L._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0GYDQK28D?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
+    "id": 112,
     "cat": "cadeaux",
     "name": "Calendrier de l'Avent 12 jours pour femme, coffret cadeau...",
     "sub": "Marque · Generic",
@@ -2030,41 +2047,7 @@ const PRODUCTS = [
     "url": "https://www.amazon.fr/dp/B0HPGGN3DC?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
-    "id": 112,
-    "cat": "cadeaux",
-    "name": "Calendrier de l'Avent Lingerie Noël 2026, 12 culottes en ...",
-    "sub": "Marque · Sizoer",
-    "price": "53,99 €",
-    "was": "53,99 €",
-    "off": "",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#5b1a26",
-    "asin": "B0HR14DD8J",
-    "image": "https://m.media-amazon.com/images/I/41giQQfnCgL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0HR14DD8J?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
     "id": 113,
-    "cat": "cadeaux",
-    "name": "Calendrier de l'Avent Lingerie Noël 2026, 24 culottes en ...",
-    "sub": "Marque · Générique",
-    "price": "42,99 €",
-    "was": "",
-    "off": "",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#5b1a26",
-    "asin": "B0HS6XQ5F1",
-    "image": "https://m.media-amazon.com/images/I/41SNSGumimL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0HS6XQ5F1?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
-    "id": 114,
     "cat": "cadeaux",
     "name": "Calendrier de l'Avent Lingerie Femme Coffret 12 Jours en ...",
     "sub": "Marque · Generic",
@@ -2081,7 +2064,41 @@ const PRODUCTS = [
     "url": "https://www.amazon.fr/dp/B0HS7TBJL9?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
+    "id": 114,
+    "cat": "cadeaux",
+    "name": "Calendrier de l'Avent Lingerie Noël 2026, 24 culottes en ...",
+    "sub": "Marque · Sizoer",
+    "price": "68,99 €",
+    "was": "68,99 €",
+    "off": "",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#5b1a26",
+    "asin": "B0HQZJK8VY",
+    "image": "https://m.media-amazon.com/images/I/41Be1n24dEL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0HQZJK8VY?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
     "id": 115,
+    "cat": "cadeaux",
+    "name": "Calendrier de l'Avent Lingerie Noël 2026, 24 culottes en ...",
+    "sub": "Marque · Générique",
+    "price": "24,99 €",
+    "was": "",
+    "off": "",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#5b1a26",
+    "asin": "B0HS7D87ZS",
+    "image": "https://m.media-amazon.com/images/I/41hVtOdONtL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0HS7D87ZS?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
+    "id": 116,
     "cat": "cadeaux",
     "name": "12 coffrets cadeaux avec bouchon et ruban, dimensions 10x...",
     "sub": "Marque · GP SUP",
@@ -2098,7 +2115,7 @@ const PRODUCTS = [
     "url": "https://www.amazon.fr/dp/B0928N5QFJ?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
-    "id": 116,
+    "id": 117,
     "cat": "cadeaux",
     "name": "PEIGNOIR PERSONNALISÉ/COFFRET BRIDE AVEC PRENOM/ENSEMBLE ...",
     "sub": "Marque · SA FLOCK",
@@ -2115,7 +2132,24 @@ const PRODUCTS = [
     "url": "https://www.amazon.fr/dp/B0CS1N7N8R?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
-    "id": 117,
+    "id": 118,
+    "cat": "cadeaux",
+    "name": "Calendrier de l'Avent Lingerie Noël 2026, 12 culottes en ...",
+    "sub": "Marque · Sizoer",
+    "price": "53,99 €",
+    "was": "53,99 €",
+    "off": "",
+    "rating": 0,
+    "reviews": 0,
+    "prime": false,
+    "tag": "",
+    "color": "#5b1a26",
+    "asin": "B0HR14DD8J",
+    "image": "https://m.media-amazon.com/images/I/41giQQfnCgL._SL500_.jpg",
+    "url": "https://www.amazon.fr/dp/B0HR14DD8J?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
+  },
+  {
+    "id": 119,
     "cat": "cadeaux",
     "name": "Tanga Calendrier de l'Avent 2026 - Ensemble de sous-vêtem...",
     "sub": "Marque · Generic",
@@ -2132,24 +2166,7 @@ const PRODUCTS = [
     "url": "https://www.amazon.fr/dp/B0HR5KMB4C?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
-    "id": 118,
-    "cat": "cadeaux",
-    "name": "RSLOVE Ensemble de Lingerie Féminine avec Porte-Jarretell...",
-    "sub": "Marque · RSLOVE",
-    "price": "18,99 €",
-    "was": "24,99 €",
-    "off": "-24%",
-    "rating": 0,
-    "reviews": 0,
-    "prime": false,
-    "tag": "",
-    "color": "#5b1a26",
-    "asin": "B0C6X52MRN",
-    "image": "https://m.media-amazon.com/images/I/41Er0ZmpidL._SL500_.jpg",
-    "url": "https://www.amazon.fr/dp/B0C6X52MRN?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
-  },
-  {
-    "id": 119,
+    "id": 120,
     "cat": "cadeaux",
     "name": "Coffret Massages Amoureux - nouvelle édition",
     "sub": "Marque · Hugo Image",
@@ -2166,7 +2183,7 @@ const PRODUCTS = [
     "url": "https://www.amazon.fr/dp/B0FF44K9GF?tag=lebrunnathali-21&linkCode=osi&th=1&psc=1"
   },
   {
-    "id": 120,
+    "id": 121,
     "cat": "cadeaux",
     "name": "Coffret Huile de Massage Couple, 4 Parfums, 4 x 80 ml | Q...",
     "sub": "Marque · AMOADO",
@@ -2199,7 +2216,7 @@ const EDITORIAL = {
 };
 
 const STATS = [
-  { num:'120', label:'produits sélectionnés' },
+  { num:'121', label:'produits sélectionnés' },
   { num:'6', label:'territoires' },
   { num:'30', label:'références de la nouvelle sélection' },
   { num:'100%', label:'liens affiliés signalés' },
